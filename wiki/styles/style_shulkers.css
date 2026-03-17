@@ -1,0 +1,60 @@
+/* ===== TITRES ===== */
+h1 {
+    text-align: center;
+}
+h1 { font-size: 150%; }
+/* ===== TEXT ===== */
+p {
+	font-size: 20px;
+}
+/* ===== CASES ===== */
+.case {
+	position: relative;
+  	width: auto;
+  	margin-top: 30px;
+	display: flex;
+}
+/* CASES - BLANCHE */
+.box_white {
+	/* AFFICHAGE */
+	width: auto;
+	display: flex;
+	text-align: center;
+	gap: 10px;
+	padding: 20px;
+
+	/* BORDURES */
+	border: 3px solid #ffffff;
+	border-radius: 20px;
+
+	/* EFFET NEON BLANC */
+	box-shadow:
+		0 0 8px rgba(255, 255, 255, 0.9),
+		0 0 20px rgba(255, 255, 255, 0.6),
+		0 0 40px rgba(255, 255, 255, 0.4),
+		0 10px 30px rgba(0, 0, 0, 0.4);
+}
+.top_white {
+	position: absolute;
+	top: -15px;
+	left: 12px;
+
+	background: rgba(0, 0, 0, 0.9);
+	padding: 4px 10px;
+
+	font-size: 25px;
+	color: #ffffff;
+
+	border-radius: 20px;
+	border: 2px solid #ffffff;
+
+	box-shadow:
+		0 0 6px rgba(255, 255, 255, 0.9),
+		0 0 14px rgba(255, 255, 255, 0.6);
+}
+/* IMAGES */
+img {
+    max-width: 300px;
+	height: auto;
+	margin-left: 0%;
+}
