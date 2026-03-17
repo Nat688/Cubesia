@@ -58,8 +58,13 @@ p {
 	height: auto;
 	margin-left: 0%;
 }
+.img_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
 .img_deco {
-    max-width: 15%;
-	height: auto;
-	margin-left: 5%;
+    width: 100%;
+    height: auto;
 }
