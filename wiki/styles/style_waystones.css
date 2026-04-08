@@ -7,6 +7,18 @@ h1 { font-size: 150%; }
 p {
 	font-size: 20px;
 }
+/* ===== BANDEAU ===== */
+.bandeau { 
+	background: linear-gradient(90deg, #ff4d4d, #cc0000); 
+	color: white; 
+	text-align: center; 
+	padding: 12px; 
+	font-size: 16px; 
+	position: fixed; 
+	top: 0; width: 100%; 
+	z-index: 1000; 
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+}
 /* ===== CASES ===== */
 .case {
 	position: relative;
