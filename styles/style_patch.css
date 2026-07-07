@@ -3,6 +3,7 @@ h1, h2, summary, details > summary {
     text-align: center;
 }
 h1 { font-size: 150%; }
+h2 { font-size: 125%; }
 li { font-size: 15px; }
 h7 { font-size: 50%; } /* -# de discord */
 /* le ``text`` de discord */
