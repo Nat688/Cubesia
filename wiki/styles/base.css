@@ -75,17 +75,17 @@ footer {
 }
 /* ===== NAME ===== */
 .cubesia {
-  background: linear-gradient(
-    135deg,
-    #A8C4FF 0%,
-    #7A90FF 25%,
-    #6558FF 55%,
-    #7B35F4 80%,
-    #B53CFF 100%
-  );
+    background: linear-gradient(
+        135deg,
+        #A8C4FF 0%,
+        #7A90FF 25%,
+        #6558FF 55%,
+        #7B35F4 80%,
+        #B53CFF 100%
+    );
 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
