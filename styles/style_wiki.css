@@ -30,9 +30,8 @@ h4 {
         box-shadow 0.25s ease, 
         background 0.25s ease;
 }
-.btn4 { margin-left: 10%; }
-.btn5 { margin-left: 30%; }
-.btn6 { margin-left: 50%; }
+.btn4 { margin-left: 25%; }
+.btn5 { margin-left: 60%; }
 .btn4:hover, .btn5:hover, .btn6:hover {
     transform: translateY(-2px);
     background: #242424;
