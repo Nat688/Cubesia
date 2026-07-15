@@ -3,8 +3,6 @@ h1, h5, div {
     text-align: center;
 }
 h1 { font-size: 150%; }
-/* ===== TITRE COULEUR ===== */
-.title_site { color: #106EBE; }
 /* ===== VOTES ===== */
 .vote-section {
     padding: 30px 20px;
