@@ -97,15 +97,16 @@ html {
 
 /* ===== IMAGES ===== */
 .wiki {
-    --tile-w: 320px;
-    --tile-h: 200px;
+    --tile-w: 460px;
+    --tile-h: 290px;
     --radius: 14px;
 }
 .shots {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
-    margin: 18px 0 6px;
+    justify-content: center;
+    gap: 16px;
+    margin: 22px 0 8px;
 }
 .shots a {
     display: flex;
@@ -140,9 +141,9 @@ html {
     flex: 1 1 100%;
     width: auto;
     height: auto;
-    max-width: 760px;
+    max-width: 880px;
 }
-.shots a.strip img { width: 100%; max-height: none; }
+.shots a.strip img { max-height: none; }
 
 /* ===== ENCADRÉS D'INFO ===== */
 .callout {
