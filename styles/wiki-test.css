@@ -92,8 +92,17 @@ html {
 /* ===== COMMANDS ===== */
 .wiki .cmd-list { list-style: none; padding: 0; }
 .wiki .cmd-list li { margin: 0; padding: 8px 0; border-bottom: 1px solid var(--border); }
-.cmd-list .command { color: #F8C048; font-family: monospace; }
-.cmd-list .base    { color: #58C3E6; }
+.cmd-list .command {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 1px 9px;
+    border-radius: 7px;
+    background: rgba(192, 132, 252, .12);
+    border: 1px solid rgba(192, 132, 252, .30);
+    color: #c084fc;
+    font-family: monospace;
+}
+.cmd-list .base { color: #7a90ff; }
 
 /* ===== IMAGES ===== */
 .wiki {
