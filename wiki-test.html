@@ -3,122 +3,1701 @@ layout: default
 ---
 
 <link rel="stylesheet" type="text/css" href="styles/wiki-test.css">
+
 <div class="wiki">
 
-	<!-- ================= CONTENU (à gauche) ================= -->
+	<!-- ================= CONTENU ================= -->
 	<main class="wiki-content">
 		<h1>Welcome to the wiki of <span class="cubesia">Cubesia</span></h1>
 		<p>Everything you need to know about the server, on a single page.</p>
 
-		<!-- ========== SPAWNERS ========== -->
+		<h2 id="commands"><i data-lucide="terminal"></i>Commands</h2>
+
+		<h3 id="cmd-general"><i data-lucide="list"></i>General</h3>
+		<ul class="cmd-list">
+			<li><span class="command">/afk</span> <span class="base">Teleports you to the AFK zone.</span></li>
+			<li><span class="command">/bin or /disposal or /trash</span> <span class="base">Allows you to destroy your items without causing lag.</span></li>
+			<li><span class="command">/home</span> <span class="base">Open the GUI to view, set, and delete your homes.</span></li>
+			<li><span class="command">/spawn</span> <span class="base">Teleports you to the spawn.</span></li>
+			<li><span class="command">/settings</span> <span class="base">Opens a GUI allowing you to toggle messages/features.</span></li>
+			<li><span class="command">/jobs or /job or /skills or /skill</span> <span class="base">Allows you to view jobs using a GUI.</span></li>
+			<li><span class="command">/pv or /vault</span> <span class="base">Opens your personal player vault.</span></li>
+			<li><span class="command">/msg or /tell</span> <span class="base">Allows you to send private messages.</span></li>
+			<li><span class="command">/profil or /profile</span> <span class="base">Opens your profile.</span></li>
+			<li><span class="command">/grave list</span> <span class="base">Gives you the list of your graves.</span></li>
+			<li><span class="command">/minions stats/statistics</span> <span class="base">Lets you view your minions stats.</span></li>
+			<li><span class="command">/tpa</span> <span class="base">Allows you to teleport to players.</span></li>
+			<li><span class="command">/tpahere</span> <span class="base">Allows you to teleport a player to you.</span></li>
+			<li><span class="command">/tpa accept/cancel or /tpahere accept/cancel</span> <span class="base">Allows you to accept or cancel a teleportation request.</span></li>
+			<li><span class="command">/help or /helpall</span> <span class="base">Allowing you to view all available server commands (either page by page or all at once).</span></li>
+			<li><span class="command">/playerwarp or /playerwarps or /pw or /pwarp or /pwarps</span> <span class="base">Opens the PlayerWarps interface.</span></li>
+			<li><span class="command">/order or /orders</span> <span class="base">Opens the orders interface.</span></li>
+			<li><span class="command">/reward or /rewards</span> <span class="base">Opens the rewards interface.</span></li>
+			<li><span class="command">/trade or /trades</span> <span class="base">Allows you to interact with other players.</span></li>
+		</ul>
+
+		<h3 id="cmd-utility"><i data-lucide="wrench"></i>Utility</h3>
+		<ul class="cmd-list">
+			<li><span class="command">/craft</span> <span class="base">Opens a cratingtable.</span></li>
+			<li><span class="command">/ec or /enderchest</span> <span class="base">Opens an enderchest.</span></li>
+			<li><span class="command">/anvil</span> <span class="base">Opens an anvil.</span></li>
+			<li><span class="command">/grindstone</span> <span class="base">Opens a grindstone.</span></li>
+			<li><span class="command">/smithingtable or /smithing</span> <span class="base">Open a smithingtable.</span></li>
+			<li><span class="command">/stonecutter</span> <span class="base">Open a stonecutter.</span></li>
+			<li><span class="command">/loom</span> <span class="base">Open a loom.</span></li>
+		</ul>
+
+		<h3 id="cmd-links"><i data-lucide="link"></i>Links</h3>
+		<ul class="cmd-list">
+			<li><span class="command">/discord</span> <span class="base">Provide the link to the Discord.</span></li>
+			<li><span class="command">/wiki</span> <span class="base">Provide the link to the Wiki.</span></li>
+			<li><span class="command">/rules or /rule</span> <span class="base">Provide the link to the Rules.</span></li>
+			<li><span class="command">/site or /website</span> <span class="base">Provide the link to the WebSite.</span></li>
+		</ul>
+
+		<h3 id="cmd-economy"><i data-lucide="wallet"></i>Economy</h3>
+		<ul class="cmd-list">
+			<li><span class="command">/money</span> <span class="base">Provides your current balance in money.</span></li>
+			<li><span class="command">/money top</span> <span class="base">List the top players in terms of money.</span></li>
+			<li><span class="command">/shards</span> <span class="base">Provides your current balance in shards.</span></li>
+			<li><span class="command">/shards top</span> <span class="base">List the top players in terms of shards.</span></li>
+			<li><span class="command">/pay</span> <span class="base">Paid the other players.</span></li>
+			<li><span class="command">/paytoggle</span> <span class="base">Toggle payments from other players.</span></li>
+			<li><span class="command">/bank</span> <span class="base">Opens the bank GUI.</span></li>
+			<li><span class="command">/banktop</span> <span class="base">Gives you the bank's current top ranking.</span></li>
+			<li><span class="command">/bounty or /boutnies</span> <span class="base">Open the mistletoe using the players' bounties.</span></li>
+			<li><span class="command">/bounty add or /bounties add</span> <span class="base">Add a player bounty.</span></li>
+		</ul>
+
+		<h3 id="cmd-shop-sell"><i data-lucide="shopping-cart"></i>Shop &amp; Sell</h3>
+		<ul class="cmd-list">
+			<li><span class="command">/shop</span> <span class="base">Open the server shop.</span></li>
+			<li><span class="command">/sell or /sellgui</span> <span class="base">Allows you to sell your items (except custom fish).</span></li>
+			<li><span class="command">/sellprice or /sellprices</span> <span class="base">Opens a GUI to view item prices (tiers in alphabetical order).</span></li>
+			<li><span class="command">/sellall</span> <span class="base">Allows you to sell your entire inventory.</span></li>
+			<li><span class="command">/autosell</span> <span class="base">Enables or disables autosell (automatically sells selected items).</span></li>
+			<li><span class="command">/ah or /auction or /auctionhouse or /hdv</span> <span class="base">Opens the auction house (player trading hub).</span></li>
+		</ul>
+
+		<h3 id="cmd-fish"><i data-lucide="fish"></i>Fish</h3>
+		<ul class="cmd-list">
+			<li><span class="command">/fish</span> <span class="base">Opens the custom fish interface.</span></li>
+			<li><span class="command">/sellfish</span> <span class="base">Allows you to sell your fish.</span></li>
+			<li><span class="command">/fish journal</span> <span class="base">Opens the fish collection interface.</span></li>
+			<li><span class="command">/fish applybaits</span> <span class="base">Allows you to apply purchased or crafted bait to your fishing rod.</span></li>
+			<li><span class="command">/fish sellall</span> <span class="base">Allows you to sell all your fish at once.</span></li>
+			<li><span class="command">/fish top</span> <span class="base">Allows you to view the top rankings (only during events).</span></li>
+			<li><span class="command">/fish toggle</span> <span class="base">Enables or disables custom fishing.</span></li>
+		</ul>
+
+		<h3 id="cmd-vip-only"><i data-lucide="crown"></i>VIP only</h3>
+		<ul class="cmd-list">
+			<li><span class="command">/heal</span> <span class="base">Fully regenerate your health.</span></li>
+			<li><span class="command">/feed</span> <span class="base">Fully replenish your hunger</span></li>
+			<li><span class="base">2 additional PWs</span></li>
+			<li><span class="base">18 additional Player Vaults</span></li>
+		</ul>
+
 		<h2 id="spawners"><i data-lucide="rabbit"></i>Spawners</h2>
 
 		<h3 id="spawner-gui"><i data-lucide="layout-grid"></i>Spawner GUI</h3>
-		<p>
-			Every <b>Spawner</b> includes its own management interface, giving you quick access to everything related to your mob farm.
-			The <b>Chest</b> is the main storage, where every item dropped by your mobs is collected automatically.
-		</p>
-		<img class="shot" src="images/wiki/spawner_gui.png" alt="Spawner GUI">
-
-		<h3 id="storage"><i data-lucide="package"></i>Storage</h3>
-		<p>The <b>Storage</b> menu includes tools to organize, filter, collect, sell, and control every item produced by your spawner.</p>
-		<ul>
-			<li>The <b>Cauldron</b> automatically sorts the stored items.</li>
-			<li>The <b>Hopper</b> opens the loot filter.</li>
-			<li>The <b>Gold Ingot</b> instantly sells every stored item.</li>
-		</ul>
-
-		<h3 id="stacking"><i data-lucide="layers"></i>Stacking</h3>
-		<p>
-			<b>Spawners</b> can be stacked together to save space. A normal right-click adds <b>one spawner</b>,
-			while <b>Shift + Right-Click</b> adds as many as possible from your inventory.
-		</p>
-
-		<div class="callout tip">
-			<i data-lucide="info"></i>
-			<p><b>Silk Touch is not required</b> to break and recover spawners.</p>
+		<p>Every <b>Spawner</b> includes its own management interface, giving you quick access to everything related to your mob farm.</p>
+		<p>The <b>Chest</b> is the main storage, where every item dropped by your mobs is collected automatically.</p>
+		<p>The <b>Mob Head</b> acts as a convenient shortcut to instantly <b>sell every stored item</b> without opening the storage first.</p>
+		<p>You will also find the <b>Experience</b> storage, allowing you to collect all accumulated XP whenever you want. This experience can also be used to repair equipment enchanted with <b>Mending</b>, making your farm even more efficient.</p>
+		<div class="shots">
+			<a href="images/wiki/spawner_gui.png" target="_blank" rel="noopener"><img src="images/wiki/spawner_gui.png" alt="Spawner gui" loading="lazy"></a>
 		</div>
 
-		<!-- ========== COMMANDS ========== -->
-		<h2 id="commands"><i data-lucide="terminal"></i>Commands</h2>
-		<ul class="cmd-list">
-			<li><span class="command">/afk</span> <span class="base">Teleports you to the AFK zone.</span></li>
-			<li><span class="command">/home</span> <span class="base">Open the GUI to view, set, and delete your homes.</span></li>
-			<li><span class="command">/spawn</span> <span class="base">Teleports you to the spawn.</span></li>
-		</ul>
-
-		<!-- ========== ENCHANTMENTS ========== -->
-		<h2 id="enchantments"><i data-lucide="book"></i>Enchantments</h2>
-
-		<h3 id="armor"><i data-lucide="shield"></i>Armor</h3>
-		<div class="table_container">
-			<table class="neon_table">
-				<thead>
-					<tr><th>Name</th><th>Summary</th><th>Max Level</th></tr>
-				</thead>
-				<tbody>
-					<tr><td>Cold Steel</td><td>Applies Mining Fatigue effect to the attacker.</td><td>III</td></tr>
-					<!-- colle ici les autres lignes de wiki/enchantments.html -->
-				</tbody>
-			</table>
+		<h3 id="spawner-storage"><i data-lucide="package"></i>Storage</h3>
+		<p>The <b>Storage</b> menu includes a variety of management tools designed to help you organize, filter, collect, sell, and control every item produced by your spawner.</p>
+		<p>The <b>Cauldron</b> automatically sorts the stored items, making your storage much easier to organize.</p>
+		<p>The <b>Hopper</b> opens the loot filter, allowing you to enable or disable specific mob drops.</p>
+		<p>The <b>Gold Ingot</b> instantly sells every item currently stored inside the spawner.</p>
+		<p>The <b>Bundle</b> transfers all stored items directly into your inventory.</p>
+		<p>Finally, the <b>Dropper</b> drops every stored item onto the ground, or only the current storage page if your storage spans multiple pages.</p>
+		<div class="shots">
+			<a href="images/wiki/spawner_storage.png" target="_blank" rel="noopener"><img src="images/wiki/spawner_storage.png" alt="Spawner storage" loading="lazy"></a>
 		</div>
 
-		<!-- ========== OTHERS ========== -->
-		<h2 id="others"><i data-lucide="plus"></i>Others</h2>
+		<h3 id="spawner-loot-filter"><i data-lucide="filter"></i>Loot Filter</h3>
+		<p>The <b>Loot Filter</b> allows you to choose exactly which drops should be stored by your spawner.</p>
+		<p>It is divided into two categories: <b>Allowed</b> and <b>Disallowed</b>.</p>
+		<p>Any item moved to the <b>Disallowed</b> category will no longer appear in the spawner's storage, helping you keep only the drops you actually want.</p>
+		<p>Switching an item between the two categories is as simple as clicking on it.</p>
+		<p>Items with durability, such as tools, weapons, and armor, are automatically grouped together regardless of their durability value, making the filter easy to configure and maintain.</p>
+		<div class="shots">
+			<a href="images/wiki/spawner_filter.png" target="_blank" rel="noopener"><img src="images/wiki/spawner_filter.png" alt="Spawner filter" loading="lazy"></a>
+		</div>
 
-		<h3 id="shulkers"><i data-lucide="box"></i>Shulkers</h3>
-		<p>
-			<b>Shulker Boxes</b> can now be <b>opened directly from your inventory</b>, without needing to place them on the ground first.
-		</p>
-
-		<h3 id="afkzone"><i data-lucide="clock"></i>AFKZone</h3>
-		<p>
-			For <b>every minute</b> spent in the AFK Zone, you receive a <b>random reward</b>.
-			Use <code>/afk</code> to get there.
-		</p>
+		<h3 id="spawner-stacking"><i data-lucide="layers"></i>Stacking</h3>
+		<p><b>Spawners</b> can be stacked together to save space and increase the efficiency of your mob farms.</p>
+		<p>To <b>add</b> spawners to an existing stack, simply <b>right-click</b> the spawner. A normal right-click adds <b>one spawner</b>, while <b>Shift + Right-Click</b> adds as many spawners as possible from your inventory in a single action.</p>
+		<p>To <b>remove</b> spawners from a stack, use <b>Left-Click</b>. A normal left-click removes <b>one spawner</b>, while <b>Shift + Left-Click</b> removes an entire stack at once, making it much faster to relocate or reorganize your farms.</p>
+		<p>Each spawner stack can contain up to <b>10,000 spawners</b>, allowing you to build extremely compact and efficient mob farms while saving valuable space.</p>
 		<div class="callout">
 			<i data-lucide="info"></i>
-			<p>You are free to leave the zone whenever you wish.</p>
+			<p>Unlike vanilla Minecraft, <b>Silk Touch is not required</b> to break and recover spawners, allowing you to move and manage them freely whenever needed.</p>
+		</div>
+		<div class="shots">
+			<a href="images/wiki/spawner_stacking.png" target="_blank" rel="noopener"><img src="images/wiki/spawner_stacking.png" alt="Spawner stacking" loading="lazy"></a>
+		</div>
+
+		<h2 id="enchantments"><i data-lucide="book"></i>Enchantments</h2>
+
+		<h3 id="ench-armor"><i data-lucide="shield"></i>Armor</h3>
+		<div class="table_container">
+			<table class="neon_table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Summary</th>
+            <th>Incompatible With</th>
+            <th>Max Level</th>
+            <th>Primary Items</th>
+            <th>Secondary Items</th>
+            <th>Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cold Steel</td>
+            <td>Applies Mining Fatigue effect to the attacker.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Darkness Cloak</td>
+            <td>Applies Darkness effect to the attacker.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Dragon Heart</td>
+            <td>Grants passive Health Boost effect.</td>
+            <td> </td>
+            <td>V</td>
+            <td>
+              <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Elemental Protection</td>
+            <td>Reduces potion and elemental damage.</td>
+            <td> </td>
+            <td>IV</td>
+            <td>
+              <img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Fire Shield</td>
+            <td>Ignites the attacker.</td>
+            <td> </td>
+            <td>IV</td>
+            <td>
+              <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Flame Walker</td>
+            <td>Ability to walk on lava, immunity to magma damage.</td>
+            <td>Frost Walker</td>
+            <td>II</td>
+            <td>
+              <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Hardened</td>
+            <td>Grants Resistance effect on receiving damage.</td>
+            <td> </td>
+            <td>II</td>
+            <td>
+              <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Ice Shield</td>
+            <td>Freezes and slows down the attacker.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Jumping</td>
+            <td>Grants Jump Boost effect.</td>
+            <td> </td>
+            <td>II</td>
+            <td>
+              <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Kamikadze</td>
+            <td>Creates an explosion on death.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Lightweight</td>
+            <td>Allows you to safely jump on turtle eggs, farmlands and big dripleaf.</td>
+            <td> </td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Night Vision</td>
+            <td>Grants Night Vision effect.</td>
+            <td> </td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Rebound</td>
+            <td>Gives the effect of landing on a Slime Block.</td>
+            <td>Feather Falling</td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Regrowth</td>
+            <td>Restores certain amount of hearts over the time.</td>
+            <td> </td>
+            <td>IV</td>
+            <td>
+              <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Saturation</td>
+            <td>Restores certain amount of food over the time.</td>
+            <td> </td>
+            <td>II</td>
+            <td>
+              <img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>Grants Speed effect.</td>
+            <td> </td>
+            <td>II</td>
+            <td>
+              <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Stopping Force</td>
+            <td>Reduces Knockback when getting damage.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Water Breathing</td>
+            <td>Grants Water Breathing effect effect.</td>
+            <td> </td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+		</div>
+
+		<h3 id="ench-bow"><i data-lucide="crosshair"></i>Bow</h3>
+		<div class="table_container">
+			<table class="neon_table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Summary</th>
+            <th>Incompatible With</th>
+            <th>Max Level</th>
+            <th>Primary Items</th>
+            <th>Secondary Items</th>
+            <th>Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bomber</td>
+            <td>Shoots TNT instead of arrows.</td>
+            <td>Ender Bow, Ghast</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Confusing Arrows</td>
+            <td>Applies Nausea effect on arrows.</td>
+            <td>Bomber, Ender Bow, Ghast</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Darkness Arrows</td>
+            <td>Applies Darkness effect on arrows.</td>
+            <td>Bomber, Ender Bow, Ghast</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Dragonfire Arrows</td>
+            <td>Applies Dragons Breath effect on arrows.</td>
+            <td>Bomber, Ender Bow, Ghast</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Electrified Arrows</td>
+            <td>Summons Lightning on hit.</td>
+            <td>Bomber, Ender Bow, Ghast</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Ender Bow</td>
+            <td>Shoots Ender Pearls instead of arrows.</td>
+            <td>Bomber, Ghast</td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Explosive Arrows</td>
+            <td>Arrows Explodes on hit.</td>
+            <td>Bomber, Ender Bow, Ghast</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Flare</td>
+            <td>Places a Torch where arrow land.</td>
+            <td>Bomber, Ender Bow, Ghast</td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Ghast</td>
+            <td>Shoots Fireball instead of arrows.</td>
+            <td>Bomber, Ender Bow</td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Hover</td>
+            <td>Applies Levitation effect on arrows.</td>
+            <td>Bomber, Ender Bow, Ghast</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Lingering</td>
+            <td>Arrows with a lingering effect on hit.</td>
+            <td>Bomber, Ender Bow, Ghast</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Poisoned Arrows</td>
+            <td>Applies Poison effect on arrows.</td>
+            <td>Bomber, Ender Bow, Ghast</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Sniper</td>
+            <td>Increases projectile speed.</td>
+            <td> </td>
+            <td>II</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Vampiric Arrows</td>
+            <td>Restores health on hit.</td>
+            <td>Bomber, Ender Bow, Ghast</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Withered Arrows</td>
+            <td>Applies Wither effect on arrows.</td>
+            <td>Bomber, Ender Bow, Ghast</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+		</div>
+
+		<h3 id="ench-tool"><i data-lucide="pickaxe"></i>Tool</h3>
+		<div class="table_container">
+			<table class="neon_table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Summary</th>
+            <th>Incompatible With</th>
+            <th>Max Level</th>
+            <th>Primary Items</th>
+            <th>Secondary Items</th>
+            <th>Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Blast Mining</td>
+            <td>Mines blocks with Explosions.</td>
+            <td>Tunnel, Veinminer</td>
+            <td>V</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Glass Breaker</td>
+            <td>Breaks glass instantly.</td>
+            <td> </td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Haste</td>
+            <td>Applies Haste effect on mining.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Lucky Miner</td>
+            <td>Produces more XP from mined blocks.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Replanter</td>
+            <td>Replants Crops on harvest or right-click.</td>
+            <td> </td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Silk Chest</td>
+            <td>Drops Chests that keeps their content.</td>
+            <td> </td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy">
+            </td>
+            <td>1</td>
+          </tr>
+          <!-- <tr>
+            <td>Silk Spawner</td>
+            <td>Chance to obtain a Monster Spawner.</td>
+            <td>Smelter</td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>1</td>
+          </tr> -->
+          <tr>
+            <td>Smelter</td>
+            <td>Smelt dropped items according to their Recipes.</td>
+            <td>Silk Touch<!--, Silk Spawner--></td>
+            <td>V</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Telekinesis</td>
+            <td>Moves all block loot directly to inventory.</td>
+            <td> </td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy">
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Treefeller</td>
+            <td>Cuts down an entire tree.</td>
+            <td> </td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Tunnel</td>
+            <td>Mines 1x2, 2x2, 3x3 area.</td>
+            <td>Veinminer, Blast Mining</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy">
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Veinminer</td>
+            <td>Mines the whole ore vein at once.</td>
+            <td>Tunnel, Blast Mining</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+		</div>
+
+		<h3 id="ench-fishing"><i data-lucide="fish"></i>Fishing</h3>
+		<div class="table_container">
+			<table class="neon_table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Summary</th>
+            <th>Incompatible With</th>
+            <th>Max Level</th>
+            <th>Primary Items</th>
+            <th>Secondary Items</th>
+            <th>Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Auto Reel</td>
+            <td>Automatically reels in a hook on bite.</td>
+            <td> </td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Curse of Drowned</td>
+            <td>Chance to fish up a Drowned.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Double Catch</td>
+            <td>Increases amount of caught item by x2.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>River Master</td>
+            <td>Increases casting distance.</td>
+            <td> </td>
+            <td>V</td>
+            <td>
+              <img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Seasoned Angler</td>
+            <td>Increases amount of gained XP.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Survivalist</td>
+            <td>Automatically cooks fish if what is caught is raw.</td>
+            <td> </td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+		</div>
+
+		<h3 id="ench-weapon"><i data-lucide="sword"></i>Weapon</h3>
+		<div class="table_container">
+			<table class="neon_table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Summary</th>
+            <th>Incompatible With</th>
+            <th>Max Level</th>
+            <th>Primary Items</th>
+            <th>Secondary Items</th>
+            <th>Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bane of Netherspawn</td>
+            <td>Increases damage to nether mobs.</td>
+            <td> </td>
+            <td>V</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Blindness</td>
+            <td>Applies Blindness effect on target.</td>
+            <td> </td>
+            <td>II</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Confusion</td>
+            <td>Applies Nausea effect on target.</td>
+            <td> </td>
+            <td>II</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Cure</td>
+            <td>Cures Zombified Piglins and Zombie Villagers on kill.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Curse of Death</td>
+            <td>If you kill a player, you have a chance of dying too.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Cutter</td>
+            <td>Damages and drops target&amp;#x27;s armor.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Decapitator</td>
+            <td>Allows to obtain target head.</td>
+            <td> </td>
+            <td>II</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Double Strike</td>
+            <td>Increases damage by twice.</td>
+            <td> </td>
+            <td>II</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Exhaust</td>
+            <td>Applies Hunger effect on target.</td>
+            <td> </td>
+            <td>IV</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Ice Aspect</td>
+            <td>Freezes and applies Slowness on target.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Infernus</td>
+            <td>Tridens sets targets on fire.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Nimble</td>
+            <td>Moves entity&amp;#x27;s drops directly to inventory.</td>
+            <td> </td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Paralyze</td>
+            <td>Applies Mining Fatigue effect on target.</td>
+            <td> </td>
+            <td>V</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Rage</td>
+            <td>Grants Strength effect in combat.</td>
+            <td> </td>
+            <td>II</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Rocket</td>
+            <td>Launches target into the space.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Swiper</td>
+            <td>Steals player XP.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Temper</td>
+            <td>Damage increases the more the less health you have.</td>
+            <td> </td>
+            <td>V</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Thrifty</td>
+            <td>Drops mob Spawn Egg.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Thunder</td>
+            <td>Summons Lightning on target with extra damage.</td>
+            <td> </td>
+            <td>V</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Vampire</td>
+            <td>Steals target&amp;#x27;s health.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Venom</td>
+            <td>Applies Poison effect on target.</td>
+            <td> </td>
+            <td>II</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Village Defender</td>
+            <td>Increases damage to Illagers.</td>
+            <td> </td>
+            <td>V</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Wisdom</td>
+            <td>Produces more XP from mobs.</td>
+            <td> </td>
+            <td>V</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Wither</td>
+            <td>Applies Wither effect on target.</td>
+            <td> </td>
+            <td>II</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+		</div>
+
+		<h3 id="ench-universal"><i data-lucide="sparkles"></i>Universal</h3>
+		<div class="table_container">
+			<table class="neon_table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Summary</th>
+            <th>Incompatible With</th>
+            <th>Max Level</th>
+            <th>Primary Items</th>
+            <th>Secondary Items</th>
+            <th>Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Curse of Breaking</td>
+            <td>Takes more durability points on use.</td>
+            <td>Unbreaking</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shield.webp" alt="Shield" title="Shield" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Curse of Fragility</td>
+            <td>Prevents item from being grindstoned or anviled.</td>
+            <td> </td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shield.webp" alt="Shield" title="Shield" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Curse of Mediocrity</td>
+            <td>Disenchants block&amp;#x27;s and mob&amp;#x27;s loot.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy">
+            </td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy">
+            </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Curse of Misfortune</td>
+            <td>Reduces blocks and mobs loot to zero.</td>
+            <td>Fortune, Looting</td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Restore</td>
+            <td>Saves item from breaking once.</td>
+            <td> </td>
+            <td>III</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shield.webp" alt="Shield" title="Shield" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Soulbound</td>
+            <td>Prevents item from being dropped upon death.</td>
+            <td>Curse of Vanishing</td>
+            <td>I</td>
+            <td>
+              <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/shield.webp" alt="Shield" title="Shield" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> 
+              <img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy">
+            </td>
+            <td> </td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+		</div>
+
+		<h2 id="shulkers"><i data-lucide="box"></i>Shulkers</h2>
+		<p><b>Shulker Boxes</b> can now be <b>opened directly from your inventory</b>, without needing to place them on the ground first.</p>
+		<p>Simply carry a Shulker Box in your inventory to access its contents instantly, saving you the time of placing and breaking it every time you need an item.</p>
+		<p>This feature makes inventory management much <b>faster, more convenient, and more efficient</b>, especially during mining, exploration, or building sessions.</p>
+		<div class="shots">
+			<a href="images/wiki/shulker.png" target="_blank" rel="noopener"><img src="images/wiki/shulker.png" alt="Shulker" loading="lazy"></a>
+		</div>
+
+		<h2 id="afkzone"><i data-lucide="clock"></i>AFKZone</h2>
+		<p>The <b>AFK Zone</b> is a dedicated area designed to reward players even while they are away from their keyboard.</p>
+		<p>For <b>every minute</b> spent in the AFK Zone, you will receive a <b>random reward</b>. The longer you remain there, the more rewards you will collect, giving you additional chances to obtain valuable resources over time.</p>
+		<p>You can access the area at any time using the <code>/afk</code> command, which teleports you directly to the AFK Zone.</p>
+		<p>You are also free to <b>leave the zone whenever you wish</b> to continue exploring, building, trading, fighting, or progressing on the server.</p>
+		<p>The available rewards and their drop chances are as follows:</p>
+		<ul>
+			<li><b>15%</b> – 1 Shard</li>
+			<li><b>20%</b> – 3 Shards</li>
+			<li><b>30%</b> – 5 Shards</li>
+			<li><b>20%</b> – 10 Shards</li>
+			<li><b>11%</b> – 25 Shards</li>
+			<li><b>3%</b> – 100 Shards</li>
+			<li><b>1%</b> - 500 Shards</li>
+		</ul>
+		<p>The AFK Zone is a simple way to earn extra rewards while taking a break, making every minute spent online a little more rewarding.</p>
+		<div class="shots">
+			<a href="images/wiki/afk-zone.png" target="_blank" rel="noopener"><img src="images/wiki/afk-zone.png" alt="Afk zone" loading="lazy"></a>
+			<a href="images/wiki/afk-zone_message-enter-left.png" target="_blank" rel="noopener"><img src="images/wiki/afk-zone_message-enter-left.png" alt="Afk zone message enter left" loading="lazy"></a>
+			<a href="images/wiki/afk-zone_message-rewards.png" target="_blank" rel="noopener"><img src="images/wiki/afk-zone_message-rewards.png" alt="Afk zone message rewards" loading="lazy"></a>
+		</div>
+
+		<h2 id="graves"><i data-lucide="skull"></i>Graves</h2>
+		<p>A <b>grave system</b> is available to protect your <b>items</b> and <b>experience</b> for <b>10 minutes</b> after death.</p>
+		<p>Even if you die in <b>lava</b>, your belongings will remain safely stored inside your grave, giving you enough time to return and recover them.</p>
+		<p>Simply travel back to the location of your death to retrieve everything. Keep in mind that you'll have to make the journey <b>on foot</b> (unless you're using a <b>Handic Card</b> 😄).</p>
+		<p>When you die, a <b>grave</b> is automatically created at the exact location of your death, and its <b>coordinates</b> are immediately displayed so you can easily find your way back.</p>
+		<p>Once you reach your grave, you can <b>right-click</b> it to retrieve your items one by one, or use <b>Shift + Right-Click</b> to collect everything instantly.</p>
+		<p>You can also use the <code>/graves list</code> command to manage your graves. It displays all of your active graves, their locations, and the <b>remaining time</b> before each one disappears, helping you recover your belongings before they are lost forever.</p>
+		<p>This system provides an extra layer of protection for your valuables, making death much less punishing while still encouraging you to return and recover your equipment.</p>
+		<div class="shots">
+			<a href="images/wiki/graves.png" target="_blank" rel="noopener"><img src="images/wiki/graves.png" alt="Graves" loading="lazy"></a>
+			<a href="images/wiki/graves_list-message.png" target="_blank" rel="noopener"><img src="images/wiki/graves_list-message.png" alt="Graves list message" loading="lazy"></a>
+			<a href="images/wiki/graves_death-message.png" target="_blank" rel="noopener"><img src="images/wiki/graves_death-message.png" alt="Graves death message" loading="lazy"></a>
+		</div>
+
+		<h2 id="sellwands"><i data-lucide="wand"></i>SellWands</h2>
+		<p><b>Sell Wands</b> allow you to sell the contents of an <b>entire chest</b> instantly with just a single click, making resource management much faster and more convenient.</p>
+		<p>Each Sell Wand has its own <b>multiplier</b>, which depends on its <b>rarity</b> and directly increases the amount of money you receive from each sale.</p>
+		<p>They also have a limited <b>durability</b> that decreases with every use, with higher rarity Sell Wands generally offering both better multipliers and more durability.</p>
+		<p>To use a Sell Wand, simply <b>left-click</b> a chest to inspect its contents and view the total number of items along with the amount of money you would earn from selling them.</p>
+		<p>If you are satisfied with the result, simply <b>right-click</b> the chest to sell all eligible items instantly and receive your money immediately.</p>
+		<p>This system allows you to manage large quantities of items efficiently while maximizing your profits, making Sell Wands an essential tool for farms and automated resource production.</p>
+		<div class="shots">
+			<a href="images/wiki/sellwands.png" target="_blank" rel="noopener"><img src="images/wiki/sellwands.png" alt="Sellwands" loading="lazy"></a>
+			<a href="images/wiki/sellwands_item-sell.png" target="_blank" rel="noopener"><img src="images/wiki/sellwands_item-sell.png" alt="Sellwands item sell" loading="lazy"></a>
+			<a href="images/wiki/sellwands_item-sell-message.png" target="_blank" rel="noopener"><img src="images/wiki/sellwands_item-sell-message.png" alt="Sellwands item sell message" loading="lazy"></a>
+		</div>
+
+		<h2 id="vaults"><i data-lucide="vault"></i>Vaults</h2>
+		<p><b>Personal Vaults (PVs)</b> are secure <b>private double chests</b> that can only be accessed by their owner, providing a safe place to store your most valuable items.</p>
+		<p>You can store virtually any type of item inside, including valuable resources, rare equipment, and long-term supplies, while stackable items behave just like they do in normal chests to maximize storage efficiency.</p>
+		<p>Use the <code>/pv</code> command to open your Personal Vault menu at any time and access your stored items from anywhere on the server.</p>
+		<p>Inside the <code>/pv</code> menu, you can <b>Shift + Click</b> on a vault to customize its icon, replacing the default barrel with an item of your choice for a cleaner and more personalized interface.</p>
+		<div class="callout">
+			<i data-lucide="info"></i>
+			<p>By default unlock <b>27 Personal Vaults</b>, with VIP rank it's <b>45 Personal Vaults</b>.</p>
+		</div>
+		<div class="shots">
+			<a href="images/wiki/vaults_chest.png" target="_blank" rel="noopener"><img src="images/wiki/vaults_chest.png" alt="Vaults chest" loading="lazy"></a>
+			<a href="images/wiki/vaults_item-picker.png" target="_blank" rel="noopener"><img src="images/wiki/vaults_item-picker.png" alt="Vaults item picker" loading="lazy"></a>
+		</div>
+
+		<h2 id="minions"><i data-lucide="bot"></i>Minions</h2>
+		<p><b>Minions</b> are automated workers that can perform a wide variety of tasks for you, making resource gathering and production much easier.</p>
+		<p>They can be connected to a <b>storage system</b>, including regular chests, trapped chests, and barrels, allowing them to automatically store the resources they collect and keeping your farms organized.</p>
+		<p>Minions can also be rotated to face <b>North, East, South, or West</b>, giving you complete freedom when designing your farms and fitting them into your base.</p>
+		<p>Every minion can be upgraded through the <b>Minion Level</b> system. They ask for money; they gain experience by carrying out the tasks entrusted to them.</p>
+		<p>Each minion also requires a dedicated <b>favorite tool</b> to operate correctly. This tool never loses durability and remains permanently usable by the minion.</p>
+		<p>Minions also require <b>fuel</b> to operate. Once the fuel runs out, the minion will stop working until more fuel is supplied.</p>
+		<p>Available fuels are: <b>Coal</b> or <b>Charcoal</b> (<b>80 seconds</b>), <b>Blaze Rod</b> (<b>120 seconds</b>), <b>Coal Block</b> (<b>900 seconds</b>), and <b>Lava Bucket</b> (<b>1200 seconds</b>).</p>
+		<p>To obtain a minion, simply use a <b>Common Key</b> on the <b>Common Crate</b>.</p>
+		<div class="shots">
+			<a href="images/wiki/minions_gui.png" target="_blank" rel="noopener"><img src="images/wiki/minions_gui.png" alt="Minions gui" loading="lazy"></a>
+			<a href="images/wiki/minions_example-1.png" target="_blank" rel="noopener"><img src="images/wiki/minions_example-1.png" alt="Minions example 1" loading="lazy"></a>
+			<a href="images/wiki/minions_example-2.png" target="_blank" rel="noopener"><img src="images/wiki/minions_example-2.png" alt="Minions example 2" loading="lazy"></a>
+		</div>
+
+		<h2 id="fish"><i data-lucide="fish"></i>Fish</h2>
+		<p>The server features a complete <b>custom fishing system</b> with dozens of unique fish represented by custom <b>player heads</b>, each with its own rarity, value, and collection progress.</p>
+		<p>Every fish you catch is automatically recorded in your personal collection, encouraging exploration and giving you new species to discover across the world.</p>
+		<p>The main command is <code>/fish</code>, which opens the fishing menu and provides access to every available feature, including bait management, your collection, statistics, and more.</p>
+		<p>Use <code>/fish journal</code> to browse your <b>Fishing Journal</b>, where you can view every available fish, track your discoveries, and monitor your overall completion progress.</p>
+		<p>Fish can be sold instantly with <code>/sellfish</code>, allowing you to quickly convert your catches into money without needing to visit a shop.</p>
+		<p>If you have purchased or obtained fishing baits, use <code>/fish applybaits</code> to apply them to your fishing rod and benefit from their special effects while fishing.</p>
+		<p>During fishing competitions and server events, <code>/fish top</code> displays the live leaderboard, allowing you to see the current rankings and track who is leading the event in real time.</p>
+		<p>Whether you enjoy collecting every species, earning money through fishing, or competing against other players during events, the custom fishing system offers plenty of progression and rewards for every type of fisherman.</p>
+		<div class="shots">
+			<a href="images/wiki/fish_gui.png" target="_blank" rel="noopener"><img src="images/wiki/fish_gui.png" alt="Fish gui" loading="lazy"></a>
+		</div>
+
+		<h2 id="elevator"><i data-lucide="arrow-up-down"></i>Elevator</h2>
+		<p><b>Elevators</b> provide a fast and convenient way to travel vertically through your base without using ladders or stairs.</p>
+		<p>To create an elevator, simply <b>throw an Ender Pearl onto a wool block</b>. Then, place another elevator block <b>above and/or below</b> it to create a connected elevator system.</p>
+		<p>Once both elevator blocks are in place, simply <b>jump</b> while standing on the lower elevator to travel upward, or <b>sneak</b> on the upper elevator to travel downward instantly.</p>
+		<p><b>Both elevator blocks must be the same wool color</b> in order to connect and function correctly.</p>
+		<p>This system allows you to move quickly between different floors while keeping your builds clean, compact, and easy to navigate.</p>
+		<div class="shots">
+			<a href="images/wiki/elevators.png" target="_blank" rel="noopener"><img src="images/wiki/elevators.png" alt="Elevators" loading="lazy"></a>
+		</div>
+
+		<h2 id="cauldron-concrete"><i data-lucide="flask-conical"></i>Cauldron Concrete</h2>
+		<p><b>Cauldron Concrete</b> makes crafting concrete much faster by allowing you to convert <b>Concrete Powder</b> into regular <b>Concrete</b> without placing each block individually.</p>
+		<p>Simply hold the desired <b>Concrete Powder</b>, then <b>Shift + Right-Click</b> on a <b>water-filled cauldron</b> to instantly harden it into normal Concrete.</p>
+		<p>This feature saves a considerable amount of time when building large structures, as you no longer need to place and break every Concrete Powder block manually.</p>
+		<p>It is a simple but extremely useful quality-of-life improvement for builders and anyone working on large construction projects.</p>
+		<div class="shots">
+			<a href="images/wiki/cauldron_concrete.png" target="_blank" rel="noopener"><img src="images/wiki/cauldron_concrete.png" alt="Cauldron concrete" loading="lazy"></a>
+		</div>
+
+		<h2 id="crying-portal"><i data-lucide="droplets"></i>Crying Portal</h2>
+		<p><b>Nether Portals</b> can also be built using <b>Crying Obsidian</b>, giving you additional flexibility when designing your builds.</p>
+		<p>A portal made entirely of Crying Obsidian functions exactly like a regular Obsidian portal and can be lit in the same way.</p>
+		<p>This feature allows you to create unique portal designs while taking advantage of the distinctive appearance and animated texture of Crying Obsidian.</p>
+		<p>Whether for aesthetics or creativity, Crying Obsidian is a fully valid alternative for constructing Nether Portals on the server.</p>
+		<div class="shots">
+			<a href="images/wiki/nether_portal.png" target="_blank" rel="noopener"><img src="images/wiki/nether_portal.png" alt="Nether portal" loading="lazy"></a>
+		</div>
+
+		<h2 id="durability-ping"><i data-lucide="bell-ring"></i>Durability Ping</h2>
+		<p><b>Durability Ping</b> helps you avoid accidentally breaking your valuable equipment by warning you when it is close to breaking.</p>
+		<p>Whenever one of your equipped items falls below <b>10% of its maximum durability</b>, you will automatically receive a notification reminding you to repair or replace it.</p>
+		<p>To prevent unnecessary spam, these warnings are protected by a <b>cooldown</b>, ensuring you are only notified occasionally instead of every time the item loses durability.</p>
+		<p>This quality-of-life feature gives you plenty of time to react, helping you protect your favorite gear and avoid costly accidents during mining, combat, or exploration.</p>
+		<div class="shots">
+			<a href="images/wiki/durability_ping.png" target="_blank" rel="noopener"><img src="images/wiki/durability_ping.png" alt="Durability ping" loading="lazy"></a>
+		</div>
+
+		<h2 id="axolotl-feed"><i data-lucide="heart"></i>Axolotl Feed</h2>
+		<p><b>Axolotl Feed</b> lets you feed axolotls directly using <b>Tropical Fish</b>, without needing to capture them in a water bucket first.</p>
+		<p>Simply use a Tropical Fish on an axolotl to feed or breed it, making the process much faster and more convenient.</p>
+		<p>The traditional method using a <b>Bucket of Tropical Fish</b> still works exactly as in vanilla Minecraft, so you are free to use whichever method you prefer.</p>
+		<p>This quality-of-life feature makes breeding and caring for axolotls much easier while preserving the original game mechanics.</p>
+		<div class="shots">
+			<a href="images/wiki/axolotl_feed.png" target="_blank" rel="noopener"><img src="images/wiki/axolotl_feed.png" alt="Axolotl feed" loading="lazy"></a>
+		</div>
+
+		<h2 id="messages-villager-trader"><i data-lucide="message-square"></i>Messages Villager / Trader</h2>
+		<p><b>Villager &amp; Wandering Trader Notifications</b> keep you informed about important events involving villagers and wandering traders.</p>
+		<p>Whenever a <b>Villager dies</b>, a server message is automatically sent, including the <b>exact coordinates</b> of where the death occurred, making it easier to investigate or react quickly.</p>
+		<p>Whenever a <b>Wandering Trader</b> spawns, a notification is also broadcast to all players, letting everyone know that a trader has appeared somewhere in the world.</p>
+		<p>These notifications improve awareness across the server, helping players protect their villagers and ensuring nobody misses the arrival of a Wandering Trader.</p>
+		<div class="shots">
+			<a href="images/wiki/message_villager_dead.png" target="_blank" rel="noopener"><img src="images/wiki/message_villager_dead.png" alt="Message villager dead" loading="lazy"></a>
+			<a href="images/wiki/message_spawn_trader.png" target="_blank" rel="noopener"><img src="images/wiki/message_spawn_trader.png" alt="Message spawn trader" loading="lazy"></a>
+		</div>
+
+		<h2 id="collectible-blocks"><i data-lucide="blocks"></i>Collectible Blocks</h2>
+		<p><b>Collectible Blocks</b> improve block collection by allowing certain normally fragile or unobtainable blocks to be recovered more easily.</p>
+		<p><b>Glass</b>, all <b>Stained Glass</b> variants, every type of <b>Glass Pane</b>, and <b>Ender Chests</b> will always drop themselves when broken, regardless of the tool you use or whether it has the Silk Touch enchantment.</p>
+		<p>In addition, <b>Budding Amethyst</b> and <b>Dirt Path</b> can now be collected with a tool enchanted with <b>Silk Touch</b>, allowing players to move and use this valuable block in their own farms and builds.</p>
+		<p>These changes make building, decorating, and resource management much more convenient while preserving the usefulness of the Silk Touch enchantment for special blocks.</p>
+
+		<h2 id="jobs"><i data-lucide="briefcase"></i>Jobs</h2>
+		<p><b>Jobs</b> allow you to earn both <b>money</b> and <b>experience</b> by performing everyday activities such as mining, farming, fishing, building, hunting, and much more.</p>
+		<p>Use the <code>/jobs</code> command to open the Jobs menu, where you can browse every available profession and manage your progress.</p>
+		<p><b>Right-click</b> on a job to open its detailed information page, showing how much <b>experience</b> and <b>money</b> you earn for each supported action, helping you choose the most profitable activities.</p>
+		<p><b>Left-click</b> on a job to view its <b>leaderboard</b>, allowing you to compare your progress with other players and see who has reached the highest level in each profession.</p>
+		<p>Whether you focus on a single profession or level up multiple jobs, the system provides a rewarding way to progress while playing normally on the server.</p>
+		<div class="shots">
+			<a href="images/wiki/jobs.png" target="_blank" rel="noopener"><img src="images/wiki/jobs.png" alt="Jobs" loading="lazy"></a>
+		</div>
+
+		<h2 id="no-trample"><i data-lucide="sprout"></i>No Trample</h2>
+		<p><b>No Crop Trample</b> prevents farmland and crops from being destroyed when players or mobs walk, run, or jump across them.</p>
+		<p>You can safely move through your farms without worrying about accidentally turning farmland back into dirt or damaging fully grown crops.</p>
+		<p>This protection is especially useful for large farms, public areas, and multiplayer environments where many players or animals regularly pass through cultivated land.</p>
+		<p>It also makes harvesting and replanting much less frustrating, allowing you to move freely while working on your fields without constantly repairing damaged farmland.</p>
+		<p>This protection is particularly valuable on multiplayer servers, where players, animals, and even unexpected situations can easily damage farmland. Whether you're harvesting, sprinting through your base, or welcoming visitors to your farms, your crops will remain completely safe from accidental trampling.</p>
+
+		<h2 id="bank"><i data-lucide="landmark"></i>Bank</h2>
+		<p>The <b>Bank</b> provides a secure way to store your money separately from your wallet, helping you better manage your finances.</p>
+		<p>Open the bank interface at any time using the <code>/bank</code> command.</p>
+		<p>Inside the menu, click the <b>Emerald on the right</b> to <b>deposit</b> money into your bank account, or the <b>Emerald on the left</b> to <b>withdraw</b> funds whenever you need them.</p>
+		<p>You can also click the <b>Diamond</b> to <b>upgrade your bank</b>, increasing its maximum storage capacity and unlocking higher interest rates.</p>
+		<p>Each bank level provides <b>periodic interest</b> on the money stored in your account, up to a maximum balance determined by your current bank level.</p>
+		<p>Keep in mind that <b>bank taxes</b> also apply to certain transactions, so managing your deposits, withdrawals, and upgrades wisely will help you maximize your long-term profits.</p>
+		<div class="shots">
+			<a href="images/wiki/bank.png" target="_blank" rel="noopener"><img src="images/wiki/bank.png" alt="Bank" loading="lazy"></a>
+		</div>
+
+		<h2 id="bounty"><i data-lucide="target"></i>Bounty</h2>
+		<p>The <b>Bounty</b> system allows players to place a <b>cash reward</b> on another player's head, encouraging PvP and creating exciting hunting opportunities across the server.</p>
+		<p>If a player with an active bounty is killed, the player who eliminates them automatically receives the <b>bounty reward</b>.</p>
+		<p>To place a bounty, simply use the command <code>/bounty add &lt;player&gt; &lt;amount&gt;</code>, replacing <code>&lt;player&gt;</code> with the target's username and <code>&lt;amount&gt;</code> with the amount of money you wish to offer.</p>
+		<p>Whether you want revenge, create friendly competition, or simply make PvP more rewarding, the Bounty system adds an extra layer of excitement to every encounter.</p>
+		<div class="shots">
+			<a href="images/wiki/bounty_gui.png" target="_blank" rel="noopener"><img src="images/wiki/bounty_gui.png" alt="Bounty gui" loading="lazy"></a>
+		</div>
+
+		<h2 id="harvest-master"><i data-lucide="wheat"></i>Harvest Master</h2>
+		<p><b>Harvest Master</b> makes farming significantly faster by allowing you to harvest and replant crops with a single action.</p>
+		<p>Simply <b>right-click</b> on a fully grown crop to harvest it instantly. If you have the required seeds or crop in your inventory, it will be <b>automatically replanted</b> at the same time, keeping your farm ready for the next growth cycle.</p>
+		<p>This feature works with virtually all harvestable crops, eliminating the need to break each plant and manually place seeds after every harvest.</p>
+		<p>It is especially useful for large farms, where it saves countless clicks and greatly improves harvesting efficiency while preserving the layout of your fields.</p>
+		<p>Whether you're farming for food, trading, or resources, Harvest Master lets you collect crops more quickly and spend more time expanding your farm instead of maintaining it.</p>
+
+		<h2 id="enchanted-book"><i data-lucide="book-open"></i>Enchanted Book</h2>
+		<p><b>Enchanted Books</b> allow you to extract the enchantments from an item and convert them into individual enchanted books.</p>
+		<p>Simply place an enchanted item, such as a pickaxe, into the interface to view every enchantment it contains. You can then choose which enchantments you want to turn into books for later use or trading.</p>
+		<p>Once the process is completed, the selected enchantments are transferred onto enchanted books, while the <b>original item is consumed</b> and permanently removed.</p>
+		<p>This feature is especially useful for recovering valuable enchantments from powerful equipment, reorganizing your gear, or selling custom enchanted books to other players without having to rely entirely on the enchantment table.</p>
+		<div class="shots">
+			<a href="images/wiki/enchanted_book.png" target="_blank" rel="noopener"><img src="images/wiki/enchanted_book.png" alt="Enchanted book" loading="lazy"></a>
+		</div>
+
+		<h2 id="item-stacker"><i data-lucide="layers"></i>Item Stacker</h2>
+		<p><b>Item Stacker</b> is an optimized stacking system that greatly reduces the number of dropped entities on the ground, helping to improve overall server performance.</p>
+		<p>Instead of creating hundreds or thousands of separate item entities, identical dropped items are automatically combined into stacks of up to <b>64,000 items</b>.</p>
+		<p>This significantly reduces lag during large farms, automatic storage systems, and mass item drops while still allowing players to collect the entire stack normally.</p>
+		<p>By minimizing the number of entities loaded in the world, the Item Stacker system keeps gameplay smoother and the server more stable, even during periods of heavy activity.</p>
+		<div class="shots">
+			<a href="images/wiki/item_stacker.png" target="_blank" rel="noopener"><img src="images/wiki/item_stacker.png" alt="Item stacker" loading="lazy"></a>
+		</div>
+
+		<h2 id="level-mobs"><i data-lucide="swords"></i>Level Mobs</h2>
+		<p><b>Level Mobs</b> make every encounter more challenging by giving mobs their own levels and scaling attributes.</p>
+		<p>Every hostile mob spawns with a <b>level ranging from 1 to 50</b>, while passive mobs have levels between <b>1 and 10</b>.</p>
+		<p>As a mob's level increases, its attributes such as <b>health</b>, <b>damage</b>, and other combat statistics become stronger, making higher-level creatures significantly more dangerous than their lower-level counterparts.</p>
+		<p>This progression system creates a more dynamic world where exploring new areas and fighting stronger enemies becomes increasingly rewarding and challenging as you advance through the game.</p>
+		<div class="shots">
+			<a href="images/wiki/level_mobs.png" target="_blank" rel="noopener"><img src="images/wiki/level_mobs.png" alt="Level mobs" loading="lazy"></a>
+		</div>
+
+		<h2 id="sell"><i data-lucide="coins"></i>Sell</h2>
+		<p>The <b>/sell</b> command allows you to quickly sell a wide variety of items without needing to visit a physical shop.</p>
+		<p>Simply open the selling interface with <code>/sell</code> and place the items you wish to sell to instantly receive the corresponding amount of money.</p>
+		<p>Every sellable item has a predefined <b>Worth</b>, which is displayed directly in its tooltip, making it easy to know its value before selling.</p>
+		<p>If you want to check prices without opening the selling menu, you can also use <code>/sellprice</code> to browse the complete list of item values available on the server.</p>
+		<p>This system provides a fast and convenient way to turn your resources into money while helping you plan farms and maximize your profits.</p>
+		<div class="shots">
+			<a href="images/wiki/sell_worth.png" target="_blank" rel="noopener"><img src="images/wiki/sell_worth.png" alt="Sell worth" loading="lazy"></a>
 		</div>
 	</main>
 
 	<!-- ================= SOMMAIRE (à droite) ================= -->
-	<aside class="toc">
+	<aside class="toc" id="toc">
 		<div class="toc-title"><i data-lucide="list"></i>On this page</div>
 		<ul>
-			<li><a href="#spawners"><i data-lucide="rabbit"></i>Spawners</a></li>
-			<li class="sub"><a href="#spawner-gui"><i data-lucide="layout-grid"></i>Spawner GUI</a></li>
-			<li class="sub"><a href="#storage"><i data-lucide="package"></i>Storage</a></li>
-			<li class="sub"><a href="#stacking"><i data-lucide="layers"></i>Stacking</a></li>
-
-			<li><a href="#commands"><i data-lucide="terminal"></i>Commands</a></li>
-
-			<li><a href="#enchantments"><i data-lucide="book"></i>Enchantments</a></li>
-			<li class="sub"><a href="#armor"><i data-lucide="shield"></i>Armor</a></li>
-
-			<li><a href="#others"><i data-lucide="plus"></i>Others</a></li>
-			<li class="sub"><a href="#shulkers"><i data-lucide="box"></i>Shulkers</a></li>
-			<li class="sub"><a href="#afkzone"><i data-lucide="clock"></i>AFKZone</a></li>
+			<li class="group">
+				<a href="#commands"><i data-lucide="terminal"></i>Commands</a>
+				<ul class="subs">
+					<li><a href="#cmd-general"><i data-lucide="list"></i>General</a></li>
+					<li><a href="#cmd-utility"><i data-lucide="wrench"></i>Utility</a></li>
+					<li><a href="#cmd-links"><i data-lucide="link"></i>Links</a></li>
+					<li><a href="#cmd-economy"><i data-lucide="wallet"></i>Economy</a></li>
+					<li><a href="#cmd-shop-sell"><i data-lucide="shopping-cart"></i>Shop &amp; Sell</a></li>
+					<li><a href="#cmd-fish"><i data-lucide="fish"></i>Fish</a></li>
+					<li><a href="#cmd-vip-only"><i data-lucide="crown"></i>VIP only</a></li>
+				</ul>
+			</li>
+			<li class="group">
+				<a href="#spawners"><i data-lucide="rabbit"></i>Spawners</a>
+				<ul class="subs">
+					<li><a href="#spawner-gui"><i data-lucide="layout-grid"></i>Spawner GUI</a></li>
+					<li><a href="#spawner-storage"><i data-lucide="package"></i>Storage</a></li>
+					<li><a href="#spawner-loot-filter"><i data-lucide="filter"></i>Loot Filter</a></li>
+					<li><a href="#spawner-stacking"><i data-lucide="layers"></i>Stacking</a></li>
+				</ul>
+			</li>
+			<li class="group">
+				<a href="#enchantments"><i data-lucide="book"></i>Enchantments</a>
+				<ul class="subs">
+					<li><a href="#ench-armor"><i data-lucide="shield"></i>Armor</a></li>
+					<li><a href="#ench-bow"><i data-lucide="crosshair"></i>Bow</a></li>
+					<li><a href="#ench-tool"><i data-lucide="pickaxe"></i>Tool</a></li>
+					<li><a href="#ench-fishing"><i data-lucide="fish"></i>Fishing</a></li>
+					<li><a href="#ench-weapon"><i data-lucide="sword"></i>Weapon</a></li>
+					<li><a href="#ench-universal"><i data-lucide="sparkles"></i>Universal</a></li>
+				</ul>
+			</li>
+			<li class="group"><a href="#shulkers"><i data-lucide="box"></i>Shulkers</a></li>
+			<li class="group"><a href="#afkzone"><i data-lucide="clock"></i>AFKZone</a></li>
+			<li class="group"><a href="#graves"><i data-lucide="skull"></i>Graves</a></li>
+			<li class="group"><a href="#sellwands"><i data-lucide="wand"></i>SellWands</a></li>
+			<li class="group"><a href="#vaults"><i data-lucide="vault"></i>Vaults</a></li>
+			<li class="group"><a href="#minions"><i data-lucide="bot"></i>Minions</a></li>
+			<li class="group"><a href="#fish"><i data-lucide="fish"></i>Fish</a></li>
+			<li class="group"><a href="#elevator"><i data-lucide="arrow-up-down"></i>Elevator</a></li>
+			<li class="group"><a href="#cauldron-concrete"><i data-lucide="flask-conical"></i>Cauldron Concrete</a></li>
+			<li class="group"><a href="#crying-portal"><i data-lucide="droplets"></i>Crying Portal</a></li>
+			<li class="group"><a href="#durability-ping"><i data-lucide="bell-ring"></i>Durability Ping</a></li>
+			<li class="group"><a href="#axolotl-feed"><i data-lucide="heart"></i>Axolotl Feed</a></li>
+			<li class="group"><a href="#messages-villager-trader"><i data-lucide="message-square"></i>Messages Villager / Trader</a></li>
+			<li class="group"><a href="#collectible-blocks"><i data-lucide="blocks"></i>Collectible Blocks</a></li>
+			<li class="group"><a href="#jobs"><i data-lucide="briefcase"></i>Jobs</a></li>
+			<li class="group"><a href="#no-trample"><i data-lucide="sprout"></i>No Trample</a></li>
+			<li class="group"><a href="#bank"><i data-lucide="landmark"></i>Bank</a></li>
+			<li class="group"><a href="#bounty"><i data-lucide="target"></i>Bounty</a></li>
+			<li class="group"><a href="#harvest-master"><i data-lucide="wheat"></i>Harvest Master</a></li>
+			<li class="group"><a href="#enchanted-book"><i data-lucide="book-open"></i>Enchanted Book</a></li>
+			<li class="group"><a href="#item-stacker"><i data-lucide="layers"></i>Item Stacker</a></li>
+			<li class="group"><a href="#level-mobs"><i data-lucide="swords"></i>Level Mobs</a></li>
+			<li class="group"><a href="#sell"><i data-lucide="coins"></i>Sell</a></li>
 		</ul>
 	</aside>
 
 </div>
 
 <script>
-	// Active les icônes Lucide du contenu
+	// Icônes Lucide
 	lucide.createIcons();
 
-	// Met en vert le lien du sommaire correspondant à la section visible
-	const links    = document.querySelectorAll('.toc a');
-	const headings = document.querySelectorAll('.wiki-content h2[id], .wiki-content h3[id]');
+	// Sommaire : section courante en violet, sous-sections dépliées pour la section ouverte
+	(function () {
+		const toc = document.getElementById('toc');
+		toc.classList.add('js');
+		const heads = [...document.querySelectorAll('.wiki-content h2[id], .wiki-content h3[id]')];
+		const links = new Map([...toc.querySelectorAll('a')].map(a => [a.getAttribute('href').slice(1), a]));
+		let ticking = false;
 
-	const observer = new IntersectionObserver((entries) => {
-		entries.forEach(entry => {
-			if (entry.isIntersecting) {
-				links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+		function update() {
+			let cur = heads[0];
+			for (const h of heads) {
+				if (h.getBoundingClientRect().top <= 110) cur = h; else break;
 			}
-		});
-	}, { rootMargin: '-80px 0px -70% 0px' });
+			if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) cur = heads[heads.length - 1];
 
-	headings.forEach(h => observer.observe(h));
+			toc.querySelectorAll('a.active').forEach(a => a.classList.remove('active'));
+			toc.querySelectorAll('.group.open').forEach(g => g.classList.remove('open'));
+
+			const a = links.get(cur.id);
+			if (a) {
+				a.classList.add('active');
+				const group = a.closest('.group');
+				if (group) group.classList.add('open');
+				a.scrollIntoView({ block: 'nearest' });
+			}
+			ticking = false;
+		}
+
+		window.addEventListener('scroll', () => {
+			if (!ticking) { requestAnimationFrame(update); ticking = true; }
+		}, { passive: true });
+		update();
+	})();
 </script>
