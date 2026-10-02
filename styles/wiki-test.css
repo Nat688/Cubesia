@@ -1,19 +1,10 @@
-/* =====================================================
-   WIKI CUBESIA - page unique (wiki.html)
-   Tout est limité à .wiki : base.css n'est pas touché.
-   ===================================================== */
-
 html {
     scroll-behavior: smooth;
-    color-scheme: dark;                       /* barres et contrôles du navigateur en sombre */
+    color-scheme: dark;
     scrollbar-width: thin;
-    scrollbar-color: #3a3131 #120f0f;         /* pouce / fond */
+    scrollbar-color: #3a3131 #120f0f;
 }
 
-/* fond de page plus sombre que le #252121 de base.css */
-body { background-color: #120f0f; }
-
-/* anciens navigateurs (sans scrollbar-color) */
 @supports not (scrollbar-color: auto) {
     ::-webkit-scrollbar              { width: 10px; height: 10px; }
     ::-webkit-scrollbar-track        { background: #120f0f; }
@@ -21,28 +12,26 @@ body { background-color: #120f0f; }
     ::-webkit-scrollbar-thumb:hover  { background: #5a4d4d; }
 }
 
-/* ===== VARIABLES ===== */
 .wiki {
-    --text:      #9d9797;   /* texte normal */
-    --strong:    #f4f1f1;   /* gras + titres */
-    --accent:    #9a8cff;   /* violet clair, dans le dégradé du nom Cubesia */
-    --hover:     #ff9f43;   /* orange des halos de boutons */
-    --card:      #181414;   /* encadrés, tableaux */
+    --text:      #9d9797;
+    --strong:    #f4f1f1;
+    --accent:    #9a8cff;
+    --hover:     #ff9f43;
+    --card:      #181414;
     --border:    #2a2323;
-    --header-h:  60px;      /* hauteur du header fixe (base.css) */
+    --header-h:  60px;
 }
 
-/* ===== MISE EN PAGE : contenu à gauche / sommaire à droite ===== */
+/* ===== MISE EN PAGE ===== */
 .wiki {
     display: grid;
-    grid-template-columns: minmax(0, 1060px) 230px;   /* contenu | sommaire */
-    justify-content: space-between;                    /* sommaire collé au bord droit */
+    grid-template-columns: minmax(0, 1060px) 230px;
+    justify-content: space-between;
     gap: 48px;
     max-width: none;
     margin: 0;
-    padding: 24px 22px 90px 56px;                      /* haut | droite | bas | gauche */
-
-    font-size: 16px;            /* annule le 150% de base.css */
+    padding: 24px 22px 90px 56px;
+    font-size: 16px;
     line-height: 1.75;
     color: var(--text);
 }
@@ -75,7 +64,6 @@ body { background-color: #120f0f; }
     color: var(--strong);
     scroll-margin-top: calc(var(--header-h) + 20px);
 }
-/* icônes Lucide : elles sont remplacées par des <svg>, donc on vise les deux */
 .wiki h2 :is(i, svg), .wiki h3 :is(i, svg) {
     width: 1.1em;
     height: 1.1em;
@@ -83,7 +71,7 @@ body { background-color: #120f0f; }
     color: var(--accent);
 }
 
-/* ===== TEXTE ===== */
+/* ===== TEXT ===== */
 .wiki p { margin: 0 0 14px; max-width: 75ch; font-size: 1rem; }
 .wiki b, .wiki strong { color: var(--strong); font-weight: 700; }
 .wiki a { color: var(--accent); }
@@ -96,18 +84,18 @@ body { background-color: #120f0f; }
     font-size: 0.9em;
 }
 
-/* ===== LISTES ===== */
+/* ===== LISTS ===== */
 .wiki ul { margin: 0 0 16px; padding-left: 24px; }
 .wiki li { margin-bottom: 6px; padding-left: 6px; }
 .wiki li::marker { color: #52525b; }
 
-/* ===== COMMANDES ===== */
+/* ===== COMMANDS ===== */
 .wiki .cmd-list { list-style: none; padding: 0; }
 .wiki .cmd-list li { margin: 0; padding: 8px 0; border-bottom: 1px solid var(--border); }
 .cmd-list .command { color: #F8C048; font-family: monospace; }
 .cmd-list .base    { color: #58C3E6; }
 
-/* ===== IMAGES : toutes dans une tuile de même taille, coins arrondis ===== */
+/* ===== IMAGES ===== */
 .wiki {
     --tile-w: 320px;
     --tile-h: 200px;
@@ -148,8 +136,6 @@ body { background-color: #120f0f; }
     border-color: var(--hover);
     box-shadow: 0 8px 26px rgba(255, 159, 67, 0.22);
 }
-
-/* captures très larges et fines (messages du chat) : une par ligne, taille naturelle */
 .shots a.strip {
     flex: 1 1 100%;
     width: auto;
@@ -179,8 +165,6 @@ body { background-color: #120f0f; }
     color: #d4d4d8;
 }
 .callout p { margin: 0; }
-
-/* variantes optionnelles : class="callout warning | danger | tip" */
 .callout.warning { border-color: #854d0e; }
 .callout.warning :is(i, svg) { color: #facc15; }
 .callout.danger  { border-color: #7f1d1d; }
@@ -210,7 +194,6 @@ body { background-color: #120f0f; }
     text-align: center;
     border-top: 1px solid var(--border);
 }
-/* colonnes Name + Summary alignées à gauche */
 .neon_table th:nth-child(-n+2),
 .neon_table td:nth-child(-n+2) { text-align: left; }
 .neon_table td:nth-child(1) { color: var(--strong); white-space: nowrap; }
@@ -220,12 +203,12 @@ body { background-color: #120f0f; }
     height: 28px;
     margin: 0 1px;
     vertical-align: middle;
-    image-rendering: pixelated;        /* icônes 16px agrandies sans flou */
+    image-rendering: pixelated;
 }
 .neon_table tbody tr:hover { background: rgba(255, 255, 255, 0.05); }
 
 /* =====================================================
-   SOMMAIRE « ON THIS PAGE » (à droite)
+   SOMMAIRE
    ===================================================== */
 .toc {
     position: sticky;
@@ -258,7 +241,7 @@ body { background-color: #120f0f; }
     align-items: center;
     gap: 10px;
     padding: 6px 0 6px 16px;
-    margin-left: -1px;                  /* le trait actif recouvre le trait gris */
+    margin-left: -1px;
     border-left: 2px solid transparent;
     color: var(--text);
     text-decoration: none;
@@ -266,18 +249,12 @@ body { background-color: #120f0f; }
 }
 .toc a :is(i, svg) { width: 17px; height: 17px; flex-shrink: 0; }
 .toc a:hover { color: var(--hover); }
-
-/* sous-sections : décalées */
 .toc .subs a { padding-left: 36px; font-size: 0.86rem; }
-
-/* section courante (classes ajoutées par le script) */
 .toc a.active { color: var(--accent); border-left-color: var(--accent); }
 .toc .group.open > a { color: var(--accent); }
-
-/* avec JS : les sous-sections ne s'affichent que pour la section ouverte */
 .toc.js .group:not(.open) > .subs { display: none; }
 
-/* ===== MOBILE : on cache le sommaire ===== */
+/* ===== MOBILE ===== */
 @media (max-width: 900px) {
     .wiki { grid-template-columns: 1fr; padding: 16px; }
     .toc  { display: none; }
