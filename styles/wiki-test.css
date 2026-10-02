@@ -1,21 +1,14 @@
-/* =====================================================
-   WIKI CUBESIA - page unique (wiki.html)
-   Tout est limité à .wiki pour ne pas casser base.css
-   ===================================================== */
-
 html { scroll-behavior: smooth; }
 
-/* ===== VARIABLES ===== */
 .wiki {
-    --text:      #a1a1aa;   /* texte normal (gris) */
-    --strong:    #ffffff;   /* texte en gras / titres */
-    --accent:    #4ade80;   /* vert du sommaire actif */
-    --card:      #1f1f1f;   /* fond des encadrés */
-    --border:    #2e2e2e;
-    --header-h:  60px;      /* hauteur du header fixe (base.css) */
+    --text:      #9d9797;
+    --strong:    #f4f1f1;
+    --accent:    #9a8cff;
+    --card:      #181414;
+    --border:    #2a2323;
+    --header-h:  60px;
 }
 
-/* ===== MISE EN PAGE : contenu à gauche / sommaire à droite ===== */
 .wiki {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 270px;
