@@ -1,0 +1,125 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" type="text/css" href="styles/style_wiki.css">
+
+<div class="wiki">
+
+	<!-- ================= CONTENU (à gauche) ================= -->
+	<main class="wiki-content">
+		<h1>Welcome to the wiki of <span class="cubesia">Cubesia</span></h1>
+		<p>Everything you need to know about the server, on a single page.</p>
+
+		<!-- ========== SPAWNERS ========== -->
+		<h2 id="spawners"><i data-lucide="rabbit"></i>Spawners</h2>
+
+		<h3 id="spawner-gui"><i data-lucide="layout-grid"></i>Spawner GUI</h3>
+		<p>
+			Every <b>Spawner</b> includes its own management interface, giving you quick access to everything related to your mob farm.
+			The <b>Chest</b> is the main storage, where every item dropped by your mobs is collected automatically.
+		</p>
+		<img class="shot" src="images/wiki/spawner_gui.png" alt="Spawner GUI">
+
+		<h3 id="storage"><i data-lucide="package"></i>Storage</h3>
+		<p>The <b>Storage</b> menu includes tools to organize, filter, collect, sell, and control every item produced by your spawner.</p>
+		<ul>
+			<li>The <b>Cauldron</b> automatically sorts the stored items.</li>
+			<li>The <b>Hopper</b> opens the loot filter.</li>
+			<li>The <b>Gold Ingot</b> instantly sells every stored item.</li>
+		</ul>
+
+		<h3 id="stacking"><i data-lucide="layers"></i>Stacking</h3>
+		<p>
+			<b>Spawners</b> can be stacked together to save space. A normal right-click adds <b>one spawner</b>,
+			while <b>Shift + Right-Click</b> adds as many as possible from your inventory.
+		</p>
+
+		<div class="callout tip">
+			<i data-lucide="info"></i>
+			<p><b>Silk Touch is not required</b> to break and recover spawners.</p>
+		</div>
+
+		<!-- ========== COMMANDS ========== -->
+		<h2 id="commands"><i data-lucide="terminal"></i>Commands</h2>
+		<ul class="cmd-list">
+			<li><span class="command">/afk</span> <span class="base">Teleports you to the AFK zone.</span></li>
+			<li><span class="command">/home</span> <span class="base">Open the GUI to view, set, and delete your homes.</span></li>
+			<li><span class="command">/spawn</span> <span class="base">Teleports you to the spawn.</span></li>
+		</ul>
+
+		<!-- ========== ENCHANTMENTS ========== -->
+		<h2 id="enchantments"><i data-lucide="book"></i>Enchantments</h2>
+
+		<h3 id="armor"><i data-lucide="shield"></i>Armor</h3>
+		<div class="table_container">
+			<table class="neon_table">
+				<thead>
+					<tr><th>Name</th><th>Summary</th><th>Max Level</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>Cold Steel</td><td>Applies Mining Fatigue effect to the attacker.</td><td>III</td></tr>
+					<!-- colle ici les autres lignes de wiki/enchantments.html -->
+				</tbody>
+			</table>
+		</div>
+
+		<!-- ========== OTHERS ========== -->
+		<h2 id="others"><i data-lucide="plus"></i>Others</h2>
+
+		<h3 id="shulkers"><i data-lucide="box"></i>Shulkers</h3>
+		<p>
+			<b>Shulker Boxes</b> can now be <b>opened directly from your inventory</b>, without needing to place them on the ground first.
+		</p>
+
+		<h3 id="afkzone"><i data-lucide="clock"></i>AFKZone</h3>
+		<p>
+			For <b>every minute</b> spent in the AFK Zone, you receive a <b>random reward</b>.
+			Use <code>/afk</code> to get there.
+		</p>
+		<div class="callout">
+			<i data-lucide="info"></i>
+			<p>You are free to leave the zone whenever you wish.</p>
+		</div>
+	</main>
+
+	<!-- ================= SOMMAIRE (à droite) ================= -->
+	<aside class="toc">
+		<div class="toc-title"><i data-lucide="list"></i>On this page</div>
+		<ul>
+			<li><a href="#spawners"><i data-lucide="rabbit"></i>Spawners</a></li>
+			<li class="sub"><a href="#spawner-gui"><i data-lucide="layout-grid"></i>Spawner GUI</a></li>
+			<li class="sub"><a href="#storage"><i data-lucide="package"></i>Storage</a></li>
+			<li class="sub"><a href="#stacking"><i data-lucide="layers"></i>Stacking</a></li>
+
+			<li><a href="#commands"><i data-lucide="terminal"></i>Commands</a></li>
+
+			<li><a href="#enchantments"><i data-lucide="book"></i>Enchantments</a></li>
+			<li class="sub"><a href="#armor"><i data-lucide="shield"></i>Armor</a></li>
+
+			<li><a href="#others"><i data-lucide="plus"></i>Others</a></li>
+			<li class="sub"><a href="#shulkers"><i data-lucide="box"></i>Shulkers</a></li>
+			<li class="sub"><a href="#afkzone"><i data-lucide="clock"></i>AFKZone</a></li>
+		</ul>
+	</aside>
+
+</div>
+
+<script>
+	// Active les icônes Lucide du contenu
+	lucide.createIcons();
+
+	// Met en vert le lien du sommaire correspondant à la section visible
+	const links    = document.querySelectorAll('.toc a');
+	const headings = document.querySelectorAll('.wiki-content h2[id], .wiki-content h3[id]');
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+			}
+		});
+	}, { rootMargin: '-80px 0px -70% 0px' });
+
+	headings.forEach(h => observer.observe(h));
+</script>
