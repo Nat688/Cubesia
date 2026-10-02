@@ -1,0 +1,206 @@
+/* =====================================================
+   WIKI CUBESIA - page unique (wiki.html)
+   Tout est limité à .wiki pour ne pas casser base.css
+   ===================================================== */
+
+html { scroll-behavior: smooth; }
+
+/* ===== VARIABLES ===== */
+.wiki {
+    --text:      #a1a1aa;   /* texte normal (gris) */
+    --strong:    #ffffff;   /* texte en gras / titres */
+    --accent:    #4ade80;   /* vert du sommaire actif */
+    --card:      #1f1f1f;   /* fond des encadrés */
+    --border:    #2e2e2e;
+    --header-h:  60px;      /* hauteur du header fixe (base.css) */
+}
+
+/* ===== MISE EN PAGE : contenu à gauche / sommaire à droite ===== */
+.wiki {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 270px;
+    gap: 56px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 28px 80px;
+
+    font-size: 16px;          /* annule le 150% de base.css */
+    line-height: 1.75;
+    color: var(--text);
+}
+
+.wiki-content { min-width: 0; }
+
+/* ===== TITRES ===== */
+.wiki h1 {
+    text-align: left;
+    font-size: 2.2rem;
+    color: var(--strong);
+    margin: 0 0 8px;
+}
+.wiki h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 56px 0 14px;
+    font-size: 1.7rem;
+    color: var(--strong);
+    scroll-margin-top: calc(var(--header-h) + 20px);   /* évite que le header cache le titre */
+}
+.wiki h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 36px 0 10px;
+    font-size: 1.3rem;
+    color: var(--strong);
+    scroll-margin-top: calc(var(--header-h) + 20px);
+}
+.wiki h2 i, .wiki h3 i {
+    width: 1.1em;
+    height: 1.1em;
+    flex-shrink: 0;
+    color: var(--accent);
+}
+
+/* ===== TEXTE ===== */
+.wiki p { margin: 0 0 16px; font-size: 1rem; }
+.wiki b, .wiki strong { color: var(--strong); font-weight: 700; }
+.wiki a { color: var(--accent); }
+
+.wiki code {
+    background: #2b2d31;
+    color: #dbdee1;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+/* ===== LISTES (puces rondes grises comme sur la capture) ===== */
+.wiki ul { margin: 0 0 16px; padding-left: 24px; }
+.wiki li { margin-bottom: 10px; padding-left: 6px; }
+.wiki li::marker { color: #52525b; }
+
+/* ===== IMAGES ===== */
+.wiki img.shot {
+    display: block;
+    max-width: 100%;
+    width: 360px;
+    margin: 16px 0 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+/* ===== ENCADRÉS D'INFO ===== */
+.callout {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin: 20px 0;
+    padding: 16px 22px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    color: #d4d4d8;
+}
+.callout > i {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: #d4d4d8;
+}
+.callout p { margin: 0; }
+
+/* variantes (optionnel : class="callout warning") */
+.callout.warning { border-color: #854d0e; }
+.callout.warning > i { color: #facc15; }
+.callout.danger  { border-color: #7f1d1d; }
+.callout.danger  > i { color: #f87171; }
+.callout.tip     { border-color: #14532d; }
+.callout.tip     > i { color: var(--accent); }
+
+/* ===== LISTE DE COMMANDES ===== */
+.wiki .cmd-list { list-style: none; padding: 0; }
+.wiki .cmd-list li { padding: 8px 0; margin: 0; border-bottom: 1px solid var(--border); }
+.cmd-list .command { color: #F8C048; font-family: monospace; }
+.cmd-list .base    { color: #58C3E6; }
+
+/* ===== TABLEAUX (enchantements) ===== */
+.table_container {
+    margin: 20px 0;
+    overflow-x: auto;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+}
+.neon_table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.neon_table th {
+    padding: 12px 14px;
+    text-align: left;
+    color: var(--strong);
+    background: rgba(255,255,255,0.05);
+    border-bottom: 1px solid var(--border);
+}
+.neon_table td { padding: 10px 14px; border-top: 1px solid var(--border); }
+.neon_table tbody tr:hover { background: rgba(255,255,255,0.06); }
+
+/* =====================================================
+   SOMMAIRE « ON THIS PAGE » (à droite)
+   ===================================================== */
+.toc {
+    position: sticky;
+    top: calc(var(--header-h) + 24px);
+    align-self: start;
+    max-height: calc(100vh - var(--header-h) - 48px);
+    overflow-y: auto;
+    font-size: 0.95rem;
+}
+
+.toc-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-weight: 600;
+    color: var(--strong);
+}
+.toc-title i { width: 18px; height: 18px; }
+
+/* trait vertical à gauche */
+.toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid var(--border);
+}
+
+.toc a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 0 7px 16px;
+    margin-left: -1px;                    /* le trait actif recouvre le trait gris */
+    border-left: 2px solid transparent;
+    color: var(--text);
+    text-decoration: none;
+    transition: color .2s, border-color .2s;
+}
+.toc a i { width: 18px; height: 18px; flex-shrink: 0; }
+.toc a:hover { color: var(--strong); }
+
+/* sous-sections : décalées vers la droite */
+.toc .sub a { padding-left: 38px; font-size: 0.92rem; }
+
+/* section visible à l'écran (classe ajoutée par le JS) */
+.toc a.active {
+    color: var(--accent);
+    border-left-color: var(--accent);
+}
+
+/* ===== MOBILE : on cache le sommaire ===== */
+@media (max-width: 900px) {
+    .wiki { grid-template-columns: 1fr; padding: 16px; }
+    .toc  { display: none; }
+}
