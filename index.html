@@ -5,66 +5,42 @@ layout: default
 <link rel="stylesheet" type="text/css" href="styles/style_index.css">
 <body>
 	<h1><span class="cubesia">Cubesia</span> Minecraft Server</h1>
-	<h2>Survival</h2> <!-- Thème du Serveur Minecraft -->
-	<h3>Informations:</h3> <!-- Information du serveur Minecraft -->
-	<li>Minecraft version: 26.1.2</li> <!-- Versions de Minecraft pour le Serv MC -->
+	<h2>Survival</h2>
+	<h3>Informations:</h3>
+	<li>Minecraft version: 1.21.8 - 26.3</li>
 	<li>
-		IP: <span id="ipServeur">Cubesia.aternos.me</span> <!-- IP du Serv MC -->
-		<button class="copy-btn" id="copyBtn" onclick="copierIP()"> <!-- Variable copy -->
-			<i data-lucide="copy"></i> <!-- icon du bouton -->
+		IP: <span id="ipServeur">cubesia.realistic.host</span>
+		<button class="copy-btn" id="copyBtn" onclick="copierIP()">
+			<i data-lucide="copy"></i>
 		</button>
 	</li>
 	<script>
-		/* Bouton copier (function) */
 		function copierIP() { 
-			const ip = document.getElementById("ipServeur").innerText; /* Copier ce qu'il y a à l'interieur du <span id="ipServeur"> (text à copier) </span> */
+			const ip = document.getElementById("ipServeur").innerText;
 			const btn = document.getElementById("copyBtn");
-			/* clic success */
 			navigator.clipboard.writeText(ip).then(() => {
-				btn.classList.add("success"); /* remplacement de l'icon copy par l'icon copy-check */
+				btn.classList.add("success");
   				btn.innerHTML = '<i data-lucide="copy-check"></i>';
   				lucide.createIcons();
-				/* Mettre un temps après le clic success, pour l'enlever */
 				setTimeout(() => {
-    				btn.classList.remove("success"); /* remise en place de l'icon copy */
+    				btn.classList.remove("success");
     				btn.innerHTML = '<i data-lucide="copy"></i>';
     				lucide.createIcons();
-				}, 1500); /* Temps avant la fin du clic success */
+				}, 1500);
 			});
 		}
 	</script>
 	<br/>
-	<div class="btn-container"> <!-- Défini la ligne de boutons -->
-		<a href="patch.html" class="btn3"> <!-- Bouton page patch.html -->
-			<i data-lucide="history"></i>Patch <!-- Icon history avec "Patch" -->
+	<div class="btn-container">
+		<a href="patch.html" class="btn3">
+			<i data-lucide="history"></i>Patch
 		</a>
-		<a href="wiki.html" class="btn3"> <!-- Bouton page wiki.html -->
-			<i data-lucide="book-marked"></i>Wiki <!-- Icon book-marked avec "Wiki" -->
+		<a href="wiki.html" class="btn3">
+			<i data-lucide="book-marked"></i>Wiki
 		</a>
 	</div>
 	<br/>
-	<!-- ACTIVER ICONS LUCIDE -->
 	<script>
 		lucide.createIcons();
 	</script>
-	<!-- ACTIVER ICONS LUCIDE -->
-	<details>
-		<summary><b>functionality</b></summary> <!-- Fonctionnalités (déroullant) -->
-		<li>Minions</li>
-		<li>Spawners</li>
-		<li>Economie</li>
-		<li>...</li>
-		<div class="separateur"></div> <!-- séparateur marquant la fin de la liste des fonctionnalités -->
-	</details>
-	<h5>To start the server:</h5>
-	<!-- Lien vers le serveur Discord du serveur Minecraft -->
-	<h6>
-		<a href="https://discord.com/invite/AAqBRQzJvZ" target="_blank" class="btn3"> <!-- Lien du serveur discord herf="lien" dans une nouvelle fenetre -->
-			<img src="https://cdn.simpleicons.org/discord" alt="Discord" class="icon">Discord <!-- Icon de discord en couleur de base (bleu/violet) -->
-		</a>
-	</h6>
-	<!-- Lien vers le channel Discord | #start-serveur -->
-	<h6>
-		<a href="https://discord.com/channels/1243590602130718740/1394638473167769652" target="_blank" class="btn3">#🔓・start-server</a> <!-- Lien du salon discord herf="lien" dans une nouvelle fenetre -->
-	</h6> 
 </body>
