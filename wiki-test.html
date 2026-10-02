@@ -3,16 +3,13 @@ layout: default
 ---
 
 <link rel="stylesheet" type="text/css" href="styles/wiki-test.css">
-
 <div class="wiki">
-
-	<!-- ================= CONTENU ================= -->
 	<main class="wiki-content">
 		<h1>Welcome to the wiki of <span class="cubesia">Cubesia</span></h1>
 		<p>Everything you need to know about the server, on a single page.</p>
 
 		<h2 id="commands"><i data-lucide="terminal"></i>Commands</h2>
-
+		
 		<h3 id="cmd-general"><i data-lucide="list"></i>General</h3>
 		<ul class="cmd-list">
 			<li><span class="command">/afk</span> <span class="base">Teleports you to the AFK zone.</span></li>
@@ -1664,10 +1661,9 @@ layout: default
 </div>
 
 <script>
-	// Icônes Lucide
+	
 	lucide.createIcons();
-
-	// Sommaire : section courante en violet, sous-sections dépliées pour la section ouverte
+	
 	(function () {
 		const toc = document.getElementById('toc');
 		toc.classList.add('js');
