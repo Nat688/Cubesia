@@ -1,5 +1,4 @@
 html { scroll-behavior: smooth; }
-
 .wiki {
     --text:      #9d9797;
     --strong:    #f4f1f1;
@@ -8,7 +7,6 @@ html { scroll-behavior: smooth; }
     --border:    #2a2323;
     --header-h:  60px;
 }
-
 .wiki {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 270px;
@@ -16,15 +14,11 @@ html { scroll-behavior: smooth; }
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 28px 80px;
-
-    font-size: 16px;          /* annule le 150% de base.css */
+    font-size: 16px;
     line-height: 1.75;
     color: var(--text);
 }
-
 .wiki-content { min-width: 0; }
-
-/* ===== TITRES ===== */
 .wiki h1 {
     text-align: left;
     font-size: 2.2rem;
@@ -35,8 +29,8 @@ html { scroll-behavior: smooth; }
     display: flex;
     align-items: center;
     gap: 12px;
-    margin: 56px 0 14px;
-    font-size: 1.7rem;
+    margin: 48px 0 12px;
+    font-size: 1.45rem;
     color: var(--strong);
     scroll-margin-top: calc(var(--header-h) + 20px);   /* évite que le header cache le titre */
 }
@@ -44,8 +38,8 @@ html { scroll-behavior: smooth; }
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 36px 0 10px;
-    font-size: 1.3rem;
+    margin: 28px 0 8px;
+    font-size: 1.1rem;
     color: var(--strong);
     scroll-margin-top: calc(var(--header-h) + 20px);
 }
@@ -55,8 +49,6 @@ html { scroll-behavior: smooth; }
     flex-shrink: 0;
     color: var(--accent);
 }
-
-/* ===== TEXTE ===== */
 .wiki p { margin: 0 0 16px; font-size: 1rem; }
 .wiki b, .wiki strong { color: var(--strong); font-weight: 700; }
 .wiki a { color: var(--accent); }
@@ -69,8 +61,6 @@ html { scroll-behavior: smooth; }
     font-family: monospace;
     font-size: 0.9em;
 }
-
-/* ===== LISTES (puces rondes grises comme sur la capture) ===== */
 .wiki ul { margin: 0 0 16px; padding-left: 24px; }
 .wiki li { margin-bottom: 10px; padding-left: 6px; }
 .wiki li::marker { color: #52525b; }
@@ -142,13 +132,14 @@ html { scroll-behavior: smooth; }
 /* =====================================================
    SOMMAIRE « ON THIS PAGE » (à droite)
    ===================================================== */
+
 .toc {
     position: sticky;
     top: calc(var(--header-h) + 24px);
     align-self: start;
     max-height: calc(100vh - var(--header-h) - 48px);
     overflow-y: auto;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .toc-title {
@@ -181,7 +172,7 @@ html { scroll-behavior: smooth; }
     transition: color .2s, border-color .2s;
 }
 .toc a i { width: 18px; height: 18px; flex-shrink: 0; }
-.toc a:hover { color: var(--strong); }
+.toc a:hover { color: #ff9f43; }
 
 /* sous-sections : décalées vers la droite */
 .toc .sub a { padding-left: 38px; font-size: 0.92rem; }
