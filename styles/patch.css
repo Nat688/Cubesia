@@ -1,25 +1,174 @@
-/* ===== TEXT ===== */
-h1, h2, summary, details > summary {
+/* ===== COLORS OF TAG ===== */
+.patch {
+    --added:   #55FF55;
+    --fixed:   #FFFF55;
+    --changed: #5555FF;
+    --removed: #FF5555;
+}
+.added   { color: var(--added);   font-weight: 700; }
+.fixed   { color: var(--fixed);   font-weight: 700; }
+.changed { color: var(--changed); font-weight: 700; }
+.removed { color: var(--removed); font-weight: 700; }
+.tag {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 0 9px;
+    border-radius: 7px;
+    font-size: 0.82em;
+    line-height: 1.65;
+    letter-spacing: 0.2px;
+    background: rgba(var(--c), 0.12);
+    border: 1px solid rgba(var(--c), 0.32);
+    color: rgb(var(--c));
+}
+.tag::first-letter { text-transform: uppercase; }
+.tag.added   { --c: 85, 255, 85; }
+.tag.fixed   { --c: 255, 255, 85; }
+.tag.changed { --c: 85, 85, 255; }
+.tag.removed { --c: 255, 85, 85; }
+.tag.changed { color: #8f8fff; }
+
+/* ===== LAYOUT ===== */
+.patch {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 12px 20px 90px;
+}
+.patch h1 {
+    margin: 22px 0 14px;
     text-align: center;
+    font-size: 2rem;
+    line-height: 1.2;
 }
-h1 { font-size: 150%; }
-h2 { font-size: 125%; }
-li { font-size: 15px; }
-h7 { font-size: 50%; } /* -# de discord */
-/* le ``text`` de discord */
-code {
-    background-color: #2b2d31;
-    color: #dbdee1;
-    padding: 1px 3px;
-    border-radius: 3px;
-    font-family: monospace;
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 0 30px;
 }
-/* ===== AUTRES ===== */
-details > summary {
-    padding: 2px 6px;
-    width: 100%;
-    background-color: #0a0909;
+.legend .tag { margin: 0; }
+.patch br { display: none; }
+
+/* ===== CARDS ===== */
+.patch details {
+    margin: 0 0 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color .25s, box-shadow .25s;
+}
+.patch details:hover { border-color: #3a3131; }
+.patch details[open] {
+    border-color: rgba(154, 140, 255, 0.35);
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.35);
+}
+.patch details > summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    padding: 14px 20px;
+    background: none;
     border: none;
-    box-shadow: 3px 3px 4px black;
+    box-shadow: none;
+    text-align: left;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text);
     cursor: pointer;
+    list-style: none;
+    transition: background .2s;
+}
+.patch details > summary::-webkit-details-marker { display: none; }
+.patch details > summary:hover { background: rgba(255, 255, 255, 0.03); }
+.patch details[open] > summary { border-bottom: 1px solid var(--border); }
+.patch details > summary::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    margin-left: 12px;
+    border-right: 2px solid var(--muted);
+    border-bottom: 2px solid var(--muted);
+    transform: rotate(45deg);
+    transition: transform .25s, border-color .25s;
+}
+.patch details[open] > summary::after {
+    transform: rotate(-135deg);
+    border-color: var(--accent);
+}
+.patch details[open] > :not(summary) { animation: patchFade .25s ease; }
+@keyframes patchFade {
+    from { opacity: 0; transform: translateY(-4px); }
+    to   { opacity: 1; transform: none; }
+}
+
+/* ===== LISTS ===== */
+.patch ul {
+    margin: 0;
+    padding: 12px 22px 16px 42px;
+}
+.patch ul ul {
+    margin: 4px 0 8px 2px;
+    padding: 0 0 0 20px;
+    border-left: 1px solid var(--border);
+}
+.patch li {
+    margin: 7px 0;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+    color: #d6d0d0;
+}
+.patch li::marker { color: #52525b; }
+.patch li b { color: #fff; }
+.patch li i { color: var(--muted); }
+.patch code {
+    padding: 1px 6px;
+    border-radius: 5px;
+    background: #2b2d31;
+    color: #dbdee1;
+    font-family: monospace;
+    font-size: 0.92em;
+}
+
+/* ===== SUBTITLES ===== */
+.patch details h3 {
+    margin: 14px 22px 0;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    text-align: left;
+    font-size: 0.95rem;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+.patch details > h3:first-of-type { margin-top: 0; border-top: none; padding-top: 14px; }
+.patch details h4 {
+    margin: 14px 22px 0;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #fff;
+}
+h7 { font-size: 50%; color: var(--muted); }
+
+/* ===== FRENCH ONLY BANNER ===== */
+.patch h2 {
+    margin: 40px 0 18px;
+    padding: 12px 18px;
+    text-align: center;
+    font-size: 0.95rem;
+    letter-spacing: 0.4px;
+    color: var(--accent-2);
+    background: rgba(255, 159, 67, 0.07);
+    border: 1px dashed rgba(255, 159, 67, 0.4);
+    border-radius: 12px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+    .patch { padding: 8px 12px 70px; }
+    .patch h1 { font-size: 1.6rem; }
+    .patch ul { padding-left: 34px; padding-right: 14px; }
 }
