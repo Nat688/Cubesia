@@ -42,7 +42,7 @@ body {
     transform: rotate(360deg) scale(1.05);
 }
 
-/* ===== TEXTE ===== */
+/* ===== TEXT ===== */
 .content h1 {
     font-size: 48px;
     margin: 0;
@@ -55,7 +55,7 @@ body {
     font-size: 18px;
     color: #bdbdbd;
 }
-/* ===== BOUTONS ===== */
+/* ===== BUTTONS ===== */
 .buttons {
     margin-top: 32px;
     display: flex;
@@ -73,7 +73,7 @@ body {
     align-items: center;
     gap: 10px;
     border: 1px solid #2b2b2b;
-    transition: 
+    transition:
         transform 0.25s ease,
         box-shadow 0.25s ease,
         background 0.25s ease;
@@ -91,7 +91,7 @@ body {
     background: #242424;
     box-shadow: 0 10px 30px rgba(255,159,67,0.4);
 }
-/* ===== ICONES ===== */
+/* ===== ICONS ===== */
 .icon,
 .btn i {
     width: 20px;
