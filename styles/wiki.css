@@ -22,7 +22,7 @@ html {
     --header-h:  60px;
 }
 
-/* ===== MISE EN PAGE ===== */
+/* ===== LAYOUT ===== */
 .wiki {
     display: grid;
     grid-template-columns: minmax(0, 1060px) 230px;
@@ -37,7 +37,7 @@ html {
 }
 .wiki-content { min-width: 0; }
 
-/* ===== TITRES ===== */
+/* ===== TITLES ===== */
 .wiki h1 {
     margin: 0 0 8px;
     text-align: left;
@@ -154,7 +154,7 @@ html {
 }
 .shots a.strip img { max-height: none; }
 
-/* ===== ENCADRÉS D'INFO ===== */
+/* ===== INFO BOXES ===== */
 .callout {
     display: flex;
     align-items: flex-start;
@@ -182,7 +182,7 @@ html {
 .callout.tip     { border-color: #3b3470; }
 .callout.tip     :is(i, svg) { color: var(--accent); }
 
-/* ===== TABLEAUX D'ENCHANTEMENTS ===== */
+/* ===== ENCHANTMENT TABLES ===== */
 .table_container {
     margin: 14px 0 8px;
     overflow-x: auto;
@@ -217,9 +217,7 @@ html {
 }
 .neon_table tbody tr:hover { background: rgba(255, 255, 255, 0.05); }
 
-/* =====================================================
-   SOMMAIRE
-   ===================================================== */
+/* ===== TABLE OF CONTENTS ===== */
 .toc {
     position: sticky;
     top: calc(var(--header-h) + 24px);
@@ -241,7 +239,6 @@ html {
 }
 .toc-title :is(i, svg) { width: 18px; height: 18px; }
 
-/* UNE seule ligne verticale : seulement sur la liste principale, jamais sur .subs */
 .toc ul { list-style: none; margin: 0; padding: 0; border: 0; }
 .toc > ul { border-left: 1px solid var(--border); }
 .toc li { margin: 0; padding: 0; }
