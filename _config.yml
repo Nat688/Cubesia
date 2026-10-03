@@ -1,3 +1,5 @@
-# MODE MAINTENANCE #
+##########################
+##   MAINTENANCE MODE   ##
+##########################
 maintenance: false
-# TRUE or FALSE #
+# "true" or "false" #
