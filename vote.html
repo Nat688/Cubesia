@@ -4,38 +4,19 @@ layout: default
 
 <link rel="stylesheet" type="text/css" href="styles/vote.css">
 <body>
-  	<h1>Bienvenue sur la page de vote du serveur <span class="title_site">AllPlugs</span></h1>
-
-	<!-- VOTES -->
+  	<h1>Bienvenue sur la page de vote du serveur <span class="cubesia">Cubesia</span></h1>
 	<section class="vote-section">
-  <!-- ----------------------------- Timer 1h30 ----------------------------- -->
 		<div class="vote-card">
 			<span><b>Vote N°1</b></span>
-			<!-- TIMER -->
 			<p id="timer" class="vote-timer">Vous pouvez voter !</p>
-			<!-- BOUTON -->
 			<a href="https://serveur-prive.net/minecraft/allplug/vote" target="_blank" class="vote-btn" id="vote1">Vote Now</a>
 		</div>
-  <!-- ----------------------------- Timer 2h ----------------------------- -->
 		<div class="vote-card">
 			<span><b>Vote N°2</b></span>
-			<!-- TIMER -->
 			<p id="temps" class="vote-timer">Vous pouvez voter !</p>
-			<!-- BOUTON -->
 			<a href="https://top-serveurs.net/minecraft/vote/allplugs" target="_blank" class="vote-btn" id="vote2"> Vote Now</a>
 		</div>
 	</section>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-  <!-- ----------------------------- SCRIPT ----------------------------- -->
   	<script>
 		function lancerTimer(id, dureeSecondes, storageKey) {
 			const el = document.getElementById(id);
@@ -53,7 +34,6 @@ layout: default
 					String(s).padStart(2, "0")
 				);
 			}
-      // Vérifier si la date de fin existe déjà //
 			let fin = localStorage.getItem(storageKey);
 			if (!fin) {
 				fin = Date.now() + dureeSecondes * 1000;
@@ -73,19 +53,16 @@ layout: default
 				el.textContent = formatTemps(restant);
 			}
 			const interval = setInterval(tick, 1000);
-			tick(); // affichage immédiat //
+			tick();
 		}
-
-    // Lancer le timer seulement au clic sur le bouton de vote
 		document.getElementById("vote1").addEventListener("click", () => {
-			localStorage.removeItem("timer_1h30_done"); // 🔴 RESET si terminé //
+			localStorage.removeItem("timer_1h30_done");
 			lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
 		});
 		document.getElementById("vote2").addEventListener("click", () => {
-			localStorage.removeItem("timer_2h_done"); // 🔴 RESET si terminé //
+			localStorage.removeItem("timer_2h_done");
 			lancerTimer("temps", 2 * 60 * 60, "timer_2h");
 		});
-	  // Stockage des timers //
 		if (localStorage.getItem("timer_1h30")) {
 			lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
 		}
