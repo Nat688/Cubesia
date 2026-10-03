@@ -245,4 +245,25 @@ layout: default
 		});
 	})();
 </script>
+<script>
+	(function () {
+		const KEY = 'cubesia-patch-open';
+		let saved = {};
+		try { saved = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) {}
+
+		const seen = {};
+		document.querySelectorAll('.patch details').forEach(d => {
+			const name = d.querySelector('summary').textContent.trim();
+			seen[name] = (seen[name] || 0) + 1;
+			const id = seen[name] > 1 ? name + ' #' + seen[name] : name;
+
+			if (id in saved) d.open = saved[id];
+
+			d.addEventListener('toggle', () => {
+				saved[id] = d.open;
+				try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+			});
+		});
+	})();
+</script>
 </body>
