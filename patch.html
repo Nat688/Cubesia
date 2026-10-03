@@ -179,55 +179,53 @@ layout: default
 	<details>
 		<summary>Patch #3</summary> <!-- PATCH 3 -->
 		<ul>
+			<li>Added a reinforcement system to summon allies (for zombies only).</li>
+			<li>Change arrow damage dealt by mobs based on their level.</li>
+			<li>Change damage dealt by Creepers based on their level.</li>
+			<li>Change item drops from mobs based on their level.</li>
+			<li>Change XP drops from mobs based on their level.</li>
+			<li>Change player detection by mobs based on their level.</li>
+			<li>Change knockback dealt by mobs based on their level.</li>
+			<li>Change knockback resistance for mobs based on their level.</li>
+			<li>Change AFK zone reward (~378/h -> ~750/h).</li>
+			<li>Change english translation of wiki and rules messages.</li>
 			<li>Fixed the missing <code>/banktop</code> permission.</li>
 			<li>Fixed drops for silverfish and villager spawners.</li>
 			<li>Fixed the damage taken by the player, which was too high.</li>
-			<li>Increased arrow damage dealt by mobs based on their level.</li>
-			<li>Increased damage dealt by Creepers based on their level.</li>
-			<li>Improved item drops from mobs based on their level.</li>
-			<li>Increased XP drops from mobs based on their level.</li>
-			<li>Improved player detection by mobs based on their level.</li>
-			<li>Increased knockback dealt by mobs based on their level.</li>
-			<li>Increased knockback resistance for mobs based on their level.</li>
-			<li>Added a reinforcement system to summon allies (for zombies only).</li>
-			<li>AFK zone reward balancing (~378/h -> ~750/h).</li>
-			<li>Removal of the automatic voting message.</li>
-			<li>English translation of wiki and rules messages.</li>
+			<li>Removed of the automatic voting message.</li>
 		</ul>
 	</details>
 	<br/>
 	<details>
 		<summary>Patch #2</summary> <!-- PATCH 2 -->
 		<ul>
-			<li>Fixed messages regarding minion charges, as well as the interface for the various minions.</li>
 			<li>Added the <code>/sellprice</code> command – allows you to view the prices of all items.</li>
+			<li>Fixed messages regarding minion charges, as well as the interface for the various minions.</li>
 		</ul>
 	</details>
 	<br/>
 	<details>
 		<summary>Patch #1</summary> <!-- PATCH 1 -->
 		<ul>
-			<li>Fixed the <code>/afk</code> command that wasn't working.</li>
-			<li>Fixed Creepers not dealing damage.</li>
-			<li>Adjustment of fish selling prices in <code>/sellfish</code>.</li>
-			<li>Correction of the French translation that shouldn't exist (TAB).</li>
+			<li>Change the fish selling prices in <code>/sellfish</code>.</li>
+			<li>Change the French translation that shouldn't exist (TAB).</li>
 			<li>Fixed the <code>/paytoggle</code> command, which also affected other players.</li>
 			<li>Fixed the <code>/pay</code> command, which was inaccessible.</li>
 			<li>Fixed the <code>/money top</code>, and <code>/shards top</code> commands, which were bugged (returning no data).</li>
 			<li>Fixed the <code>/sellguiprice</code> command, which was being displayed when it shouldn't have been.</li>
 			<li>Fixed the <code>/banktop</code> not appearing in the command list.</li>
+			<li>Fixed the <code>/afk</code> command that wasn't working.</li>
+			<li>Fixed Creepers not dealing damage.</li>
 		</ul>
 	</details>
 </main>
 <script>
 	(function () {
 		const WORDS = {
-			added:   ['added', 'add'],
-			fixed:   ['fixed', 'fix', 'fixes'],
-			changed: ['change', 'changed', 'modified', 'updated', 'enhanced', 'improved', 'replaced', 'overhauled',
-			          'overhaul', 'balancing', 'balanced', 'rebalanced', 'adjusted', 'adjustment',
-			          'increased', 'reworked', 'modification', 'modifications'],
-			removed: ['removed', 'removal', 'deletion', 'deleted']
+			added:   ['added'],
+			fixed:   ['fixed'],
+			changed: ['change'],
+			removed: ['removed']
 		};
 		const MAP = {};
 		for (const type in WORDS) WORDS[type].forEach(w => MAP[w] = type);
