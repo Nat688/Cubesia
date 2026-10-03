@@ -5,7 +5,7 @@ header {
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: #120f0f;
+    background-color: #0a0909;
     z-index: 10000;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@ header {
 body {
     margin: 0;
     height: 100vh;
-    background: radial-gradient(circle at top, #222, #181818);
+    background-color: #120f0f;
     display: flex;
     align-items: center;
     justify-content: center;
