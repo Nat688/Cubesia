@@ -81,13 +81,14 @@ layout: default
 
 	<section class="block">
 		<h2>Latest patch</h2>
-		<a class="patch-card" href="patch.html">
+		<a class="patch-card loading" id="patchCard" href="patch.html">
 			<h3 id="patchTitle">Patch #15</h3>
 			<ul id="patchList">
 				<li><span class="mini-tag added">Added</span>support for '&amp;' color codes on signs, in anvils, and in chat.</li>
 				<li><span class="mini-tag changed">Change</span>the server version to Minecraft 26.2.</li>
 				<li><span class="mini-tag changed">Change</span>the enchantment table's storage so it now retains the lapis lazuli when the player closes the interface.</li>
 				<li><span class="mini-tag changed">Change</span>cauldrons so they no longer lose water when turning concrete powder into concrete.</li>
+				<li class="more">+ 3 more changes</li>
 			</ul>
 			<span class="patch-more">See all patches <i data-lucide="arrow-right"></i></span>
 		</a>
@@ -137,15 +138,15 @@ layout: default
 			.catch(() => {});
 
 		const MAP = { added: 'added', fixed: 'fixed', change: 'changed', changed: 'changed', removed: 'removed' };
-		fetch('patch.html')
+		const card = document.getElementById('patchCard');
+		fetch('patch.html', { cache: 'no-cache' })
 			.then(r => r.text())
 			.then(html => {
 				const doc = new DOMParser().parseFromString(html, 'text/html');
 				const d = doc.querySelector('.patch details');
 				if (!d) return;
-				const items = [...d.querySelectorAll('li')]
-					.filter(li => li.parentElement.parentElement === d)
-					.slice(0, 4);
+				const all = [...d.querySelectorAll('li')].filter(li => li.parentElement.parentElement === d);
+				const items = all.slice(0, 4);
 				if (!items.length) return;
 
 				document.getElementById('patchTitle').textContent = d.querySelector('summary').textContent.trim();
@@ -166,8 +167,16 @@ layout: default
 					}
 					ul.appendChild(el);
 				});
+				const extra = all.length - items.length;
+				if (extra > 0) {
+					const more = document.createElement('li');
+					more.className = 'more';
+					more.textContent = '+ ' + extra + ' more change' + (extra > 1 ? 's' : '');
+					ul.appendChild(more);
+				}
 			})
-			.catch(() => {});
+			.catch(() => {})
+			.finally(() => card.classList.remove('loading'));
 	})();
 </script>
 </body>
