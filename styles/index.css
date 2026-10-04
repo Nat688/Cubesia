@@ -302,7 +302,7 @@ details > summary {
 .mini-tag.new     { color: #00AA00; }
 .mini-tag.added   { color: #55FF55; }
 .mini-tag.fixed   { color: #FFFF55; }
-.mini-tag.changed { color: #8f8fff; }
+.mini-tag.change  { color: #8f8fff; }
 .mini-tag.removed { color: #FF5555; }
 .patch-more {
     display: inline-flex;
