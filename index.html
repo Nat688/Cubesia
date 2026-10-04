@@ -138,7 +138,7 @@ layout: default
 			})
 			.catch(() => {});
 
-		const MAP = { added: 'added', fixed: 'fixed', change: 'changed', changed: 'changed', removed: 'removed' };
+		const MAP = { new: 'new', added: 'added', fixed: 'fixed', change: 'change', removed: 'removed' };
 		const card = document.getElementById('patchCard');
 		fetch('patch.html', { cache: 'no-cache' })
 			.then(r => r.text())
