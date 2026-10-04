@@ -1,5 +1,6 @@
 /* ===== COLORS OF TAG ===== */
 .patch {
+    --new:     #00AA00;
     --added:   #55FF55;
     --fixed:   #FFFF55;
     --changed: #5555FF;
