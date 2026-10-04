@@ -268,6 +268,10 @@ details > summary {
     border-color: rgba(154, 140, 255, 0.45);
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
 }
+.patch-card h3,
+.patch-card ul { transition: opacity .25s; }
+.patch-card.loading h3,
+.patch-card.loading ul { opacity: 0; }
 .patch-card h3 {
     margin: 0 0 10px;
     text-align: left;
@@ -285,6 +289,12 @@ details > summary {
     color: #d6d0d0;
 }
 .patch-card li::marker { color: #52525b; }
+.patch-card li.more {
+    margin-left: -20px;
+    list-style: none;
+    color: var(--muted);
+    font-size: 0.88em;
+}
 .mini-tag {
     margin-right: 6px;
     font-weight: 700;
