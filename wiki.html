@@ -1414,7 +1414,7 @@ layout: default
 		<p>Open the leaderboard interface with <code>/leaderboard</code> (or <code>/leaderboards</code>), climb the rankings, outdo your rivals and show everyone that you are among the best players on Cubesia.</p>
 		<div class="callout">
 			<i data-lucide="info"></i>
-			<p>You can also check some rankings directly with <code>/money top</code>, <code>/shards top</code> and <code>/banktop</code>.</p>
+			<p>You can also check some rankings directly with <code>/money top</code> and <code>/shards top</code>.</p>
 		</div>
 		<div class="shots">
 			<a href="images/wiki/leaderboard.png" target="_blank" rel="noopener"><img src="images/wiki/leaderboard.png" alt="Leaderboard" loading="lazy"></a>
@@ -1479,7 +1479,7 @@ layout: default
 		<p>Simply travel back to the location of your death to retrieve everything. Keep in mind that you'll have to make the journey <b>on foot</b> (unless you're using a <b>Handic Card</b> 😄).</p>
 		<p>When you die, a <b>grave</b> is automatically created at the exact location of your death, and its <b>coordinates</b> are immediately displayed so you can easily find your way back.</p>
 		<p>Once you reach your grave, you can <b>right-click</b> it to retrieve your items one by one, or use <b>Shift + Right-Click</b> to collect everything instantly.</p>
-		<p>You can also use the <code>/graves list</code> command to manage your graves. It displays all of your active graves, their locations, and the <b>remaining time</b> before each one disappears, helping you recover your belongings before they are lost forever.</p>
+		<p>You can also use the <code>/grave list</code> command to manage your graves. It displays all of your active graves, their locations, and the <b>remaining time</b> before each one disappears, helping you recover your belongings before they are lost forever.</p>
 		<p>This system provides an extra layer of protection for your valuables, making death much less punishing while still encouraging you to return and recover your equipment.</p>
 		<div class="shots">
 			<a href="images/wiki/graves.png" target="_blank" rel="noopener"><img src="images/wiki/graves.png" alt="Graves" width="672" height="511" loading="lazy"></a>
@@ -1503,7 +1503,7 @@ layout: default
 		<h2 id="vaults"><i data-lucide="vault"></i>Vaults</h2>
 		<p><b>Personal Vaults (PVs)</b> are secure <b>private double chests</b> that can only be accessed by their owner, providing a safe place to store your most valuable items.</p>
 		<p>You can store virtually any type of item inside, including valuable resources, rare equipment, and long-term supplies, while stackable items behave just like they do in normal chests to maximize storage efficiency.</p>
-		<p>Use the <code>/pv</code> command to open your Personal Vault menu at any time and access your stored items from anywhere on the server.</p>
+		<p>Use the <code>/pv</code> command (or <code>/vault</code>) to open your Personal Vault menu at any time and access your stored items from anywhere on the server.</p>
 		<p>Inside the <code>/pv</code> menu, you can <b>Shift + Click</b> on a vault to customize its icon, replacing the default barrel with an item of your choice for a cleaner and more personalized interface.</p>
 		<div class="callout">
 			<i data-lucide="info"></i>
@@ -1520,6 +1520,7 @@ layout: default
 		<p>The main command is <code>/fish</code>, which opens the fishing menu and provides access to every available feature, including bait management, your collection, statistics, and more.</p>
 		<p>Use <code>/fish journal</code> to browse your <b>Fishing Journal</b>, where you can view every available fish, track your discoveries, and monitor your overall completion progress.</p>
 		<p>Fish can be sold instantly with <code>/sellfish</code>, allowing you to quickly convert your catches into money without needing to visit a shop.</p>
+		<p>Use <code>/fish sellall</code> to sell all your fish at once, and <code>/fish toggle</code> to enable or disable custom fishing.</p>
 		<p>If you have purchased or obtained fishing baits, use <code>/fish applybaits</code> to apply them to your fishing rod and benefit from their special effects while fishing.</p>
 		<p>During fishing competitions and server events, <code>/fish top</code> displays the live leaderboard, allowing you to see the current rankings and track who is leading the event in real time.</p>
 		<p>Whether you enjoy collecting every species, earning money through fishing, or competing against other players during events, the custom fishing system offers plenty of progression and rewards for every type of fisherman.</p>
@@ -1539,7 +1540,7 @@ layout: default
 
 		<h2 id="jobs"><i data-lucide="briefcase"></i>Jobs</h2>
 		<p><b>Jobs</b> allow you to earn both <b>money</b> and <b>experience</b> by performing everyday activities such as mining, farming, fishing, building, hunting, and much more.</p>
-		<p>Use the <code>/jobs</code> command to open the Jobs menu, where you can browse every available profession and manage your progress.</p>
+		<p>Use the <code>/jobs</code> command (or <code>/job</code>, <code>/skills</code>, <code>/skill</code>) to open the Jobs menu, where you can browse every available profession and manage your progress.</p>
 		<p><b>Right-click</b> on a job to open its detailed information page, showing how much <b>experience</b> and <b>money</b> you earn for each supported action, helping you choose the most profitable activities.</p>
 		<p><b>Left-click</b> on a job to view its <b>leaderboard</b>, allowing you to compare your progress with other players and see who has reached the highest level in each profession.</p>
 		<p>Whether you focus on a single profession or level up multiple jobs, the system provides a rewarding way to progress while playing normally on the server.</p>
@@ -1550,6 +1551,7 @@ layout: default
 		<h2 id="bounty"><i data-lucide="target"></i>Bounty</h2>
 		<p>The <b>Bounty</b> system allows players to place a <b>cash reward</b> on another player's head, encouraging PvP and creating exciting hunting opportunities across the server.</p>
 		<p>If a player with an active bounty is killed, the player who eliminates them automatically receives the <b>bounty reward</b>.</p>
+		<p>Use <code>/bounty</code> to open the bounty menu and see every active bounty on the server.</p>
 		<p>To place a bounty, simply use the command <code>/bounty add &lt;player&gt; &lt;amount&gt;</code>, replacing <code>&lt;player&gt;</code> with the target's username and <code>&lt;amount&gt;</code> with the amount of money you wish to offer.</p>
 		<p>Whether you want revenge, create friendly competition, or simply make PvP more rewarding, the Bounty system adds an extra layer of excitement to every encounter.</p>
 		<div class="shots">
@@ -1558,9 +1560,10 @@ layout: default
 
 		<h2 id="sell"><i data-lucide="coins"></i>Sell</h2>
 		<p>The <b>/sell</b> command allows you to quickly sell a wide variety of items without needing to visit a physical shop.</p>
-		<p>Simply open the selling interface with <code>/sell</code> and place the items you wish to sell to instantly receive the corresponding amount of money.</p>
+		<p>Simply open the selling interface with <code>/sell</code> (or <code>/sellgui</code>) and place the items you wish to sell to instantly receive the corresponding amount of money.</p>
 		<p>Every sellable item has a predefined <b>Worth</b>, which is displayed directly in its tooltip, making it easy to know its value before selling.</p>
-		<p>If you want to check prices without opening the selling menu, you can also use <code>/sellprice</code> to browse the complete list of item values available on the server.</p>
+		<p>If you want to check prices without opening the selling menu, you can also use <code>/sellprice</code> (or <code>/sellprices</code>) to browse the complete list of item values available on the server.</p>
+		<p>To sell your entire inventory in one go, use <code>/sellall</code>, and use <code>/autosell</code> to enable or disable the automatic selling of the items you selected.</p>
 		<p>This system provides a fast and convenient way to turn your resources into money while helping you plan farms and maximize your profits.</p>
 		<div class="shots">
 			<a href="images/wiki/sell_worth.png" target="_blank" rel="noopener"><img src="images/wiki/sell_worth.png" alt="Sell worth" width="331" height="175" loading="lazy"></a>
@@ -1705,6 +1708,14 @@ layout: default
 			<a href="images/wiki/enchanted_book.png" target="_blank" rel="noopener"><img src="images/wiki/enchanted_book.png" alt="Enchanted book" width="736" height="390" loading="lazy"></a>
 		</div>
 
+		<h3 id="villager-reroll"><i data-lucide="refresh-cw"></i>Villager Reroll</h3>
+		<p><b>Villager Reroll</b> lets you <b>exchange the trades</b> of your villagers without having to break and place their <b>job site block</b> again.</p>
+		<p>Normally, getting a new set of offers means breaking the villager's workstation and placing it back, hoping for better trades. With Villager Reroll, you can do it directly on the villager, which saves time and keeps your trading hall untouched.</p>
+		<p>This makes it much easier to find the trade you are looking for, without having to rebuild or rearrange your villager setup every time.</p>
+		<div class="shots">
+			<a href="images/wiki/villager_reroll.png" target="_blank" rel="noopener"><img src="images/wiki/villager_reroll.png" alt="Villager reroll" loading="lazy"></a>
+		</div>
+
 	</main>
 	<aside class="toc" id="toc">
 		<div class="toc-title"><i data-lucide="list"></i>On this page</div>
@@ -1781,6 +1792,7 @@ layout: default
 					<li><a href="#golden-dandelion"><i data-lucide="flower-2"></i>Golden Dandelion</a></li>
 					<li><a href="#durability-ping"><i data-lucide="bell-ring"></i>Durability Ping</a></li>
 					<li><a href="#enchanted-book"><i data-lucide="book-open"></i>Enchanted Book</a></li>
+					<li><a href="#villager-reroll"><i data-lucide="refresh-cw"></i>Villager Reroll</a></li>
 				</ul>
 			</li>
 		</ul>
