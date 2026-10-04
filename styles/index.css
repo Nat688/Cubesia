@@ -299,6 +299,7 @@ details > summary {
     margin-right: 6px;
     font-weight: 700;
 }
+.mini-tag.new     { color: #00AA00; }
 .mini-tag.added   { color: #55FF55; }
 .mini-tag.fixed   { color: #FFFF55; }
 .mini-tag.changed { color: #8f8fff; }
