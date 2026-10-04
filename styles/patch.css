@@ -6,7 +6,7 @@
     --changed: #5555FF;
     --removed: #FF5555;
 }
-.added   { color: var(--new);     font-weight: 700; }
+.new     { color: var(--new);     font-weight: 700; }
 .added   { color: var(--added);   font-weight: 700; }
 .fixed   { color: var(--fixed);   font-weight: 700; }
 .changed { color: var(--changed); font-weight: 700; }
@@ -29,7 +29,6 @@
 .tag.fixed   { --c: 255, 255, 85; }
 .tag.changed { --c: 85, 85, 255; }
 .tag.removed { --c: 255, 85, 85; }
-.tag.changed { color: #8f8fff; }
 
 /* ===== LAYOUT ===== */
 .patch {
