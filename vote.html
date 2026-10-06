@@ -4,24 +4,24 @@ layout: default
 
 <link rel="stylesheet" type="text/css" href="styles/vote.css">
 <body>
-  	<h1>Bienvenue sur la page de vote du serveur <span class="cubesia">Cubesia</span></h1>
+  	<h1><span class="cubesia">Cubesia</span> server vote list</h1>
 	<section class="vote-section">
 		<div class="vote-card">
-			<span><b>Vote N°1</b></span>
-			<p id="timer" class="vote-timer">Vous pouvez voter !</p>
+			<span><b>Vote 1</b></span>
+			<p id="timer" class="vote-timer">You can vote!</p>
 			<a href="https://serveur-prive.net/minecraft/allplug/vote" target="_blank" class="vote-btn" id="vote1">Vote Now</a>
 		</div>
 		<div class="vote-card">
-			<span><b>Vote N°2</b></span>
-			<p id="temps" class="vote-timer">Vous pouvez voter !</p>
-			<a href="https://top-serveurs.net/minecraft/vote/allplugs" target="_blank" class="vote-btn" id="vote2"> Vote Now</a>
+			<span><b>Vote 2</b></span>
+			<p id="temps" class="vote-timer">You can vote!</p>
+			<a href="https://top-serveurs.net/minecraft/vote/allplugs" target="_blank" class="vote-btn" id="vote2">Vote Now</a>
 		</div>
 	</section>
   	<script>
 		function lancerTimer(id, dureeSecondes, storageKey) {
 			const el = document.getElementById(id);
 			if (localStorage.getItem(storageKey + "_done") === "1") {
-				el.textContent = "Vous pouvez voté !";
+				el.textContent = "You can vote!";
 				return;
 			}
 			function formatTemps(sec) {
