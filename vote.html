@@ -46,7 +46,7 @@ layout: default
 				if (restant <= 0) {
 					localStorage.setItem(storageKey + "_done", "1");
 					clearInterval(interval);
-					el.textContent = "Vous pouvez voté !";
+					el.textContent = "You can vote!";
 					localStorage.removeItem(storageKey);
 					return;
 				}
