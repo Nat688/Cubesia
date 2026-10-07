@@ -3,9 +3,58 @@ h1, h5, div {
     text-align: center;
 }
 h1 { font-size: 150%; }
+.vote-intro {
+    margin: 6px 0 0;
+    text-align: center;
+    color: var(--muted);
+}
+
+/* ===== USERNAME ===== */
+.pseudo-box {
+    max-width: 440px;
+    margin: 26px auto 0;
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+.pseudo-box label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--muted);
+    font-size: 0.9em;
+}
+.pseudo-row {
+    display: flex;
+    gap: 10px;
+}
+.pseudo-row input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 12px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font: inherit;
+    text-align: left;
+}
+.pseudo-row input:focus {
+    outline: none;
+    border-color: rgba(154, 140, 255, 0.6);
+}
+.pseudo-hint {
+    min-height: 1.4em;
+    margin: 8px 0 0;
+    font-size: 0.85em;
+    color: var(--muted);
+}
+.pseudo-hint.error { color: #FF5555; }
+.pseudo-hint.ok { color: #55FF55; }
+
 /* ===== VOTES ===== */
 .vote-section {
-    padding: 30px 20px;
+    padding: 30px 20px 120px;
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -42,6 +91,13 @@ h1 { font-size: 150%; }
     color: #b6b6c2;
     margin: 10px 0 30px;
 }
+.vote-timer {
+    font-variant-numeric: tabular-nums;
+    font-size: 1.3rem;
+}
+.vote-card.ready .vote-timer { color: #55FF55; }
+.vote-card.waiting .vote-timer { color: var(--accent-2); }
+
 /* ===== BUTTON ===== */
 .vote-btn {
     display: inline-block;
@@ -53,7 +109,6 @@ h1 { font-size: 150%; }
     text-decoration: none;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 .vote-btn:hover {
     transform: scale(1.08);
     box-shadow: 0 0 30px rgba(255,110,199,0.5);
