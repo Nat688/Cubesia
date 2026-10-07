@@ -4,70 +4,143 @@ layout: default
 
 <link rel="stylesheet" type="text/css" href="styles/vote.css">
 <body>
-  	<h1><span class="cubesia">Cubesia</span> server vote list</h1>
-	<section class="vote-section">
-		<div class="vote-card">
-			<span><b>Vote 1</b></span>
-			<p id="timer" class="vote-timer">You can vote!</p>
-			<a href="https://serveur-prive.net/minecraft/allplug/vote" target="_blank" class="vote-btn" id="vote1">Vote Now</a>
+	<h1>Vote for <span class="cubesia">Cubesia</span></h1>
+	<p class="vote-intro">Enter your Minecraft username, then vote on each site to receive your rewards.</p>
+
+	<div class="pseudo-box">
+		<label for="pseudo">Your Minecraft username</label>
+		<div class="pseudo-row">
+			<input type="text" id="pseudo" maxlength="20" placeholder="Steve" autocomplete="off" spellcheck="false">
 		</div>
-		<div class="vote-card">
-			<span><b>Vote 2</b></span>
-			<p id="temps" class="vote-timer">You can vote!</p>
-			<a href="https://top-serveurs.net/minecraft/vote/allplugs" target="_blank" class="vote-btn" id="vote2">Vote Now</a>
-		</div>
-	</section>
-  	<script>
-		function lancerTimer(id, dureeSecondes, storageKey) {
-			const el = document.getElementById(id);
-			if (localStorage.getItem(storageKey + "_done") === "1") {
-				el.textContent = "You can vote!";
+		<p class="pseudo-hint" id="pseudoHint" aria-live="polite"></p>
+	</div>
+
+	<section class="vote-section" id="voteSection"></section>
+
+<script>
+	// ======================= FONCTIONS =======================
+	function buildUrl(url, pseudo) {
+		return url.replace(/\{pseudo\}/g, encodeURIComponent(pseudo));
+	}
+
+	// Pseudo accepté : lettres, chiffres, _ et . (1 à 20 caractères).
+	function isValidPseudo(pseudo) {
+		return /^[A-Za-z0-9_.]{1,20}$/.test(pseudo);
+	}
+	function formatTime(sec) {
+		const h = Math.floor(sec / 3600);
+		const m = Math.floor((sec % 3600) / 60);
+		const s = sec % 60;
+		return String(h).padStart(2, '0') + ':' + String(m).padStart(2, '0') + ':' + String(s).padStart(2, '0');
+	}
+</script>
+
+<script>
+	// ============================== CONFIG ==============================
+	// Une ligne par site de vote :
+	//   name    : titre de la carte
+	//   key     : nom de sauvegarde du timer (ne pas le changer : les timers en cours seraient perdus)
+	//   seconds : temps d'attente avant de pouvoir revoter
+	//   url     : lien de vote. Écris {pseudo} là où le site attend le pseudo du joueur.
+	//             Sans {pseudo}, le lien est utilisé tel quel.
+	const VOTE_SITES = [
+		{ name: 'Vote N°1', key: 'timer_1h30', seconds: 90 * 60, url: 'https://serveur-prive.net/minecraft/allplug/vote' },
+		{ name: 'Vote N°2', key: 'timer_2h',   seconds: 2 * 3600, url: 'https://top-serveurs.net/minecraft/vote/allplugs' }
+	];
+	// Exemples avec {pseudo} :
+	//   url: 'https://serveur-minecraft-vote.fr/serveurs/NOM.ID/vote?pseudo={pseudo}'
+	//   url: 'https://www.liste-serveurs-minecraft.org/vote/?idc=ID&nickname={pseudo}'
+
+	// ============================== PAGE ===============================
+	const PSEUDO_KEY = 'cubesia-vote-pseudo';
+	const input = document.getElementById('pseudo');
+	const hint = document.getElementById('pseudoHint');
+	const section = document.getElementById('voteSection');
+	const store = {
+		get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+		set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
+		del(k) { try { localStorage.removeItem(k); } catch (e) {} }
+	};
+	function getPseudo() { return input.value.trim(); }
+	function setHint(text, kind) {
+		hint.textContent = text;
+		hint.className = 'pseudo-hint' + (kind ? ' ' + kind : '');
+	}
+	function updateHint() {
+		const p = getPseudo();
+		if (!p) setHint('', '');
+		else if (!isValidPseudo(p)) setHint('Use only letters, numbers, _ and .', 'error');
+		else setHint('Username saved.', 'ok');
+	}
+	VOTE_SITES.forEach(site => {
+		const card = document.createElement('div');
+		card.className = 'vote-card ready';
+		const title = document.createElement('span');
+		const b = document.createElement('b');
+		b.textContent = site.name;
+		title.appendChild(b);
+		const timer = document.createElement('p');
+		timer.className = 'vote-timer';
+		timer.textContent = 'You can vote!';
+		const link = document.createElement('a');
+		link.className = 'vote-btn';
+		link.target = '_blank';
+		link.rel = 'noopener';
+		link.textContent = 'Vote Now';
+		card.append(title, timer, link);
+		section.appendChild(card);
+		Object.assign(site, { card, timer, link, interval: null });
+
+		link.addEventListener('click', () => runTimer(site));
+	});
+
+	function refreshLinks() {
+		const p = getPseudo();
+		VOTE_SITES.forEach(site => {
+			site.link.href = buildUrl(site.url, isValidPseudo(p) ? p : '');
+		});
+	}
+
+	// ----- timers -----
+	function runTimer(site) {
+		clearInterval(site.interval);
+		let end = store.get(site.key);
+		if (!end) {
+			end = Date.now() + site.seconds * 1000;
+			store.set(site.key, end);
+		} else {
+			end = parseInt(end, 10);
+		}
+		function tick() {
+			const left = Math.floor((end - Date.now()) / 1000);
+			if (left <= 0) {
+				clearInterval(site.interval);
+				store.del(site.key);
+				site.timer.textContent = 'You can vote!';
+				site.card.classList.add('ready');
+				site.card.classList.remove('waiting');
 				return;
 			}
-			function formatTemps(sec) {
-				let h = Math.floor(sec / 3600);
-				let m = Math.floor((sec % 3600) / 60);
-				let s = sec % 60;
-				return (
-					String(h).padStart(2, "0") + ":" +
-					String(m).padStart(2, "0") + ":" +
-					String(s).padStart(2, "0")
-				);
-			}
-			let fin = localStorage.getItem(storageKey);
-			if (!fin) {
-				fin = Date.now() + dureeSecondes * 1000;
-				localStorage.setItem(storageKey, fin);
-			} else {
-				fin = parseInt(fin, 10);
-			}
-			function tick() {
-				let restant = Math.floor((fin - Date.now()) / 1000);
-				if (restant <= 0) {
-					localStorage.setItem(storageKey + "_done", "1");
-					clearInterval(interval);
-					el.textContent = "You can vote!";
-					localStorage.removeItem(storageKey);
-					return;
-				}
-				el.textContent = formatTemps(restant);
-			}
-			const interval = setInterval(tick, 1000);
-			tick();
+			site.timer.textContent = formatTime(left);
+			site.card.classList.add('waiting');
+			site.card.classList.remove('ready');
 		}
-		document.getElementById("vote1").addEventListener("click", () => {
-			localStorage.removeItem("timer_1h30_done");
-			lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
-		});
-		document.getElementById("vote2").addEventListener("click", () => {
-			localStorage.removeItem("timer_2h_done");
-			lancerTimer("temps", 2 * 60 * 60, "timer_2h");
-		});
-		if (localStorage.getItem("timer_1h30")) {
-			lancerTimer("timer", 1 * 60 * 60 + 30 * 60, "timer_1h30");
-		}
-		if (localStorage.getItem("timer_2h")) {
-			lancerTimer("temps", 2 * 60 * 60, "timer_2h");
-		}
-	</script>
+		site.interval = setInterval(tick, 1000);
+		tick();
+	}
+
+	VOTE_SITES.forEach(site => { if (store.get(site.key)) runTimer(site); });
+
+	// ----- pseudo -----
+	input.value = store.get(PSEUDO_KEY) || '';
+
+	input.addEventListener('input', () => {
+		store.set(PSEUDO_KEY, input.value.trim());
+		refreshLinks();
+		updateHint();
+	});
+
+	refreshLinks();
+	updateHint();
+</script>
 </body>
