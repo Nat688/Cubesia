@@ -44,8 +44,8 @@ layout: default
 	//   url     : lien de vote. Écris {pseudo} là où le site attend le pseudo du joueur.
 	//             Sans {pseudo}, le lien est utilisé tel quel.
 	const VOTE_SITES = [
-		{ name: 'Vote N°1', key: 'timer_1h30', seconds: 90 * 60, url: 'https://serveur-prive.net/minecraft/allplug/vote' },
-		{ name: 'Vote N°2', key: 'timer_2h',   seconds: 2 * 3600, url: 'https://top-serveurs.net/minecraft/vote/allplugs' }
+		{ name: 'Vote N°1', key: 'timer_1h30', seconds: 90 * 60, url: 'https://serveur-prive.net/minecraft/cubesia/vote/{pseudo}' },
+		{ name: 'Vote N°2', key: 'timer_2h',   seconds: 2 * 3600, url: 'https://top-serveurs.net/minecraft/vote/cubesia?pseudo={pseudo}' }
 	];
 	// Exemples avec {pseudo} :
 	//   url: 'https://serveur-minecraft-vote.fr/serveurs/NOM.ID/vote?pseudo={pseudo}'
