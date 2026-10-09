@@ -121,6 +121,15 @@ footer {
     transform: scale(1.2) rotate(-8deg);
 }
 
+/* ===== DISCORD ===== */
+.btn2.btn-discord { margin-right: 0; }
+.btn-discord + .btn2 { margin-left: 10px; }
+.btn-discord img {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
 /* ===== NAME ===== */
 .cubesia {
     background: linear-gradient(
