@@ -109,6 +109,25 @@ footer {
     text-align: center;
 }
 
+/* ===== MOBILE HEADER ===== */
+@media (max-width: 520px) {
+    header {
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    header::-webkit-scrollbar { display: none; }
+    .btn,
+    .btn2 { padding: 11px 9px; }
+    .btn { margin-left: 4px; }
+    .btn2 { margin-right: 4px; }
+    .btn-discord + .btn2 { margin-left: 4px; }
+    header svg,
+    .btn-discord img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 /* ===== ICONS ===== */
 .icon,
 .btn i {
