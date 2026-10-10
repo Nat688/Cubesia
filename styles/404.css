@@ -1,0 +1,21 @@
+.notfound {
+  max-width: 560px;
+	margin: 0 auto;
+	padding: 70px 20px 100px;
+	text-align: center;
+}
+.notfound .nf-code {
+	margin: 0;
+	font-size: 7rem;
+	font-weight: 800;
+	line-height: 1;
+}
+.notfound h1 { margin: 10px 0 8px; font-size: 1.8rem; }
+.notfound p { margin: 0 0 30px; color: var(--muted); }
+.notfound .nf-actions {
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: center;
+	gap: 12px;
+}
+.notfound .nf-actions .btn { margin-left: 0; }
