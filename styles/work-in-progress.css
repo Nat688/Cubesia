@@ -1,29 +1,11 @@
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #0a0909;
-    z-index: 10000;
-    display: flex;
-    align-items: center;
-}
-* {
-    box-sizing: border-box;
-    font-family: Inter, system-ui, sans-serif;
-}
-
-body {
-    margin: 0;
-    height: 100vh;
-    background-color: #120f0f;
+.wip {
+    min-height: calc(100vh - 60px);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #f1f1f1;
+    padding: 24px 20px 60px;
 }
-.container {
+.wip .container {
     display: flex;
     align-items: center;
     gap: 80px;
@@ -37,8 +19,9 @@ body {
     transform: rotate(360deg) scale(1.05);
 }
 .content h1 {
-    font-size: 48px;
     margin: 0;
+    font-size: 48px;
+    line-height: 1.15;
     background: linear-gradient(90deg, #fff, #ff9f43);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -48,54 +31,22 @@ body {
     font-size: 18px;
     color: #bdbdbd;
 }
-.buttons {
-    margin-top: 32px;
-    display: flex;
-    gap: 20px;
+.wip .buttons {
+    flex-wrap: wrap;
 }
-.btn,
-.btn2 {
-    padding: 10px 18px;
-    border-radius: 8px;
-    background: #1f1f1f;
-    color: #f1f1f1;
-    text-decoration: none;
-    font-weight: 80%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid #2b2b2b;
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        background 0.25s ease;
-}
-.btn {
-    margin-left: 10px;
-}
-.btn2 {
-    margin-left: auto;
-    margin-right: 10px;
-}
-.btn:hover,
-.btn2:hover {
-    transform: translateY(-4px);
-    background: #242424;
-    box-shadow: 0 10px 30px rgba(255,159,67,0.4);
-}
-.icon,
-.btn i {
-    width: 20px;
-    height: 20px;
-    transition: transform 0.3s ease;
-}
-.btn:hover .icon,
-.btn:hover i {
-    transform: scale(1.2) rotate(-8deg);
+.wip .buttons .btn {
+    margin-left: 0;
 }
 @media (max-width: 900px) {
-    .container {
+    .wip .container {
         flex-direction: column;
+        gap: 36px;
         text-align: center;
+    }
+    .wip .buttons {
+        justify-content: center;
+    }
+    .content h1 {
+        font-size: 34px;
     }
 }
