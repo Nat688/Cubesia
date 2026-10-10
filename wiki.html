@@ -1911,3 +1911,112 @@ title: Wiki
 		update();
 	})();
 </script>
+<script>
+(function () {
+	const toc = document.getElementById('toc');
+	const heads = [...document.querySelectorAll('.wiki-content h2[id], .wiki-content h3[id]')];
+
+	// ----- texte de chaque section (titre + contenu jusqu'au titre suivant), pour la recherche
+	const index = new Map();
+	heads.forEach(h => {
+		let text = h.textContent;
+		let n = h.nextElementSibling;
+		while (n && !/^H[23]$/.test(n.tagName)) {
+			text += ' ' + n.textContent;
+			n = n.nextElementSibling;
+		}
+		index.set(h.id, text.toLowerCase().replace(/\s+/g, ' '));
+	});
+
+	// ----- 1) lien à copier sur chaque titre
+	async function copyText(text) {
+		try {
+			await navigator.clipboard.writeText(text);
+		} catch (e) {
+			const t = document.createElement('textarea');
+			t.value = text;
+			document.body.appendChild(t);
+			t.select();
+			document.execCommand('copy');
+			t.remove();
+		}
+	}
+	heads.forEach(h => {
+		const a = document.createElement('a');
+		a.className = 'anchor';
+		a.href = '#' + h.id;
+		a.textContent = '#';
+		a.setAttribute('aria-label', 'Copy link to this section');
+		a.addEventListener('click', () => {
+			copyText(location.origin + location.pathname + '#' + h.id);
+			a.textContent = '\u2713';
+			setTimeout(() => { a.textContent = '#'; }, 1200);
+		});
+		h.appendChild(a);
+	});
+
+	// ----- 2) recherche dans le sommaire
+	const input = document.createElement('input');
+	input.type = 'search';
+	input.className = 'toc-search';
+	input.placeholder = 'Search the wiki...';
+	input.setAttribute('aria-label', 'Search the wiki');
+	const empty = document.createElement('p');
+	empty.className = 'toc-empty';
+	empty.textContent = 'No result.';
+	empty.hidden = true;
+	toc.querySelector('.toc-title').after(input);
+	toc.querySelector(':scope > ul').after(empty);
+
+	function filter() {
+		const terms = input.value.toLowerCase().split(/\s+/).filter(Boolean);
+		const matches = a => {
+			const text = index.get(a.getAttribute('href').slice(1)) || '';
+			return terms.every(t => text.includes(t));
+		};
+		toc.classList.toggle('searching', terms.length > 0);
+		let shown = 0;
+		toc.querySelectorAll(':scope > ul > li').forEach(group => {
+			let anySub = false;
+			group.querySelectorAll('.subs li').forEach(li => {
+				const ok = matches(li.querySelector('a'));
+				li.hidden = terms.length > 0 && !ok;
+				if (ok) anySub = true;
+			});
+			const visible = terms.length === 0 || matches(group.querySelector(':scope > a')) || anySub;
+			group.hidden = !visible;
+			if (visible) shown++;
+		});
+		empty.hidden = terms.length === 0 || shown > 0;
+	}
+	input.addEventListener('input', filter);
+	input.addEventListener('keydown', e => {
+		if (e.key === 'Escape') {
+			input.value = '';
+			filter();
+		} else if (e.key === 'Enter') {
+			const first = [...toc.querySelectorAll('a[href^="#"]')].find(a => !a.closest('[hidden]'));
+			if (first) {
+				location.hash = first.getAttribute('href');
+				toc.classList.remove('open');
+			}
+		}
+	});
+
+	// ----- 3) bouton flottant du sommaire (téléphone)
+	const fab = document.createElement('button');
+	fab.type = 'button';
+	fab.className = 'toc-fab';
+	fab.setAttribute('aria-label', 'Open the table of contents');
+	fab.innerHTML = '<i data-lucide="list"></i>';
+	document.body.appendChild(fab);
+	if (window.lucide) lucide.createIcons();
+	fab.addEventListener('click', () => toc.classList.toggle('open'));
+	toc.addEventListener('click', e => {
+		if (e.target.closest('a')) toc.classList.remove('open');
+	});
+	document.addEventListener('click', e => {
+		if (!toc.contains(e.target) && !fab.contains(e.target)) toc.classList.remove('open');
+	});
+})();
+</script>
