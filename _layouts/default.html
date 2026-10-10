@@ -8,12 +8,18 @@
 		<link rel="icon" type="images/png" href="images/favicon.png">
 		<title>Maintenance</title>
 		<link rel="stylesheet" type="text/css" href="styles/maintenance.css">
-		<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- Lucide Icons -->
+		<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"></script>
 	</head>
 	
 	<body>
 		<div class="container">
+
+  <!-- IMAGE -->
 			<img src="images/cone.png" alt="Maintenance" class="cone">
+
+  <!-- CONTENU -->
 			<div class="content">
 				<h1>We'll be back soon!</h1>
 				<p>
@@ -21,37 +27,64 @@
 					Check back later or stay connected:
 				</p>
 				<div class="buttons">
+
+      <!-- DISCORD -->
 					<a href="https://discord.com/invite/AAqBRQzJvZ" target="_blank" class="btn">
 						<img src="https://cdn.simpleicons.org/discord/ffffff" alt="Discord" class="icon">Discord
 					</a>
+
+      <!-- GITHUB -->
 					<a href="https://github.com/Nat688/Cubesia/issues" target="_blank" class="btn">
 						<i data-lucide="circle-dot"></i>GitHub - Issues
 					</a>
+
+      <!-- WIKI -->
 					<a href="https://nat688.github.io/Cubesia/wiki.html" class="btn">
 						<i data-lucide="book"></i>Wiki
 					</a>
+
+      <!-- VOTE -->
 					<a href="https://nat688.github.io/Cubesia/work-in-progress.html" target="_blank" class="btn">
 						<i data-lucide="vote"></i>Vote
 					</a>
 				</div>
 			</div>
 		</div>
+
+<!-- ACTIVER LUCIDE -->
 		<script>
 			lucide.createIcons();
 		</script>
 	</body>
 </html>
 
-{% else %}
+{% else %}  <!-- ---------------------- SITE BASIQUE !!! ---------------------- -->
+
+<!-- LE SITE -->
 
 <!DOCTYPE html> 
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{% if page.url == '/404.html' %}<base href="https://nat688.github.io/Cubesia/">{% endif %}
+		{% assign full_title = "Cubesia" %}
+		{% if page.title %}{% assign full_title = page.title | append: " – Cubesia" %}{% endif %}
+		{% assign desc = page.description | default: "Cubesia is a Minecraft survival server with stackable spawners, custom enchantments, an auction house, teams and much more. IP: cubesia.realistic.host" %}
 		<link rel="icon" type="image/png" href="images/favicon.png">
-    	<title>Cubesia</title>
-		<script src="https://unpkg.com/lucide@latest"></script>
+		<title>{{ full_title }}</title>
+		<meta name="description" content="{{ desc | escape }}">
+		<meta name="theme-color" content="#7B35F4">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Cubesia">
+		<meta property="og:title" content="{{ full_title | escape }}">
+		<meta property="og:description" content="{{ desc | escape }}">
+		<meta property="og:url" content="https://nat688.github.io/Cubesia{{ page.url }}">
+		<meta property="og:image" content="https://nat688.github.io/Cubesia/images/og-image.png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta name="twitter:card" content="summary_large_image">
+		<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"></script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
@@ -79,11 +112,31 @@
 		<a href="https://nat688.github.io/Cubesia/work-in-progress.html" class="btn2">
 			<i data-lucide="shopping-cart"></i>
 		</a>
+			
+<!-- ACTIVER ICONS LUCIDE -->
+			
         <script>
 				lucide.createIcons();
+
+				(function () {
+					const norm = p => p.replace(/\/index\.html$/, '/').replace(/\.html$/, '').replace(/\/$/, '');
+					const here = norm(location.pathname);
+					let found = false;
+					document.querySelectorAll('header a').forEach(a => {
+						if (found || a.target === '_blank') return;
+						if (norm(new URL(a.href).pathname) === here) {
+							a.classList.add('active');
+							a.setAttribute('aria-current', 'page');
+							found = true;
+						}
+					});
+				})();
 		</script>
 	</header>
+		
+<!-- CHANGE SELON LES PAGES -->
 	{{ content }}
+<!-- CHANGE SELON LES PAGES -->
 </html>
 
 {% endif %}
