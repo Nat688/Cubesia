@@ -261,6 +261,89 @@ html {
 .toc .group.open > a { color: var(--accent); }
 .toc.js .group:not(.open) > .subs { display: none; }
 
+/* ===== HEADING LINKS ===== */
+.wiki .anchor {
+    margin-left: 2px;
+    color: var(--muted);
+    font-size: 0.75em;
+    font-weight: 600;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity .15s, color .15s;
+}
+.wiki h2:hover .anchor,
+.wiki h3:hover .anchor,
+.wiki .anchor:focus-visible { opacity: 1; }
+.wiki .anchor:hover { color: var(--accent); }
+@media (hover: none) {
+    .wiki .anchor { opacity: 0.35; }
+}
+
+/* ===== SEARCH ===== */
+.toc-search {
+    width: 100%;
+    margin: 0 0 12px;
+    padding: 8px 12px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--strong);
+    font: inherit;
+    font-size: 0.9rem;
+}
+.toc-search:focus {
+    outline: none;
+    border-color: rgba(154, 140, 255, 0.6);
+}
+.toc-empty {
+    margin: 8px 0 0 16px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+.toc.js.searching .group > .subs { display: block; }
+
+/* ===== MOBILE TOC ===== */
+.toc-fab {
+    display: none;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 9001;
+    width: 52px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--accent);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.toc-fab svg {
+    width: 22px;
+    height: 22px;
+}
+@media (max-width: 900px) {
+    .toc-fab { display: flex; }
+    .toc {
+        display: none;
+        position: fixed;
+        left: 12px;
+        right: 12px;
+        bottom: 80px;
+        top: auto;
+        max-height: 65vh;
+        padding: 16px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        z-index: 9000;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    }
+    .toc.open { display: block; }
+}
+
 /* ===== MOBILE ===== */
 @media (max-width: 900px) {
     .wiki { grid-template-columns: 1fr; padding: 16px; }

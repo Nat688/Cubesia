@@ -140,6 +140,15 @@ footer {
     transform: scale(1.2) rotate(-8deg);
 }
 
+/* ===== ACTIVE PAGE ===== */
+.btn.active,
+.btn2.active {
+    color: var(--accent);
+    background: #262121;
+    border-color: rgba(154, 140, 255, 0.55);
+    box-shadow: 0 6px 20px rgba(154, 140, 255, 0.2);
+}
+
 /* ===== DISCORD ===== */
 .btn2.btn-discord { margin-right: 0; }
 .btn-discord + .btn2 { margin-left: 10px; }

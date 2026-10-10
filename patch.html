@@ -335,4 +335,111 @@ title: Patch
 		});
 	})();
 </script>
+<script>
+(function () {
+	// Dates des patchs (AAAA-MM-JJ). Pour un nouveau patch, tu peux aussi écrire : <details data-date="2026-10-10">
+	const PATCH_DATES = {
+		'Patch #1': '2026-07-13', 'Patch #2': '2026-07-14', 'Patch #3': '2026-07-14', 'Patch #4': '2026-07-15',
+		'Patch #5': '2026-07-15', 'Patch #6': '2026-07-16', 'Patch #7': '2026-07-16', 'Patch #8': '2026-07-17',
+		'Patch #9': '2026-07-18', 'Patch #10': '2026-07-20', 'Patch #11': '2026-07-21', 'Patch #12': '2026-07-31',
+		'Update #1': '2026-08-05', 'Patch #13': '2026-08-07', 'Patch #14': '2026-08-25', 'Patch #15': '2026-08-30',
+		'Update #2': '2026-10-04', 'Patch #16': '2026-10-05', 'Patch #17': '2026-10-06', 'Patch #18': '2026-10-07',
+		'Patch #19': '2026-10-09'
+	};
+
+	function formatDate(iso) {
+		const p = iso.split('-').map(Number);
+		return new Date(p[0], p[1] - 1, p[2]).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+	}
+
+	const cards = [...document.querySelectorAll('.patch details')];
+
+	// ----- 1) dates à côté des titres
+	cards.forEach(d => {
+		const summary = d.querySelector('summary');
+		const iso = d.dataset.date || PATCH_DATES[summary.textContent.trim()];
+		if (!iso) return;
+		const span = document.createElement('span');
+		span.className = 'date';
+		span.textContent = formatDate(iso);
+		summary.appendChild(span);
+	});
+
+	// ----- 2) boutons « tout ouvrir / tout fermer »
+	const legend = document.querySelector('.patch .legend');
+	if (!legend) return;
+	const hint = document.createElement('p');
+	hint.className = 'patch-hint';
+	hint.textContent = 'Click a label to show only that type of change.';
+	const tools = document.createElement('div');
+	tools.className = 'patch-tools';
+	tools.innerHTML = '<button type="button" data-act="open">Expand all</button><button type="button" data-act="close">Collapse all</button>';
+	const empty = document.createElement('p');
+	empty.className = 'patch-empty';
+	empty.textContent = 'No change of this type.';
+	empty.hidden = true;
+	legend.after(hint, tools, empty);
+	tools.addEventListener('click', e => {
+		const b = e.target.closest('button');
+		if (!b) return;
+		cards.forEach(d => { if (!d.hidden) d.open = b.dataset.act === 'open'; });
+	});
+
+	// ----- 3) filtre par type : clic sur une étiquette de la légende (re-clic pour annuler)
+	const TYPES = ['added', 'fixed', 'changed', 'removed'];
+	const tags = [...legend.querySelectorAll('.tag')];
+	let current = null;
+	let before = null;
+
+	function applyFilter(type) {
+		if (type && !before) before = new Map(cards.map(d => [d, d.open]));
+		let shown = 0;
+		cards.forEach(d => {
+			let any = false;
+			d.querySelectorAll(':scope > ul > li').forEach(li => {
+				const t = li.querySelector(':scope > .tag');
+				const ok = !type || (t && t.classList.contains(type));
+				li.hidden = !ok;
+				if (ok) any = true;
+			});
+			d.querySelectorAll(':scope > ul > ul').forEach(sub => {
+				const prev = sub.previousElementSibling;
+				sub.hidden = !!type && !!prev && prev.hidden;
+			});
+			d.hidden = !!type && !any;
+			if (!d.hidden) shown++;
+			if (type && any) d.open = true;
+		});
+		if (!type && before) {
+			cards.forEach(d => { d.open = before.get(d); });
+			before = null;
+		}
+		empty.hidden = !type || shown > 0;
+		tags.forEach(tag => {
+			const on = !!type && tag.classList.contains(type);
+			tag.classList.toggle('active', on);
+			tag.classList.toggle('dim', !!type && !on);
+			tag.setAttribute('aria-pressed', on ? 'true' : 'false');
+		});
+	}
+
+	tags.forEach(tag => {
+		const type = TYPES.find(t => tag.classList.contains(t));
+		tag.setAttribute('role', 'button');
+		tag.setAttribute('tabindex', '0');
+		tag.setAttribute('aria-pressed', 'false');
+		const toggle = () => {
+			current = current === type ? null : type;
+			applyFilter(current);
+		};
+		tag.addEventListener('click', toggle);
+		tag.addEventListener('keydown', e => {
+			if (e.key === 'Enter' || e.key === ' ') {
+				e.preventDefault();
+				toggle();
+			}
+		});
+	});
+})();
+</script>
 </body>
