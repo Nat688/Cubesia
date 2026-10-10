@@ -168,6 +168,53 @@ h7 { font-size: 50%; color: var(--muted); }
     border-radius: 12px;
 }
 
+/* ===== DATES ===== */
+.patch .date {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* ===== TOOLS ===== */
+.legend .tag {
+    cursor: pointer;
+    user-select: none;
+    transition: opacity .2s, box-shadow .2s;
+}
+.legend .tag.dim { opacity: 0.4; }
+.legend .tag.active { box-shadow: 0 0 0 2px rgba(var(--c), 0.35); }
+.patch-hint {
+    margin: -18px 0 14px;
+    text-align: center;
+    font-size: 0.82rem;
+    color: var(--muted);
+}
+.patch-tools {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 0 22px;
+}
+.patch-tools button {
+    padding: 6px 14px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: #f1f1f1;
+    font: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: border-color .2s;
+}
+.patch-tools button:hover { border-color: rgba(255, 159, 67, 0.45); }
+.patch-empty {
+    margin: 30px 0;
+    text-align: center;
+    color: var(--muted);
+}
+
 /* ===== MOBILE ===== */
 @media (max-width: 600px) {
     .patch { padding: 8px 12px 70px; }
