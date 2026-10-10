@@ -4,180 +4,167 @@ layout: default
 
 <link rel="stylesheet" type="text/css" href="styles/index.css">
 <body>
-<main class="home">
-
-	<section class="hero">
-		<h1><span class="cubesia">Cubesia</span> Minecraft Server</h1>
-		<p class="tagline">A survival server with stackable spawners, custom enchantments, minions and much more.</p>
-
-		<div class="ip-row">
-			<button class="ip-chip" id="copyBtn" type="button" aria-label="Copy server IP">
-				<i data-lucide="server"></i>
-				<span class="ip-text" id="ipServeur">cubesia.realistic.host</span>
-				<span class="ip-action">
-					<span class="ic-copy"><i data-lucide="copy"></i></span>
-					<span class="ic-check"><i data-lucide="check"></i></span>
-					<span class="ip-label" aria-live="polite">Copy</span>
-				</span>
-			</button>
-		</div>
-
-		<div class="meta">
-			<span class="badge"><i data-lucide="gamepad-2"></i>Minecraft 1.21.8 - 26.3</span>
-			<span class="badge status" id="status" hidden><span class="dot"></span><span class="status-text"></span></span>
-		</div>
-
-		<div class="btn-container">
-			<a href="patch.html" class="btn3"><i data-lucide="history"></i>Patch</a>
-			<a href="wiki.html" class="btn3"><i data-lucide="book-marked"></i>Wiki</a>
-			<a href="rules.html" class="btn3"><i data-lucide="scale"></i>Rules</a>
-		</div>
-	</section>
-
-	<section class="block">
-		<h2>How to join</h2>
-		<ol class="steps">
-			<li><b>Open Minecraft</b><span>Launch the game on a supported version (1.21.8 - 26.3).</span></li>
-			<li><b>Add the server</b><span>Go to Multiplayer, then Add Server.</span></li>
-			<li><b>Paste the IP</b><span>Enter <code>cubesia.realistic.host</code> and join.</span></li>
-		</ol>
-	</section>
-
-	<section class="block">
-		<h2>What you will find</h2>
-		<div class="features">
-			<a class="feature" href="wiki.html#spawners">
-				<i data-lucide="rabbit"></i>
-				<b>Spawners</b>
-				<span>Stack up to 10,000 spawners, with storage, XP and loot filter. No Silk Touch needed.</span>
+	<main class="home">
+		<section class="hero">
+			<h1><span class="cubesia">Cubesia</span> Minecraft Server</h1>
+			<p class="tagline">A survival server with stackable spawners, custom enchantments, minions and much more.</p>
+			<div class="ip-row">
+				<button class="ip-chip" id="copyBtn" type="button" aria-label="Copy server IP">
+					<i data-lucide="server"></i>
+					<span class="ip-text" id="ipServeur">cubesia.realistic.host</span>
+					<span class="ip-action">
+						<span class="ic-copy"><i data-lucide="copy"></i></span>
+						<span class="ic-check"><i data-lucide="check"></i></span>
+						<span class="ip-label" aria-live="polite">Copy</span>
+					</span>
+				</button>
+			</div>
+			<div class="meta">
+				<span class="badge"><i data-lucide="gamepad-2"></i>Minecraft 1.21.8 - 26.3</span>
+				<span class="badge status" id="status" hidden><span class="dot"></span><span class="status-text"></span></span>
+			</div>
+			<div class="btn-container">
+				<a href="patch.html" class="btn3"><i data-lucide="history"></i>Patch</a>
+				<a href="wiki.html" class="btn3"><i data-lucide="book-marked"></i>Wiki</a>
+				<a href="rules.html" class="btn3"><i data-lucide="scale"></i>Rules</a>
+			</div>
+		</section>
+		<section class="block">
+			<h2>How to join</h2>
+			<ol class="steps">
+				<li><b>Open Minecraft</b><span>Launch the game on a supported version (1.21.8 - 26.3).</span></li>
+				<li><b>Add the server</b><span>Go to Multiplayer, then Add Server.</span></li>
+				<li><b>Paste the IP</b><span>Enter <code>cubesia.realistic.host</code> and join.</span></li>
+			</ol>
+		</section>
+		<section class="block">
+			<h2>What you will find</h2>
+			<div class="features">
+				<a class="feature" href="wiki.html#spawners">
+					<i data-lucide="rabbit"></i>
+					<b>Spawners</b>
+					<span>Stack up to 10,000 spawners, with storage, XP and loot filter. No Silk Touch needed.</span>
+				</a>
+				<a class="feature" href="wiki.html#enchantments">
+					<i data-lucide="book"></i>
+					<b>Enchantments</b>
+					<span>More than 80 custom enchantments for armor, bows, tools, fishing rods and weapons.</span>
+				</a>
+				<a class="feature" href="wiki.html#auction-house">
+					<i data-lucide="gavel"></i>
+					<b>Auction House</b>
+					<span>Sell your items to other players at the price you choose, with every listing announced on Discord.</span>
+				</a>
+				<a class="feature" href="wiki.html#afkzone">
+					<i data-lucide="clock"></i>
+					<b>AFK Zone</b>
+					<span>A random reward for every minute spent there, even while you are away.</span>
+				</a>
+				<a class="feature" href="wiki.html#graves">
+					<i data-lucide="skull"></i>
+					<b>Graves</b>
+					<span>Your items and XP are kept safe in a grave for 10 minutes after you die.</span>
+				</a>
+				<a class="feature" href="wiki.html#vaults">
+					<i data-lucide="vault"></i>
+					<b>Personal Vaults</b>
+					<span>Private double chests that only you can open, with the /pv command.</span>
+				</a>
+			</div>
+		</section>
+		<section class="block">
+			<h2>Latest patch</h2>
+			<a class="patch-card loading" id="patchCard" href="patch.html">
+				<h3 id="patchTitle">TITLE</h3>
+           		<ul id="patchList">
+               		<li><span class="mini-tag new">New</span>text.</li>
+                	<li><span class="mini-tag added">Added</span>text.</li>
+                	<li><span class="mini-tag changed">Change</span>text.</li>
+					<li><span class="mini-tag fixed">Fixed</span>text.</li>
+               		<li><span class="mini-tag removed">Removed</span>text.</li>
+                	<li class="more">+ X more changes</li>
+            	</ul>
+            	<span class="patch-more">See all patches <i data-lucide="arrow-right"></i></span>
 			</a>
-			<a class="feature" href="wiki.html#enchantments">
-				<i data-lucide="book"></i>
-				<b>Enchantments</b>
-				<span>More than 80 custom enchantments for armor, bows, tools, fishing rods and weapons.</span>
-			</a>
-			<a class="feature" href="wiki.html#auction-house">
-				<i data-lucide="gavel"></i>
-				<b>Auction House</b>
-				<span>Sell your items to other players at the price you choose, with every listing announced on Discord.</span>
-			</a>
-			<a class="feature" href="wiki.html#afkzone">
-				<i data-lucide="clock"></i>
-				<b>AFK Zone</b>
-				<span>A random reward for every minute spent there, even while you are away.</span>
-			</a>
-			<a class="feature" href="wiki.html#graves">
-				<i data-lucide="skull"></i>
-				<b>Graves</b>
-				<span>Your items and XP are kept safe in a grave for 10 minutes after you die.</span>
-			</a>
-			<a class="feature" href="wiki.html#vaults">
-				<i data-lucide="vault"></i>
-				<b>Personal Vaults</b>
-				<span>Private double chests that only you can open, with the /pv command.</span>
-			</a>
-		</div>
-	</section>
+		</section>
+	</main>
+	<script>
+		lucide.createIcons();
 
-	<section class="block">
-		<h2>Latest patch</h2>
-		<a class="patch-card loading" id="patchCard" href="patch.html">
-			<h3 id="patchTitle">TITLE</h3>
-            <ul id="patchList">
-                <li><span class="mini-tag new">New</span>text.</li>
-                <li><span class="mini-tag added">Added</span>text.</li>
-                <li><span class="mini-tag changed">Change</span>text.</li>
-				<li><span class="mini-tag fixed">Fixed</span>text.</li>
-                <li><span class="mini-tag removed">Removed</span>text.</li>
-                <li class="more">+ X more changes</li>
-            </ul>
-            <span class="patch-more">See all patches <i data-lucide="arrow-right"></i></span>
-		</a>
-	</section>
-
-</main>
-
-<script>
-	lucide.createIcons();
-
-	(function () {
-		const chip = document.getElementById('copyBtn');
-		const label = chip.querySelector('.ip-label');
-		const ip = document.getElementById('ipServeur').textContent.trim();
-
-		chip.addEventListener('click', async () => {
-			try {
-				await navigator.clipboard.writeText(ip);
-			} catch (e) {
-				const t = document.createElement('textarea');
-				t.value = ip;
-				document.body.appendChild(t);
-				t.select();
-				document.execCommand('copy');
-				t.remove();
-			}
-			chip.classList.add('copied');
-			label.textContent = 'Copied!';
-			clearTimeout(chip._t);
-			chip._t = setTimeout(() => {
-				chip.classList.remove('copied');
-				label.textContent = 'Copy';
-			}, 1800);
-		});
-
-		const status = document.getElementById('status');
-		fetch('https://api.mcsrvstat.us/3/' + ip)
-			.then(r => r.json())
-			.then(d => {
-				if (typeof d.online !== 'boolean') return;
-				status.classList.add(d.online ? 'online' : 'offline');
-				status.querySelector('.status-text').textContent = d.online
-					? (d.players ? d.players.online + ' / ' + d.players.max + ' online' : 'Online')
-					: 'Offline';
-				status.hidden = false;
-			})
-			.catch(() => {});
-
-		const MAP = { new: 'new', added: 'added', fixed: 'fixed', change: 'change', removed: 'removed' };
-		const card = document.getElementById('patchCard');
-		fetch('patch.html', { cache: 'no-cache' })
-			.then(r => r.text())
-			.then(html => {
-				const doc = new DOMParser().parseFromString(html, 'text/html');
-				const d = doc.querySelector('.patch details');
-				if (!d) return;
-				const all = [...d.querySelectorAll('li')].filter(li => li.parentElement.parentElement === d);
-				const items = all.slice(0, 4);
-				if (!items.length) return;
-
-				document.getElementById('patchTitle').textContent = d.querySelector('summary').textContent.trim();
-				const ul = document.getElementById('patchList');
-				ul.textContent = '';
-				items.forEach(li => {
-					const text = li.textContent.trim().replace(/\s+/g, ' ');
-					const m = text.match(/^(\w+)\s*(.*)$/);
-					const type = m && MAP[m[1].toLowerCase()];
-					const el = document.createElement('li');
-					if (type) {
-						const tag = document.createElement('span');
-						tag.className = 'mini-tag ' + type;
-						tag.textContent = m[1];
-						el.append(tag, m[2]);
-					} else {
-						el.textContent = text;
-					}
-					ul.appendChild(el);
-				});
-				const extra = all.length - items.length;
-				if (extra > 0) {
-					const more = document.createElement('li');
-					more.className = 'more';
-					more.textContent = '+ ' + extra + ' more change' + (extra > 1 ? 's' : '');
-					ul.appendChild(more);
+		(function () {
+			const chip = document.getElementById('copyBtn');
+			const label = chip.querySelector('.ip-label');
+			const ip = document.getElementById('ipServeur').textContent.trim();
+			chip.addEventListener('click', async () => {
+				try {
+					await navigator.clipboard.writeText(ip);
+				} catch (e) {
+					const t = document.createElement('textarea');
+					t.value = ip;
+					document.body.appendChild(t);
+					t.select();
+					document.execCommand('copy');
+					t.remove();
 				}
-			})
-			.catch(() => {})
-			.finally(() => card.classList.remove('loading'));
-	})();
-</script>
+				chip.classList.add('copied');
+				label.textContent = 'Copied!';
+				clearTimeout(chip._t);
+				chip._t = setTimeout(() => {
+					chip.classList.remove('copied');
+					label.textContent = 'Copy';
+				}, 1800);
+			});
+			const status = document.getElementById('status');
+			fetch('https://api.mcsrvstat.us/3/' + ip)
+				.then(r => r.json())
+				.then(d => {
+					if (typeof d.online !== 'boolean') return;
+					status.classList.add(d.online ? 'online' : 'offline');
+					status.querySelector('.status-text').textContent = d.online
+						? (d.players ? d.players.online + ' / ' + d.players.max + ' online' : 'Online')
+						: 'Offline';
+					status.hidden = false;
+				})
+				.catch(() => {});
+			const MAP = { new: 'new', added: 'added', fixed: 'fixed', change: 'change', removed: 'removed' };
+			const card = document.getElementById('patchCard');
+			fetch('patch.html', { cache: 'no-cache' })
+				.then(r => r.text())
+				.then(html => {
+					const doc = new DOMParser().parseFromString(html, 'text/html');
+					const d = doc.querySelector('.patch details');
+					if (!d) return;
+					const all = [...d.querySelectorAll('li')].filter(li => li.parentElement.parentElement === d);
+					const items = all.slice(0, 4);
+					if (!items.length) return;
+					document.getElementById('patchTitle').textContent = d.querySelector('summary').textContent.trim();
+					const ul = document.getElementById('patchList');
+					ul.textContent = '';
+					items.forEach(li => {
+						const text = li.textContent.trim().replace(/\s+/g, ' ');
+						const m = text.match(/^(\w+)\s*(.*)$/);
+						const type = m && MAP[m[1].toLowerCase()];
+						const el = document.createElement('li');
+						if (type) {
+							const tag = document.createElement('span');
+							tag.className = 'mini-tag ' + type;
+							tag.textContent = m[1];
+							el.append(tag, m[2]);
+						} else {
+							el.textContent = text;
+						}
+						ul.appendChild(el);
+					});
+					const extra = all.length - items.length;
+					if (extra > 0) {
+						const more = document.createElement('li');
+						more.className = 'more';
+						more.textContent = '+ ' + extra + ' more change' + (extra > 1 ? 's' : '');
+						ul.appendChild(more);
+					}
+				})
+				.catch(() => {})
+				.finally(() => card.classList.remove('loading'));
+		})();
+	</script>
 </body>
