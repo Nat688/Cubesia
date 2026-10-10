@@ -386,7 +386,7 @@ title: Patch
 	});
 
 	// ----- 3) filtre par type : clic sur une étiquette de la légende (re-clic pour annuler)
-	const TYPES = ['added', 'fixed', 'changed', 'removed'];
+	const TYPES = ['new', 'added', 'fixed', 'change', 'removed'];
 	const tags = [...legend.querySelectorAll('.tag')];
 	let current = null;
 	let before = null;
