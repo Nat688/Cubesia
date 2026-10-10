@@ -330,16 +330,6 @@ title: Patch
 </script>
 <script>
 (function () {
-	// Dates des patchs (AAAA-MM-JJ). Pour un nouveau patch, tu peux aussi écrire : <details data-date="2026-10-10">
-	const PATCH_DATES = {
-		'Patch #1': '2026-07-13', 'Patch #2': '2026-07-14', 'Patch #3': '2026-07-14', 'Patch #4': '2026-07-15',
-		'Patch #5': '2026-07-15', 'Patch #6': '2026-07-16', 'Patch #7': '2026-07-16', 'Patch #8': '2026-07-17',
-		'Patch #9': '2026-07-18', 'Patch #10': '2026-07-20', 'Patch #11': '2026-07-21', 'Patch #12': '2026-07-31',
-		'Update #1': '2026-08-05', 'Patch #13': '2026-08-07', 'Patch #14': '2026-08-25', 'Patch #15': '2026-08-30',
-		'Update #2': '2026-10-04', 'Patch #16': '2026-10-05', 'Patch #17': '2026-10-06', 'Patch #18': '2026-10-07',
-		'Patch #19': '2026-10-09'
-	};
-
 	function formatDate(iso) {
 		const p = iso.split('-').map(Number);
 		return new Date(p[0], p[1] - 1, p[2]).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
