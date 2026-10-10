@@ -2,7 +2,6 @@
     box-sizing: border-box;
     font-family: Inter, system-ui, sans-serif;
 }
-
 body {
     margin: 0;
     height: 100vh;
@@ -12,14 +11,11 @@ body {
     justify-content: center;
     color: #f1f1f1;
 }
-
 .container {
     display: flex;
     align-items: center;
     gap: 80px;
 }
-
-/* ===== IMAGE ===== */
 .cone {
     width: 180px;
     transition: transform 0.8s ease;
@@ -28,8 +24,6 @@ body {
 .cone:hover {
     transform: rotate(360deg) scale(1.05);
 }
-
-/* ===== TEXT ===== */
 .content h1 {
     font-size: 48px;
     margin: 0;
@@ -42,8 +36,6 @@ body {
     font-size: 18px;
     color: #bdbdbd;
 }
-
-/* ===== BUTTONS ===== */
 .buttons {
     margin-top: 32px;
     display: flex;
@@ -70,8 +62,6 @@ body {
     background: #242424;
     box-shadow: 0 10px 30px rgba(255,159,67,0.4);
 }
-
-/* ===== ICONS ===== */
 .icon,
 .btn i {
     width: 20px;
@@ -82,8 +72,6 @@ body {
 .btn:hover i {
     transform: scale(1.2) rotate(-8deg);
 }
-
-/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
     .container {
         flex-direction: column;

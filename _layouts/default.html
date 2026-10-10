@@ -8,18 +8,12 @@
 		<link rel="icon" type="images/png" href="images/favicon.png">
 		<title>Maintenance</title>
 		<link rel="stylesheet" type="text/css" href="styles/maintenance.css">
-
-<!-- Lucide Icons -->
 		<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"></script>
 	</head>
 	
 	<body>
 		<div class="container">
-
-  <!-- IMAGE -->
 			<img src="images/cone.png" alt="Maintenance" class="cone">
-
-  <!-- CONTENU -->
 			<div class="content">
 				<h1>We'll be back soon!</h1>
 				<p>
@@ -27,40 +21,28 @@
 					Check back later or stay connected:
 				</p>
 				<div class="buttons">
-
-      <!-- DISCORD -->
 					<a href="https://discord.com/invite/AAqBRQzJvZ" target="_blank" class="btn">
 						<img src="https://cdn.simpleicons.org/discord/ffffff" alt="Discord" class="icon">Discord
 					</a>
-
-      <!-- GITHUB -->
 					<a href="https://github.com/Nat688/Cubesia/issues" target="_blank" class="btn">
 						<i data-lucide="circle-dot"></i>GitHub - Issues
 					</a>
-
-      <!-- WIKI -->
 					<a href="https://nat688.github.io/Cubesia/wiki.html" class="btn">
 						<i data-lucide="book"></i>Wiki
 					</a>
-
-      <!-- VOTE -->
 					<a href="https://nat688.github.io/Cubesia/work-in-progress.html" target="_blank" class="btn">
 						<i data-lucide="vote"></i>Vote
 					</a>
 				</div>
 			</div>
 		</div>
-
-<!-- ACTIVER LUCIDE -->
 		<script>
 			lucide.createIcons();
 		</script>
 	</body>
 </html>
 
-{% else %}  <!-- ---------------------- SITE BASIQUE !!! ---------------------- -->
-
-<!-- LE SITE -->
+{% else %}
 
 <!DOCTYPE html> 
 <html lang="fr">
@@ -111,10 +93,7 @@
 		</a>
 		<a href="https://nat688.github.io/Cubesia/work-in-progress.html" class="btn2">
 			<i data-lucide="shopping-cart"></i>
-		</a>
-			
-<!-- ACTIVER ICONS LUCIDE -->
-			
+		</a>	
         <script>
 				lucide.createIcons();
 
@@ -133,10 +112,7 @@
 				})();
 		</script>
 	</header>
-		
-<!-- CHANGE SELON LES PAGES -->
 	{{ content }}
-<!-- CHANGE SELON LES PAGES -->
 </html>
 
 {% endif %}

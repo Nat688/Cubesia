@@ -4,14 +4,12 @@ html {
     scrollbar-width: thin;
     scrollbar-color: #3a3131 #120f0f;
 }
-
 @supports not (scrollbar-color: auto) {
     ::-webkit-scrollbar              { width: 10px; height: 10px; }
     ::-webkit-scrollbar-track        { background: #120f0f; }
     ::-webkit-scrollbar-thumb        { background: #3a3131; border-radius: 10px; border: 2px solid #120f0f; }
     ::-webkit-scrollbar-thumb:hover  { background: #5a4d4d; }
 }
-
 .wiki {
     --text:      #9d9797;
     --strong:    #f4f1f1;
@@ -21,8 +19,6 @@ html {
     --border:    #2a2323;
     --header-h:  60px;
 }
-
-/* ===== LAYOUT ===== */
 .wiki {
     display: grid;
     grid-template-columns: minmax(0, 1060px) 230px;
@@ -36,8 +32,6 @@ html {
     color: var(--text);
 }
 .wiki-content { min-width: 0; }
-
-/* ===== TITLES ===== */
 .wiki h1 {
     margin: 0 0 8px;
     text-align: left;
@@ -70,8 +64,6 @@ html {
     flex-shrink: 0;
     color: var(--accent);
 }
-
-/* ===== TEXT ===== */
 .wiki p { margin: 0 0 14px; max-width: 75ch; font-size: 1rem; }
 .wiki b, .wiki strong { color: var(--strong); font-weight: 700; }
 .wiki a { color: var(--accent); }
@@ -83,13 +75,9 @@ html {
     font-family: monospace;
     font-size: 0.9em;
 }
-
-/* ===== LISTS ===== */
 .wiki ul { margin: 0 0 16px; padding-left: 24px; }
 .wiki li { margin-bottom: 6px; padding-left: 6px; }
 .wiki li::marker { color: #52525b; }
-
-/* ===== COMMANDS ===== */
 .wiki .cmd-list { list-style: none; padding: 0; }
 .wiki .cmd-list li { margin: 0; padding: 8px 0; border-bottom: 1px solid var(--border); }
 .cmd-list .command {
@@ -103,8 +91,6 @@ html {
     font-family: monospace;
 }
 .cmd-list .base { color: #7a90ff; }
-
-/* ===== IMAGES ===== */
 .wiki {
     --tile-w: 460px;
     --tile-h: 290px;
@@ -153,8 +139,6 @@ html {
     max-width: 880px;
 }
 .shots a.strip img { max-height: none; }
-
-/* ===== INFO BOXES ===== */
 .callout {
     display: flex;
     align-items: flex-start;
@@ -181,8 +165,6 @@ html {
 .callout.danger  :is(i, svg) { color: #f87171; }
 .callout.tip     { border-color: #3b3470; }
 .callout.tip     :is(i, svg) { color: var(--accent); }
-
-/* ===== ENCHANTMENT TABLES ===== */
 .table_container {
     margin: 14px 0 8px;
     overflow-x: auto;
@@ -216,8 +198,6 @@ html {
     image-rendering: pixelated;
 }
 .neon_table tbody tr:hover { background: rgba(255, 255, 255, 0.05); }
-
-/* ===== TABLE OF CONTENTS ===== */
 .toc {
     position: sticky;
     top: calc(var(--header-h) + 24px);
@@ -238,11 +218,9 @@ html {
     color: var(--strong);
 }
 .toc-title :is(i, svg) { width: 18px; height: 18px; }
-
 .toc ul { list-style: none; margin: 0; padding: 0; border: 0; }
 .toc > ul { border-left: 1px solid var(--border); }
 .toc li { margin: 0; padding: 0; }
-
 .toc a {
     display: flex;
     align-items: center;
@@ -260,8 +238,6 @@ html {
 .toc a.active { color: var(--accent); border-left-color: var(--accent); }
 .toc .group.open > a { color: var(--accent); }
 .toc.js .group:not(.open) > .subs { display: none; }
-
-/* ===== HEADING LINKS ===== */
 .wiki .anchor {
     margin-left: 2px;
     color: var(--muted);
@@ -278,8 +254,6 @@ html {
 @media (hover: none) {
     .wiki .anchor { opacity: 0.35; }
 }
-
-/* ===== SEARCH ===== */
 .toc-search {
     width: 100%;
     margin: 0 0 12px;
@@ -301,8 +275,6 @@ html {
     font-size: 0.9rem;
 }
 .toc.js.searching .group > .subs { display: block; }
-
-/* ===== MOBILE TOC ===== */
 .toc-fab {
     display: none;
     position: fixed;
@@ -343,13 +315,10 @@ html {
     }
     .toc.open { display: block; }
 }
-
-/* ===== MOBILE ===== */
 @media (max-width: 900px) {
     .wiki { grid-template-columns: 1fr; padding: 16px; }
     .toc  { display: none; }
 }
-
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
 }
