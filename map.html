@@ -1,0 +1,30 @@
+---
+layout: default
+title: Map
+description: Explore the world of Cubesia on a live interactive map.
+---
+
+<link rel="stylesheet" type="text/css" href="styles/map.css">
+<body>
+	<main class="map-page">
+		<div class="map-bar">
+			<span class="map-title"><i data-lucide="map"></i>Live map</span>
+			<span class="map-actions">
+				<button type="button" id="mapFull" class="btn"><i data-lucide="maximize"></i>Fullscreen</button>
+				<a href="https://cubesia.lodeway.app/#x=0&amp;z=0&amp;zoom=1" class="btn" target="_blank" rel="noopener"><i data-lucide="external-link"></i>New tab</a>
+			</span>
+		</div>
+		<iframe id="mapFrame" class="map-frame" src="https://cubesia.lodeway.app/#x=0&amp;z=0&amp;zoom=1" title="Cubesia live map" allow="fullscreen" allowfullscreen referrerpolicy="no-referrer"></iframe>
+		<p class="map-hint">If the map does not load here, open it in a new tab.</p>
+	</main>
+	<script>
+		lucide.createIcons();
+		(function () {
+			const frame = document.getElementById('mapFrame');
+			const button = document.getElementById('mapFull');
+			const request = frame.requestFullscreen || frame.webkitRequestFullscreen;
+			if (!request) { button.hidden = true; return; }
+			button.addEventListener('click', () => request.call(frame));
+		})();
+	</script>
+</body>
