@@ -17,14 +17,5 @@ description: Explore the world of Cubesia on a live interactive map.
 		<iframe id="mapFrame" class="map-frame" src="https://cubesia.lodeway.app/#x=0&amp;z=0&amp;zoom=1" title="Cubesia live map" allow="fullscreen" allowfullscreen referrerpolicy="no-referrer"></iframe>
 		<p class="map-hint">If the map does not load here, open it in a new tab.</p>
 	</main>
-	<script>
-		lucide.createIcons();
-		(function () {
-			const frame = document.getElementById('mapFrame');
-			const button = document.getElementById('mapFull');
-			const request = frame.requestFullscreen || frame.webkitRequestFullscreen;
-			if (!request) { button.hidden = true; return; }
-			button.addEventListener('click', () => request.call(frame));
-		})();
-	</script>
+	<script src="scripts/map.js"></script>
 </body>
