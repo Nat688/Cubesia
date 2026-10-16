@@ -4,6 +4,7 @@ title: Wiki
 ---
 
 <link rel="stylesheet" type="text/css" href="styles/wiki.css">
+<link rel="stylesheet" type="text/css" href="styles/doc.css">
 <body>
 	<div class="wiki">
 		<main class="wiki-content">
@@ -34,6 +35,17 @@ title: Wiki
 				<li><span class="command">/team</span> <span class="command">/teams</span> <span class="base">Opens the team interface, or lets you use team commands.</span></li>
 				<li><span class="command">/fly</span> <span class="base">Allows you to fly on your own schedule.</span></li>
 				<li><span class="command">/changelog</span> <span class="base">Shows the server changelog directly in-game.</span></li>
+			</ul>
+			<h3 id="cmd-extras"><i data-lucide="sparkles"></i>Extras</h3>
+			<ul class="cmd-list">
+				<li><span class="command">/cosmetics</span> <span class="base">Opens the cosmetics interface.</span></li>
+				<li><span class="command">/redeem &lt;code&gt;</span> <span class="base">Allows you to redeem a code.</span></li>
+				<li><span class="command">/level</span> <span class="command">/lvl</span> <span class="command">/levels</span> <span class="base">Opens the levels interface.</span></li>
+				<li><span class="command">/collection</span> <span class="command">/collections</span> <span class="base">Opens the collections interface.</span></li>
+				<li><span class="command">/colours</span> <span class="command">/chatcolor</span> <span class="command">/chatcolour</span> <span class="base">Opens the chat colors interface.</span></li>
+				<li><span class="command">/calendar</span> <span class="base">Opens the calendar interface.</span></li>
+				<li><span class="command">/miningcomp</span> <span class="base">Shows the current mining competition.</span></li>
+				<li><span class="command">/vote</span> <span class="base">Shows the links to vote for the server.</span></li>
 			</ul>
 			<h3 id="cmd-utility"><i data-lucide="wrench"></i>Utility</h3>
 			<ul class="cmd-list">
@@ -71,6 +83,7 @@ title: Wiki
 				<li><span class="command">/sellall</span> <span class="base">Allows you to sell your entire inventory.</span></li>
 				<li><span class="command">/autosell</span> <span class="base">Toggles autosell (automatically sells selected items).</span></li>
 				<li><span class="command">/ah</span> <span class="command">/auction</span> <span class="command">/auctionhouse</span> <span class="command">/hdv</span> <span class="base">Opens the auction house (player trading hub).</span></li>
+				<li><span class="command">/blackmarket</span> <span class="base">Opens the black market.</span></li>
 			</ul>
 			<h3 id="cmd-fish"><i data-lucide="fish"></i>Fish</h3>
 			<ul class="cmd-list">
@@ -96,7 +109,7 @@ title: Wiki
 			<p>The <b>Mob Head</b> acts as a convenient shortcut to instantly <b>sell every stored item</b> without opening the storage first.</p>
 			<p>You will also find the <b>Experience</b> storage, allowing you to collect all accumulated XP whenever you want. This experience can also be used to repair equipment enchanted with <b>Mending</b>, making your farm even more efficient.</p>
 			<div class="shots">
-				<a href="images/wiki/spawner_gui.png" target="_blank" rel="noopener"><img src="images/wiki/spawner_gui.png" alt="Spawner gui" width="507" height="220" loading="lazy"></a>
+				<a href="images/wiki/spawner_gui.webp" target="_blank" rel="noopener"><img src="images/wiki/spawner_gui.webp" alt="Spawner gui" width="507" height="220" loading="lazy"></a>
 			</div>
 			<h3 id="spawner-storage"><i data-lucide="package"></i>Storage</h3>
 			<p>The <b>Storage</b> menu includes a variety of management tools designed to help you organize, filter, collect, sell, and control every item produced by your spawner.</p>
@@ -106,7 +119,7 @@ title: Wiki
 			<p>The <b>Bundle</b> transfers all stored items directly into your inventory.</p>
 			<p>Finally, the <b>Dropper</b> drops every stored item onto the ground, or only the current storage page if your storage spans multiple pages.</p>
 			<div class="shots">
-				<a href="images/wiki/spawner_storage.png" target="_blank" rel="noopener"><img src="images/wiki/spawner_storage.png" alt="Spawner storage" width="511" height="385" loading="lazy"></a>
+				<a href="images/wiki/spawner_storage.webp" target="_blank" rel="noopener"><img src="images/wiki/spawner_storage.webp" alt="Spawner storage" width="511" height="385" loading="lazy"></a>
 			</div>
 			<h3 id="spawner-loot-filter"><i data-lucide="filter"></i>Loot Filter</h3>
 			<p>The <b>Loot Filter</b> allows you to choose exactly which drops should be stored by your spawner.</p>
@@ -115,7 +128,7 @@ title: Wiki
 			<p>Switching an item between the two categories is as simple as clicking on it.</p>
 			<p>Items with durability, such as tools, weapons, and armor, are automatically grouped together regardless of their durability value, making the filter easy to configure and maintain.</p>
 			<div class="shots">
-				<a href="images/wiki/spawner_filter.png" target="_blank" rel="noopener"><img src="images/wiki/spawner_filter.png" alt="Spawner filter" width="507" height="220" loading="lazy"></a>
+				<a href="images/wiki/spawner_filter.webp" target="_blank" rel="noopener"><img src="images/wiki/spawner_filter.webp" alt="Spawner filter" width="507" height="220" loading="lazy"></a>
 			</div>
 			<h3 id="spawner-stacking"><i data-lucide="layers"></i>Stacking</h3>
 			<p><b>Spawners</b> can be stacked together to save space and increase the efficiency of your mob farms.</p>
@@ -127,8 +140,11 @@ title: Wiki
 				<p>Unlike vanilla Minecraft, <b>Silk Touch is not required</b> to break and recover spawners, allowing you to move and manage them freely whenever needed.</p>
 			</div>
 			<div class="shots">
-				<a href="images/wiki/spawner_stacking.png" target="_blank" rel="noopener"><img src="images/wiki/spawner_stacking.png" alt="Spawner stacking" width="1016" height="932" loading="lazy"></a>
+				<a href="images/wiki/spawner_stacking.webp" target="_blank" rel="noopener"><img src="images/wiki/spawner_stacking.webp" alt="Spawner stacking" width="1016" height="932" loading="lazy"></a>
 			</div>
+			<h3 id="spawner-egg"><i data-lucide="egg"></i>Changing the mob</h3>
+			<p>You can <b>change the mob</b> of a spawner with a <b>spawn egg</b>: use the spawn egg of the mob you want on the spawner.</p>
+			<p>This lets you reuse your spawners and adapt your mob farms without having to find new ones.</p>
 			<h2 id="enchantments"><i data-lucide="book"></i>Enchantments</h2>
 			<h3 id="ench-minecraft"><i data-lucide="gamepad-2"></i>Minecraft</h3>
 			<div class="callout">
@@ -1405,7 +1421,14 @@ title: Wiki
 				<p>A <b>10% tax</b> is applied to every sale made on the Auction House.</p>
 			</div>
 			<div class="shots">
-				<a href="images/wiki/ah.png" target="_blank" rel="noopener"><img src="images/wiki/ah.png" alt="Auction house" loading="lazy"></a>
+				<a href="images/wiki/ah.webp" target="_blank" rel="noopener"><img src="images/wiki/ah.webp" alt="Auction house" loading="lazy"></a>
+			</div>
+			<h2 id="black-market"><i data-lucide="shopping-bag"></i>Black Market</h2>
+			<p>The <b>Black Market</b> is a shop for <b>vanilla items</b>.</p>
+			<p>Its stock <b>changes every hour</b> and follows a <b>rarity system</b>, so the offers you see are never quite the same.</p>
+			<p>Open it at any time with <code>/blackmarket</code>, and come back regularly to see what is on sale.</p>
+			<div class="shots">
+				<a href="images/wiki/blackmarket.webp" target="_blank" rel="noopener"><img src="images/wiki/blackmarket.webp" alt="Black market" loading="lazy"></a>
 			</div>
 			<h2 id="trade"><i data-lucide="handshake"></i>Trade</h2>
 			<p>The <b>Trade</b> system lets you exchange items directly with another player through a dedicated interface, so you never have to drop anything on the ground and hope for the best.</p>
@@ -1413,7 +1436,7 @@ title: Wiki
 			<p>The trade window lets both players put forward their items, making every exchange simple, clear and transparent.</p>
 			<p>It is the easiest way to swap resources, share loot with your friends or settle a deal with someone you trust.</p>
 			<div class="shots">
-				<a href="images/wiki/trade.png" target="_blank" rel="noopener"><img src="images/wiki/trade.png" alt="Trade" loading="lazy"></a>
+				<a href="images/wiki/trade.webp" target="_blank" rel="noopener"><img src="images/wiki/trade.webp" alt="Trade" loading="lazy"></a>
 			</div>
 			<h2 id="orders"><i data-lucide="clipboard-list"></i>Orders</h2>
 			<p><b>Orders</b> let you ask other players for the <b>blocks</b>, <b>items</b> and <b>resources</b> you need.</p>
@@ -1425,8 +1448,8 @@ title: Wiki
 				<p>A <b>10% tax</b> is also applied to orders.</p>
 			</div>
 			<div class="shots">
-				<a href="images/wiki/orders.png" target="_blank" rel="noopener"><img src="images/wiki/orders.png" alt="Orders" loading="lazy"></a>
-				<a href="images/wiki/order_select.png" target="_blank" rel="noopener"><img src="images/wiki/order_select.png" alt="Order select" loading="lazy"></a>
+				<a href="images/wiki/orders.webp" target="_blank" rel="noopener"><img src="images/wiki/orders.webp" alt="Orders" loading="lazy"></a>
+				<a href="images/wiki/order_select.webp" target="_blank" rel="noopener"><img src="images/wiki/order_select.webp" alt="Order select" loading="lazy"></a>
 			</div>
 			<h2 id="rewards"><i data-lucide="gift"></i>Rewards</h2>
 			<p><b>Rewards</b> give you free goodies just for playing on the server, such as <b>keys</b> and much more.</p>
@@ -1434,7 +1457,19 @@ title: Wiki
 			<p>Some rewards can be claimed <b>every hour</b>, while others are available <b>once per day</b>, so there is always a reason to come back and check the menu.</p>
 			<p>The more regularly you log in, the more rewards you will collect.</p>
 			<div class="shots">
-				<a href="images/wiki/rewards.png" target="_blank" rel="noopener"><img src="images/wiki/rewards.png" alt="Rewards" loading="lazy"></a>
+				<a href="images/wiki/rewards.webp" target="_blank" rel="noopener"><img src="images/wiki/rewards.webp" alt="Rewards" loading="lazy"></a>
+			</div>
+			<h2 id="voting"><i data-lucide="vote"></i>Vote</h2>
+			<p>Voting for Cubesia helps the server grow, and <b>every vote is rewarded</b>.</p>
+			<p>You can vote <b>from the game</b> with <code>/vote</code>, or <b>from the website</b> on the <a href="vote.html">Vote</a> page.</p>
+			<ul>
+				<li>Each vote gives you <b>10,000</b> and <b>1x Common Key</b>.</li>
+				<li>A <b>vote party</b> is triggered every <b>20 votes</b>.</li>
+				<li>You also receive extra rewards when you reach <b>vote milestones</b>.</li>
+			</ul>
+			<p>Every voting site has its own cooldown, which is displayed as a timer on the <a href="vote.html">Vote</a> page.</p>
+			<div class="shots">
+				<a href="images/wiki/vote.webp" target="_blank" rel="noopener"><img src="images/wiki/vote.webp" alt="Vote" loading="lazy"></a>
 			</div>
 			<h2 id="teams"><i data-lucide="users"></i>Teams</h2>
 			<p><b>Teams</b> let you play together with your friends and share your progress on the server.</p>
@@ -1448,8 +1483,8 @@ title: Wiki
 			</ul>
 			<p>Working as a team makes it much easier to organize big projects, share resources and take on the challenges of the server together.</p>
 			<div class="shots">
-				<a href="images/wiki/team_gui.png" target="_blank" rel="noopener"><img src="images/wiki/team_gui.png" alt="Team gui" loading="lazy"></a>
-				<a href="images/wiki/team_settings.png" target="_blank" rel="noopener"><img src="images/wiki/team_settings.png" alt="Team settings" loading="lazy"></a>
+				<a href="images/wiki/team_gui.webp" target="_blank" rel="noopener"><img src="images/wiki/team_gui.webp" alt="Team gui" loading="lazy"></a>
+				<a href="images/wiki/team_settings.webp" target="_blank" rel="noopener"><img src="images/wiki/team_settings.webp" alt="Team settings" loading="lazy"></a>
 			</div>
 			<h2 id="leaderboards"><i data-lucide="trophy"></i>Leaderboards</h2>
 			<p><b>Leaderboards</b> let you compete against the other players of the server and see exactly where you stand.</p>
@@ -1459,34 +1494,52 @@ title: Wiki
 				<p>You can also check some rankings directly with <code>/money top</code> and <code>/shards top</code>.</p>
 			</div>
 			<div class="shots">
-				<a href="images/wiki/leaderboard.png" target="_blank" rel="noopener"><img src="images/wiki/leaderboard.png" alt="Leaderboard" loading="lazy"></a>
+				<a href="images/wiki/leaderboard.webp" target="_blank" rel="noopener"><img src="images/wiki/leaderboard.webp" alt="Leaderboard" loading="lazy"></a>
+			</div>
+			<h2 id="levels"><i data-lucide="trending-up"></i>Levels</h2>
+			<p><b>Player levels</b> make you stronger over time: each level boosts your stats, such as your <b>health</b> and your <b>strength</b>.</p>
+			<p>Open the levels interface with <code>/level</code> (or <code>/lvl</code>, <code>/levels</code>) to check your progression.</p>
+			<div class="shots">
+				<a href="images/wiki/levels.webp" target="_blank" rel="noopener"><img src="images/wiki/levels.webp" alt="Levels" loading="lazy"></a>
+			</div>
+			<h2 id="advancements"><i data-lucide="award"></i>Advancements</h2>
+			<p>Cubesia adds <b>new, custom advancements</b> with their own style, on top of the vanilla ones.</p>
+			<p>They are <b>directly integrated into the advancements menu</b> (the <b>L</b> key by default), so there is nothing extra to open.</p>
+			<div class="shots">
+				<a href="images/wiki/advancements.webp" target="_blank" rel="noopener"><img src="images/wiki/advancements.webp" alt="Advancements" loading="lazy"></a>
+			</div>
+			<h2 id="cosmetics"><i data-lucide="shirt"></i>Cosmetics</h2>
+			<p><b>Cosmetics</b> let you customize your experience with extras such as <b>mounts</b> and more.</p>
+			<p>Open the cosmetics menu at any time with <code>/cosmetics</code>.</p>
+			<div class="shots">
+				<a href="images/wiki/cosmetics.webp" target="_blank" rel="noopener"><img src="images/wiki/cosmetics.webp" alt="Cosmetics" loading="lazy"></a>
 			</div>
 			<h2 id="chat-games"><i data-lucide="messages-square"></i>Chat Games</h2>
 			<p><b>Chat Games</b> are small games that appear regularly in the chat to bring a little extra fun to the server.</p>
 			<p>They come in many forms, such as <b>trivia questions</b>, <b>math equations</b> and <b>many other challenges</b>.</p>
 			<p>Keep an eye on the chat and be the <b>first to type the correct answer</b> to win the round.</p>
 			<div class="shots">
-				<a class="strip" href="images/wiki/game_chat.png" target="_blank" rel="noopener"><img src="images/wiki/game_chat.png" alt="Game chat" loading="lazy"></a>
+				<a class="strip" href="images/wiki/game_chat.webp" target="_blank" rel="noopener"><img src="images/wiki/game_chat.webp" alt="Game chat" loading="lazy"></a>
 			</div>
 			<h2 id="server-changelog"><i data-lucide="scroll-text"></i>Server Changelog</h2>
 			<p>The <b>server changelog</b> is available <b>directly in game</b>, so you can follow every update without leaving Minecraft.</p>
 			<p>Use the <code>/changelog</code> command to read it at any time.</p>
 			<p>It lists the changes of each patch (new features, fixes, balance changes and removals) using the same colors as the <a href="patch.html">Patch</a> page of this website.</p>
 			<div class="shots">
-				<a href="images/wiki/changelog.png" target="_blank" rel="noopener"><img src="images/wiki/changelog.png" alt="Changelog" loading="lazy"></a>
+				<a href="images/wiki/changelog.webp" target="_blank" rel="noopener"><img src="images/wiki/changelog.webp" alt="Changelog" loading="lazy"></a>
 			</div>
 			<h2 id="death-messages"><i data-lucide="heart-crack"></i>Death Messages</h2>
 			<p>The server now features <b>new, custom death messages</b>.</p>
 			<p>Whenever a player dies, a redesigned message is displayed in the chat, making every death a little more memorable.</p>
 			<div class="shots">
-				<a class="strip" href="images/wiki/death_message.png" target="_blank" rel="noopener"><img src="images/wiki/death_message.png" alt="Death message" loading="lazy"></a>
+				<a class="strip" href="images/wiki/death_message.webp" target="_blank" rel="noopener"><img src="images/wiki/death_message.webp" alt="Death message" loading="lazy"></a>
 			</div>
 			<h2 id="fly-time"><i data-lucide="plane"></i>Fly Time</h2>
 			<p><b>Fly time</b> lets you fly around for a limited amount of time, and it can be obtained from the <b>Common Crate</b>.</p>
 			<p>Once you have some fly time, use <code>/fly</code> to take off whenever you want and explore, build or travel across the server from above.</p>
 			<p>Open the crate and, with a bit of luck, fly time will be one of your rewards.</p>
 			<div class="shots">
-				<a href="images/wiki/tempfly.png" target="_blank" rel="noopener"><img src="images/wiki/tempfly.png" alt="Temp fly" loading="lazy"></a>
+				<a href="images/wiki/tempfly.webp" target="_blank" rel="noopener"><img src="images/wiki/tempfly.webp" alt="Temp fly" loading="lazy"></a>
 			</div>
 			<h2 id="afkzone"><i data-lucide="clock"></i>AFKZone</h2>
 			<p>The <b>AFK Zone</b> is a dedicated area designed to reward players even while they are away from their keyboard.</p>
@@ -1505,9 +1558,9 @@ title: Wiki
 			</ul>
 			<p>The AFK Zone is a simple way to earn extra rewards while taking a break, making every minute spent online a little more rewarding.</p>
 			<div class="shots">
-				<a href="images/wiki/afk-zone.png" target="_blank" rel="noopener"><img src="images/wiki/afk-zone.png" alt="Afk zone" width="1427" height="1073" loading="lazy"></a>
-				<a class="strip" href="images/wiki/afk-zone_message-enter-left.png" target="_blank" rel="noopener"><img src="images/wiki/afk-zone_message-enter-left.png" alt="Afk zone message enter left" width="955" height="107" loading="lazy"></a>
-				<a class="strip" href="images/wiki/afk-zone_message-rewards.png" target="_blank" rel="noopener"><img src="images/wiki/afk-zone_message-rewards.png" alt="Afk zone message rewards" width="902" height="85" loading="lazy"></a>
+				<a href="images/wiki/afk-zone.webp" target="_blank" rel="noopener"><img src="images/wiki/afk-zone.webp" alt="Afk zone" width="1427" height="1073" loading="lazy"></a>
+				<a class="strip" href="images/wiki/afk-zone_message-enter-left.webp" target="_blank" rel="noopener"><img src="images/wiki/afk-zone_message-enter-left.webp" alt="Afk zone message enter left" width="955" height="107" loading="lazy"></a>
+				<a class="strip" href="images/wiki/afk-zone_message-rewards.webp" target="_blank" rel="noopener"><img src="images/wiki/afk-zone_message-rewards.webp" alt="Afk zone message rewards" width="902" height="85" loading="lazy"></a>
 			</div>
 			<h2 id="graves"><i data-lucide="skull"></i>Graves</h2>
 			<p>A <b>grave system</b> is available to protect your <b>items</b> and <b>experience</b> for <b>10 minutes</b> after death.</p>
@@ -1518,9 +1571,9 @@ title: Wiki
 			<p>You can also use the <code>/grave list</code> command to manage your graves. It displays all of your active graves, their locations, and the <b>remaining time</b> before each one disappears, helping you recover your belongings before they are lost forever.</p>
 			<p>This system provides an extra layer of protection for your valuables, making death much less punishing while still encouraging you to return and recover your equipment.</p>
 			<div class="shots">
-				<a href="images/wiki/graves.png" target="_blank" rel="noopener"><img src="images/wiki/graves.png" alt="Graves" width="672" height="511" loading="lazy"></a>
-				<a class="strip" href="images/wiki/graves_list-message.png" target="_blank" rel="noopener"><img src="images/wiki/graves_list-message.png" alt="Graves list message" width="782" height="85" loading="lazy"></a>
-				<a class="strip" href="images/wiki/graves_death-message.png" target="_blank" rel="noopener"><img src="images/wiki/graves_death-message.png" alt="Graves death message" width="837" height="28" loading="lazy"></a>
+				<a href="images/wiki/graves.webp" target="_blank" rel="noopener"><img src="images/wiki/graves.webp" alt="Graves" width="672" height="511" loading="lazy"></a>
+				<a class="strip" href="images/wiki/graves_list-message.webp" target="_blank" rel="noopener"><img src="images/wiki/graves_list-message.webp" alt="Graves list message" width="782" height="85" loading="lazy"></a>
+				<a class="strip" href="images/wiki/graves_death-message.webp" target="_blank" rel="noopener"><img src="images/wiki/graves_death-message.webp" alt="Graves death message" width="837" height="28" loading="lazy"></a>
 			</div>
 			<h2 id="sellwands"><i data-lucide="wand"></i>SellWands</h2>
 			<p><b>Sell Wands</b> allow you to sell the contents of an <b>entire chest</b> instantly with just a single click, making resource management much faster and more convenient.</p>
@@ -1530,9 +1583,9 @@ title: Wiki
 			<p>If you are satisfied with the result, simply <b>right-click</b> the chest to sell all eligible items instantly and receive your money immediately.</p>
 			<p>This system allows you to manage large quantities of items efficiently while maximizing your profits, making Sell Wands an essential tool for farms and automated resource production.</p>
 			<div class="shots">
-				<a href="images/wiki/sellwands.png" target="_blank" rel="noopener"><img src="images/wiki/sellwands.png" alt="Sellwands" width="502" height="180" loading="lazy"></a>
-				<a href="images/wiki/sellwands_item-sell.png" target="_blank" rel="noopener"><img src="images/wiki/sellwands_item-sell.png" alt="Sellwands item sell" width="1653" height="635" loading="lazy"></a>
-				<a class="strip" href="images/wiki/sellwands_item-sell-message.png" target="_blank" rel="noopener"><img src="images/wiki/sellwands_item-sell-message.png" alt="Sellwands item sell message" width="897" height="56" loading="lazy"></a>
+				<a href="images/wiki/sellwands.webp" target="_blank" rel="noopener"><img src="images/wiki/sellwands.webp" alt="Sellwands" width="502" height="180" loading="lazy"></a>
+				<a href="images/wiki/sellwands_item-sell.webp" target="_blank" rel="noopener"><img src="images/wiki/sellwands_item-sell.webp" alt="Sellwands item sell" width="1653" height="635" loading="lazy"></a>
+				<a class="strip" href="images/wiki/sellwands_item-sell-message.webp" target="_blank" rel="noopener"><img src="images/wiki/sellwands_item-sell-message.webp" alt="Sellwands item sell message" width="897" height="56" loading="lazy"></a>
 			</div>
 			<h2 id="vaults"><i data-lucide="vault"></i>Vaults</h2>
 			<p><b>Personal Vaults (PVs)</b> are secure <b>private double chests</b> that can only be accessed by their owner, providing a safe place to store your most valuable items.</p>
@@ -1544,8 +1597,8 @@ title: Wiki
 				<p>By default unlock <b>27 Personal Vaults</b>, with VIP rank it's <b>45 Personal Vaults</b>.</p>
 			</div>
 			<div class="shots">
-				<a href="images/wiki/vaults_chest.png" target="_blank" rel="noopener"><img src="images/wiki/vaults_chest.png" alt="Vaults chest" width="510" height="385" loading="lazy"></a>
-				<a href="images/wiki/vaults_item-picker.png" target="_blank" rel="noopener"><img src="images/wiki/vaults_item-picker.png" alt="Vaults item picker" width="510" height="381" loading="lazy"></a>
+				<a href="images/wiki/vaults_chest.webp" target="_blank" rel="noopener"><img src="images/wiki/vaults_chest.webp" alt="Vaults chest" width="510" height="385" loading="lazy"></a>
+				<a href="images/wiki/vaults_item-picker.webp" target="_blank" rel="noopener"><img src="images/wiki/vaults_item-picker.webp" alt="Vaults item picker" width="510" height="381" loading="lazy"></a>
 			</div>
 			<h2 id="fish"><i data-lucide="fish"></i>Fish</h2>
 			<p>The server features a complete <b>custom fishing system</b> with dozens of unique fish represented by custom <b>player heads</b>, each with its own rarity, value, and collection progress.</p>
@@ -1558,8 +1611,11 @@ title: Wiki
 			<p>During fishing competitions and server events, <code>/fish top</code> displays the live leaderboard, allowing you to see the current rankings and track who is leading the event in real time.</p>
 			<p>Whether you enjoy collecting every species, earning money through fishing, or competing against other players during events, the custom fishing system offers plenty of progression and rewards for every type of fisherman.</p>
 			<div class="shots">
-				<a href="images/wiki/fish_gui.png" target="_blank" rel="noopener"><img src="images/wiki/fish_gui.png" alt="Fish gui" width="512" height="382" loading="lazy"></a>
+				<a href="images/wiki/fish_gui.webp" target="_blank" rel="noopener"><img src="images/wiki/fish_gui.webp" alt="Fish gui" width="512" height="382" loading="lazy"></a>
 			</div>
+			<h2 id="mining-competition"><i data-lucide="pickaxe"></i>Mining Competition</h2>
+			<p><b>Mining competitions</b> are server events in the same spirit as the fishing contests, but made for <b>miners</b>.</p>
+			<p>Compete against the other players while you mine, and use <code>/miningcomp</code> to follow the current competition.</p>
 			<h2 id="elevator"><i data-lucide="arrow-up-down"></i>Elevator</h2>
 			<p><b>Elevators</b> provide a fast and convenient way to travel vertically through your base without using ladders or stairs.</p>
 			<p>To create an elevator, simply <b>throw an Ender Pearl onto a wool block</b>. Then, place another elevator block <b>above and/or below</b> it to create a connected elevator system.</p>
@@ -1567,7 +1623,7 @@ title: Wiki
 			<p><b>Both elevator blocks must be the same wool color</b> in order to connect and function correctly.</p>
 			<p>This system allows you to move quickly between different floors while keeping your builds clean, compact, and easy to navigate.</p>
 			<div class="shots">
-				<a href="images/wiki/elevators.png" target="_blank" rel="noopener"><img src="images/wiki/elevators.png" alt="Elevators" width="623" height="383" loading="lazy"></a>
+				<a href="images/wiki/elevators.webp" target="_blank" rel="noopener"><img src="images/wiki/elevators.webp" alt="Elevators" width="623" height="383" loading="lazy"></a>
 			</div>
 			<h2 id="jobs"><i data-lucide="briefcase"></i>Jobs</h2>
 			<p><b>Jobs</b> allow you to earn both <b>money</b> and <b>experience</b> by performing everyday activities such as mining, farming, fishing, building, hunting, and much more.</p>
@@ -1576,7 +1632,7 @@ title: Wiki
 			<p><b>Left-click</b> on a job to view its <b>leaderboard</b>, allowing you to compare your progress with other players and see who has reached the highest level in each profession.</p>
 			<p>Whether you focus on a single profession or level up multiple jobs, the system provides a rewarding way to progress while playing normally on the server.</p>
 			<div class="shots">
-				<a href="images/wiki/jobs.png" target="_blank" rel="noopener"><img src="images/wiki/jobs.png" alt="Jobs" width="512" height="278" loading="lazy"></a>
+				<a href="images/wiki/jobs.webp" target="_blank" rel="noopener"><img src="images/wiki/jobs.webp" alt="Jobs" width="512" height="278" loading="lazy"></a>
 			</div>
 			<h2 id="bounty"><i data-lucide="target"></i>Bounty</h2>
 			<p>The <b>Bounty</b> system allows players to place a <b>cash reward</b> on another player's head, encouraging PvP and creating exciting hunting opportunities across the server.</p>
@@ -1585,7 +1641,7 @@ title: Wiki
 			<p>To place a bounty, simply use the command <code>/bounty add &lt;player&gt; &lt;amount&gt;</code>, replacing <code>&lt;player&gt;</code> with the target's username and <code>&lt;amount&gt;</code> with the amount of money you wish to offer.</p>
 			<p>Whether you want revenge, create friendly competition, or simply make PvP more rewarding, the Bounty system adds an extra layer of excitement to every encounter.</p>
 			<div class="shots">
-				<a href="images/wiki/bounty_gui.png" target="_blank" rel="noopener"><img src="images/wiki/bounty_gui.png" alt="Bounty gui" width="507" height="330" loading="lazy"></a>
+				<a href="images/wiki/bounty_gui.webp" target="_blank" rel="noopener"><img src="images/wiki/bounty_gui.webp" alt="Bounty gui" width="507" height="330" loading="lazy"></a>
 			</div>
 			<h2 id="sell"><i data-lucide="coins"></i>Sell</h2>
 			<p>The <b>/sell</b> command allows you to quickly sell a wide variety of items without needing to visit a physical shop.</p>
@@ -1595,7 +1651,7 @@ title: Wiki
 			<p>To sell your entire inventory in one go, use <code>/sellall</code>, and use <code>/autosell</code> to enable or disable the automatic selling of the items you selected.</p>
 			<p>This system provides a fast and convenient way to turn your resources into money while helping you plan farms and maximize your profits.</p>
 			<div class="shots">
-				<a href="images/wiki/sell_worth.png" target="_blank" rel="noopener"><img src="images/wiki/sell_worth.png" alt="Sell worth" width="331" height="175" loading="lazy"></a>
+				<a href="images/wiki/sell_worth.webp" target="_blank" rel="noopener"><img src="images/wiki/sell_worth.webp" alt="Sell worth" width="331" height="175" loading="lazy"></a>
 			</div>
 			<h2 id="small-changes"><i data-lucide="list-checks"></i>Small Changes</h2>
 			<p>A collection of smaller improvements and quality-of-life features that make everyday gameplay smoother. Each one is simple on its own, but together they make a real difference.</p>
@@ -1604,7 +1660,7 @@ title: Wiki
 			<p>Simply carry a Shulker Box in your inventory to access its contents instantly, saving you the time of placing and breaking it every time you need an item.</p>
 			<p>This feature makes inventory management much <b>faster, more convenient, and more efficient</b>, especially during mining, exploration, or building sessions.</p>
 			<div class="shots">
-				<a class="strip" href="images/wiki/shulker.png" target="_blank" rel="noopener"><img src="images/wiki/shulker.png" alt="Shulker" width="713" height="57" loading="lazy"></a>
+				<a class="strip" href="images/wiki/shulker.webp" target="_blank" rel="noopener"><img src="images/wiki/shulker.webp" alt="Shulker" width="713" height="57" loading="lazy"></a>
 			</div>
 			<h3 id="cauldron-concrete"><i data-lucide="flask-conical"></i>Cauldron Concrete</h3>
 			<p><b>Cauldron Concrete</b> makes crafting concrete much faster by allowing you to convert <b>Concrete Powder</b> into regular <b>Concrete</b> without placing each block individually.</p>
@@ -1613,7 +1669,7 @@ title: Wiki
 			<p>It is a simple but extremely useful quality-of-life improvement for builders and anyone working on large construction projects.</p>
 			<p>Cauldrons also <b>no longer lose water</b> when converting Concrete Powder into Concrete, so a single filled cauldron can harden as many blocks as you need, with no need to refill it between conversions.</p>
 			<div class="shots">
-				<a href="images/wiki/cauldron_concrete.png" target="_blank" rel="noopener"><img src="images/wiki/cauldron_concrete.png" alt="Cauldron concrete" width="1367" height="1102" loading="lazy"></a>
+				<a href="images/wiki/cauldron_concrete.webp" target="_blank" rel="noopener"><img src="images/wiki/cauldron_concrete.webp" alt="Cauldron concrete" width="1367" height="1102" loading="lazy"></a>
 			</div>
 			<h3 id="crying-portal"><i data-lucide="droplets"></i>Crying Portal</h3>
 			<p><b>Nether Portals</b> can also be built using <b>Crying Obsidian</b>, giving you additional flexibility when designing your builds.</p>
@@ -1621,7 +1677,7 @@ title: Wiki
 			<p>This feature allows you to create unique portal designs while taking advantage of the distinctive appearance and animated texture of Crying Obsidian.</p>
 			<p>Whether for aesthetics or creativity, Crying Obsidian is a fully valid alternative for constructing Nether Portals on the server.</p>
 			<div class="shots">
-				<a href="images/wiki/nether_portal.png" target="_blank" rel="noopener"><img src="images/wiki/nether_portal.png" alt="Nether portal" width="595" height="647" loading="lazy"></a>
+				<a href="images/wiki/nether_portal.webp" target="_blank" rel="noopener"><img src="images/wiki/nether_portal.webp" alt="Nether portal" width="595" height="647" loading="lazy"></a>
 			</div>
 			<h3 id="axolotl-feed"><i data-lucide="heart"></i>Axolotl Feed</h3>
 			<p><b>Axolotl Feed</b> lets you feed axolotls directly using <b>Tropical Fish</b>, without needing to capture them in a water bucket first.</p>
@@ -1629,7 +1685,7 @@ title: Wiki
 			<p>The traditional method using a <b>Bucket of Tropical Fish</b> still works exactly as in vanilla Minecraft, so you are free to use whichever method you prefer.</p>
 			<p>This quality-of-life feature makes breeding and caring for axolotls much easier while preserving the original game mechanics.</p>
 			<div class="shots">
-				<a href="images/wiki/axolotl_feed.png" target="_blank" rel="noopener"><img src="images/wiki/axolotl_feed.png" alt="Axolotl feed" width="560" height="373" loading="lazy"></a>
+				<a href="images/wiki/axolotl_feed.webp" target="_blank" rel="noopener"><img src="images/wiki/axolotl_feed.webp" alt="Axolotl feed" width="560" height="373" loading="lazy"></a>
 			</div>
 			<h3 id="messages-villager-trader"><i data-lucide="message-square"></i>Messages Villager / Trader</h3>
 			<p><b>Villager &amp; Wandering Trader Notifications</b> keep you informed about important events involving villagers and wandering traders.</p>
@@ -1637,8 +1693,8 @@ title: Wiki
 			<p>Whenever a <b>Wandering Trader</b> spawns, a notification is also broadcast to all players, letting everyone know that a trader has appeared somewhere in the world.</p>
 			<p>These notifications improve awareness across the server, helping players protect their villagers and ensuring nobody misses the arrival of a Wandering Trader.</p>
 			<div class="shots">
-				<a class="strip" href="images/wiki/message_villager_dead.png" target="_blank" rel="noopener"><img src="images/wiki/message_villager_dead.png" alt="Message villager dead" width="990" height="26" loading="lazy"></a>
-				<a class="strip" href="images/wiki/message_spawn_trader.png" target="_blank" rel="noopener"><img src="images/wiki/message_spawn_trader.png" alt="Message spawn trader" width="918" height="27" loading="lazy"></a>
+				<a class="strip" href="images/wiki/message_villager_dead.webp" target="_blank" rel="noopener"><img src="images/wiki/message_villager_dead.webp" alt="Message villager dead" width="990" height="26" loading="lazy"></a>
+				<a class="strip" href="images/wiki/message_spawn_trader.webp" target="_blank" rel="noopener"><img src="images/wiki/message_spawn_trader.webp" alt="Message spawn trader" width="918" height="27" loading="lazy"></a>
 			</div>
 			<h3 id="collectible-blocks"><i data-lucide="blocks"></i>Collectible Blocks</h3>
 			<p><b>Collectible Blocks</b> improve block collection by allowing certain normally fragile or unobtainable blocks to be recovered more easily.</p>
@@ -1651,6 +1707,7 @@ title: Wiki
 			<p>This protection is especially useful for large farms, public areas, and multiplayer environments where many players or animals regularly pass through cultivated land.</p>
 			<p>It also makes harvesting and replanting much less frustrating, allowing you to move freely while working on your fields without constantly repairing damaged farmland.</p>
 			<p>This protection is particularly valuable on multiplayer servers, where players, animals, and even unexpected situations can easily damage farmland. Whether you're harvesting, sprinting through your base, or welcoming visitors to your farms, your crops will remain completely safe from accidental trampling.</p>
+			<p>You can still break farmland on purpose: simply <b>hold a shovel</b> and <b>jump onto the farmland</b>, and it will break as usual.</p>
 			<h3 id="harvest-master"><i data-lucide="wheat"></i>Harvest Master</h3>
 			<p><b>Harvest Master</b> makes farming significantly faster by allowing you to harvest and replant crops with a single action.</p>
 			<p>Simply <b>right-click</b> on a fully grown crop to harvest it instantly. If you have the required seeds or crop in your inventory, it will be <b>automatically replanted</b> at the same time, keeping your farm ready for the next growth cycle.</p>
@@ -1663,7 +1720,7 @@ title: Wiki
 			<p>This significantly reduces lag during large farms, automatic storage systems, and mass item drops while still allowing players to collect the entire stack normally.</p>
 			<p>By minimizing the number of entities loaded in the world, the Item Stacker system keeps gameplay smoother and the server more stable, even during periods of heavy activity.</p>
 			<div class="shots">
-				<a href="images/wiki/item_stacker.png" target="_blank" rel="noopener"><img src="images/wiki/item_stacker.png" alt="Item stacker" width="996" height="492" loading="lazy"></a>
+				<a href="images/wiki/item_stacker.webp" target="_blank" rel="noopener"><img src="images/wiki/item_stacker.webp" alt="Item stacker" width="996" height="492" loading="lazy"></a>
 			</div>-->
 			<h3 id="enchantment-table"><i data-lucide="gem"></i>Enchantment Table</h3>
 			<p>The <b>Enchantment Table</b> now keeps your <b>Lapis Lazuli</b> in place: when you close the interface, the lapis lazuli <b>remains inside the table</b> instead of being given back to you.</p>
@@ -1674,7 +1731,7 @@ title: Wiki
 			<p>To use them, simply type <code>&amp;</code> followed by the code of the color you want, for example <code>&amp;a</code> for green, <code>&amp;c</code> for red, <code>&amp;e</code> for yellow or <code>&amp;9</code> for blue. The other Minecraft color codes work the same way.</p>
 			<p>For instance, <code>&amp;aHello &amp;cWorld</code> will display <b>Hello</b> in green and <b>World</b> in red.</p>
 			<div class="shots">
-				<a href="images/wiki/colors.png" target="_blank" rel="noopener"><img src="images/wiki/colors.png" alt="Enchanted book" width="750" height="311" loading="lazy"></a>
+				<a href="images/wiki/colors.webp" target="_blank" rel="noopener"><img src="images/wiki/colors.webp" alt="Enchanted book" width="750" height="311" loading="lazy"></a>
 			</div>
 			<h3 id="bees"><i data-lucide="hexagon"></i>Bees</h3>
 			<p>Bees <b>no longer attack</b> once their nest or beehive has been destroyed.</p>
@@ -1689,7 +1746,7 @@ title: Wiki
 			<p>This makes it much easier to move mobs around: bring a villager to your trading hall, guide your animals to a new pen or keep a mob close to you while you work.</p>
 			<p>You are no longer limited to the few mobs that vanilla Minecraft allows you to leash.</p>
 			<div class="shots">
-				<a href="images/wiki/leads.png" target="_blank" rel="noopener"><img src="images/wiki/leads.png" alt="Enchanted book" width="1357" height="777" loading="lazy"></a>
+				<a href="images/wiki/leads.webp" target="_blank" rel="noopener"><img src="images/wiki/leads.webp" alt="Enchanted book" width="1357" height="777" loading="lazy"></a>
 			</div>
 			<h3 id="string-duplication"><i data-lucide="copy"></i>String Duplication</h3>
 			<p><b>String duplication</b> is back and works the way it did <b>before Minecraft 1.21.1</b>.</p>
@@ -1707,7 +1764,7 @@ title: Wiki
 			<p>To prevent unnecessary spam, these warnings are protected by a <b>cooldown</b>, ensuring you are only notified occasionally instead of every time the item loses durability.</p>
 			<p>This quality-of-life feature gives you plenty of time to react, helping you protect your favorite gear and avoid costly accidents during mining, combat, or exploration.</p>
 			<div class="shots">
-				<a class="strip" href="images/wiki/durability_ping.png" target="_blank" rel="noopener"><img src="images/wiki/durability_ping.png" alt="Durability ping" width="1540" height="133" loading="lazy"></a>
+				<a class="strip" href="images/wiki/durability_ping.webp" target="_blank" rel="noopener"><img src="images/wiki/durability_ping.webp" alt="Durability ping" width="1540" height="133" loading="lazy"></a>
 			</div>
 			<h3 id="enchanted-book"><i data-lucide="book-open"></i>Enchanted Book</h3>
 			<p><b>Enchanted Books</b> allow you to extract the enchantments from an item and convert them into individual enchanted books.</p>
@@ -1715,14 +1772,14 @@ title: Wiki
 			<p>Once the process is completed, the selected enchantments are transferred onto enchanted books, while the <b>original item is consumed</b> and permanently removed.</p>
 			<p>This feature is especially useful for recovering valuable enchantments from powerful equipment, reorganizing your gear, or selling custom enchanted books to other players without having to rely entirely on the enchantment table.</p>
 			<div class="shots">
-				<a href="images/wiki/enchanted_book.png" target="_blank" rel="noopener"><img src="images/wiki/enchanted_book.png" alt="Enchanted book" width="736" height="390" loading="lazy"></a>
+				<a href="images/wiki/enchanted_book.webp" target="_blank" rel="noopener"><img src="images/wiki/enchanted_book.webp" alt="Enchanted book" width="736" height="390" loading="lazy"></a>
 			</div>
 			<h3 id="villager-reroll"><i data-lucide="refresh-cw"></i>Villager Reroll</h3>
 			<p><b>Villager Reroll</b> lets you <b>exchange the trades</b> of your villagers without having to break and place their <b>job site block</b> again.</p>
 			<p>Normally, getting a new set of offers means breaking the villager's workstation and placing it back, hoping for better trades. With Villager Reroll, you can do it directly on the villager, which saves time and keeps your trading hall untouched.</p>
 			<p>This makes it much easier to find the trade you are looking for, without having to rebuild or rearrange your villager setup every time.</p>
 			<div class="shots">
-				<a href="images/wiki/villager_reroll.png" target="_blank" rel="noopener"><img src="images/wiki/villager_reroll.png" alt="Villager reroll" loading="lazy"></a>
+				<a href="images/wiki/villager_reroll.webp" target="_blank" rel="noopener"><img src="images/wiki/villager_reroll.webp" alt="Villager reroll" loading="lazy"></a>
 			</div>
 			<h3 id="no-too-expensive"><i data-lucide="hammer"></i>No Too Expensive</h3>
 			<p>The infamous <b>"Too Expensive!"</b> message of the anvil is gone: you can now combine, repair and rename items <b>no matter how high the level cost is</b>.</p>
@@ -1740,6 +1797,7 @@ title: Wiki
 					<a href="#commands"><i data-lucide="terminal"></i>Commands</a>
 					<ul class="subs">
 						<li><a href="#cmd-general"><i data-lucide="list"></i>General</a></li>
+						<li><a href="#cmd-extras"><i data-lucide="sparkles"></i>Extras</a></li>
 						<li><a href="#cmd-utility"><i data-lucide="wrench"></i>Utility</a></li>
 						<li><a href="#cmd-links"><i data-lucide="link"></i>Links</a></li>
 						<li><a href="#cmd-economy"><i data-lucide="wallet"></i>Economy</a></li>
@@ -1755,6 +1813,7 @@ title: Wiki
 						<li><a href="#spawner-storage"><i data-lucide="package"></i>Storage</a></li>
 						<li><a href="#spawner-loot-filter"><i data-lucide="filter"></i>Loot Filter</a></li>
 						<li><a href="#spawner-stacking"><i data-lucide="layers"></i>Stacking</a></li>
+						<li><a href="#spawner-egg"><i data-lucide="egg"></i>Changing the mob</a></li>
 					</ul>
 				</li>
 				<li class="group">
@@ -1770,11 +1829,16 @@ title: Wiki
 					</ul>
 				</li>
 				<li class="group"><a href="#auction-house"><i data-lucide="gavel"></i>Auction House</a></li>
+				<li class="group"><a href="#black-market"><i data-lucide="shopping-bag"></i>Black Market</a></li>
 				<li class="group"><a href="#trade"><i data-lucide="handshake"></i>Trade</a></li>
 				<li class="group"><a href="#orders"><i data-lucide="clipboard-list"></i>Orders</a></li>
 				<li class="group"><a href="#rewards"><i data-lucide="gift"></i>Rewards</a></li>
+				<li class="group"><a href="#voting"><i data-lucide="vote"></i>Vote</a></li>
 				<li class="group"><a href="#teams"><i data-lucide="users"></i>Teams</a></li>
 				<li class="group"><a href="#leaderboards"><i data-lucide="trophy"></i>Leaderboards</a></li>
+				<li class="group"><a href="#levels"><i data-lucide="trending-up"></i>Levels</a></li>
+				<li class="group"><a href="#advancements"><i data-lucide="award"></i>Advancements</a></li>
+				<li class="group"><a href="#cosmetics"><i data-lucide="shirt"></i>Cosmetics</a></li>
 				<li class="group"><a href="#chat-games"><i data-lucide="messages-square"></i>Chat Games</a></li>
 				<li class="group"><a href="#server-changelog"><i data-lucide="scroll-text"></i>Server Changelog</a></li>
 				<li class="group"><a href="#death-messages"><i data-lucide="heart-crack"></i>Death Messages</a></li>
@@ -1784,6 +1848,7 @@ title: Wiki
 				<li class="group"><a href="#sellwands"><i data-lucide="wand"></i>SellWands</a></li>
 				<li class="group"><a href="#vaults"><i data-lucide="vault"></i>Vaults</a></li>
 				<li class="group"><a href="#fish"><i data-lucide="fish"></i>Fish</a></li>
+				<li class="group"><a href="#mining-competition"><i data-lucide="pickaxe"></i>Mining Competition</a></li>
 				<li class="group"><a href="#elevator"><i data-lucide="arrow-up-down"></i>Elevator</a></li>
 				<li class="group"><a href="#jobs"><i data-lucide="briefcase"></i>Jobs</a></li>
 				<li class="group"><a href="#bounty"><i data-lucide="target"></i>Bounty</a></li>
@@ -1950,4 +2015,6 @@ title: Wiki
 		});
 	})();
 	</script>
+	<script src="scripts/wiki.js"></script>
+	<script src="scripts/doc.js"></script>
 </body>
