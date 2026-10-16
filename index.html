@@ -27,6 +27,7 @@ layout: default
 				<a href="patch.html" class="btn3"><i data-lucide="history"></i>Patch</a>
 				<a href="wiki.html" class="btn3"><i data-lucide="book-marked"></i>Wiki</a>
 				<a href="rules.html" class="btn3"><i data-lucide="scale"></i>Rules</a>
+				<a href="vote.html" class="btn3"><i data-lucide="vote"></i>Vote</a>
 			</div>
 		</section>
 		<section class="block">
@@ -73,6 +74,17 @@ layout: default
 			</div>
 		</section>
 		<section class="block">
+			<h2>Explore the world</h2>
+			<a class="map-card" href="map.html">
+				<i data-lucide="map"></i>
+				<span class="map-text">
+					<b>Live map</b>
+					<span>Explore the world of Cubesia on an interactive map, updated live.</span>
+				</span>
+				<span class="map-go">Open the map <i data-lucide="arrow-right"></i></span>
+			</a>
+		</section>
+		<section class="block">
 			<h2>Latest patch</h2>
 			<a class="patch-card loading" id="patchCard" href="patch.html">
 				<h3 id="patchTitle">TITLE</h3>
@@ -90,7 +102,6 @@ layout: default
 	</main>
 	<script>
 		lucide.createIcons();
-
 		(function () {
 			const chip = document.getElementById('copyBtn');
 			const label = chip.querySelector('.ip-label');
