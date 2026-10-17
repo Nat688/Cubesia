@@ -35,6 +35,8 @@ title: Wiki
 				<li><span class="command">/team</span> <span class="command">/teams</span> <span class="base">Opens the team interface, or lets you use team commands.</span></li>
 				<li><span class="command">/fly</span> <span class="base">Allows you to fly on your own schedule.</span></li>
 				<li><span class="command">/changelog</span> <span class="base">Shows the server changelog directly in-game.</span></li>
+				<li><span class="command">/tags</span> <span class="base">Opens the tags interface.</span></li>
+				<li><span class="command">/grades</span> <span class="base">Shows the available ranks.</span></li>
 			</ul>
 			<h3 id="cmd-extras"><i data-lucide="sparkles"></i>Extras</h3>
 			<ul class="cmd-list">
@@ -56,10 +58,13 @@ title: Wiki
 				<li><span class="command">/smithingtable</span> <span class="command">/smithing</span> <span class="base">Opens a smithing table.</span></li>
 				<li><span class="command">/stonecutter</span> <span class="base">Opens a stonecutter.</span></li>
 				<li><span class="command">/loom</span> <span class="base">Opens a loom.</span></li>
+				<li><span class="command">/nightvision</span> <span class="command">/nv</span> <span class="base">Toggles night vision.</span></li>
 			</ul>
 			<h3 id="cmd-links"><i data-lucide="link"></i>Links</h3>
 			<ul class="cmd-list">
 				<li><span class="command">/discord</span> <span class="base">Shows the link to the Discord.</span></li>
+				<li><span class="command">/link</span> <span class="base">Links your Minecraft account to your Discord account.</span></li>
+				<li><span class="command">/unlink</span> <span class="base">Unlinks your Minecraft account from your Discord account.</span></li>
 				<li><span class="command">/wiki</span> <span class="base">Shows the link to the Wiki.</span></li>
 				<li><span class="command">/rules</span> <span class="command">/rule</span> <span class="base">Shows the link to the Rules.</span></li>
 				<li><span class="command">/site</span> <span class="command">/website</span> <span class="base">Shows the link to the website.</span></li>
@@ -1528,6 +1533,69 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/changelog.webp" target="_blank" rel="noopener"><img src="images/wiki/changelog.webp" alt="Changelog" loading="lazy"></a>
 			</div>
+			<h2 id="discord"><i data-lucide="message-circle"></i>Discord</h2>
+			<p>Cubesia is directly connected to its <b>Discord server</b>, so you can stay in touch with the community even when you are not in the game.</p>
+			<p>A <b>Discord bot</b> links the <b>in-game chat</b> with a channel of our Discord: every message sent in Minecraft appears on Discord, and every message sent in that channel appears in the game chat.</p>
+			<p>Your <b>Discord roles</b> are also <b>synchronized with your Minecraft grades</b>, so the grade you buy in the game is automatically reflected on Discord.</p>
+			<p>To benefit from the role synchronization, you first need to <b>link your Minecraft account to your Discord account</b>. If you ever want to remove the link, use <code>/unlink</code> in the game.</p>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p><b>How to link your account:</b> type <code>/link</code> in Minecraft to get your code, then type <code>/link &lt;code&gt;</code> on Discord, replacing <code>&lt;code&gt;</code> with the code you received.</p>
+			</div>
+			<h2 id="grades"><i data-lucide="crown"></i>Grades</h2>
+			<p><b>Grades</b> are permanent upgrades for your account. Each one unlocks <b>perks</b> such as more <b>homes</b>, more <b>Personal Vaults</b>, more <b>Auction House</b> slots, more <b>Orders</b> slots, more <b>playerwarps</b> and several special abilities.</p>
+			<p>Open the grades shop with <code>/grades</code>. The menu is split into two families of grades, which you buy with different currencies.</p>
+			<p>The perks listed in the tables below are the <b>totals you have</b> once the grade is unlocked, and the value in parentheses is how much the grade adds compared to the previous one.</p>
+			<h3 id="grades-money"><i data-lucide="coins"></i>Money grades</h3>
+			<p>These nine grades are bought with <b>money</b>. They must be bought <b>in order</b>: you cannot buy a grade until you own the one just before it. Every grade also <b>includes the perks of the previous ones</b>.</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead>
+						<tr><th>Grade</th><th>Cost</th><th>Perks</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>Stone</td><td>$250,000</td><td>2 Vaults (+1), 3 Auction House slots (+1)</td></tr>
+						<tr><td>Copper</td><td>$500,000</td><td>3 Vaults (+1), 2 homes (+1), 2 Orders slots (+1)</td></tr>
+						<tr><td>Iron</td><td>$1,250,000</td><td>Create <a href="#elevator">elevators</a>, 5 Auction House slots (+2), 4 Vaults (+1)</td></tr>
+						<tr><td>Lapis</td><td>$2,500,000</td><td>6 Vaults (+2), 2 playerwarps (+1), 3 Orders slots (+1)</td></tr>
+						<tr><td>Gold</td><td>$5,000,000</td><td>9 Vaults (+3), 3 homes (+1)</td></tr>
+						<tr><td>Diamond</td><td>$12,500,000</td><td>12 Vaults (+3), 10 Auction House slots (+5), lower taxes (10% to 0% on the Auction House)</td></tr>
+						<tr><td>Emerald</td><td>$25,000,000</td><td>15 Vaults (+3), change the type of a spawner, 12 Auction House slots (+2), 5 Orders slots (+2)</td></tr>
+						<tr><td>Netherite</td><td>$50,000,000</td><td>18 Vaults (+3), 3 playerwarps (+1), 4 homes (+1), 15 Auction House slots (+3)</td></tr>
+						<tr><td>Nether Star</td><td>$125,000,000</td><td>27 Vaults (+9), 5 homes (+1), infinite fly, 25 Auction House slots (+10)</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<h3 id="grades-gems"><i data-lucide="gem"></i>Gem grades</h3>
+			<p>These three grades are bought with <b>gems</b> (◆) and are independent from the money grades. They can be bought <b>directly</b>, or <b>upgraded step by step</b>: if you already own a lower gem grade, you only pay the <b>difference</b>.</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead>
+						<tr><th>Grade</th><th>Cost</th><th>Perks</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>Coal</td><td>990◆</td><td>RTP in the Nether world, 2 homes (+1), 5 Auction House slots (+3), 5 Vaults (+4), 3 Orders slots (+2)</td></tr>
+						<tr><td>Redstone</td><td>2,490◆<br>1,500◆ if you own Coal</td><td>10 Vaults (+5), RTP in the End world, 10 Auction House slots (+5), 3 homes (+1)</td></tr>
+						<tr><td>Quartz</td><td>4,990◆<br>4,000◆ if you own Coal<br>2,500◆ if you own Redstone</td><td>Lower taxes (10% to 0% on the Auction House), 4 homes (+1), 15 Auction House slots (+5), change the type of a spawner, infinite fly, 18 Vaults (+8), 4 Orders slots (+1)</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<p>Higher gem grades include the lower ones, so buying <b>Quartz</b> replaces <b>Coal</b> and <b>Redstone</b>.</p>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p>If you click on a grade you already own, or one that is already included in a higher grade, nothing is charged: the menu only tells you that you already have it.</p>
+			</div>
+			<div class="shots">
+				<a href="images/wiki/grades.webp" target="_blank" rel="noopener"><img src="images/wiki/grades.webp" alt="Grades" loading="lazy"></a>
+			</div>
+			<h2 id="tags"><i data-lucide="tag"></i>Tags</h2>
+			<p><b>Tags</b> are small icons and titles that you can show next to your name in the chat, to display your style, your achievements or simply what you like.</p>
+			<p>Open the tags interface with <code>/tags</code> to browse every tag of the server. Each tag is represented by its own item, so you can quickly find the one that suits you.</p>
+			<p>Select the tag you want to wear, and it will appear in the chat every time you talk. You can change it or remove it whenever you want.</p>
+			<p>Can be purchased at the /shop in the cosmetics section.</p>
+			<div class="shots">
+				<a href="images/wiki/tags.webp" target="_blank" rel="noopener"><img src="images/wiki/tags.webp" alt="Tags" loading="lazy"></a>
+			</div>
 			<h2 id="death-messages"><i data-lucide="heart-crack"></i>Death Messages</h2>
 			<p>The server now features <b>new, custom death messages</b>.</p>
 			<p>Whenever a player dies, a redesigned message is displayed in the chat, making every death a little more memorable.</p>
@@ -1714,14 +1782,14 @@ title: Wiki
 			<p>This feature works with virtually all harvestable crops, eliminating the need to break each plant and manually place seeds after every harvest.</p>
 			<p>It is especially useful for large farms, where it saves countless clicks and greatly improves harvesting efficiency while preserving the layout of your fields.</p>
 			<p>Whether you're farming for food, trading, or resources, Harvest Master lets you collect crops more quickly and spend more time expanding your farm instead of maintaining it.</p>
-			<!--<h3 id="item-stacker"><i data-lucide="layers"></i>Item Stacker</h3>
+			<h3 id="item-stacker"><i data-lucide="layers"></i>Item Stacker</h3>
 			<p><b>Item Stacker</b> is an optimized stacking system that greatly reduces the number of dropped entities on the ground, helping to improve overall server performance.</p>
 			<p>Instead of creating hundreds or thousands of separate item entities, identical dropped items are automatically combined into stacks of up to <b>64,000 items</b>.</p>
 			<p>This significantly reduces lag during large farms, automatic storage systems, and mass item drops while still allowing players to collect the entire stack normally.</p>
 			<p>By minimizing the number of entities loaded in the world, the Item Stacker system keeps gameplay smoother and the server more stable, even during periods of heavy activity.</p>
 			<div class="shots">
 				<a href="images/wiki/item_stacker.webp" target="_blank" rel="noopener"><img src="images/wiki/item_stacker.webp" alt="Item stacker" width="996" height="492" loading="lazy"></a>
-			</div>-->
+			</div>
 			<h3 id="enchantment-table"><i data-lucide="gem"></i>Enchantment Table</h3>
 			<p>The <b>Enchantment Table</b> now keeps your <b>Lapis Lazuli</b> in place: when you close the interface, the lapis lazuli <b>remains inside the table</b> instead of being given back to you.</p>
 			<p>This means you no longer have to place your lapis lazuli again every time you reopen the table, which makes enchanting several items in a row much faster and less tedious.</p>
@@ -1789,6 +1857,19 @@ title: Wiki
 			<p>You can now go <b>above the maximum levels of vanilla Minecraft</b>: enchantments are no longer limited to their usual cap, such as <b>Efficiency VI</b>.</p>
 			<p>Combined with <a href="#no-too-expensive">No Too Expensive</a>, you can keep upgrading your favorite gear much further than in the base game.</p>
 			<p>You can check the maximum level of every custom enchantment in the <a href="#enchantments">Enchantments</a> tables.</p>
+			<h3 id="carryon"><i data-lucide="hand"></i>CarryOn</h3>
+			<p><b>CarryOn</b> lets you <b>pick up and carry</b> things in your hands, then put them down somewhere else. It is perfect to move a chest full of items, to relocate a mob, or to reorganize your base without having to break and rebuild everything.</p>
+			<p>It works on <b>all entities</b>, <b>except bosses</b>, and on <b>some blocks</b> such as <b>chests</b>. <b>Spawners</b> cannot be carried.</p>
+			<p>To pick something up, <b>Shift + Right-Click</b> on it with <b>empty hands</b>. To put it down, <b>Shift + Right-Click</b> on the block where you want to place it.</p>
+			<p>While you are carrying something, you move more slowly and cannot use your hands normally, so choose a safe spot before picking it up.</p>
+			<div class="shots">
+				<a href="images/wiki/carryon.webp" target="_blank" rel="noopener"><img src="images/wiki/carryon.webp" alt="CarryOn" loading="lazy"></a>
+			</div>
+			<h3 id="clear-lags"><i data-lucide="trash-2"></i>Clear Lags</h3>
+			<p><b>Clear Lags</b> automatically cleans the world <b>every 30 minutes</b> to keep the server fast, smooth and stable.</p>
+			<p>Each clean-up removes the <b>entities</b> and the <b>items lying on the ground</b>, which are the main causes of lag on a busy server.</p>
+			<p>Your animals are safe: <b>tamed mobs</b> and other protected entities are <b>never removed</b>.</p>
+			<p>A <b>warning message</b> is sent in the chat before every clean-up, so you have time to pick up the items you want to keep.</p>
 		</main>
 		<aside class="toc" id="toc">
 			<div class="toc-title"><i data-lucide="list"></i>On this page</div>
@@ -1841,6 +1922,15 @@ title: Wiki
 				<li class="group"><a href="#cosmetics"><i data-lucide="shirt"></i>Cosmetics</a></li>
 				<li class="group"><a href="#chat-games"><i data-lucide="messages-square"></i>Chat Games</a></li>
 				<li class="group"><a href="#server-changelog"><i data-lucide="scroll-text"></i>Server Changelog</a></li>
+				<li class="group"><a href="#discord"><i data-lucide="message-circle"></i>Discord</a></li>
+				<li class="group">
+					<a href="#grades"><i data-lucide="crown"></i>Grades</a>
+					<ul class="subs">
+						<li><a href="#grades-money"><i data-lucide="coins"></i>Money grades</a></li>
+						<li><a href="#grades-gems"><i data-lucide="gem"></i>Gem grades</a></li>
+					</ul>
+				</li>
+				<li class="group"><a href="#tags"><i data-lucide="tag"></i>Tags</a></li>
 				<li class="group"><a href="#death-messages"><i data-lucide="heart-crack"></i>Death Messages</a></li>
 				<li class="group"><a href="#fly-time"><i data-lucide="plane"></i>Fly Time</a></li>
 				<li class="group"><a href="#afkzone"><i data-lucide="clock"></i>AFKZone</a></li>
@@ -1864,7 +1954,7 @@ title: Wiki
 						<li><a href="#collectible-blocks"><i data-lucide="blocks"></i>Collectible Blocks</a></li>
 						<li><a href="#no-trample"><i data-lucide="sprout"></i>No Trample</a></li>
 						<li><a href="#harvest-master"><i data-lucide="wheat"></i>Harvest Master</a></li>
-						<!--<li><a href="#item-stacker"><i data-lucide="layers"></i>Item Stacker</a></li>-->
+						<li><a href="#item-stacker"><i data-lucide="layers"></i>Item Stacker</a></li>
 						<li><a href="#enchantment-table"><i data-lucide="gem"></i>Enchantment Table</a></li>
 						<!--<li><a href="#color-codes"><i data-lucide="palette"></i>Color Codes</a></li>-->
 						<li><a href="#bees"><i data-lucide="hexagon"></i>Bees</a></li>
@@ -1877,6 +1967,8 @@ title: Wiki
 						<li><a href="#villager-reroll"><i data-lucide="refresh-cw"></i>Villager Reroll</a></li>
 						<li><a href="#no-too-expensive"><i data-lucide="hammer"></i>No Too Expensive</a></li>
 						<li><a href="#beyond-vanilla-levels"><i data-lucide="trending-up"></i>Beyond Vanilla Levels</a></li>
+						<li><a href="#carryon"><i data-lucide="hand"></i>CarryOn</a></li>
+						<li><a href="#clear-lags"><i data-lucide="trash-2"></i>Clear Lags</a></li>
 					</ul>
 				</li>
 			</ul>
