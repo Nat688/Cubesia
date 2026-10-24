@@ -5,19 +5,6 @@ title: Wiki
 
 <link rel="stylesheet" type="text/css" href="styles/wiki.css">
 <link rel="stylesheet" type="text/css" href="styles/doc.css">
-<style>
-	/* Compact enchantment tables */
-	#enchantments ~ * .neon_table, .wiki-content .ench-fold .neon_table{font-size:.85rem}
-	.ench-fold .neon_table th,.ench-fold .neon_table td{padding:5px 8px;line-height:1.3}
-	.ench-fold .neon_table td img{width:20px;height:20px;margin:0 1px;vertical-align:middle}
-	.ench-fold{margin:8px 0 18px}
-	.ench-fold>summary{cursor:pointer;display:inline-block;padding:6px 14px;border:1px solid currentColor;border-radius:8px;opacity:.85;font-weight:600;list-style:none;user-select:none}
-	.ench-fold>summary::-webkit-details-marker{display:none}
-	.ench-fold>summary::before{content:"\25B8  "}
-	.ench-fold[open]>summary::before{content:"\25BE  "}
-	.ench-fold>summary:hover{opacity:1}
-	.ench-fold[open]>summary{margin-bottom:10px}
-</style>
 <body>
 	<div class="wiki">
 		<main class="wiki-content">
@@ -220,1285 +207,199 @@ title: Wiki
 				<i data-lucide="info"></i>
 				<p>These are the vanilla Minecraft enchantments. The maximum levels shown are the ones you can reach on Cubesia, which can be higher than in the base game thanks to <a href="#beyond-vanilla-levels">Beyond Vanilla Levels</a>.</p>
 			</div>
-			<details class="ench-fold">
-				<summary>Show the 43 enchantments</summary>
-				<div class="table_container">
+			<div class="table_container">
 				<table class="neon_table">
 					<thead>
 						<tr><th>Name</th><th>Summary</th><th>Incompatible With</th><th>Max Level</th><th>Primary Items</th><th>Secondary Items</th><th>Weight</th></tr>
 					</thead>
 					<tbody>
-						<tr><td>Aqua Affinity</td><td>Removes the underwater mining speed penalty.</td><td> </td><td>I</td><td><img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Bane of Arthropods</td><td>Increases damage to arthropods and slows them.</td><td>Smite, Sharpness, Breach, Density</td><td>V</td><td><img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> <img src="images/icon/spear.webp" alt="Spear" title="Spear" width="28" height="28" loading="lazy"></td><td><img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> <img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy"></td><td>5</td></tr>
-						<tr><td>Blast Protection</td><td>Reduces explosion damage and knockback.</td><td>Fire Protection, Protection, Projectile Protection</td><td>IV</td><td><img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Breach</td><td>Reduces the effect of the target's armor.</td><td>Density, Bane of Arthropods, Smite, Sharpness</td><td>IV</td><td><img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Channeling</td><td>A thrown trident summons lightning during thunderstorms.</td><td>Riptide</td><td>I</td><td><img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"></td><td> </td><td>1</td></tr>
-						<tr><td>Curse of Binding</td><td>The item cannot be removed from armor slots.</td><td> </td><td>I</td><td> </td><td><img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"> <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy"></td><td>1</td></tr>
-						<tr><td>Curse of Vanishing</td><td>The item disappears on death.</td><td> </td><td>I</td><td> </td><td><img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"> <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> <img src="images/icon/spear.webp" alt="Spear" title="Spear" width="28" height="28" loading="lazy"> <img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy"> <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"> <img src="images/icon/shield.webp" alt="Shield" title="Shield" width="28" height="28" loading="lazy"> <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy"> <img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> <img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy"></td><td>1</td></tr>
-						<tr><td>Density</td><td>Increases the damage of mace smash attacks.</td><td>Breach, Bane of Arthropods, Smite, Sharpness</td><td>V</td><td><img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy"></td><td> </td><td>5</td></tr>
-						<tr><td>Depth Strider</td><td>Reduces the movement speed penalty in water.</td><td>Frost Walker</td><td>V</td><td><img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Efficiency</td><td>Increases mining speed.</td><td> </td><td>VIII</td><td><img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"></td><td><img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"></td><td>10</td></tr>
-						<tr><td>Feather Falling</td><td>Reduces fall damage.</td><td> </td><td>V</td><td><img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"></td><td> </td><td>5</td></tr>
-						<tr><td>Fire Aspect</td><td>Sets targets on fire.</td><td> </td><td>II</td><td><img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> <img src="images/icon/spear.webp" alt="Spear" title="Spear" width="28" height="28" loading="lazy"></td><td><img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy"></td><td>2</td></tr>
-						<tr><td>Fire Protection</td><td>Reduces fire damage and burning time.</td><td>Blast Protection, Protection, Projectile Protection</td><td>IV</td><td><img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"></td><td> </td><td>5</td></tr>
-						<tr><td>Flame</td><td>Arrows set targets on fire.</td><td> </td><td>I</td><td><img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Fortune</td><td>Chance for extra drops from certain blocks.</td><td>Silk Touch</td><td>V</td><td><img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Frost Walker</td><td>Turns water under you into frosted ice.</td><td>Depth Strider</td><td>IV</td><td> </td><td><img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"></td><td>2</td></tr>
-						<tr><td>Impaling</td><td>Increases damage to aquatic mobs.</td><td> </td><td>V</td><td><img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Infinity</td><td>Bow shots do not consume arrows.</td><td>Mending</td><td>I</td><td><img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"></td><td> </td><td>1</td></tr>
-						<tr><td>Knockback</td><td>Increases melee knockback.</td><td> </td><td>II</td><td><img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> <img src="images/icon/spear.webp" alt="Spear" title="Spear" width="28" height="28" loading="lazy"></td><td> </td><td>5</td></tr>
-						<tr><td>Looting</td><td>Chance for extra drops from mobs.</td><td> </td><td>V</td><td><img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> <img src="images/icon/spear.webp" alt="Spear" title="Spear" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Loyalty</td><td>A thrown trident returns to you.</td><td>Riptide</td><td>III</td><td><img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"></td><td> </td><td>5</td></tr>
-						<tr><td>Luck of the Sea</td><td>Increases the chance of treasure while fishing.</td><td> </td><td>V</td><td><img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Lunge</td><td>A spear jab launches you forward.</td><td> </td><td>III</td><td><img src="images/icon/spear.webp" alt="Spear" title="Spear" width="28" height="28" loading="lazy"></td><td> </td><td>5</td></tr>
-						<tr><td>Lure</td><td>Fish bite faster.</td><td> </td><td>VIII</td><td><img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Mending</td><td>Repairs the item using experience.</td><td>Infinity</td><td>I</td><td> </td><td><img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"> <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> <img src="images/icon/spear.webp" alt="Spear" title="Spear" width="28" height="28" loading="lazy"> <img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy"> <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"> <img src="images/icon/shield.webp" alt="Shield" title="Shield" width="28" height="28" loading="lazy"> <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy"> <img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> <img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy"></td><td>2</td></tr>
-						<tr><td>Multishot</td><td>Fires three arrows at once.</td><td>Piercing</td><td>V</td><td><img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Piercing</td><td>Arrows pierce through multiple targets.</td><td>Multishot</td><td>IV</td><td><img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"></td><td> </td><td>10</td></tr>
-						<tr><td>Power</td><td>Increases arrow damage.</td><td> </td><td>V</td><td><img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"></td><td> </td><td>10</td></tr>
-						<tr><td>Projectile Protection</td><td>Reduces projectile damage.</td><td>Protection, Blast Protection, Fire Protection</td><td>IV</td><td><img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"></td><td> </td><td>5</td></tr>
-						<tr><td>Protection</td><td>Reduces most types of damage.</td><td>Blast Protection, Fire Protection, Projectile Protection</td><td>V</td><td><img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"></td><td> </td><td>10</td></tr>
-						<tr><td>Punch</td><td>Increases arrow knockback.</td><td> </td><td>II</td><td><img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Quick Charge</td><td>The crossbow reloads faster.</td><td> </td><td>III</td><td><img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"></td><td> </td><td>5</td></tr>
-						<tr><td>Respiration</td><td>Extends underwater breathing time.</td><td> </td><td>V</td><td><img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Riptide</td><td>The trident launches you forward in water or rain.</td><td>Channeling, Loyalty</td><td>III</td><td><img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Sharpness</td><td>Increases melee damage.</td><td>Bane of Arthropods, Smite, Breach, Density</td><td>V</td><td><img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> <img src="images/icon/spear.webp" alt="Spear" title="Spear" width="28" height="28" loading="lazy"></td><td><img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"></td><td>10</td></tr>
-						<tr><td>Silk Touch</td><td>Blocks drop themselves.</td><td>Fortune</td><td>I</td><td><img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"></td><td> </td><td>1</td></tr>
-						<tr><td>Smite</td><td>Increases damage to undead mobs.</td><td>Bane of Arthropods, Sharpness, Breach, Density</td><td>V</td><td><img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> <img src="images/icon/spear.webp" alt="Spear" title="Spear" width="28" height="28" loading="lazy"></td><td><img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> <img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy"></td><td>5</td></tr>
-						<tr><td>Soul Speed</td><td>Faster movement on soul sand and soul soil.</td><td> </td><td>V</td><td> </td><td><img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"></td><td>1</td></tr>
-						<tr><td>Sweeping Edge</td><td>Increases the damage of sword sweep attacks.</td><td> </td><td>V</td><td><img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"></td><td> </td><td>2</td></tr>
-						<tr><td>Swift Sneak</td><td>Faster movement while sneaking.</td><td> </td><td>III</td><td> </td><td><img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"></td><td>1</td></tr>
-						<tr><td>Thorns</td><td>Reflects damage to attackers.</td><td> </td><td>V</td><td><img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"></td><td><img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"></td><td>1</td></tr>
-						<tr><td>Unbreaking</td><td>Items lose durability less often.</td><td> </td><td>V</td><td><img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"> <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> <img src="images/icon/spear.webp" alt="Spear" title="Spear" width="28" height="28" loading="lazy"> <img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy"> <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> <img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> <img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy"></td><td><img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"> <img src="images/icon/shield.webp" alt="Shield" title="Shield" width="28" height="28" loading="lazy"> <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy"></td><td>5</td></tr>
-						<tr><td>Wind Burst</td><td>A mace smash attack launches you upward.</td><td> </td><td>III</td><td> </td><td><img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy"></td><td>2</td></tr>
+						<tr><td>Aqua Affinity</td><td>Removes the underwater mining speed penalty.</td><td> </td><td>I</td><td data-ic="helmet"></td><td> </td><td>2</td></tr>
+						<tr><td>Bane of Arthropods</td><td>Increases damage to arthropods and slows them.</td><td>Smite, Sharpness, Breach, Density</td><td>V</td><td data-ic="sword spear"></td><td data-ic="axe mace"></td><td>5</td></tr>
+						<tr><td>Blast Protection</td><td>Reduces explosion damage and knockback.</td><td>Fire Protection, Protection, Projectile Protection</td><td>IV</td><td data-ic="helmet chestplate leggings boots"></td><td> </td><td>2</td></tr>
+						<tr><td>Breach</td><td>Reduces the effect of the target's armor.</td><td>Density, Bane of Arthropods, Smite, Sharpness</td><td>IV</td><td data-ic="mace"></td><td> </td><td>2</td></tr>
+						<tr><td>Channeling</td><td>A thrown trident summons lightning during thunderstorms.</td><td>Riptide</td><td>I</td><td data-ic="trident"></td><td> </td><td>1</td></tr>
+						<tr><td>Curse of Binding</td><td>The item cannot be removed from armor slots.</td><td> </td><td>I</td><td> </td><td data-ic="helmet chestplate leggings boots elytra"></td><td>1</td></tr>
+						<tr><td>Curse of Vanishing</td><td>The item disappears on death.</td><td> </td><td>I</td><td> </td><td data-ic="helmet chestplate leggings boots pickaxe shovel axe sword hoe spear fishing-rod bow shears shield elytra trident crossbow mace"></td><td>1</td></tr>
+						<tr><td>Density</td><td>Increases the damage of mace smash attacks.</td><td>Breach, Bane of Arthropods, Smite, Sharpness</td><td>V</td><td data-ic="mace"></td><td> </td><td>5</td></tr>
+						<tr><td>Depth Strider</td><td>Reduces the movement speed penalty in water.</td><td>Frost Walker</td><td>V</td><td data-ic="boots"></td><td> </td><td>2</td></tr>
+						<tr><td>Efficiency</td><td>Increases mining speed.</td><td> </td><td>VIII</td><td data-ic="pickaxe shovel axe hoe"></td><td data-ic="shears"></td><td>10</td></tr>
+						<tr><td>Feather Falling</td><td>Reduces fall damage.</td><td> </td><td>V</td><td data-ic="boots"></td><td> </td><td>5</td></tr>
+						<tr><td>Fire Aspect</td><td>Sets targets on fire.</td><td> </td><td>II</td><td data-ic="sword spear"></td><td data-ic="mace"></td><td>2</td></tr>
+						<tr><td>Fire Protection</td><td>Reduces fire damage and burning time.</td><td>Blast Protection, Protection, Projectile Protection</td><td>IV</td><td data-ic="helmet chestplate leggings boots"></td><td> </td><td>5</td></tr>
+						<tr><td>Flame</td><td>Arrows set targets on fire.</td><td> </td><td>I</td><td data-ic="bow"></td><td> </td><td>2</td></tr>
+						<tr><td>Fortune</td><td>Chance for extra drops from certain blocks.</td><td>Silk Touch</td><td>V</td><td data-ic="pickaxe shovel axe hoe"></td><td> </td><td>2</td></tr>
+						<tr><td>Frost Walker</td><td>Turns water under you into frosted ice.</td><td>Depth Strider</td><td>IV</td><td> </td><td data-ic="boots"></td><td>2</td></tr>
+						<tr><td>Impaling</td><td>Increases damage to aquatic mobs.</td><td> </td><td>V</td><td data-ic="trident"></td><td> </td><td>2</td></tr>
+						<tr><td>Infinity</td><td>Bow shots do not consume arrows.</td><td>Mending</td><td>I</td><td data-ic="bow"></td><td> </td><td>1</td></tr>
+						<tr><td>Knockback</td><td>Increases melee knockback.</td><td> </td><td>II</td><td data-ic="sword spear"></td><td> </td><td>5</td></tr>
+						<tr><td>Looting</td><td>Chance for extra drops from mobs.</td><td> </td><td>V</td><td data-ic="sword spear"></td><td> </td><td>2</td></tr>
+						<tr><td>Loyalty</td><td>A thrown trident returns to you.</td><td>Riptide</td><td>III</td><td data-ic="trident"></td><td> </td><td>5</td></tr>
+						<tr><td>Luck of the Sea</td><td>Increases the chance of treasure while fishing.</td><td> </td><td>V</td><td data-ic="fishing-rod"></td><td> </td><td>2</td></tr>
+						<tr><td>Lunge</td><td>A spear jab launches you forward.</td><td> </td><td>III</td><td data-ic="spear"></td><td> </td><td>5</td></tr>
+						<tr><td>Lure</td><td>Fish bite faster.</td><td> </td><td>VIII</td><td data-ic="fishing-rod"></td><td> </td><td>2</td></tr>
+						<tr><td>Mending</td><td>Repairs the item using experience.</td><td>Infinity</td><td>I</td><td> </td><td data-ic="helmet chestplate leggings boots pickaxe shovel axe sword hoe spear fishing-rod bow shears shield elytra trident crossbow mace"></td><td>2</td></tr>
+						<tr><td>Multishot</td><td>Fires three arrows at once.</td><td>Piercing</td><td>V</td><td data-ic="crossbow"></td><td> </td><td>2</td></tr>
+						<tr><td>Piercing</td><td>Arrows pierce through multiple targets.</td><td>Multishot</td><td>IV</td><td data-ic="crossbow"></td><td> </td><td>10</td></tr>
+						<tr><td>Power</td><td>Increases arrow damage.</td><td> </td><td>V</td><td data-ic="bow"></td><td> </td><td>10</td></tr>
+						<tr><td>Projectile Protection</td><td>Reduces projectile damage.</td><td>Protection, Blast Protection, Fire Protection</td><td>IV</td><td data-ic="helmet chestplate leggings boots"></td><td> </td><td>5</td></tr>
+						<tr><td>Protection</td><td>Reduces most types of damage.</td><td>Blast Protection, Fire Protection, Projectile Protection</td><td>V</td><td data-ic="helmet chestplate leggings boots"></td><td> </td><td>10</td></tr>
+						<tr><td>Punch</td><td>Increases arrow knockback.</td><td> </td><td>II</td><td data-ic="bow"></td><td> </td><td>2</td></tr>
+						<tr><td>Quick Charge</td><td>The crossbow reloads faster.</td><td> </td><td>III</td><td data-ic="crossbow"></td><td> </td><td>5</td></tr>
+						<tr><td>Respiration</td><td>Extends underwater breathing time.</td><td> </td><td>V</td><td data-ic="helmet"></td><td> </td><td>2</td></tr>
+						<tr><td>Riptide</td><td>The trident launches you forward in water or rain.</td><td>Channeling, Loyalty</td><td>III</td><td data-ic="trident"></td><td> </td><td>2</td></tr>
+						<tr><td>Sharpness</td><td>Increases melee damage.</td><td>Bane of Arthropods, Smite, Breach, Density</td><td>V</td><td data-ic="sword spear"></td><td data-ic="axe"></td><td>10</td></tr>
+						<tr><td>Silk Touch</td><td>Blocks drop themselves.</td><td>Fortune</td><td>I</td><td data-ic="pickaxe shovel axe hoe"></td><td> </td><td>1</td></tr>
+						<tr><td>Smite</td><td>Increases damage to undead mobs.</td><td>Bane of Arthropods, Sharpness, Breach, Density</td><td>V</td><td data-ic="sword spear"></td><td data-ic="axe mace"></td><td>5</td></tr>
+						<tr><td>Soul Speed</td><td>Faster movement on soul sand and soul soil.</td><td> </td><td>V</td><td> </td><td data-ic="boots"></td><td>1</td></tr>
+						<tr><td>Sweeping Edge</td><td>Increases the damage of sword sweep attacks.</td><td> </td><td>V</td><td data-ic="sword"></td><td> </td><td>2</td></tr>
+						<tr><td>Swift Sneak</td><td>Faster movement while sneaking.</td><td> </td><td>III</td><td> </td><td data-ic="leggings"></td><td>1</td></tr>
+						<tr><td>Thorns</td><td>Reflects damage to attackers.</td><td> </td><td>V</td><td data-ic="chestplate"></td><td data-ic="helmet leggings boots"></td><td>1</td></tr>
+						<tr><td>Unbreaking</td><td>Items lose durability less often.</td><td> </td><td>V</td><td data-ic="helmet chestplate leggings boots pickaxe shovel axe sword hoe spear fishing-rod bow trident crossbow mace"></td><td data-ic="shears shield elytra"></td><td>5</td></tr>
+						<tr><td>Wind Burst</td><td>A mace smash attack launches you upward.</td><td> </td><td>III</td><td> </td><td data-ic="mace"></td><td>2</td></tr>
 					</tbody>
 				</table>
 			</div>
-			</details>
 			<h3 id="ench-armor"><i data-lucide="shield"></i>Armor</h3>
-			<details class="ench-fold">
-				<summary>Show the 18 enchantments</summary>
-				<div class="table_container">
+			<div class="table_container">
 				<table class="neon_table">
 					<thead>
-		          		<tr>
-		            		<th>Name</th>
-		            		<th>Summary</th>
-		            		<th>Incompatible With</th>
-				            <th>Max Level</th>
-				            <th>Primary Items</th>
-				            <th>Secondary Items</th>
-				            <th>Weight</th>
-				        </tr>
+						<tr><th>Name</th><th>Summary</th><th>Incompatible With</th><th>Max Level</th><th>Primary Items</th><th>Secondary Items</th><th>Weight</th></tr>
 		        	</thead>
 		        	<tbody>
-		          		<tr>
-				            <td>Cold Steel</td>
-				            <td>Applies Mining Fatigue effect to the attacker.</td>
-				            <td> </td>
-				            <td>III</td>
-		            		<td>
-		              			<img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
-					        </td>
-					        <td>
-					            <img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
-					        </td>
-		            		<td>5</td>
-		          		</tr>
-		          		<tr>
-				            <td>Darkness Cloak</td>
-				            <td>Applies Darkness effect to the attacker.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-			          	</tr>
-			          	<tr>
-				            <td>Dragon Heart</td>
-				            <td>Grants passive Health Boost effect.</td>
-				            <td> </td>
-				            <td>V</td>
-				            <td>
-				              	<img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-		          		</tr>
-		          		<tr>
-				            <td>Elemental Protection</td>
-				            <td>Reduces potion and elemental damage.</td>
-				            <td> </td>
-				            <td>IV</td>
-				            <td>
-				              	<img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Fire Shield</td>
-				            <td>Ignites the attacker.</td>
-				            <td> </td>
-				            <td>IV</td>
-				            <td>
-				              	<img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Flame Walker</td>
-				            <td>Ability to walk on lava, immunity to magma damage.</td>
-				            <td>Frost Walker</td>
-				            <td>II</td>
-				            <td>
-				              	<img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>1</td>
-				        </tr>
-				        <tr>
-				            <td>Hardened</td>
-				            <td>Grants Resistance effect on receiving damage.</td>
-				            <td> </td>
-				            <td>II</td>
-				            <td>
-				              	<img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Ice Shield</td>
-				            <td>Freezes and slows down the attacker.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Jumping</td>
-				            <td>Grants Jump Boost effect.</td>
-				            <td> </td>
-				            <td>II</td>
-				            <td>
-				              	<img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Kamikadze</td>
-				            <td>Creates an explosion on death.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Lightweight</td>
-				            <td>Allows you to safely jump on turtle eggs, farmlands and big dripleaf.</td>
-				            <td> </td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Night Vision</td>
-				            <td>Grants Night Vision effect.</td>
-				            <td> </td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>1</td>
-				        </tr>
-				        <tr>
-				            <td>Rebound</td>
-				            <td>Gives the effect of landing on a Slime Block.</td>
-				            <td>Feather Falling</td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Regrowth</td>
-				            <td>Restores certain amount of hearts over the time.</td>
-				            <td> </td>
-				            <td>IV</td>
-				            <td>
-				              	<img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Saturation</td>
-				            <td>Restores certain amount of food over the time.</td>
-				            <td> </td>
-				            <td>II</td>
-				            <td>
-				              	<img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Speed</td>
-				            <td>Grants Speed effect.</td>
-				            <td> </td>
-				            <td>II</td>
-				            <td>
-				              	<img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Stopping Force</td>
-				            <td>Reduces Knockback when getting damage.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Water Breathing</td>
-				            <td>Grants Water Breathing effect effect.</td>
-				            <td> </td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>1</td>
-				        </tr>
+						<tr><td>Cold Steel</td><td>Applies Mining Fatigue effect to the attacker.</td><td> </td><td>III</td><td data-ic="chestplate"></td><td data-ic="elytra"></td><td>5</td></tr>
+						<tr><td>Darkness Cloak</td><td>Applies Darkness effect to the attacker.</td><td> </td><td>III</td><td data-ic="chestplate"></td><td data-ic="elytra"></td><td>5</td></tr>
+						<tr><td>Dragon Heart</td><td>Grants passive Health Boost effect.</td><td> </td><td>V</td><td data-ic="chestplate"></td><td data-ic="elytra"></td><td>2</td></tr>
+						<tr><td>Elemental Protection</td><td>Reduces potion and elemental damage.</td><td> </td><td>IV</td><td data-ic="helmet chestplate leggings boots"></td><td> </td><td>10</td></tr>
+						<tr><td>Fire Shield</td><td>Ignites the attacker.</td><td> </td><td>IV</td><td data-ic="chestplate"></td><td data-ic="elytra"></td><td>2</td></tr>
+						<tr><td>Flame Walker</td><td>Ability to walk on lava, immunity to magma damage.</td><td>Frost Walker</td><td>II</td><td data-ic="boots"></td><td> </td><td>1</td></tr>
+						<tr><td>Hardened</td><td>Grants Resistance effect on receiving damage.</td><td> </td><td>II</td><td data-ic="chestplate"></td><td data-ic="elytra"></td><td>5</td></tr>
+						<tr><td>Ice Shield</td><td>Freezes and slows down the attacker.</td><td> </td><td>III</td><td data-ic="chestplate"></td><td data-ic="elytra"></td><td>10</td></tr>
+						<tr><td>Jumping</td><td>Grants Jump Boost effect.</td><td> </td><td>II</td><td data-ic="boots"></td><td> </td><td>2</td></tr>
+						<tr><td>Kamikadze</td><td>Creates an explosion on death.</td><td> </td><td>III</td><td data-ic="chestplate"></td><td data-ic="elytra"></td><td>5</td></tr>
+						<tr><td>Lightweight</td><td>Allows you to safely jump on turtle eggs, farmlands and big dripleaf.</td><td> </td><td>I</td><td data-ic="boots"></td><td> </td><td>10</td></tr>
+						<tr><td>Night Vision</td><td>Grants Night Vision effect.</td><td> </td><td>I</td><td data-ic="helmet"></td><td> </td><td>1</td></tr>
+						<tr><td>Rebound</td><td>Gives the effect of landing on a Slime Block.</td><td>Feather Falling</td><td>I</td><td data-ic="boots"></td><td> </td><td>2</td></tr>
+						<tr><td>Regrowth</td><td>Restores certain amount of hearts over the time.</td><td> </td><td>IV</td><td data-ic="chestplate"></td><td data-ic="elytra"></td><td>2</td></tr>
+						<tr><td>Saturation</td><td>Restores certain amount of food over the time.</td><td> </td><td>II</td><td data-ic="helmet"></td><td> </td><td>2</td></tr>
+						<tr><td>Speed</td><td>Grants Speed effect.</td><td> </td><td>II</td><td data-ic="boots"></td><td> </td><td>2</td></tr>
+						<tr><td>Stopping Force</td><td>Reduces Knockback when getting damage.</td><td> </td><td>III</td><td data-ic="leggings"></td><td> </td><td>5</td></tr>
+						<tr><td>Water Breathing</td><td>Grants Water Breathing effect effect.</td><td> </td><td>I</td><td data-ic="helmet"></td><td> </td><td>1</td></tr>
 		        	</tbody>
 		      	</table>
 			</div>
-			</details>
 			<h3 id="ench-bow"><i data-lucide="crosshair"></i>Bow</h3>
-			<details class="ench-fold">
-				<summary>Show the 15 enchantments</summary>
-				<div class="table_container">
+			<div class="table_container">
 				<table class="neon_table">
 			        <thead>
-				        <tr>
-				            <th>Name</th>
-				            <th>Summary</th>
-				            <th>Incompatible With</th>
-				            <th>Max Level</th>
-				            <th>Primary Items</th>
-				            <th>Secondary Items</th>
-				        	<th>Weight</th>
-				        </tr>
+						<tr><th>Name</th><th>Summary</th><th>Incompatible With</th><th>Max Level</th><th>Primary Items</th><th>Secondary Items</th><th>Weight</th></tr>
 				    </thead>
 				    <tbody>
-				        <tr>
-				            <td>Bomber</td>
-				            <td>Shoots TNT instead of arrows.</td>
-				            <td>Ender Bow, Ghast</td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>1</td>
-				        </tr>
-				        <tr>
-				            <td>Confusing Arrows</td>
-				            <td>Applies Nausea effect on arrows.</td>
-				            <td>Bomber, Ender Bow, Ghast</td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Darkness Arrows</td>
-				            <td>Applies Darkness effect on arrows.</td>
-				            <td>Bomber, Ender Bow, Ghast</td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Dragonfire Arrows</td>
-				            <td>Applies Dragons Breath effect on arrows.</td>
-				            <td>Bomber, Ender Bow, Ghast</td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Electrified Arrows</td>
-				            <td>Summons Lightning on hit.</td>
-				            <td>Bomber, Ender Bow, Ghast</td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Ender Bow</td>
-				            <td>Shoots Ender Pearls instead of arrows.</td>
-				            <td>Bomber, Ghast</td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>1</td>
-				        </tr>
-				        <tr>
-				            <td>Explosive Arrows</td>
-				            <td>Arrows Explodes on hit.</td>
-				            <td>Bomber, Ender Bow, Ghast</td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Flare</td>
-				            <td>Places a Torch where arrow land.</td>
-				            <td>Bomber, Ender Bow, Ghast</td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Ghast</td>
-				            <td>Shoots Fireball instead of arrows.</td>
-				            <td>Bomber, Ender Bow</td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>1</td>
-				        </tr>
-				        <tr>
-				            <td>Hover</td>
-				            <td>Applies Levitation effect on arrows.</td>
-				            <td>Bomber, Ender Bow, Ghast</td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Lingering</td>
-				            <td>Arrows with a lingering effect on hit.</td>
-				            <td>Bomber, Ender Bow, Ghast</td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Poisoned Arrows</td>
-				            <td>Applies Poison effect on arrows.</td>
-				            <td>Bomber, Ender Bow, Ghast</td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Sniper</td>
-				            <td>Increases projectile speed.</td>
-				            <td> </td>
-				            <td>II</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				    	<tr>
-				            <td>Vampiric Arrows</td>
-				            <td>Restores health on hit.</td>
-				            <td>Bomber, Ender Bow, Ghast</td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Withered Arrows</td>
-				            <td>Applies Wither effect on arrows.</td>
-				            <td>Bomber, Ender Bow, Ghast</td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-			          	</tr>
+						<tr><td>Bomber</td><td>Shoots TNT instead of arrows.</td><td>Ender Bow, Ghast</td><td>III</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>1</td></tr>
+						<tr><td>Confusing Arrows</td><td>Applies Nausea effect on arrows.</td><td>Bomber, Ender Bow, Ghast</td><td>III</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>10</td></tr>
+						<tr><td>Darkness Arrows</td><td>Applies Darkness effect on arrows.</td><td>Bomber, Ender Bow, Ghast</td><td>III</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>10</td></tr>
+						<tr><td>Dragonfire Arrows</td><td>Applies Dragons Breath effect on arrows.</td><td>Bomber, Ender Bow, Ghast</td><td>III</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>2</td></tr>
+						<tr><td>Electrified Arrows</td><td>Summons Lightning on hit.</td><td>Bomber, Ender Bow, Ghast</td><td>III</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>5</td></tr>
+						<tr><td>Ender Bow</td><td>Shoots Ender Pearls instead of arrows.</td><td>Bomber, Ghast</td><td>I</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>1</td></tr>
+						<tr><td>Explosive Arrows</td><td>Arrows Explodes on hit.</td><td>Bomber, Ender Bow, Ghast</td><td>III</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>5</td></tr>
+						<tr><td>Flare</td><td>Places a Torch where arrow land.</td><td>Bomber, Ender Bow, Ghast</td><td>I</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>5</td></tr>
+						<tr><td>Ghast</td><td>Shoots Fireball instead of arrows.</td><td>Bomber, Ender Bow</td><td>I</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>1</td></tr>
+						<tr><td>Hover</td><td>Applies Levitation effect on arrows.</td><td>Bomber, Ender Bow, Ghast</td><td>III</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>10</td></tr>
+						<tr><td>Lingering</td><td>Arrows with a lingering effect on hit.</td><td>Bomber, Ender Bow, Ghast</td><td>III</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>2</td></tr>
+						<tr><td>Poisoned Arrows</td><td>Applies Poison effect on arrows.</td><td>Bomber, Ender Bow, Ghast</td><td>III</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>5</td></tr>
+						<tr><td>Sniper</td><td>Increases projectile speed.</td><td> </td><td>II</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>10</td></tr>
+						<tr><td>Vampiric Arrows</td><td>Restores health on hit.</td><td>Bomber, Ender Bow, Ghast</td><td>III</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>2</td></tr>
+						<tr><td>Withered Arrows</td><td>Applies Wither effect on arrows.</td><td>Bomber, Ender Bow, Ghast</td><td>III</td><td data-ic="bow"></td><td data-ic="crossbow"></td><td>5</td></tr>
 			    	</tbody>
 			    </table>
 			</div>
-			</details>
-	
 			<h3 id="ench-tool"><i data-lucide="pickaxe"></i>Tool</h3>
-			<details class="ench-fold">
-				<summary>Show the 12 enchantments</summary>
-				<div class="table_container">
+			<div class="table_container">
 				<table class="neon_table">
 			        <thead>
-				        <tr>
-				            <th>Name</th>
-				            <th>Summary</th>
-				            <th>Incompatible With</th>
-				            <th>Max Level</th>
-				            <th>Primary Items</th>
-				            <th>Secondary Items</th>
-				            <th>Weight</th>
-				        </tr>
+						<tr><th>Name</th><th>Summary</th><th>Incompatible With</th><th>Max Level</th><th>Primary Items</th><th>Secondary Items</th><th>Weight</th></tr>
 				    </thead>
 				    <tbody>
-				        <tr>
-				            <td>Blast Mining</td>
-				            <td>Mines blocks with Explosions.</td>
-				            <td>Tunnel, Veinminer</td>
-				            <td>V</td>
-				            <td>
-				              	<img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Glass Breaker</td>
-				            <td>Breaks glass instantly.</td>
-				            <td> </td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Haste</td>
-				            <td>Applies Haste effect on mining.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
-				             	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Lucky Miner</td>
-				            <td>Produces more XP from mined blocks.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Replanter</td>
-				            <td>Replants Crops on harvest or right-click.</td>
-				            <td> </td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>1</td>
-				        </tr>
-				        <tr>
-				            <td>Silk Chest</td>
-				            <td>Drops Chests that keeps their content.</td>
-				            <td> </td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>1</td>
-				        </tr>
-				        <!-- <tr>
-				            <td>Silk Spawner</td>
-				            <td>Chance to obtain a Monster Spawner.</td>
-				            <td>Smelter</td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>1</td>
-				        </tr> -->
-				        <tr>
-				            <td>Smelter</td>
-				            <td>Smelt dropped items according to their Recipes.</td>
-				            <td>Silk Touch<!--, Silk Spawner--></td>
-				            <td>V</td>
-				            <td>
-				              	<img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				             	<img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Telekinesis</td>
-				            <td>Moves all block loot directly to inventory.</td>
-				            <td> </td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>1</td>
-				        </tr>
-				        <tr>
-				            <td>Treefeller</td>
-				            <td>Cuts down an entire tree.</td>
-				            <td> </td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Tunnel</td>
-				            <td>Mines 1x2, 2x2, 3x3 area.</td>
-				            <td>Veinminer, Blast Mining</td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>1</td>
-				        </tr>
-				        <tr>
-				            <td>Veinminer</td>
-				            <td>Mines the whole ore vein at once.</td>
-				            <td>Tunnel, Blast Mining</td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>2</td>
-				        </tr>
+						<tr><td>Blast Mining</td><td>Mines blocks with Explosions.</td><td>Tunnel, Veinminer</td><td>V</td><td data-ic="pickaxe"></td><td> </td><td>2</td></tr>
+						<tr><td>Glass Breaker</td><td>Breaks glass instantly.</td><td> </td><td>I</td><td data-ic="pickaxe axe shovel"></td><td data-ic="hoe shears"></td><td>10</td></tr>
+						<tr><td>Haste</td><td>Applies Haste effect on mining.</td><td> </td><td>III</td><td data-ic="pickaxe axe shovel"></td><td data-ic="hoe shears"></td><td>2</td></tr>
+						<tr><td>Lucky Miner</td><td>Produces more XP from mined blocks.</td><td> </td><td>III</td><td data-ic="pickaxe"></td><td> </td><td>5</td></tr>
+						<tr><td>Replanter</td><td>Replants Crops on harvest or right-click.</td><td> </td><td>I</td><td data-ic="hoe"></td><td> </td><td>1</td></tr>
+						<tr><td>Silk Chest</td><td>Drops Chests that keeps their content.</td><td> </td><td>I</td><td data-ic="axe"></td><td data-ic="pickaxe shovel hoe"></td><td>1</td></tr>
+				        <!-- <tr><td>Silk Spawner</td><td>Chance to obtain a Monster Spawner.</td><td>Smelter</td><td>I</td><td data-ic="pickaxe"></td><td> </td><td>1</td></tr> -->
+						<tr><td>Smelter</td><td>Smelt dropped items according to their Recipes.</td><td>Silk Touch<!--, Silk Spawner--></td><td>V</td><td data-ic="pickaxe axe shovel"></td><td data-ic="hoe shears"></td><td>5</td></tr>
+						<tr><td>Telekinesis</td><td>Moves all block loot directly to inventory.</td><td> </td><td>I</td><td data-ic="pickaxe axe shovel hoe"></td><td data-ic="shears"></td><td>1</td></tr>
+						<tr><td>Treefeller</td><td>Cuts down an entire tree.</td><td> </td><td>I</td><td data-ic="axe"></td><td> </td><td>2</td></tr>
+						<tr><td>Tunnel</td><td>Mines 1x2, 2x2, 3x3 area.</td><td>Veinminer, Blast Mining</td><td>III</td><td data-ic="pickaxe"></td><td data-ic="axe shovel hoe"></td><td>1</td></tr>
+						<tr><td>Veinminer</td><td>Mines the whole ore vein at once.</td><td>Tunnel, Blast Mining</td><td>III</td><td data-ic="pickaxe"></td><td> </td><td>2</td></tr>
 			        </tbody>
 			    </table>
 			</div>
-			</details>
 			<h3 id="ench-fishing"><i data-lucide="fish"></i>Fishing</h3>
-			<details class="ench-fold">
-				<summary>Show the 6 enchantments</summary>
-				<div class="table_container">
+			<div class="table_container">
 				<table class="neon_table">
 			        <thead>
-				        <tr>
-				            <th>Name</th>
-				            <th>Summary</th>
-				            <th>Incompatible With</th>
-				            <th>Max Level</th>
-				            <th>Primary Items</th>
-				            <th>Secondary Items</th>
-				            <th>Weight</th>
-				        </tr>
+						<tr><th>Name</th><th>Summary</th><th>Incompatible With</th><th>Max Level</th><th>Primary Items</th><th>Secondary Items</th><th>Weight</th></tr>
 				    </thead>
 				    <tbody>
-				        <tr>
-				            <td>Auto Reel</td>
-				            <td>Automatically reels in a hook on bite.</td>
-				            <td> </td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>1</td>
-				        </tr>
-				        <tr>
-				            <td>Curse of Drowned</td>
-				            <td>Chance to fish up a Drowned.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Double Catch</td>
-				            <td>Increases amount of caught item by x2.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>River Master</td>
-				            <td>Increases casting distance.</td>
-				            <td> </td>
-				            <td>V</td>
-				            <td>
-				              	<img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Seasoned Angler</td>
-				            <td>Increases amount of gained XP.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Survivalist</td>
-				            <td>Automatically cooks fish if what is caught is raw.</td>
-				            <td> </td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>2</td>
-				        </tr>
+						<tr><td>Auto Reel</td><td>Automatically reels in a hook on bite.</td><td> </td><td>I</td><td data-ic="fishing-rod"></td><td> </td><td>1</td></tr>
+						<tr><td>Curse of Drowned</td><td>Chance to fish up a Drowned.</td><td> </td><td>III</td><td data-ic="fishing-rod"></td><td> </td><td>5</td></tr>
+						<tr><td>Double Catch</td><td>Increases amount of caught item by x2.</td><td> </td><td>III</td><td data-ic="fishing-rod"></td><td> </td><td>2</td></tr>
+						<tr><td>River Master</td><td>Increases casting distance.</td><td> </td><td>V</td><td data-ic="fishing-rod"></td><td> </td><td>10</td></tr>
+						<tr><td>Seasoned Angler</td><td>Increases amount of gained XP.</td><td> </td><td>III</td><td data-ic="fishing-rod"></td><td> </td><td>5</td></tr>
+						<tr><td>Survivalist</td><td>Automatically cooks fish if what is caught is raw.</td><td> </td><td>I</td><td data-ic="fishing-rod"></td><td> </td><td>2</td></tr>
 			        </tbody>
 			    </table>
 			</div>
-			</details>
 			<h3 id="ench-weapon"><i data-lucide="sword"></i>Weapon</h3>
-			<details class="ench-fold">
-				<summary>Show the 24 enchantments</summary>
-				<div class="table_container">
+			<div class="table_container">
 				<table class="neon_table">
 			        <thead>
-				        <tr>
-				            <th>Name</th>
-				            <th>Summary</th>
-				            <th>Incompatible With</th>
-				            <th>Max Level</th>
-				            <th>Primary Items</th>
-				            <th>Secondary Items</th>
-				            <th>Weight</th>
-				        </tr>
+						<tr><th>Name</th><th>Summary</th><th>Incompatible With</th><th>Max Level</th><th>Primary Items</th><th>Secondary Items</th><th>Weight</th></tr>
 				    </thead>
 				    <tbody>
-				        <tr>
-				            <td>Bane of Netherspawn</td>
-				            <td>Increases damage to nether mobs.</td>
-				            <td> </td>
-				            <td>V</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Blindness</td>
-				            <td>Applies Blindness effect on target.</td>
-				            <td> </td>
-				            <td>II</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Confusion</td>
-				            <td>Applies Nausea effect on target.</td>
-				            <td> </td>
-				            <td>II</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Cure</td>
-				            <td>Cures Zombified Piglins and Zombie Villagers on kill.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Curse of Death</td>
-				            <td>If you kill a player, you have a chance of dying too.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Cutter</td>
-				            <td>Damages and drops target's armor.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Decapitator</td>
-				            <td>Allows to obtain target head.</td>
-				            <td> </td>
-				            <td>II</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Double Strike</td>
-				            <td>Increases damage by twice.</td>
-				            <td> </td>
-				            <td>II</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>1</td>
-				        </tr>
-				        <tr>
-				            <td>Exhaust</td>
-				            <td>Applies Hunger effect on target.</td>
-				            <td> </td>
-				            <td>IV</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Ice Aspect</td>
-				            <td>Freezes and applies Slowness on target.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Infernus</td>
-				            <td>Tridens sets targets on fire.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Nimble</td>
-				            <td>Moves entity's drops directly to inventory.</td>
-				            <td> </td>
-				            <td>I</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Paralyze</td>
-				            <td>Applies Mining Fatigue effect on target.</td>
-				            <td> </td>
-				            <td>V</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Rage</td>
-				            <td>Grants Strength effect in combat.</td>
-				            <td> </td>
-				            <td>II</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Rocket</td>
-				            <td>Launches target into the space.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				             	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Swiper</td>
-				            <td>Steals player XP.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Temper</td>
-				            <td>Damage increases the more the less health you have.</td>
-				            <td> </td>
-				            <td>V</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>1</td>
-				        </tr>
-				        <tr>
-				            <td>Thrifty</td>
-				            <td>Drops mob Spawn Egg.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Thunder</td>
-				            <td>Summons Lightning on target with extra damage.</td>
-				            <td> </td>
-				            <td>V</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Vampire</td>
-				            <td>Steals target's health.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>2</td>
-				        </tr>
-				        <tr>
-				            <td>Venom</td>
-				            <td>Applies Poison effect on target.</td>
-				            <td> </td>
-				            <td>II</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Village Defender</td>
-				            <td>Increases damage to Illagers.</td>
-				            <td> </td>
-				            <td>V</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>10</td>
-				        </tr>
-				        <tr>
-				            <td>Wisdom</td>
-				            <td>Produces more XP from mobs.</td>
-				            <td> </td>
-				            <td>V</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-				        </tr>
-				        <tr>
-				            <td>Wither</td>
-				            <td>Applies Wither effect on target.</td>
-				            <td> </td>
-				            <td>II</td>
-				            <td>
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-				        </tr>
+						<tr><td>Bane of Netherspawn</td><td>Increases damage to nether mobs.</td><td> </td><td>V</td><td data-ic="sword"></td><td data-ic="axe"></td><td>10</td></tr>
+						<tr><td>Blindness</td><td>Applies Blindness effect on target.</td><td> </td><td>II</td><td data-ic="sword"></td><td data-ic="axe"></td><td>10</td></tr>
+						<tr><td>Confusion</td><td>Applies Nausea effect on target.</td><td> </td><td>II</td><td data-ic="sword"></td><td data-ic="axe"></td><td>10</td></tr>
+						<tr><td>Cure</td><td>Cures Zombified Piglins and Zombie Villagers on kill.</td><td> </td><td>III</td><td data-ic="sword"></td><td data-ic="axe"></td><td>10</td></tr>
+						<tr><td>Curse of Death</td><td>If you kill a player, you have a chance of dying too.</td><td> </td><td>III</td><td data-ic="sword"></td><td data-ic="axe"></td><td>2</td></tr>
+						<tr><td>Cutter</td><td>Damages and drops target's armor.</td><td> </td><td>III</td><td data-ic="sword"></td><td data-ic="axe"></td><td>2</td></tr>
+						<tr><td>Decapitator</td><td>Allows to obtain target head.</td><td> </td><td>II</td><td data-ic="sword"></td><td data-ic="axe"></td><td>2</td></tr>
+						<tr><td>Double Strike</td><td>Increases damage by twice.</td><td> </td><td>II</td><td data-ic="sword"></td><td data-ic="axe"></td><td>1</td></tr>
+						<tr><td>Exhaust</td><td>Applies Hunger effect on target.</td><td> </td><td>IV</td><td data-ic="sword"></td><td data-ic="axe"></td><td>10</td></tr>
+						<tr><td>Ice Aspect</td><td>Freezes and applies Slowness on target.</td><td> </td><td>III</td><td data-ic="sword"></td><td data-ic="axe"></td><td>10</td></tr>
+						<tr><td>Infernus</td><td>Tridens sets targets on fire.</td><td> </td><td>III</td><td data-ic="trident"></td><td> </td><td>10</td></tr>
+						<tr><td>Nimble</td><td>Moves entity's drops directly to inventory.</td><td> </td><td>I</td><td data-ic="sword"></td><td data-ic="axe"></td><td>2</td></tr>
+						<tr><td>Paralyze</td><td>Applies Mining Fatigue effect on target.</td><td> </td><td>V</td><td data-ic="sword"></td><td data-ic="axe"></td><td>5</td></tr>
+						<tr><td>Rage</td><td>Grants Strength effect in combat.</td><td> </td><td>II</td><td data-ic="sword"></td><td data-ic="axe"></td><td>5</td></tr>
+						<tr><td>Rocket</td><td>Launches target into the space.</td><td> </td><td>III</td><td data-ic="sword"></td><td data-ic="axe"></td><td>5</td></tr>
+						<tr><td>Swiper</td><td>Steals player XP.</td><td> </td><td>III</td><td data-ic="sword"></td><td data-ic="axe"></td><td>2</td></tr>
+						<tr><td>Temper</td><td>Damage increases the more the less health you have.</td><td> </td><td>V</td><td data-ic="sword"></td><td data-ic="axe"></td><td>1</td></tr>
+						<tr><td>Thrifty</td><td>Drops mob Spawn Egg.</td><td> </td><td>III</td><td data-ic="sword"></td><td data-ic="axe"></td><td>2</td></tr>
+						<tr><td>Thunder</td><td>Summons Lightning on target with extra damage.</td><td> </td><td>V</td><td data-ic="sword"></td><td data-ic="axe"></td><td>5</td></tr>
+						<tr><td>Vampire</td><td>Steals target's health.</td><td> </td><td>III</td><td data-ic="sword"></td><td data-ic="axe"></td><td>2</td></tr>
+						<tr><td>Venom</td><td>Applies Poison effect on target.</td><td> </td><td>II</td><td data-ic="sword"></td><td data-ic="axe"></td><td>10</td></tr>
+						<tr><td>Village Defender</td><td>Increases damage to Illagers.</td><td> </td><td>V</td><td data-ic="sword"></td><td data-ic="axe"></td><td>10</td></tr>
+						<tr><td>Wisdom</td><td>Produces more XP from mobs.</td><td> </td><td>V</td><td data-ic="sword"></td><td data-ic="axe"></td><td>5</td></tr>
+						<tr><td>Wither</td><td>Applies Wither effect on target.</td><td> </td><td>II</td><td data-ic="sword"></td><td data-ic="axe"></td><td>5</td></tr>
 			        </tbody>
 			    </table>
 			</div>
-			</details>
 			<h3 id="ench-universal"><i data-lucide="sparkles"></i>Universal</h3>
-			<details class="ench-fold">
-				<summary>Show the 6 enchantments</summary>
-				<div class="table_container">
+			<div class="table_container">
 				<table class="neon_table">
 			        <thead>
-			          	<tr>
-			            	<th>Name</th>
-			            	<th>Summary</th>
-			            	<th>Incompatible With</th>
-			            	<th>Max Level</th>
-			            	<th>Primary Items</th>
-			            	<th>Secondary Items</th>
-			            	<th>Weight</th>
-			          	</tr>
+						<tr><th>Name</th><th>Summary</th><th>Incompatible With</th><th>Max Level</th><th>Primary Items</th><th>Secondary Items</th><th>Weight</th></tr>
 			        </thead>
 			        <tbody>
-			          	<tr>
-			            	<td>Curse of Breaking</td>
-			            	<td>Takes more durability points on use.</td>
-			            	<td>Unbreaking</td>
-			           		<td>III</td>
-			            	<td>
-				              	<img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shield.webp" alt="Shield" title="Shield" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>10</td>
-				        </tr>
-			          	<tr>
-				            <td>Curse of Fragility</td>
-				            <td>Prevents item from being grindstoned or anviled.</td>
-				            <td> </td>
-				            <td>I</td>
-				            <td>
-				                <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shield.webp" alt="Shield" title="Shield" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>10</td>
-			          	</tr>
-			          	<tr>
-				            <td>Curse of Mediocrity</td>
-				            <td>Disenchants block's and mob's loot.</td>
-				            <td> </td>
-				            <td>III</td>
-				            <td>
-				                <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>
-				                <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy">
-				            </td>
-				            <td>5</td>
-			          	</tr>
-			          	<tr>
-				            <td>Curse of Misfortune</td>
-				            <td>Reduces blocks and mobs loot to zero.</td>
-				            <td>Fortune, Looting</td>
-				            <td>III</td>
-				            <td>
-				                <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> 
-				                <img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>5</td>
-			          	</tr>
-			          	<tr>
-			            	<td>Restore</td>
-			            	<td>Saves item from breaking once.</td>
-			            	<td> </td>
-			            	<td>III</td>
-			            	<td>
-				              	<img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shield.webp" alt="Shield" title="Shield" width="28" height="28" loading="lazy"> 
-			              		<img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy"> 
-			              		<img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> 
-			              		<img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy">
-			            	</td>
-			            	<td> </td>
-			            	<td>2</td>
-			          	</tr>
-			          	<tr>
-				            <td>Soulbound</td>
-				            <td>Prevents item from being dropped upon death.</td>
-				            <td>Curse of Vanishing</td>
-				            <td>I</td>
-				            <td>
-					            <img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy"> 
-					            <img src="images/icon/axe.webp" alt="Axe" title="Axe" width="28" height="28" loading="lazy"> 
-					            <img src="images/icon/shovel.webp" alt="Shovel" title="Shovel" width="28" height="28" loading="lazy"> 
-					            <img src="images/icon/hoe.webp" alt="Hoe" title="Hoe" width="28" height="28" loading="lazy"> 
-					            <img src="images/icon/sword.webp" alt="Sword" title="Sword" width="28" height="28" loading="lazy"> 
-					            <img src="images/icon/bow.webp" alt="Bow" title="Bow" width="28" height="28" loading="lazy"> 
-					            <img src="images/icon/crossbow.webp" alt="Crossbow" title="Crossbow" width="28" height="28" loading="lazy"> 
-					            <img src="images/icon/shears.webp" alt="Shears" title="Shears" width="28" height="28" loading="lazy"> 
-					        	<img src="images/icon/helmet.webp" alt="Helmet" title="Helmet" width="28" height="28" loading="lazy"> 
-					          	<img src="images/icon/chestplate.webp" alt="Chestplate" title="Chestplate" width="28" height="28" loading="lazy"> 
-					            <img src="images/icon/leggings.webp" alt="Leggings" title="Leggings" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/boots.webp" alt="Boots" title="Boots" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/shield.webp" alt="Shield" title="Shield" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/fishing-rod.webp" alt="Fishing rod" title="Fishing rod" width="28" height="28" loading="lazy"> 
-				              	<img src="images/icon/trident.webp" alt="Trident" title="Trident" width="28" height="28" loading="lazy"> 
-				            	<img src="images/icon/mace.webp" alt="Mace" title="Mace" width="28" height="28" loading="lazy">
-				            </td>
-				            <td> </td>
-				            <td>2</td>
-			        	</tr>
+						<tr><td>Curse of Breaking</td><td>Takes more durability points on use.</td><td>Unbreaking</td><td>III</td><td data-ic="pickaxe axe shovel hoe sword bow crossbow shears helmet chestplate leggings boots elytra shield fishing-rod trident mace"></td><td> </td><td>10</td></tr>
+						<tr><td>Curse of Fragility</td><td>Prevents item from being grindstoned or anviled.</td><td> </td><td>I</td><td data-ic="pickaxe axe shovel hoe sword bow crossbow shears helmet chestplate leggings boots elytra shield fishing-rod trident mace"></td><td> </td><td>10</td></tr>
+						<tr><td>Curse of Mediocrity</td><td>Disenchants block's and mob's loot.</td><td> </td><td>III</td><td data-ic="sword axe bow crossbow trident mace"></td><td data-ic="pickaxe shovel hoe shears"></td><td>5</td></tr>
+						<tr><td>Curse of Misfortune</td><td>Reduces blocks and mobs loot to zero.</td><td>Fortune, Looting</td><td>III</td><td data-ic="pickaxe axe shovel hoe sword bow crossbow shears trident mace"></td><td> </td><td>5</td></tr>
+						<tr><td>Restore</td><td>Saves item from breaking once.</td><td> </td><td>III</td><td data-ic="pickaxe axe shovel hoe sword bow crossbow shears helmet chestplate leggings boots elytra shield fishing-rod trident mace"></td><td> </td><td>2</td></tr>
+						<tr><td>Soulbound</td><td>Prevents item from being dropped upon death.</td><td>Curse of Vanishing</td><td>I</td><td data-ic="pickaxe axe shovel hoe sword bow crossbow shears helmet chestplate leggings boots elytra shield fishing-rod trident mace"></td><td> </td><td>2</td></tr>
 			    	</tbody>
 				</table>
 			</div>
-			</details>
 			<h2 id="auction-house"><i data-lucide="gavel"></i>Auction House</h2>
 			<p>The <b>Auction House</b> is the player-driven marketplace of the server, where you can <b>sell your items to other players</b> and browse everything that others have put on sale.</p>
 			<p>Open it at any time with <code>/ah</code> (you can also use <code>/auction</code>, <code>/auctionhouse</code> or <code>/hdv</code>).</p>
@@ -2287,9 +1188,7 @@ title: Wiki
 		</aside>
 	</div>
 	<script>
-		(function(){function o(){var h=location.hash.slice(1);if(!h)return;var t=document.getElementById(h);var d=t&&t.nextElementSibling;
-		while(d&&d.tagName!=="H3"&&d.tagName!=="H2"){var f=d.matches&&d.matches(".ench-fold")?d:d.querySelector&&d.querySelector(".ench-fold");if(f&&h.indexOf("ench-")===0)f.open=true;d=d.nextElementSibling}}
-		window.addEventListener("hashchange",o);window.addEventListener("DOMContentLoaded",o)})();
+		document.querySelectorAll("td[data-ic]").forEach(function(td){td.innerHTML=td.dataset.ic.split(" ").map(function(n){var t=n.replace(/-/g," ");t=t.charAt(0).toUpperCase()+t.slice(1);return '<img src="images/icon/'+n+'.webp" alt="'+t+'" title="'+t+'" width="28" height="28" loading="lazy">'}).join(" ")});
 	</script>
 	<script src="scripts/wiki.js"></script>
 	<script src="scripts/doc.js"></script>
