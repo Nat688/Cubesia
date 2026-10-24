@@ -5,11 +5,24 @@ title: Wiki
 
 <link rel="stylesheet" type="text/css" href="styles/wiki.css">
 <link rel="stylesheet" type="text/css" href="styles/doc.css">
+<style>
+	/* Compact enchantment tables */
+	#enchantments ~ * .neon_table, .wiki-content .ench-fold .neon_table{font-size:.85rem}
+	.ench-fold .neon_table th,.ench-fold .neon_table td{padding:5px 8px;line-height:1.3}
+	.ench-fold .neon_table td img{width:20px;height:20px;margin:0 1px;vertical-align:middle}
+	.ench-fold{margin:8px 0 18px}
+	.ench-fold>summary{cursor:pointer;display:inline-block;padding:6px 14px;border:1px solid currentColor;border-radius:8px;opacity:.85;font-weight:600;list-style:none;user-select:none}
+	.ench-fold>summary::-webkit-details-marker{display:none}
+	.ench-fold>summary::before{content:"\25B8  "}
+	.ench-fold[open]>summary::before{content:"\25BE  "}
+	.ench-fold>summary:hover{opacity:1}
+	.ench-fold[open]>summary{margin-bottom:10px}
+</style>
 <body>
 	<div class="wiki">
 		<main class="wiki-content">
 			<h1>Welcome to the wiki of <span class="cubesia">Cubesia</span></h1>
-			<p>Everything you need to know about the server, on a single page.</p>
+			<p>Everything you need to know about the server, on a single page: commands, grades, farms, enchantments, events and every little quality-of-life detail that makes Cubesia what it is.</p>
 			<h2 id="commands"><i data-lucide="terminal"></i>Commands</h2>
 			<h3 id="cmd-general"><i data-lucide="list"></i>General</h3>
 			<ul class="cmd-list">
@@ -35,8 +48,12 @@ title: Wiki
 				<li><span class="command">/team</span> <span class="command">/teams</span> <span class="base">Opens the team interface, or lets you use team commands.</span></li>
 				<li><span class="command">/fly</span> <span class="base">Allows you to fly on your own schedule.</span></li>
 				<li><span class="command">/changelog</span> <span class="base">Shows the server changelog directly in-game.</span></li>
-				<li><span class="command">/tags</span> <span class="base">Opens the tags interface.</span></li>
-				<li><span class="command">/grades</span> <span class="base">Shows the available ranks.</span></li>
+			<li><span class="command">/rtp</span> <span class="base">Opens the random teleport menu (Overworld, Nether and End, depending on your grade).</span></li>
+			<li><span class="command">/tags</span> <span class="command">/tag</span> <span class="base">Opens the tags menu to equip the tag of your choice.</span></li>
+			<li><span class="command">/stash</span> <span class="base">Lets you collect items that could not be delivered to your inventory.</span></li>
+			<li><span class="command">/nightvision</span> <span class="base">Toggles night vision on or off.</span></li>
+			<li><span class="command">/link</span> <span class="base">Starts the linking of your Minecraft account to your Discord account (see <a href="#discord">Discord</a>).</span></li>
+			<li><span class="command">/unlink</span> <span class="base">Removes the link between your Minecraft and Discord accounts.</span></li>
 			</ul>
 			<h3 id="cmd-extras"><i data-lucide="sparkles"></i>Extras</h3>
 			<ul class="cmd-list">
@@ -58,13 +75,11 @@ title: Wiki
 				<li><span class="command">/smithingtable</span> <span class="command">/smithing</span> <span class="base">Opens a smithing table.</span></li>
 				<li><span class="command">/stonecutter</span> <span class="base">Opens a stonecutter.</span></li>
 				<li><span class="command">/loom</span> <span class="base">Opens a loom.</span></li>
-				<li><span class="command">/nightvision</span> <span class="command">/nv</span> <span class="base">Toggles night vision.</span></li>
+			<li><span class="command">/cartographytable</span> <span class="base">Opens a cartography table.</span></li>
 			</ul>
 			<h3 id="cmd-links"><i data-lucide="link"></i>Links</h3>
 			<ul class="cmd-list">
 				<li><span class="command">/discord</span> <span class="base">Shows the link to the Discord.</span></li>
-				<li><span class="command">/link</span> <span class="base">Links your Minecraft account to your Discord account.</span></li>
-				<li><span class="command">/unlink</span> <span class="base">Unlinks your Minecraft account from your Discord account.</span></li>
 				<li><span class="command">/wiki</span> <span class="base">Shows the link to the Wiki.</span></li>
 				<li><span class="command">/rules</span> <span class="command">/rule</span> <span class="base">Shows the link to the Rules.</span></li>
 				<li><span class="command">/site</span> <span class="command">/website</span> <span class="base">Shows the link to the website.</span></li>
@@ -74,7 +89,8 @@ title: Wiki
 				<li><span class="command">/money</span> <span class="base">Shows your current balance in money.</span></li>
 				<li><span class="command">/money top</span> <span class="base">Shows the top players in terms of money.</span></li>
 				<li><span class="command">/shards</span> <span class="base">Shows your current balance in shards.</span></li>
-				<li><span class="command">/shards top</span> <span class="base">Shows the top players in terms of shards.</span></li>
+				<li><span class="command">/gems</span> <span class="base">Shows your current balance in gems (the premium currency used for gem grades).</span></li>
+			<li><span class="command">/shards top</span> <span class="base">Shows the top players in terms of shards.</span></li>
 				<li><span class="command">/pay</span> <span class="base">Allows you to pay other players.</span></li>
 				<li><span class="command">/paytoggle</span> <span class="base">Toggles payments from other players.</span></li>
 				<li><span class="command">/bounty</span> <span class="base">Opens the bounty menu with the players' bounties.</span></li>
@@ -104,9 +120,51 @@ title: Wiki
 			<ul class="cmd-list">
 				<li><span class="command">/heal</span> <span class="base">Allows you to fully regenerate your health.</span></li>
 				<li><span class="command">/feed</span> <span class="base">Allows you to fully replenish your hunger.</span></li>
-				<li><span class="base">2 additional PWs</span></li>
+				<li><span class="base">2 additional Player Warps</span></li>
 				<li><span class="base">18 additional Player Vaults</span></li>
 			</ul>
+			<h2 id="grades"><i data-lucide="medal"></i>Grades</h2>
+			<p><b>Grades</b> are permanent upgrades that make your life on Cubesia easier: more <b>homes</b>, more <b>vaults</b>, more <b>auction slots</b>, more <b>orders</b> and a few exclusive abilities. Open the grades menu from the <b>/shop</b> to see what you own and what is next.</p>
+			<p>There are two families of grades, and both of them are bought once and kept forever.</p>
+			<h3 id="grades-money"><i data-lucide="coins"></i>Money grades</h3>
+			<p>Money grades are bought <b>in order</b> with the money you earn in game. Each grade <b>includes every perk of the previous ones</b>, so climbing the ladder always makes you stronger.</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead><tr><th>Grade</th><th>Price</th><th>What you get</th></tr></thead>
+					<tbody>
+						<tr><td>Stone</td><td>250,000</td><td>2 vaults, 3 auction slots</td></tr>
+						<tr><td>Copper</td><td>500,000</td><td>3 vaults, 2 homes, 2 orders</td></tr>
+						<tr><td>Iron</td><td>1,250,000</td><td>4 vaults, 5 auction slots, create elevators</td></tr>
+						<tr><td>Lapis</td><td>2,500,000</td><td>6 vaults, 2 player warps, 3 orders</td></tr>
+						<tr><td>Gold</td><td>5,000,000</td><td>9 vaults, 3 homes</td></tr>
+						<tr><td>Diamond</td><td>12,500,000</td><td>12 vaults, 10 auction slots, 0% auction tax</td></tr>
+						<tr><td>Emerald</td><td>25,000,000</td><td>15 vaults, 12 auction slots, 5 orders, change spawner mob</td></tr>
+						<tr><td>Netherite</td><td>50,000,000</td><td>18 vaults, 3 player warps, 4 homes, 15 auction slots</td></tr>
+						<tr><td>Nether Star</td><td>125,000,000</td><td>27 vaults, 5 homes, infinite flight, 25 auction slots</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<h3 id="grades-gems"><i data-lucide="gem"></i>Gem grades</h3>
+			<p>Gem grades are purchased with <b>gems</b> and unlock perks that money grades cannot, such as <b>random teleport in the Nether and the End</b>. They are cheaper when you already own the previous gem grade.</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead><tr><th>Grade</th><th>Price</th><th>What you get</th></tr></thead>
+					<tbody>
+						<tr><td>Coal</td><td>990 &#9670;</td><td>RTP in the Nether, 2 homes, 5 auction slots, 5 vaults, 3 orders</td></tr>
+						<tr><td>Redstone</td><td>2,490 &#9670; (1,500 &#9670; with Coal)</td><td>RTP in the End, 3 homes, 10 auction slots, 10 vaults</td></tr>
+						<tr><td>Quartz</td><td>4,990 &#9670; (4,000 &#9670; with Coal, 2,500 &#9670; with Redstone)</td><td>4 homes, 15 auction slots, 18 vaults, 4 orders, 0% auction tax, change spawner mob, infinite flight</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p><b>Gems</b> (&#9670;) cannot be traded or sent to other players. Check your balance with <code>/gems</code>. Gem grades replace the lower ones, so you never lose a perk by upgrading.</p>
+			</div>
+			<h3 id="grades-default"><i data-lucide="user"></i>Starting perks</h3>
+			<p>Without any grade, every player has <b>1 vault</b>, <b>1 home</b>, <b>2 auction slots</b>, <b>1 order</b> and <b>1 player warp</b>. The <b>VIP</b> status is separate and adds <b>/heal</b>, <b>/feed</b>, <b>2 extra player warps</b> and <b>18 extra vaults</b> (see <a href="#cmd-vip-only">VIP only</a>).</p>
+			<div class="shots">
+				<a href="images/wiki/grades.webp" target="_blank" rel="noopener"><img src="images/wiki/grades.webp" alt="Grades menu" loading="lazy"></a>
+			</div>
 			<h2 id="spawners"><i data-lucide="rabbit"></i>Spawners</h2>
 			<h3 id="spawner-gui"><i data-lucide="layout-grid"></i>Spawner GUI</h3>
 			<p>Every <b>Spawner</b> includes its own management interface, giving you quick access to everything related to your mob farm.</p>
@@ -122,6 +180,7 @@ title: Wiki
 			<p>The <b>Hopper</b> opens the loot filter, allowing you to enable or disable specific mob drops.</p>
 			<p>The <b>Gold Ingot</b> instantly sells every item currently stored inside the spawner.</p>
 			<p>The <b>Bundle</b> transfers all stored items directly into your inventory.</p>
+			<p>Each storage page holds <b>45 slots</b>, and the experience storage keeps up to <b>1,000 XP</b> until you collect it.</p>
 			<p>Finally, the <b>Dropper</b> drops every stored item onto the ground, or only the current storage page if your storage spans multiple pages.</p>
 			<div class="shots">
 				<a href="images/wiki/spawner_storage.webp" target="_blank" rel="noopener"><img src="images/wiki/spawner_storage.webp" alt="Spawner storage" width="511" height="385" loading="lazy"></a>
@@ -139,10 +198,11 @@ title: Wiki
 			<p><b>Spawners</b> can be stacked together to save space and increase the efficiency of your mob farms.</p>
 			<p>To <b>add</b> spawners to an existing stack, simply <b>right-click</b> the spawner. A normal right-click adds <b>one spawner</b>, while <b>Shift + Right-Click</b> adds as many spawners as possible from your inventory in a single action.</p>
 			<p>To <b>remove</b> spawners from a stack, use <b>Left-Click</b>. A normal left-click removes <b>one spawner</b>, while <b>Shift + Left-Click</b> removes an entire stack at once, making it much faster to relocate or reorganize your farms.</p>
+			<p>Spawners also work faster as a stack: a spawner produces between <b>1 and 4 mobs</b> every <b>25 seconds</b> when a player is within <b>32 blocks</b>, and a hopper placed under it can collect the drops automatically. Spawners are also <b>protected from explosions</b>.</p>
 			<p>Each spawner stack can contain up to <b>10,000 spawners</b>, allowing you to build extremely compact and efficient mob farms while saving valuable space.</p>
 			<div class="callout">
 				<i data-lucide="info"></i>
-				<p>Unlike vanilla Minecraft, <b>Silk Touch is not required</b> to break and recover spawners, allowing you to move and manage them freely whenever needed.</p>
+				<p>Unlike vanilla Minecraft, <b>Silk Touch is not required</b> to break and recover spawners. An <b>iron, golden, diamond or netherite pickaxe</b> is enough: the spawner costs a single point of durability and goes <b>straight into your inventory</b>, so you can move and manage your farms freely.</p>
 			</div>
 			<div class="shots">
 				<a href="images/wiki/spawner_stacking.webp" target="_blank" rel="noopener"><img src="images/wiki/spawner_stacking.webp" alt="Spawner stacking" width="1016" height="932" loading="lazy"></a>
@@ -150,13 +210,19 @@ title: Wiki
 			<h3 id="spawner-egg"><i data-lucide="egg"></i>Changing the mob</h3>
 			<p>You can <b>change the mob</b> of a spawner with a <b>spawn egg</b>: use the spawn egg of the mob you want on the spawner.</p>
 			<p>This lets you reuse your spawners and adapt your mob farms without having to find new ones.</p>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p>Changing the mob of a spawner is a perk of the <b>Emerald</b> and <b>Quartz</b> <a href="#grades">grades</a> (and every grade above them).</p>
+			</div>
 			<h2 id="enchantments"><i data-lucide="book"></i>Enchantments</h2>
 			<h3 id="ench-minecraft"><i data-lucide="gamepad-2"></i>Minecraft</h3>
 			<div class="callout">
 				<i data-lucide="info"></i>
-				<p>These are the vanilla Minecraft enchantments, with their vanilla maximum levels. On Cubesia, you can go <a href="#beyond-vanilla-levels">above these levels</a>.</p>
+				<p>These are the vanilla Minecraft enchantments. The maximum levels shown are the ones you can reach on Cubesia, which can be higher than in the base game thanks to <a href="#beyond-vanilla-levels">Beyond Vanilla Levels</a>.</p>
 			</div>
-			<div class="table_container">
+			<details class="ench-fold">
+				<summary>Show the 43 enchantments</summary>
+				<div class="table_container">
 				<table class="neon_table">
 					<thead>
 						<tr><th>Name</th><th>Summary</th><th>Incompatible With</th><th>Max Level</th><th>Primary Items</th><th>Secondary Items</th><th>Weight</th></tr>
@@ -208,8 +274,11 @@ title: Wiki
 					</tbody>
 				</table>
 			</div>
+			</details>
 			<h3 id="ench-armor"><i data-lucide="shield"></i>Armor</h3>
-			<div class="table_container">
+			<details class="ench-fold">
+				<summary>Show the 18 enchantments</summary>
+				<div class="table_container">
 				<table class="neon_table">
 					<thead>
 		          		<tr>
@@ -247,7 +316,7 @@ title: Wiki
 				            <td>
 				              	<img src="images/icon/elytra.webp" alt="Elytra" title="Elytra" width="28" height="28" loading="lazy">
 				            </td>
-				            <td>10</td>
+				            <td>5</td>
 			          	</tr>
 			          	<tr>
 				            <td>Dragon Heart</td>
@@ -443,8 +512,11 @@ title: Wiki
 		        	</tbody>
 		      	</table>
 			</div>
+			</details>
 			<h3 id="ench-bow"><i data-lucide="crosshair"></i>Bow</h3>
-			<div class="table_container">
+			<details class="ench-fold">
+				<summary>Show the 15 enchantments</summary>
+				<div class="table_container">
 				<table class="neon_table">
 			        <thead>
 				        <tr>
@@ -656,9 +728,12 @@ title: Wiki
 			    	</tbody>
 			    </table>
 			</div>
+			</details>
 	
 			<h3 id="ench-tool"><i data-lucide="pickaxe"></i>Tool</h3>
-			<div class="table_container">
+			<details class="ench-fold">
+				<summary>Show the 12 enchantments</summary>
+				<div class="table_container">
 				<table class="neon_table">
 			        <thead>
 				        <tr>
@@ -830,13 +905,16 @@ title: Wiki
 				              	<img src="images/icon/pickaxe.webp" alt="Pickaxe" title="Pickaxe" width="28" height="28" loading="lazy">
 				            </td>
 				            <td> </td>
-				            <td>1</td>
+				            <td>2</td>
 				        </tr>
 			        </tbody>
 			    </table>
 			</div>
+			</details>
 			<h3 id="ench-fishing"><i data-lucide="fish"></i>Fishing</h3>
-			<div class="table_container">
+			<details class="ench-fold">
+				<summary>Show the 6 enchantments</summary>
+				<div class="table_container">
 				<table class="neon_table">
 			        <thead>
 				        <tr>
@@ -919,8 +997,11 @@ title: Wiki
 			        </tbody>
 			    </table>
 			</div>
+			</details>
 			<h3 id="ench-weapon"><i data-lucide="sword"></i>Weapon</h3>
-			<div class="table_container">
+			<details class="ench-fold">
+				<summary>Show the 24 enchantments</summary>
+				<div class="table_container">
 				<table class="neon_table">
 			        <thead>
 				        <tr>
@@ -1247,8 +1328,11 @@ title: Wiki
 			        </tbody>
 			    </table>
 			</div>
+			</details>
 			<h3 id="ench-universal"><i data-lucide="sparkles"></i>Universal</h3>
-			<div class="table_container">
+			<details class="ench-fold">
+				<summary>Show the 6 enchantments</summary>
+				<div class="table_container">
 				<table class="neon_table">
 			        <thead>
 			          	<tr>
@@ -1414,16 +1498,19 @@ title: Wiki
 			    	</tbody>
 				</table>
 			</div>
+			</details>
 			<h2 id="auction-house"><i data-lucide="gavel"></i>Auction House</h2>
 			<p>The <b>Auction House</b> is the player-driven marketplace of the server, where you can <b>sell your items to other players</b> and browse everything that others have put on sale.</p>
 			<p>Open it at any time with <code>/ah</code> (you can also use <code>/auction</code>, <code>/auctionhouse</code> or <code>/hdv</code>).</p>
 			<p>You are free to <b>set the price you want</b> for each item, so you decide how much your loot, your farms or your rare finds are worth.</p>
-			<p>Every listing remains on sale for <b>7 days</b>, giving other players plenty of time to find it and buy it.</p>
+			<p>Every listing remains on sale for <b>7 days</b>, giving other players plenty of time to find it and buy it. Once a listing has expired, you can recover your item from the <b>Expired</b> tab.</p>
+			<p>To put an item on sale, hold it and use <code>/ah sell &lt;price&gt; [amount]</code>. Prices accept shortcuts such as <b>K</b> (thousand), <b>M</b> (million) and <b>B</b> (billion), so <code>/ah sell 2.5M</code> works as you would expect. The minimum price is <b>10</b>.</p>
+			<p>The interface lets you browse by <b>category</b> (Blocks, Weapons, Armor, Tools, Consumables, Resources, Enchanted Books and Miscellaneous), <b>search</b> for a specific item, and review your active listings, your purchases and your sales history.</p>
 			<p>Each new listing is also announced in the <b>#auctionhouse</b> channel of our Discord, with the <b>price</b>, the <b>item</b> and more details, so you never miss a good deal. <a href="https://discord.com/channels/1243590602130718740/1534528195087306762" target="_blank" rel="noopener">Open the channel</a>.</p>
 			<p>Whether you want to turn your farm surplus into money or find the rare item you have been looking for, the Auction House is the place to do it.</p>
 			<div class="callout">
 				<i data-lucide="info"></i>
-				<p>A <b>10% tax</b> is applied to every sale made on the Auction House.</p>
+				<p>A <b>10% tax</b> is applied to every sale made on the Auction House. Players with the <b>Diamond</b> grade (or the <b>Quartz</b> gem grade) and above pay <b>no tax at all</b>. The number of items you can list at once also grows with your <a href="#grades">grade</a>.</p>
 			</div>
 			<div class="shots">
 				<a href="images/wiki/ah.webp" target="_blank" rel="noopener"><img src="images/wiki/ah.webp" alt="Auction house" loading="lazy"></a>
@@ -1431,6 +1518,7 @@ title: Wiki
 			<h2 id="black-market"><i data-lucide="shopping-bag"></i>Black Market</h2>
 			<p>The <b>Black Market</b> is a shop for <b>vanilla items</b>.</p>
 			<p>Its stock <b>changes every hour</b> and follows a <b>rarity system</b>, so the offers you see are never quite the same.</p>
+			<p>Every restock brings <b>15 offers</b> split by rarity: <b>5 common</b>, <b>5 rare</b>, <b>3 epic</b> and <b>2 legendary</b>. Rarer offers are scarcer, so do not wait too long when you spot something you like.</p>
 			<p>Open it at any time with <code>/blackmarket</code>, and come back regularly to see what is on sale.</p>
 			<div class="shots">
 				<a href="images/wiki/blackmarket.webp" target="_blank" rel="noopener"><img src="images/wiki/blackmarket.webp" alt="Black market" loading="lazy"></a>
@@ -1439,14 +1527,48 @@ title: Wiki
 			<p>The <b>Trade</b> system lets you exchange items directly with another player through a dedicated interface, so you never have to drop anything on the ground and hope for the best.</p>
 			<p>Use <code>/trade &lt;player&gt;</code> (or <code>/trades</code>) to start a trade with the player of your choice.</p>
 			<p>The trade window lets both players put forward their items, making every exchange simple, clear and transparent.</p>
+			<p>The other player has <b>60 seconds</b> to accept your request, and both sides must confirm the final offer after a short <b>5-second</b> safety delay. Trades between accounts on the same connection are not allowed, and you can disable incoming requests at any time with <code>/trade toggle</code>.</p>
 			<p>It is the easiest way to swap resources, share loot with your friends or settle a deal with someone you trust.</p>
 			<div class="shots">
 				<a href="images/wiki/trade.webp" target="_blank" rel="noopener"><img src="images/wiki/trade.webp" alt="Trade" loading="lazy"></a>
+			</div>
+			<h2 id="homes"><i data-lucide="house"></i>Homes</h2>
+			<p><b>Homes</b> let you save a place and come back to it whenever you want, so you never have to walk home again.</p>
+			<p>Open the home menu with <code>/home</code> to <b>set</b>, <b>delete</b> and <b>teleport to</b> your homes. The menu shows <b>5 homes per page</b>.</p>
+			<p>Every teleport has a <b>3-second countdown</b>, and it is <b>cancelled if you move</b>, so stand still until it is over.</p>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p>Every player starts with <b>1 home</b>. Your <a href="#grades">grade</a> unlocks more, up to <b>5 homes</b> with the Nether Star grade.</p>
+			</div>
+			<div class="shots">
+				<a href="images/wiki/homes.webp" target="_blank" rel="noopener"><img src="images/wiki/homes.webp" alt="Homes" loading="lazy"></a>
+			</div>
+			<h2 id="rtp"><i data-lucide="dices"></i>Random Teleport</h2>
+			<p><b>Random Teleport</b> sends you to a random spot of the world, ideal to find untouched land for your next base or farm.</p>
+			<p>Use <code>/rtp</code> to open the menu and pick a world: <b>Overworld</b>, <b>Nether</b> or <b>End</b>. You are teleported within a <b>50,000-block radius</b> after a <b>3-second countdown</b> (cancelled if you move), and you must wait <b>60 seconds</b> before using it again. It is completely <b>free</b>.</p>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p>The <b>Overworld</b> is open to everyone. The <b>Nether</b> is unlocked by the <b>Coal</b> <a href="#grades-gems">gem grade</a> and the <b>End</b> by the <b>Redstone</b> gem grade.</p>
+			</div>
+			<div class="shots">
+				<a href="images/wiki/rtp.webp" target="_blank" rel="noopener"><img src="images/wiki/rtp.webp" alt="Random teleport" loading="lazy"></a>
+			</div>
+			<h2 id="player-warps"><i data-lucide="map-pin"></i>Player Warps</h2>
+			<p><b>Player Warps</b> let every player create a public teleport point, perfect for showing off a build, opening a shop or sharing a farm.</p>
+			<p>Open the menu with <code>/pw</code> (or <code>/playerwarp</code>, <code>/playerwarps</code>, <code>/pwarp</code>, <code>/pwarps</code>) to browse the warps created by other players, sorted by <b>category</b>: <b>Building</b>, <b>Shop</b>, <b>Farm</b>, <b>PvP</b>, <b>Event</b>, <b>Fun</b>, <b>Special</b> and <b>Other</b>.</p>
+			<p>Teleporting has a short <b>3-second countdown</b>, and a warp name can be up to <b>16 characters</b> long. Creating a warp is currently <b>free</b>.</p>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p>You start with <b>1 player warp</b>. Your <a href="#grades">grade</a> unlocks more, and <b>VIP</b> adds <b>2 extra warps</b>.</p>
+			</div>
+			<div class="shots">
+				<a href="images/wiki/player_warps.webp" target="_blank" rel="noopener"><img src="images/wiki/player_warps.webp" alt="Player warps" loading="lazy"></a>
 			</div>
 			<h2 id="orders"><i data-lucide="clipboard-list"></i>Orders</h2>
 			<p><b>Orders</b> let you ask other players for the <b>blocks</b>, <b>items</b> and <b>resources</b> you need.</p>
 			<p>Open the orders interface with <code>/orders</code> (or <code>/order</code>) to create a request or to browse the requests made by other players.</p>
 			<p>When creating an order, you simply select the item you are looking for in the selection menu, and the request becomes visible to everyone on the server.</p>
+			<p>You can have <b>one active order</b> by default, and your <a href="#grades">grade</a> raises this limit.</p>
 			<p>Other players can then see what is needed and help you out, which is perfect when you are missing a specific resource or when you want to help the community.</p>
 			<div class="callout">
 				<i data-lucide="info"></i>
@@ -1459,10 +1581,36 @@ title: Wiki
 			<h2 id="rewards"><i data-lucide="gift"></i>Rewards</h2>
 			<p><b>Rewards</b> give you free goodies just for playing on the server, such as <b>keys</b> and much more.</p>
 			<p>Open the rewards interface with <code>/rewards</code> (or <code>/reward</code>) to see everything that is available to you.</p>
-			<p>Some rewards can be claimed <b>every hour</b>, while others are available <b>once per day</b>, so there is always a reason to come back and check the menu.</p>
+			<p>Some rewards can be claimed <b>every hour</b> (a <b>Common Key</b>), while others are available <b>once per day</b> (<b>250 shards</b>), so there is always a reason to come back and check the menu.</p>
 			<p>The more regularly you log in, the more rewards you will collect.</p>
 			<div class="shots">
 				<a href="images/wiki/rewards.webp" target="_blank" rel="noopener"><img src="images/wiki/rewards.webp" alt="Rewards" loading="lazy"></a>
+			</div>
+			<h2 id="crates"><i data-lucide="key-round"></i>Crates</h2>
+			<p><b>Crates</b> are mystery chests that you open with a matching <b>key</b>. Each crate has its own reward pool, and the rarer the crate, the better the loot.</p>
+			<p>Keys can be found in many places: <a href="#voting">voting</a>, <a href="#rewards">rewards</a>, <a href="#jobs">jobs</a> and special events. There are <b>four crates</b> on the server:</p>
+			<ul>
+				<li><b>Common Crate</b> – the entry-level crate, and the one you will open the most.</li>
+				<li><b>Amethyst Crate</b> – a pool of <b>5 tool rewards</b>.</li>
+				<li><b>Sapphire Crate</b> – a pool of <b>6 high-value rewards</b>.</li>
+				<li><b>Crimson Crate</b> – the biggest pool, with <b>15 rewards</b> including armor, weapons, an <b>Elytra</b>, a <b>Mace</b>, a <b>Trident</b>, a <b>Bow</b>, a <b>Crossbow</b> and tools.</li>
+			</ul>
+			<p>The <b>Common Crate</b> is not only about gear: it can also drop <b>30 minutes of <a href="#fly-time">fly time</a></b> and, with a bit of luck, a key for a better crate.</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead><tr><th>Common Crate reward</th><th>Chance</th></tr></thead>
+					<tbody>
+						<tr><td>Armor piece (boots, helmet, leggings or chestplate)</td><td>12% each</td></tr>
+						<tr><td>Pickaxe</td><td>14%</td></tr>
+						<tr><td>Sword</td><td>14%</td></tr>
+						<tr><td>30 minutes of fly time</td><td>20%</td></tr>
+						<tr><td>Amethyst Key</td><td>3%</td></tr>
+						<tr><td>Sapphire Key</td><td>1%</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="shots">
+				<a href="images/wiki/crates.webp" target="_blank" rel="noopener"><img src="images/wiki/crates.webp" alt="Crates" loading="lazy"></a>
 			</div>
 			<h2 id="voting"><i data-lucide="vote"></i>Vote</h2>
 			<p>Voting for Cubesia helps the server grow, and <b>every vote is rewarded</b>.</p>
@@ -1472,6 +1620,33 @@ title: Wiki
 				<li>A <b>vote party</b> is triggered every <b>20 votes</b>.</li>
 				<li>You also receive extra rewards when you reach <b>vote milestones</b>.</li>
 			</ul>
+			<p>During a <b>vote party</b>, every online player receives <b>25,000</b>, so voting helps the whole community.</p>
+			<p>Your <b>weekly goals</b> reward you for staying consistent:</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead><tr><th>Votes this week</th><th>Reward</th></tr></thead>
+					<tbody>
+						<tr><td>5</td><td>15,000</td></tr>
+						<tr><td>10</td><td>16 Steak</td></tr>
+						<tr><td>20</td><td>50,000</td></tr>
+						<tr><td>25</td><td>1 Wither Skeleton Skull</td></tr>
+						<tr><td>40</td><td>8 Diamonds</td></tr>
+						<tr><td>50</td><td>150,000</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<p>Your <b>all-time milestones</b> are permanent rewards for the most dedicated voters:</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead><tr><th>Total votes</th><th>Reward</th></tr></thead>
+					<tbody>
+						<tr><td>50</td><td>25,000</td></tr>
+						<tr><td>100</td><td>100,000</td></tr>
+						<tr><td>250</td><td>400,000</td></tr>
+						<tr><td>1,000</td><td>1,000,000</td></tr>
+					</tbody>
+				</table>
+			</div>
 			<p>Every voting site has its own cooldown, which is displayed as a timer on the <a href="vote.html">Vote</a> page.</p>
 			<div class="shots">
 				<a href="images/wiki/vote.webp" target="_blank" rel="noopener"><img src="images/wiki/vote.webp" alt="Vote" loading="lazy"></a>
@@ -1486,6 +1661,8 @@ title: Wiki
 				<li><b>Shared chest</b> – a storage space that every member can access.</li>
 				<li><b>Team bank</b> – a shared balance for the whole team.</li>
 			</ul>
+			<p>A team starts with up to <b>20 members</b> and can grow to <b>30</b> through upgrades. Team names can be up to <b>12 characters</b> long and tags up to <b>4</b>. Invitations expire after <b>5 minutes</b>, and your team can set up to <b>3 team warps</b> (teleports have a 3-second countdown).</p>
+			<p>The shared chest starts at <b>3 rows</b> and can be upgraded to <b>6</b>. Friendly fire between teammates is <b>enabled by default</b>, but you can change it in the team settings.</p>
 			<p>Working as a team makes it much easier to organize big projects, share resources and take on the challenges of the server together.</p>
 			<div class="shots">
 				<a href="images/wiki/team_gui.webp" target="_blank" rel="noopener"><img src="images/wiki/team_gui.webp" alt="Team gui" loading="lazy"></a>
@@ -1494,6 +1671,7 @@ title: Wiki
 			<h2 id="leaderboards"><i data-lucide="trophy"></i>Leaderboards</h2>
 			<p><b>Leaderboards</b> let you compete against the other players of the server and see exactly where you stand.</p>
 			<p>Open the leaderboard interface with <code>/leaderboard</code> (or <code>/leaderboards</code>), climb the rankings, outdo your rivals and show everyone that you are among the best players on Cubesia.</p>
+			<p>Rankings are available for <b>balances</b>, <b>shards</b>, <b>kills</b>, <b>mob kills</b>, <b>deaths</b>, <b>damage dealt</b>, <b>playtime</b>, <b>jumps</b>, <b>blocks mined</b>, <b>fish caught</b> and <b>items crafted</b>. Many boards are tracked per <b>day</b>, <b>week</b>, <b>month</b> and <b>year</b>, so newcomers always have a chance to shine.</p>
 			<div class="callout">
 				<i data-lucide="info"></i>
 				<p>You can also check some rankings directly with <code>/money top</code> and <code>/shards top</code>.</p>
@@ -1501,28 +1679,112 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/leaderboard.webp" target="_blank" rel="noopener"><img src="images/wiki/leaderboard.webp" alt="Leaderboard" loading="lazy"></a>
 			</div>
+			<h2 id="profile"><i data-lucide="id-card"></i>Profile</h2>
+			<p>Your <b>profile</b> is your identity card on Cubesia. Open yours with <code>/profile</code> (or <code>/profil</code>) to see your <b>first join date</b>, <b>kills</b>, <b>deaths</b>, <b>playtime</b>, <b>balance</b> and <b>experience</b> at a glance.</p>
+			<div class="shots">
+				<a href="images/wiki/profile.webp" target="_blank" rel="noopener"><img src="images/wiki/profile.webp" alt="Profile" loading="lazy"></a>
+			</div>
+			<h2 id="settings"><i data-lucide="settings"></i>Settings</h2>
+			<p>Make the server yours with <code>/settings</code>. Each option is a simple toggle:</p>
+			<ul>
+				<li><b>Scoreboard</b> – show or hide the sidebar.</li>
+				<li><b>Broadcasts</b> – show or hide automatic server announcements.</li>
+				<li><b>Payments</b> – accept or refuse money from other players (like <code>/paytoggle</code>).</li>
+				<li><b>Trades</b> – accept or refuse trade requests.</li>
+				<li><b>Fish catch messages</b> – the chat message for each fish you catch.</li>
+				<li><b>Custom fishing</b> – turn the <a href="#fish">custom fishing</a> system on or off.</li>
+				<li><b>Fish boss bar</b> – the boss bar shown while fishing.</li>
+			</ul>
+			<div class="shots">
+				<a href="images/wiki/settings.webp" target="_blank" rel="noopener"><img src="images/wiki/settings.webp" alt="Settings" loading="lazy"></a>
+			</div>
 			<h2 id="levels"><i data-lucide="trending-up"></i>Levels</h2>
 			<p><b>Player levels</b> make you stronger over time: each level boosts your stats, such as your <b>health</b> and your <b>strength</b>.</p>
 			<p>Open the levels interface with <code>/level</code> (or <code>/lvl</code>, <code>/levels</code>) to check your progression.</p>
+			<p>There are <b>100 levels</b> to reach. Each level asks for more experience than the last, and every one of them rewards you with <b>money</b>. Along the way you unlock permanent bonuses such as more <b>health</b> (up to 20 hearts), <b>speed</b>, <b>armor</b>, <b>luck</b> and a longer <b>reach</b>.</p>
+			<p>Looking for more goals? Check out <a href="#collections">Collections</a>.</p>
 			<div class="shots">
 				<a href="images/wiki/levels.webp" target="_blank" rel="noopener"><img src="images/wiki/levels.webp" alt="Levels" loading="lazy"></a>
 			</div>
+			<h2 id="collections"><i data-lucide="library"></i>Collections</h2>
+			<p><b>Collections</b> track everything you gather on the server and reward you for it. As you collect more of an item, you reach <b>milestones</b> and receive rewards.</p>
+			<p>Open the menu with <code>/collection</code> (or <code>/collections</code>). There are <b>88 collections</b> spread over five categories:</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead><tr><th>Category</th><th>Collections</th></tr></thead>
+					<tbody>
+						<tr><td>Farming</td><td>22</td></tr>
+						<tr><td>Mining</td><td>20</td></tr>
+						<tr><td>Combat</td><td>20</td></tr>
+						<tr><td>Lumberjack</td><td>15</td></tr>
+						<tr><td>Fishing</td><td>11</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<p>Milestones go from <b>10% to 100%</b> of each collection, with rewards that grow from <b>25,000</b> up to <b>2,500,000</b>. Completing a collection is a real achievement!</p>
+			<div class="shots">
+				<a href="images/wiki/collections.webp" target="_blank" rel="noopener"><img src="images/wiki/collections.webp" alt="Collections" loading="lazy"></a>
+			</div>
+			<h2 id="events"><i data-lucide="calendar-days"></i>Events</h2>
+			<p>Cubesia hosts <b>seasonal events</b> with exclusive rewards. Open the event calendar with <code>/calendar</code>.</p>
+			<h3 id="halloween-calendar"><i data-lucide="ghost"></i>Halloween Calendar</h3>
+			<p>From <b>October 24 to October 31</b>, a gift is waiting for you each day. Come back every day, because <b>missed days cannot be claimed later</b>.</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead><tr><th>Day</th><th>Reward</th></tr></thead>
+					<tbody>
+						<tr><td>24</td><td>50,000</td></tr>
+						<tr><td>25</td><td>Candy bag (Halloween Candy, Cursed Pumpkin Pie, Bewitched Golden Apples)</td></tr>
+						<tr><td>26</td><td>An <b>Event</b> SellWand</td></tr>
+						<tr><td>27</td><td>Halloween Mask (exclusive 2026 item)</td></tr>
+						<tr><td>28</td><td>64 Soul Bottles (XP)</td></tr>
+						<tr><td>29</td><td>2 Cursed Talismans (Totems of Undying)</td></tr>
+						<tr><td>30</td><td>1 Sapphire Key</td></tr>
+						<tr><td>31</td><td><b>Spider Spawner</b> (grand finale, announced to the whole server)</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="shots">
+				<a href="images/wiki/calendar.webp" target="_blank" rel="noopener"><img src="images/wiki/calendar.webp" alt="Calendar" loading="lazy"></a>
+			</div>
 			<h2 id="advancements"><i data-lucide="award"></i>Advancements</h2>
 			<p>Cubesia adds <b>new, custom advancements</b> with their own style, on top of the vanilla ones.</p>
+			<p>There are <b>86 custom advancements</b> spread over four new tabs: <b>Craftsman's Ledger</b>, <b>Hard Knocks</b>, <b>New Version Discoveries</b> and <b>Wild Life</b>.</p>
 			<p>They are <b>directly integrated into the advancements menu</b> (the <b>L</b> key by default), so there is nothing extra to open.</p>
 			<div class="shots">
 				<a href="images/wiki/advancements.webp" target="_blank" rel="noopener"><img src="images/wiki/advancements.webp" alt="Advancements" loading="lazy"></a>
 			</div>
 			<h2 id="cosmetics"><i data-lucide="shirt"></i>Cosmetics</h2>
 			<p><b>Cosmetics</b> let you customize your experience with extras such as <b>mounts</b> and more.</p>
-			<p>Open the cosmetics menu at any time with <code>/cosmetics</code>.</p>
+			<p>Open the cosmetics menu at any time with <code>/cosmetics</code>. You will find <b>gadgets</b>, <b>particle effects</b>, <b>pets</b>, <b>morphs</b>, <b>hats</b>, <b>suits</b>, <b>emotes</b>, <b>projectile effects</b> and <b>death effects</b>.</p>
+			<p>Looking for a title instead? Take a look at <a href="#tags">Tags</a>.</p>
 			<div class="shots">
 				<a href="images/wiki/cosmetics.webp" target="_blank" rel="noopener"><img src="images/wiki/cosmetics.webp" alt="Cosmetics" loading="lazy"></a>
+			</div>
+			<h2 id="tags"><i data-lucide="tag"></i>Tags</h2>
+			<p><b>Tags</b> are small titles displayed next to your name in the chat, a stylish way to show who you are on Cubesia, whether you are a humble <b>Farmer</b> or an unstoppable <b>Overlord</b>.</p>
+			<p>Open the menu with <code>/tags</code> (or <code>/tag</code>). <b>Click a tag you own</b> to equip it, and use <b>Remove my tag</b> to go back to the default prefix.</p>
+			<p>Tags you do not own yet appear locked. You can buy them in the <b>Cosmetic Shop</b> (<b>Buy tags</b>), with prices starting at <b>100,000</b>. There are <b>34 tags</b> in five rarities:</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead><tr><th>Rarity</th><th>Tags</th><th>Examples</th></tr></thead>
+					<tbody>
+						<tr><td>Common</td><td>8</td><td>Newbie, Farmer, Miner, Builder, Explorer, Trader, Fisher, Chill</td></tr>
+						<tr><td>Rare</td><td>9</td><td>Warrior, Hunter, Wizard, Pirate, Ninja, Viking, Knight, Alchemist, Gamer</td></tr>
+						<tr><td>Epic</td><td>8</td><td>Legend, Dragon, Phoenix, Shadow, Demon, Angel, Frost, Thunder</td></tr>
+						<tr><td>Legendary</td><td>5</td><td>King, Queen, Emperor, Overlord, Billionaire</td></tr>
+						<tr><td>Mythic</td><td>4</td><td>Immortal, Godlike, Cosmic, Eternal</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="shots">
+				<a href="images/wiki/tags.webp" target="_blank" rel="noopener"><img src="images/wiki/tags.webp" alt="Tags menu" loading="lazy"></a>
 			</div>
 			<h2 id="chat-games"><i data-lucide="messages-square"></i>Chat Games</h2>
 			<p><b>Chat Games</b> are small games that appear regularly in the chat to bring a little extra fun to the server.</p>
 			<p>They come in many forms, such as <b>trivia questions</b>, <b>math equations</b> and <b>many other challenges</b>.</p>
-			<p>Keep an eye on the chat and be the <b>first to type the correct answer</b> to win the round.</p>
+			<p>A new game starts roughly every <b>8 to 10 minutes</b>, and you have <b>45 seconds</b> to answer. The games include <b>Math</b>, <b>Trivia</b>, <b>Unscramble</b>, <b>Type</b>, <b>Unreverse</b>, <b>Completion</b> and <b>Guess The Number</b>.</p>
+			<p>Keep an eye on the chat and be the <b>first to type the correct answer</b> to win the round and a money reward.</p>
 			<div class="shots">
 				<a class="strip" href="images/wiki/game_chat.webp" target="_blank" rel="noopener"><img src="images/wiki/game_chat.webp" alt="Game chat" loading="lazy"></a>
 			</div>
@@ -1534,68 +1796,19 @@ title: Wiki
 				<a href="images/wiki/changelog.webp" target="_blank" rel="noopener"><img src="images/wiki/changelog.webp" alt="Changelog" loading="lazy"></a>
 			</div>
 			<h2 id="discord"><i data-lucide="message-circle"></i>Discord</h2>
-			<p>Cubesia is directly connected to its <b>Discord server</b>, so you can stay in touch with the community even when you are not in the game.</p>
-			<p>A <b>Discord bot</b> links the <b>in-game chat</b> with a channel of our Discord: every message sent in Minecraft appears on Discord, and every message sent in that channel appears in the game chat.</p>
-			<p>Your <b>Discord roles</b> are also <b>synchronized with your Minecraft grades</b>, so the grade you buy in the game is automatically reflected on Discord.</p>
-			<p>To benefit from the role synchronization, you first need to <b>link your Minecraft account to your Discord account</b>. If you ever want to remove the link, use <code>/unlink</code> in the game.</p>
+			<p>Cubesia and the Discord server are directly connected, so you can stay with your friends even when you are not in game.</p>
+			<h3 id="discord-link"><i data-lucide="link"></i>Linking your account</h3>
+			<p>Link your Minecraft account to your Discord account to unlock the chat bridge features, receive your <b>roles</b> automatically and earn a <b>one-time reward of 25,000</b>.</p>
 			<div class="callout">
 				<i data-lucide="info"></i>
-				<p><b>How to link your account:</b> type <code>/link</code> in Minecraft to get your code, then type <code>/link &lt;code&gt;</code> on Discord, replacing <code>&lt;code&gt;</code> with the code you received.</p>
+				<p><b>How to link your account:</b> run <code>/link</code> in Minecraft to get a <b>4-character code</b>, then send <code>/link &lt;code&gt;</code> on Discord. The code expires after <b>5 minutes</b>. To remove the link, use <code>/unlink</code>.</p>
 			</div>
-			<h2 id="grades"><i data-lucide="crown"></i>Grades</h2>
-			<p><b>Grades</b> are permanent upgrades for your account. Each one unlocks <b>perks</b> such as more <b>homes</b>, more <b>Personal Vaults</b>, more <b>Auction House</b> slots, more <b>Orders</b> slots, more <b>playerwarps</b> and several special abilities.</p>
-			<p>Open the grades shop with <code>/grades</code>. The menu is split into two families of grades, which you buy with different currencies.</p>
-			<p>The perks listed in the tables below are the <b>totals you have</b> once the grade is unlocked, and the value in parentheses is how much the grade adds compared to the previous one.</p>
-			<h3 id="grades-money"><i data-lucide="coins"></i>Money grades</h3>
-			<p>These nine grades are bought with <b>money</b>. They must be bought <b>in order</b>: you cannot buy a grade until you own the one just before it. Every grade also <b>includes the perks of the previous ones</b>.</p>
-			<div class="table_container">
-				<table class="neon_table">
-					<thead>
-						<tr><th>Grade</th><th>Cost</th><th>Perks</th></tr>
-					</thead>
-					<tbody>
-						<tr><td>Stone</td><td>$250,000</td><td>2 Vaults (+1), 3 Auction House slots (+1)</td></tr>
-						<tr><td>Copper</td><td>$500,000</td><td>3 Vaults (+1), 2 homes (+1), 2 Orders slots (+1)</td></tr>
-						<tr><td>Iron</td><td>$1,250,000</td><td>Create <a href="#elevator">elevators</a>, 5 Auction House slots (+2), 4 Vaults (+1)</td></tr>
-						<tr><td>Lapis</td><td>$2,500,000</td><td>6 Vaults (+2), 2 playerwarps (+1), 3 Orders slots (+1)</td></tr>
-						<tr><td>Gold</td><td>$5,000,000</td><td>9 Vaults (+3), 3 homes (+1)</td></tr>
-						<tr><td>Diamond</td><td>$12,500,000</td><td>12 Vaults (+3), 10 Auction House slots (+5), lower taxes (10% to 0% on the Auction House)</td></tr>
-						<tr><td>Emerald</td><td>$25,000,000</td><td>15 Vaults (+3), change the type of a spawner, 12 Auction House slots (+2), 5 Orders slots (+2)</td></tr>
-						<tr><td>Netherite</td><td>$50,000,000</td><td>18 Vaults (+3), 3 playerwarps (+1), 4 homes (+1), 15 Auction House slots (+3)</td></tr>
-						<tr><td>Nether Star</td><td>$125,000,000</td><td>27 Vaults (+9), 5 homes (+1), infinite fly, 25 Auction House slots (+10)</td></tr>
-					</tbody>
-				</table>
-			</div>
-			<h3 id="grades-gems"><i data-lucide="gem"></i>Gem grades</h3>
-			<p>These three grades are bought with <b>gems</b> (◆) and are independent from the money grades. They can be bought <b>directly</b>, or <b>upgraded step by step</b>: if you already own a lower gem grade, you only pay the <b>difference</b>.</p>
-			<div class="table_container">
-				<table class="neon_table">
-					<thead>
-						<tr><th>Grade</th><th>Cost</th><th>Perks</th></tr>
-					</thead>
-					<tbody>
-						<tr><td>Coal</td><td>990◆</td><td>RTP in the Nether world, 2 homes (+1), 5 Auction House slots (+3), 5 Vaults (+4), 3 Orders slots (+2)</td></tr>
-						<tr><td>Redstone</td><td>2,490◆<br>1,500◆ if you own Coal</td><td>10 Vaults (+5), RTP in the End world, 10 Auction House slots (+5), 3 homes (+1)</td></tr>
-						<tr><td>Quartz</td><td>4,990◆<br>4,000◆ if you own Coal<br>2,500◆ if you own Redstone</td><td>Lower taxes (10% to 0% on the Auction House), 4 homes (+1), 15 Auction House slots (+5), change the type of a spawner, infinite fly, 18 Vaults (+8), 4 Orders slots (+1)</td></tr>
-					</tbody>
-				</table>
-			</div>
-			<p>Higher gem grades include the lower ones, so buying <b>Quartz</b> replaces <b>Coal</b> and <b>Redstone</b>.</p>
-			<div class="callout">
-				<i data-lucide="info"></i>
-				<p>If you click on a grade you already own, or one that is already included in a higher grade, nothing is charged: the menu only tells you that you already have it.</p>
-			</div>
-			<div class="shots">
-				<a href="images/wiki/grades.webp" target="_blank" rel="noopener"><img src="images/wiki/grades.webp" alt="Grades" loading="lazy"></a>
-			</div>
-			<h2 id="tags"><i data-lucide="tag"></i>Tags</h2>
-			<p><b>Tags</b> are small icons and titles that you can show next to your name in the chat, to display your style, your achievements or simply what you like.</p>
-			<p>Open the tags interface with <code>/tags</code> to browse every tag of the server. Each tag is represented by its own item, so you can quickly find the one that suits you.</p>
-			<p>Select the tag you want to wear, and it will appear in the chat every time you talk. You can change it or remove it whenever you want.</p>
-			<p>Can be purchased at the /shop in the cosmetics section.</p>
-			<div class="shots">
-				<a href="images/wiki/tags.webp" target="_blank" rel="noopener"><img src="images/wiki/tags.webp" alt="Tags" loading="lazy"></a>
-			</div>
+			<h3 id="discord-chat"><i data-lucide="messages-square"></i>Chat bridge</h3>
+			<p>A Discord bot <b>mirrors the in-game chat</b> in a dedicated channel and sends your Discord messages back to the server, so conversations never stop. The bot can also show your <b>profile</b> (link status, kills) and the <b>top kills</b> leaderboard directly on Discord.</p>
+			<h3 id="discord-roles"><i data-lucide="shield-check"></i>Role synchronization</h3>
+			<p>Once your accounts are linked, your <b>in-game roles are mirrored on Discord</b>, and the reverse is also true. This includes the community and staff roles such as <b>VIP</b>, <b>MVP</b>, <b>Friends</b>, <b>Beta Tester</b>, <b>Helper</b>, <b>Moderator</b>, <b>Senior Moderator</b>, <b>Admin</b>, <b>Dev</b> and <b>Owner</b>.</p>
+			<p>Shop <a href="#grades">grades</a> are not synchronized with Discord roles.</p>
+			<p>You can find the invitation any time with <code>/discord</code>.</p>
 			<h2 id="death-messages"><i data-lucide="heart-crack"></i>Death Messages</h2>
 			<p>The server now features <b>new, custom death messages</b>.</p>
 			<p>Whenever a player dies, a redesigned message is displayed in the chat, making every death a little more memorable.</p>
@@ -1605,7 +1818,11 @@ title: Wiki
 			<h2 id="fly-time"><i data-lucide="plane"></i>Fly Time</h2>
 			<p><b>Fly time</b> lets you fly around for a limited amount of time, and it can be obtained from the <b>Common Crate</b>.</p>
 			<p>Once you have some fly time, use <code>/fly</code> to take off whenever you want and explore, build or travel across the server from above.</p>
-			<p>Open the crate and, with a bit of luck, fly time will be one of your rewards.</p>
+			<p>Open the crate and, with a bit of luck, fly time will be one of your rewards. Your remaining fly time is kept when you die.</p>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p>The <b>Nether Star</b> grade unlocks <b>infinite flight</b>, and so does the <b>Quartz</b> gem grade. See <a href="#grades">Grades</a>.</p>
+			</div>
 			<div class="shots">
 				<a href="images/wiki/tempfly.webp" target="_blank" rel="noopener"><img src="images/wiki/tempfly.webp" alt="Temp fly" loading="lazy"></a>
 			</div>
@@ -1637,6 +1854,11 @@ title: Wiki
 			<p>When you die, a <b>grave</b> is automatically created at the exact location of your death, and its <b>coordinates</b> are immediately displayed so you can easily find your way back.</p>
 			<p>Once you reach your grave, you can <b>right-click</b> it to retrieve your items one by one, or use <b>Shift + Right-Click</b> to collect everything instantly.</p>
 			<p>You can also use the <code>/grave list</code> command to manage your graves. It displays all of your active graves, their locations, and the <b>remaining time</b> before each one disappears, helping you recover your belongings before they are lost forever.</p>
+			<p>You keep <b>100% of your experience</b>, and every grave disappears after <b>10 minutes</b>.</p>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p>A grave can be opened by <b>any player</b>, not only its owner. Return quickly, or stay close to your teammates!</p>
+			</div>
 			<p>This system provides an extra layer of protection for your valuables, making death much less punishing while still encouraging you to return and recover your equipment.</p>
 			<div class="shots">
 				<a href="images/wiki/graves.webp" target="_blank" rel="noopener"><img src="images/wiki/graves.webp" alt="Graves" width="672" height="511" loading="lazy"></a>
@@ -1645,10 +1867,26 @@ title: Wiki
 			</div>
 			<h2 id="sellwands"><i data-lucide="wand"></i>SellWands</h2>
 			<p><b>Sell Wands</b> allow you to sell the contents of an <b>entire chest</b> instantly with just a single click, making resource management much faster and more convenient.</p>
-			<p>Each Sell Wand has its own <b>multiplier</b>, which depends on its <b>rarity</b> and directly increases the amount of money you receive from each sale.</p>
+			<p>Each Sell Wand has its own <b>multiplier</b>, which depends on its <b>type</b> and directly increases the amount of money you receive from each sale.</p>
 			<p>They also have a limited <b>durability</b> that decreases with every use, with higher rarity Sell Wands generally offering both better multipliers and more durability.</p>
 			<p>To use a Sell Wand, simply <b>left-click</b> a chest to inspect its contents and view the total number of items along with the amount of money you would earn from selling them.</p>
 			<p>If you are satisfied with the result, simply <b>right-click</b> the chest to sell all eligible items instantly and receive your money immediately.</p>
+			<p>Here are the available wand types:</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead><tr><th>Wand</th><th>Multiplier</th><th>Uses</th></tr></thead>
+					<tbody>
+						<tr><td>Normal</td><td>x1.0</td><td>100</td></tr>
+						<tr><td>Common</td><td>x1.1</td><td>1,000</td></tr>
+						<tr><td>Ender Chest</td><td>x1.5</td><td>100</td></tr>
+						<tr><td>Event</td><td>x1.5</td><td>-</td></tr>
+						<tr><td>Amethyst</td><td>x1.5</td><td>-</td></tr>
+						<tr><td>Sapphire</td><td>x2.0</td><td>-</td></tr>
+						<tr><td>Crimson</td><td>x2.5</td><td>-</td></tr>
+						<tr><td>Unlimited</td><td>-</td><td>Unlimited (3-second cooldown)</td></tr>
+					</tbody>
+				</table>
+			</div>
 			<p>This system allows you to manage large quantities of items efficiently while maximizing your profits, making Sell Wands an essential tool for farms and automated resource production.</p>
 			<div class="shots">
 				<a href="images/wiki/sellwands.webp" target="_blank" rel="noopener"><img src="images/wiki/sellwands.webp" alt="Sellwands" width="502" height="180" loading="lazy"></a>
@@ -1662,7 +1900,7 @@ title: Wiki
 			<p>Inside the <code>/pv</code> menu, you can <b>Shift + Click</b> on a vault to customize its icon, replacing the default barrel with an item of your choice for a cleaner and more personalized interface.</p>
 			<div class="callout">
 				<i data-lucide="info"></i>
-				<p>By default unlock <b>27 Personal Vaults</b>, with VIP rank it's <b>45 Personal Vaults</b>.</p>
+				<p>Every player starts with <b>1 Personal Vault</b>. The <b>VIP</b> perk adds <b>18 more</b>, and every <a href="#grades">grade</a> unlocks additional vaults, up to <b>27</b> with the Nether Star grade.</p>
 			</div>
 			<div class="shots">
 				<a href="images/wiki/vaults_chest.webp" target="_blank" rel="noopener"><img src="images/wiki/vaults_chest.webp" alt="Vaults chest" width="510" height="385" loading="lazy"></a>
@@ -1677,6 +1915,23 @@ title: Wiki
 			<p>Use <code>/fish sellall</code> to sell all your fish at once, and <code>/fish toggle</code> to enable or disable custom fishing.</p>
 			<p>If you have purchased or obtained fishing baits, use <code>/fish applybaits</code> to apply them to your fishing rod and benefit from their special effects while fishing.</p>
 			<p>During fishing competitions and server events, <code>/fish top</code> displays the live leaderboard, allowing you to see the current rankings and track who is leading the event in real time.</p>
+			<p>There are <b>99 fish</b> to discover, spread across seven rarities. The rarer the fish, the more it is worth:</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead><tr><th>Rarity</th><th>Fish</th><th>Value multiplier</th></tr></thead>
+					<tbody>
+						<tr><td>Common</td><td>40</td><td>x10</td></tr>
+						<tr><td>Uncommon</td><td>17</td><td>x20</td></tr>
+						<tr><td>Rare</td><td>12</td><td>x40</td></tr>
+						<tr><td>Epic</td><td>11</td><td>x80</td></tr>
+						<tr><td>Legendary</td><td>9</td><td>x160</td></tr>
+						<tr><td>Mythic</td><td>6</td><td>x300</td></tr>
+						<tr><td>Unique</td><td>4</td><td>x500</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<p><b>Fishing competitions</b> start every <b>2 hours</b> and last <b>10 minutes</b>. The <b>top 3</b> win money and experience, so grab your rod when the announcement appears!</p>
+			<p><b>Baits</b> make your catches even better, and up to <b>10</b> can be applied to a single rod. <b>Treasure Hunter</b> boosts your chances of finding treasure, <b>Rarity Upgrade</b> only lets Epic and rarer fish bite, and <b>Shark Hunter</b> and <b>Whale Hunter</b> target the biggest creatures of the sea. Most baits can also be crafted.</p>
 			<p>Whether you enjoy collecting every species, earning money through fishing, or competing against other players during events, the custom fishing system offers plenty of progression and rewards for every type of fisherman.</p>
 			<div class="shots">
 				<a href="images/wiki/fish_gui.webp" target="_blank" rel="noopener"><img src="images/wiki/fish_gui.webp" alt="Fish gui" width="512" height="382" loading="lazy"></a>
@@ -1684,20 +1939,44 @@ title: Wiki
 			<h2 id="mining-competition"><i data-lucide="pickaxe"></i>Mining Competition</h2>
 			<p><b>Mining competitions</b> are server events in the same spirit as the fishing contests, but made for <b>miners</b>.</p>
 			<p>Compete against the other players while you mine, and use <code>/miningcomp</code> to follow the current competition.</p>
+			<p>A new competition starts every <b>30 minutes</b>. In <b>Stone Rush</b> (5 minutes) you break as many blocks as you can, while <b>Ore Hunt</b> (10 minutes) rewards the best ore collectors. The <b>top 5</b> players of each round win a money reward.</p>
 			<h2 id="elevator"><i data-lucide="arrow-up-down"></i>Elevator</h2>
 			<p><b>Elevators</b> provide a fast and convenient way to travel vertically through your base without using ladders or stairs.</p>
 			<p>To create an elevator, simply <b>throw an Ender Pearl onto a wool block</b>. Then, place another elevator block <b>above and/or below</b> it to create a connected elevator system.</p>
 			<p>Once both elevator blocks are in place, simply <b>jump</b> while standing on the lower elevator to travel upward, or <b>sneak</b> on the upper elevator to travel downward instantly.</p>
 			<p><b>Both elevator blocks must be the same wool color</b> in order to connect and function correctly.</p>
+			<p>Elevator blocks come in all <b>16 wool colors</b>, so you can build several independent elevators side by side.</p>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p>Creating elevators is unlocked by the <b>Iron</b> <a href="#grades">grade</a>.</p>
+			</div>
 			<p>This system allows you to move quickly between different floors while keeping your builds clean, compact, and easy to navigate.</p>
 			<div class="shots">
 				<a href="images/wiki/elevators.webp" target="_blank" rel="noopener"><img src="images/wiki/elevators.webp" alt="Elevators" width="623" height="383" loading="lazy"></a>
+			</div>
+			<h2 id="carryon"><i data-lucide="hand-grab"></i>CarryOn</h2>
+			<p><b>CarryOn</b> lets you pick up and move almost anything with your own hands: <b>animals</b>, <b>villagers</b>, <b>chests</b> and plenty of other blocks, without breaking them and without losing their contents.</p>
+			<p>To pick something up, <b>sneak</b> and <b>right-click</b> it with <b>both hands empty</b>. To put it down, simply <b>right-click</b> on the block where you want it. You can only reach targets within <b>3 blocks</b>.</p>
+			<p>It works on <b>all entities except bosses</b> and on many blocks such as <b>chests</b>, with the notable exception of <b>spawners</b>, which have their own system (see <a href="#spawners">Spawners</a>).</p>
+			<ul>
+				<li><b>Entities</b> – hostile mobs can be carried too. Pets can only be picked up by their owner. Very large mobs (such as the Ender Dragon, Wither, Warden, Elder Guardian or Ghast) cannot be carried.</li>
+				<li><b>Stacking animals</b> – sneak and right-click an animal while carrying another one to stack up to <b>10 animals</b> on your back.</li>
+				<li><b>Blocks</b> – chests keep their items. Beds, doors, portals and other fragile blocks cannot be carried.</li>
+			</ul>
+			<p>Carrying something is not free: you are <b>slowed down</b>, your hotbar slot is <b>locked</b> and you cannot attack. If you die while carrying, what you hold is <b>put down on the ground</b>.</p>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p>CarryOn respects <b>claims and protections</b>. You cannot pick up something you are not allowed to touch.</p>
+			</div>
+			<div class="shots">
+				<a href="images/wiki/carryon.webp" target="_blank" rel="noopener"><img src="images/wiki/carryon.webp" alt="CarryOn" loading="lazy"></a>
 			</div>
 			<h2 id="jobs"><i data-lucide="briefcase"></i>Jobs</h2>
 			<p><b>Jobs</b> allow you to earn both <b>money</b> and <b>experience</b> by performing everyday activities such as mining, farming, fishing, building, hunting, and much more.</p>
 			<p>Use the <code>/jobs</code> command (or <code>/job</code>, <code>/skills</code>, <code>/skill</code>) to open the Jobs menu, where you can browse every available profession and manage your progress.</p>
 			<p><b>Right-click</b> on a job to open its detailed information page, showing how much <b>experience</b> and <b>money</b> you earn for each supported action, helping you choose the most profitable activities.</p>
 			<p><b>Left-click</b> on a job to view its <b>leaderboard</b>, allowing you to compare your progress with other players and see who has reached the highest level in each profession.</p>
+			<p>There are <b>13 jobs</b>: <b>Hunter</b>, <b>Miner</b>, <b>Farmer</b>, <b>Husbandry</b>, <b>Fisher</b>, <b>Witcher</b>, <b>Lumberjack</b>, <b>Digger</b>, <b>Gladiator</b>, <b>Guardian</b>, <b>Producer</b>, <b>Trader</b> and <b>Traveler</b>. Every level-up grants you money and a <b>Common Key</b>.</p>
 			<p>Whether you focus on a single profession or level up multiple jobs, the system provides a rewarding way to progress while playing normally on the server.</p>
 			<div class="shots">
 				<a href="images/wiki/jobs.webp" target="_blank" rel="noopener"><img src="images/wiki/jobs.webp" alt="Jobs" width="512" height="278" loading="lazy"></a>
@@ -1707,19 +1986,43 @@ title: Wiki
 			<p>If a player with an active bounty is killed, the player who eliminates them automatically receives the <b>bounty reward</b>.</p>
 			<p>Use <code>/bounty</code> to open the bounty menu and see every active bounty on the server.</p>
 			<p>To place a bounty, simply use the command <code>/bounty add &lt;player&gt; &lt;amount&gt;</code>, replacing <code>&lt;player&gt;</code> with the target's username and <code>&lt;amount&gt;</code> with the amount of money you wish to offer.</p>
+			<p>The minimum bounty is <b>100</b>. To keep things fair, you cannot claim a bounty from a player on your own connection or in your own team, and a bounty is kept if its target dies naturally.</p>
 			<p>Whether you want revenge, create friendly competition, or simply make PvP more rewarding, the Bounty system adds an extra layer of excitement to every encounter.</p>
 			<div class="shots">
 				<a href="images/wiki/bounty_gui.webp" target="_blank" rel="noopener"><img src="images/wiki/bounty_gui.webp" alt="Bounty gui" width="507" height="330" loading="lazy"></a>
 			</div>
+			<h2 id="combat-tag"><i data-lucide="swords"></i>Combat Tag</h2>
+			<p><b>Combat Tag</b> keeps PvP fair: once you hit or are hit by another player, you are <b>in combat for 30 seconds</b>.</p>
+			<ul>
+				<li>If you <b>disconnect</b> during combat, you are <b>killed</b> and your items drop.</li>
+				<li>Most <b>commands are blocked</b> while you are tagged, so you cannot teleport away mid-fight.</li>
+				<li>You cannot run across a <b>protected border</b> to escape: you are pushed back.</li>
+			</ul>
+			<p>Fight it out, or wait for the timer to end before leaving.</p>
 			<h2 id="sell"><i data-lucide="coins"></i>Sell</h2>
 			<p>The <b>/sell</b> command allows you to quickly sell a wide variety of items without needing to visit a physical shop.</p>
 			<p>Simply open the selling interface with <code>/sell</code> (or <code>/sellgui</code>) and place the items you wish to sell to instantly receive the corresponding amount of money.</p>
 			<p>Every sellable item has a predefined <b>Worth</b>, which is displayed directly in its tooltip, making it easy to know its value before selling.</p>
 			<p>If you want to check prices without opening the selling menu, you can also use <code>/sellprice</code> (or <code>/sellprices</code>) to browse the complete list of item values available on the server.</p>
 			<p>To sell your entire inventory in one go, use <code>/sellall</code>, and use <code>/autosell</code> to enable or disable the automatic selling of the items you selected.</p>
+			<p>Selling is <b>tax-free</b>, and a single transaction can reach up to <b>1,000,000</b>. Note that <code>/sellall</code> never sells enchanted items.</p>
 			<p>This system provides a fast and convenient way to turn your resources into money while helping you plan farms and maximize your profits.</p>
 			<div class="shots">
 				<a href="images/wiki/sell_worth.webp" target="_blank" rel="noopener"><img src="images/wiki/sell_worth.webp" alt="Sell worth" width="331" height="175" loading="lazy"></a>
+			</div>
+			<h2 id="clearlag"><i data-lucide="eraser"></i>ClearLag</h2>
+			<p><b>ClearLag</b> keeps the server smooth by regularly cleaning up the world. Every <b>30 minutes</b>, all <b>dropped items</b> and all <b>unneeded entities</b> are removed, which greatly reduces lag for everyone.</p>
+			<p>You will be warned beforehand with a countdown (at <b>60, 10, 3, 2 and 1 seconds</b>), so you have time to pick up what you care about. You can choose how the messages are displayed, or turn them off, using <code>/clearlag togglemessages</code>, <code>/clearlag togglemessage</code> and <code>/clearlag togglesound</code>.</p>
+			<p>Do not worry about your companions and valuables: many things are <b>protected</b>.</p>
+			<ul>
+				<li><b>Mobs</b> – tamed pets, named mobs, bred animals and mobs you have tagged are never removed. Bosses are also safe.</li>
+				<li><b>Items</b> – precious drops such as diamond, netherite and emerald gear and blocks, elytra, totems, enchanted golden apples, nether stars, beacons, tridents, dragon eggs and heads, and shulker boxes are protected.</li>
+				<li><b>Around you</b> – items dropped in the last <b>20 seconds</b> or within <b>10 blocks</b> of a player are left alone.</li>
+				<li><b>Other entities</b> – paintings, end crystals, minecarts, boats and allays are never cleared.</li>
+			</ul>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p>The <a href="#item-stacker">Item Stacker</a> is part of ClearLag: it merges identical dropped items into stacks and groups XP orbs, so large farms stay light on the server.</p>
 			</div>
 			<h2 id="small-changes"><i data-lucide="list-checks"></i>Small Changes</h2>
 			<p>A collection of smaller improvements and quality-of-life features that make everyday gameplay smoother. Each one is simple on its own, but together they make a real difference.</p>
@@ -1784,12 +2087,15 @@ title: Wiki
 			<p>Whether you're farming for food, trading, or resources, Harvest Master lets you collect crops more quickly and spend more time expanding your farm instead of maintaining it.</p>
 			<h3 id="item-stacker"><i data-lucide="layers"></i>Item Stacker</h3>
 			<p><b>Item Stacker</b> is an optimized stacking system that greatly reduces the number of dropped entities on the ground, helping to improve overall server performance.</p>
-			<p>Instead of creating hundreds or thousands of separate item entities, identical dropped items are automatically combined into stacks of up to <b>64,000 items</b>.</p>
+			<p>Instead of creating hundreds or thousands of separate item entities, identical dropped items are automatically combined into stacks of up to <b>6,400 items</b> within a radius of 3 blocks, and each stack shows its item name and count above it.</p>
 			<p>This significantly reduces lag during large farms, automatic storage systems, and mass item drops while still allowing players to collect the entire stack normally.</p>
 			<p>By minimizing the number of entities loaded in the world, the Item Stacker system keeps gameplay smoother and the server more stable, even during periods of heavy activity.</p>
 			<div class="shots">
 				<a href="images/wiki/item_stacker.webp" target="_blank" rel="noopener"><img src="images/wiki/item_stacker.webp" alt="Item stacker" width="996" height="492" loading="lazy"></a>
 			</div>
+			<h3 id="night-vision"><i data-lucide="eye"></i>Night Vision</h3>
+			<p>Exploring caves or mining at night is much easier with <code>/nightvision</code>, which <b>toggles night vision</b> on and off whenever you want.</p>
+			<p>Mining, building underground and exploring the ocean floor no longer require torches or potions: simply run the command and see clearly.</p>
 			<h3 id="enchantment-table"><i data-lucide="gem"></i>Enchantment Table</h3>
 			<p>The <b>Enchantment Table</b> now keeps your <b>Lapis Lazuli</b> in place: when you close the interface, the lapis lazuli <b>remains inside the table</b> instead of being given back to you.</p>
 			<p>This means you no longer have to place your lapis lazuli again every time you reopen the table, which makes enchanting several items in a row much faster and less tedious.</p>
@@ -1856,20 +2162,8 @@ title: Wiki
 			<h3 id="beyond-vanilla-levels"><i data-lucide="trending-up"></i>Beyond Vanilla Levels</h3>
 			<p>You can now go <b>above the maximum levels of vanilla Minecraft</b>: enchantments are no longer limited to their usual cap, such as <b>Efficiency VI</b>.</p>
 			<p>Combined with <a href="#no-too-expensive">No Too Expensive</a>, you can keep upgrading your favorite gear much further than in the base game.</p>
+			<p>The following vanilla enchantments can now reach a higher level on the anvil: <b>Depth Strider V</b>, <b>Efficiency VIII</b>, <b>Feather Falling V</b>, <b>Fortune V</b>, <b>Frost Walker IV</b>, <b>Looting V</b>, <b>Luck of the Sea V</b>, <b>Lure VIII</b>, <b>Multishot V</b>, <b>Protection V</b>, <b>Respiration V</b>, <b>Soul Speed V</b>, <b>Sweeping Edge V</b>, <b>Thorns V</b> and <b>Unbreaking V</b>.</p>
 			<p>You can check the maximum level of every custom enchantment in the <a href="#enchantments">Enchantments</a> tables.</p>
-			<h3 id="carryon"><i data-lucide="hand"></i>CarryOn</h3>
-			<p><b>CarryOn</b> lets you <b>pick up and carry</b> things in your hands, then put them down somewhere else. It is perfect to move a chest full of items, to relocate a mob, or to reorganize your base without having to break and rebuild everything.</p>
-			<p>It works on <b>all entities</b>, <b>except bosses</b>, and on <b>some blocks</b> such as <b>chests</b>. <b>Spawners</b> cannot be carried.</p>
-			<p>To pick something up, <b>Shift + Right-Click</b> on it with <b>empty hands</b>. To put it down, <b>Shift + Right-Click</b> on the block where you want to place it.</p>
-			<p>While you are carrying something, you move more slowly and cannot use your hands normally, so choose a safe spot before picking it up.</p>
-			<div class="shots">
-				<a href="images/wiki/carryon.webp" target="_blank" rel="noopener"><img src="images/wiki/carryon.webp" alt="CarryOn" loading="lazy"></a>
-			</div>
-			<h3 id="clear-lags"><i data-lucide="trash-2"></i>Clear Lags</h3>
-			<p><b>Clear Lags</b> automatically cleans the world <b>every 30 minutes</b> to keep the server fast, smooth and stable.</p>
-			<p>Each clean-up removes the <b>entities</b> and the <b>items lying on the ground</b>, which are the main causes of lag on a busy server.</p>
-			<p>Your animals are safe: <b>tamed mobs</b> and other protected entities are <b>never removed</b>.</p>
-			<p>A <b>warning message</b> is sent in the chat before every clean-up, so you have time to pick up the items you want to keep.</p>
 		</main>
 		<aside class="toc" id="toc">
 			<div class="toc-title"><i data-lucide="list"></i>On this page</div>
@@ -1885,6 +2179,14 @@ title: Wiki
 						<li><a href="#cmd-shop-sell"><i data-lucide="shopping-cart"></i>Shop &amp; Sell</a></li>
 						<li><a href="#cmd-fish"><i data-lucide="fish"></i>Fish</a></li>
 						<li><a href="#cmd-vip-only"><i data-lucide="crown"></i>VIP only</a></li>
+					</ul>
+				</li>
+				<li class="group">
+					<a href="#grades"><i data-lucide="medal"></i>Grades</a>
+					<ul class="subs">
+						<li><a href="#grades-money"><i data-lucide="coins"></i>Money grades</a></li>
+						<li><a href="#grades-gems"><i data-lucide="gem"></i>Gem grades</a></li>
+						<li><a href="#grades-default"><i data-lucide="user"></i>Starting perks</a></li>
 					</ul>
 				</li>
 				<li class="group">
@@ -1912,25 +2214,33 @@ title: Wiki
 				<li class="group"><a href="#auction-house"><i data-lucide="gavel"></i>Auction House</a></li>
 				<li class="group"><a href="#black-market"><i data-lucide="shopping-bag"></i>Black Market</a></li>
 				<li class="group"><a href="#trade"><i data-lucide="handshake"></i>Trade</a></li>
+				<li class="group"><a href="#homes"><i data-lucide="house"></i>Homes</a></li>
+				<li class="group"><a href="#rtp"><i data-lucide="dices"></i>Random Teleport</a></li>
+				<li class="group"><a href="#player-warps"><i data-lucide="map-pin"></i>Player Warps</a></li>
 				<li class="group"><a href="#orders"><i data-lucide="clipboard-list"></i>Orders</a></li>
 				<li class="group"><a href="#rewards"><i data-lucide="gift"></i>Rewards</a></li>
+				<li class="group"><a href="#crates"><i data-lucide="key-round"></i>Crates</a></li>
 				<li class="group"><a href="#voting"><i data-lucide="vote"></i>Vote</a></li>
 				<li class="group"><a href="#teams"><i data-lucide="users"></i>Teams</a></li>
 				<li class="group"><a href="#leaderboards"><i data-lucide="trophy"></i>Leaderboards</a></li>
+				<li class="group"><a href="#profile"><i data-lucide="id-card"></i>Profile</a></li>
+				<li class="group"><a href="#settings"><i data-lucide="settings"></i>Settings</a></li>
 				<li class="group"><a href="#levels"><i data-lucide="trending-up"></i>Levels</a></li>
+				<li class="group"><a href="#collections"><i data-lucide="library"></i>Collections</a></li>
+				<li class="group"><a href="#events"><i data-lucide="calendar-days"></i>Events</a></li>
 				<li class="group"><a href="#advancements"><i data-lucide="award"></i>Advancements</a></li>
 				<li class="group"><a href="#cosmetics"><i data-lucide="shirt"></i>Cosmetics</a></li>
+				<li class="group"><a href="#tags"><i data-lucide="tag"></i>Tags</a></li>
 				<li class="group"><a href="#chat-games"><i data-lucide="messages-square"></i>Chat Games</a></li>
 				<li class="group"><a href="#server-changelog"><i data-lucide="scroll-text"></i>Server Changelog</a></li>
-				<li class="group"><a href="#discord"><i data-lucide="message-circle"></i>Discord</a></li>
 				<li class="group">
-					<a href="#grades"><i data-lucide="crown"></i>Grades</a>
+					<a href="#discord"><i data-lucide="message-circle"></i>Discord</a>
 					<ul class="subs">
-						<li><a href="#grades-money"><i data-lucide="coins"></i>Money grades</a></li>
-						<li><a href="#grades-gems"><i data-lucide="gem"></i>Gem grades</a></li>
+						<li><a href="#discord-link"><i data-lucide="link"></i>Linking your account</a></li>
+						<li><a href="#discord-chat"><i data-lucide="messages-square"></i>Chat bridge</a></li>
+						<li><a href="#discord-roles"><i data-lucide="shield-check"></i>Role synchronization</a></li>
 					</ul>
 				</li>
-				<li class="group"><a href="#tags"><i data-lucide="tag"></i>Tags</a></li>
 				<li class="group"><a href="#death-messages"><i data-lucide="heart-crack"></i>Death Messages</a></li>
 				<li class="group"><a href="#fly-time"><i data-lucide="plane"></i>Fly Time</a></li>
 				<li class="group"><a href="#afkzone"><i data-lucide="clock"></i>AFKZone</a></li>
@@ -1940,9 +2250,12 @@ title: Wiki
 				<li class="group"><a href="#fish"><i data-lucide="fish"></i>Fish</a></li>
 				<li class="group"><a href="#mining-competition"><i data-lucide="pickaxe"></i>Mining Competition</a></li>
 				<li class="group"><a href="#elevator"><i data-lucide="arrow-up-down"></i>Elevator</a></li>
+				<li class="group"><a href="#carryon"><i data-lucide="hand-grab"></i>CarryOn</a></li>
 				<li class="group"><a href="#jobs"><i data-lucide="briefcase"></i>Jobs</a></li>
 				<li class="group"><a href="#bounty"><i data-lucide="target"></i>Bounty</a></li>
+				<li class="group"><a href="#combat-tag"><i data-lucide="swords"></i>Combat Tag</a></li>
 				<li class="group"><a href="#sell"><i data-lucide="coins"></i>Sell</a></li>
+				<li class="group"><a href="#clearlag"><i data-lucide="eraser"></i>ClearLag</a></li>
 				<li class="group">
 					<a href="#small-changes"><i data-lucide="list-checks"></i>Small Changes</a>
 					<ul class="subs">
@@ -1955,6 +2268,7 @@ title: Wiki
 						<li><a href="#no-trample"><i data-lucide="sprout"></i>No Trample</a></li>
 						<li><a href="#harvest-master"><i data-lucide="wheat"></i>Harvest Master</a></li>
 						<li><a href="#item-stacker"><i data-lucide="layers"></i>Item Stacker</a></li>
+						<li><a href="#night-vision"><i data-lucide="eye"></i>Night Vision</a></li>
 						<li><a href="#enchantment-table"><i data-lucide="gem"></i>Enchantment Table</a></li>
 						<!--<li><a href="#color-codes"><i data-lucide="palette"></i>Color Codes</a></li>-->
 						<li><a href="#bees"><i data-lucide="hexagon"></i>Bees</a></li>
@@ -1967,13 +2281,16 @@ title: Wiki
 						<li><a href="#villager-reroll"><i data-lucide="refresh-cw"></i>Villager Reroll</a></li>
 						<li><a href="#no-too-expensive"><i data-lucide="hammer"></i>No Too Expensive</a></li>
 						<li><a href="#beyond-vanilla-levels"><i data-lucide="trending-up"></i>Beyond Vanilla Levels</a></li>
-						<li><a href="#carryon"><i data-lucide="hand"></i>CarryOn</a></li>
-						<li><a href="#clear-lags"><i data-lucide="trash-2"></i>Clear Lags</a></li>
 					</ul>
 				</li>
 			</ul>
 		</aside>
 	</div>
+	<script>
+		(function(){function o(){var h=location.hash.slice(1);if(!h)return;var t=document.getElementById(h);var d=t&&t.nextElementSibling;
+		while(d&&d.tagName!=="H3"&&d.tagName!=="H2"){var f=d.matches&&d.matches(".ench-fold")?d:d.querySelector&&d.querySelector(".ench-fold");if(f&&h.indexOf("ench-")===0)f.open=true;d=d.nextElementSibling}}
+		window.addEventListener("hashchange",o);window.addEventListener("DOMContentLoaded",o)})();
+	</script>
 	<script src="scripts/wiki.js"></script>
 	<script src="scripts/doc.js"></script>
 </body>
