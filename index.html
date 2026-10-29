@@ -148,7 +148,9 @@ layout: default
 					const all = [...d.querySelectorAll('li')].filter(li => li.parentElement.parentElement === d);
 					const items = all.slice(0, 4);
 					if (!items.length) return;
-					document.getElementById('patchTitle').textContent = d.querySelector('summary').textContent.trim();
+					const title = d.querySelector('summary').textContent.trim();
+					document.getElementById('patchTitle').textContent = title;
+					card.href = 'patch.html#' + (d.id || title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''));
 					const ul = document.getElementById('patchList');
 					ul.textContent = '';
 					items.forEach(li => {
