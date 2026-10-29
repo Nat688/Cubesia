@@ -8,7 +8,8 @@
 		<link rel="icon" type="image/png" href="images/favicon.png">
 		<title>Maintenance</title>
 		<link rel="stylesheet" type="text/css" href="styles/maintenance.css">
-		<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"></script>
+		<script src="scripts/lucide.min.js"></script>
+		<script>window.lucide || document.write('<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"><\/script>');</script>
 	</head>
 	<body>
 		<div class="container">
@@ -66,7 +67,12 @@
 		<meta property="og:image:width" content="1200">
 		<meta property="og:image:height" content="630">
 		<meta name="twitter:card" content="summary_large_image">
-		<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"></script>
+		<link rel="alternate" type="application/rss+xml" title="Cubesia patches" href="feed.xml">
+		<link rel="manifest" href="manifest.json">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<script>if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js'));</script>
+		<script src="scripts/lucide.min.js"></script>
+		<script>window.lucide || document.write('<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"><\/script>');</script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
@@ -113,6 +119,9 @@
 		</script>
 	</header>
 	{{ content }}
+	{% unless page.edit == false %}
+	<p class="edit-page"><a href="https://github.com/Nat688/Cubesia/edit/main/{{ page.path }}" target="_blank" rel="noopener">Edit this page on GitHub</a></p>
+	{% endunless %}
 </html>
 
 {% endif %}
