@@ -16,7 +16,8 @@ Options :
     --only-new            ne touche pas au texte des patchs déjà présents dans le fichier du serveur
     --out FICHIER         fichier du plugin à écrire (défaut : _build/_data.yml)
     --feed FICHIER        flux RSS à écrire (défaut : feed.xml) ; --no-feed pour ne pas le faire
-    --discord URL         envoie le dernier patch dans un salon Discord (URL de webhook)
+    --discord [URL]       envoie le dernier patch dans un salon Discord. Sans URL, lit la variable
+                          d'environnement DISCORD_WEBHOOK_URL (recommandé : l'adresse reste secrète)
     --discord-patch NOM   annonce un autre patch, par exemple "Patch #19"
     --dry-run             affiche le message Discord au lieu de l'envoyer
 """
@@ -33,7 +34,7 @@ from html.parser import HTMLParser
 from xml.sax.saxutils import escape
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://nat688.github.io/Cubesia/'
-COLORS = {'new': 'dark_green', 'added': 'green', 'fixed': 'yellow', 'change': 'blue', 'removed': 'red'}
+COLORS = {'new': 'dark_green', 'added': 'green', 'fixed': 'yellow', 'change': 'blue', 'changed': 'blue', 'removed': 'red'}
 DEFAULT_AUTHOR = '"Nat_68"'
 def slug(title):
     return re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
@@ -96,6 +97,7 @@ def read_patches(path):
         out.append(d)
     return out
 def split_tag(item):
+    """Renvoie (mot-étiquette ou None, parties restantes)."""
     parts = [dict(x) for x in item['parts']]
     if item['depth'] == 1 and parts and parts[0]['kind'] is None:
         m = re.match(r'\s*(\w+)([\s\S]*)$', re.sub(r'\s+', ' ', parts[0]['text']))
@@ -258,7 +260,7 @@ def main():
     ap.add_argument('--out', default=os.path.join(ROOT, '_build', '_data.yml'))
     ap.add_argument('--feed', default=os.path.join(ROOT, 'feed.xml'))
     ap.add_argument('--no-feed', action='store_true')
-    ap.add_argument('--discord')
+    ap.add_argument('--discord', nargs='?', const='ENV', metavar='URL')
     ap.add_argument('--discord-patch')
     ap.add_argument('--dry-run', action='store_true')
     a = ap.parse_args()
@@ -281,13 +283,18 @@ def main():
         open(a.feed, 'w', encoding='utf-8').write(build_feed(patches))
         print('flux RSS :', a.feed)
     if a.discord or a.dry_run:
+        webhook = a.discord
+        if webhook == 'ENV':
+            webhook = os.environ.get('DISCORD_WEBHOOK_URL')
+            if not webhook and not a.dry_run:
+                sys.exit('Aucune adresse de webhook : écris --discord URL, ou crée la variable DISCORD_WEBHOOK_URL')
         patch = next((p for p in patches if p['title'] == a.discord_patch), None) if a.discord_patch else patches[0]
         if not patch:
             sys.exit('Patch introuvable : ' + a.discord_patch)
         payload = discord_payload(patch)
-        if a.dry_run or not a.discord:
+        if a.dry_run or not webhook:
             print(json.dumps(payload, ensure_ascii=False, indent=2))
         else:
-            print('Discord : réponse', send_discord(a.discord, payload))
+            print('Discord : réponse', send_discord(webhook, payload))
 if __name__ == '__main__':
     main()
