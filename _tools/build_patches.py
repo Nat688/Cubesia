@@ -34,7 +34,7 @@ from html.parser import HTMLParser
 from xml.sax.saxutils import escape
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://nat688.github.io/Cubesia/'
-COLORS = {'new': 'dark_green', 'added': 'green', 'fixed': 'yellow', 'change': 'blue', 'changed': 'blue', 'removed': 'red'}
+COLORS = {'new': 'dark_green', 'added': 'green', 'fixed': 'yellow', 'change': 'blue', 'removed': 'red'}
 DEFAULT_AUTHOR = '"Nat_68"'
 def slug(title):
     return re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
