@@ -1,4 +1,4 @@
-## Welcome to Cubesia, a survival server where every detail has been crafted to make your adventure smoother, richer and more rewarding.
+### Welcome to Cubesia, a survival server where every detail has been crafted to make your adventure smoother, richer and more rewarding.
 
 **⛏️ SURVIVE, BUILD, PROGRESS**
 
@@ -28,4 +28,4 @@ Carry animals and chests with CarryOn, open shulker boxes from your inventory, u
 
 Link your Minecraft account to Discord to chat with the server, receive your roles automatically and claim a welcome reward. Play with friends in teams, share chests and grow together.
 
-### Everything is explained in our in-game /menu and in the wiki. Join Cubesia today and start your story!
+Everything is explained in our in-game ``/menu`` and in the wiki. Join Cubesia today and start your story!
