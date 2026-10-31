@@ -1,6 +1,7 @@
 Welcome to Cubesia, a survival server where every detail has been crafted to make your adventure smoother, richer and more rewarding.
 
 ⛏️ SURVIVE, BUILD, PROGRESS
+
 Level up to 100 and unlock permanent bonuses, complete 88 collections, earn money with 13 jobs and discover 86 custom advancements. Pick a tag to show off your style, and climb the leaderboards by day, week, month or year.
 
 💰 A LIVING ECONOMY
