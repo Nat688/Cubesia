@@ -2,7 +2,7 @@
 
 **⛏️ SURVIVE, BUILD, PROGRESS**
 
-* Level up to 100 and unlock permanent bonuses, complete 88 collections, earn money with 13 jobs and discover 86 custom advancements. Pick a tag to show off your style, and climb the leaderboards by day, week, month or year.
+Level up to 100 and unlock permanent bonuses, complete 88 collections, earn money with 13 jobs and discover 86 custom advancements. Pick a tag to show off your style, and climb the leaderboards by day, week, month or year.
 
 **💰 A LIVING ECONOMY**
 
