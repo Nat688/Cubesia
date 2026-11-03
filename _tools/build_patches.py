@@ -134,8 +134,6 @@ def minecraft_line(item):
     if not word and len(comps) == 1 and isinstance(comps[0], str):
         return dumps(comps[0].strip())
     return dumps({'extra': comps, 'text': ''})
-
-
 def minecraft_lines(patch):
     lines = [dumps({'bold': True, 'text': patch['title']})]
     for item in patch['items']:
@@ -152,7 +150,6 @@ def build_yaml(patches, existing_path, only_new):
     for e in existing:
         if isinstance(e.get('recordedAt'), datetime.datetime):
             e['recordedAt'] = e['recordedAt'].strftime('%Y-%m-%dT%H:%M:%SZ')
-
     def title_of(entry):
         try:
             return json.loads(entry['serializedLines'][0])['text']
