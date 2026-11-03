@@ -1,25 +1,21 @@
-"""Source unique des patchs : patch.html  ->  _data.yml (plugin), feed.xml (RSS) et annonce Discord.
+"""Single source for patches: patch.html  ->  _data.yml (the in-game changelog plugin).
 
-Tu écris tes patchs UNIQUEMENT dans patch.html (avec data-date="AAAA-MM-JJ" sur chaque <details>).
-Ce script en tire tout le reste. Il faut Python et PyYAML :  pip install pyyaml
+Write your patches ONLY in patch.html (with data-date="YYYY-MM-DD" on every <details>).
+This script builds the plugin file from it. It needs Python and PyYAML:  pip install pyyaml
 
-Utilisation, depuis la racine du projet :
-    python _tools/build_patches.py --yaml chemin/vers/le/_data.yml-du-serveur
-        -> écrit _build/_data.yml (à remettre sur le serveur) et feed.xml
+Usage, from the project root:
+    python _tools/build_patches.py --yaml path/to/the/server/_data.yml
+        -> writes _build/_data.yml (put it back on the server)
     python _tools/build_patches.py
-        -> pareil, mais sans le fichier du serveur : tous les joueurs auront tout en « non lu »
+        -> same, but without the server file: every player will see every patch as unread
 
-Options :
-    --yaml FICHIER        _data.yml actuel du serveur : on garde ses dates, son auteur et la liste
-                          « playersRead » de chaque patch, on met à jour les textes et on ajoute les
-                          nouveaux patchs (non lus par personne)
-    --only-new            ne touche pas au texte des patchs déjà présents dans le fichier du serveur
-    --out FICHIER         fichier du plugin à écrire (défaut : _build/_data.yml)
-    --feed FICHIER        flux RSS à écrire (défaut : feed.xml) ; --no-feed pour ne pas le faire
-    --discord [URL]       envoie le dernier patch dans un salon Discord. Sans URL, lit la variable
-                          d'environnement DISCORD_WEBHOOK_URL (recommandé : l'adresse reste secrète)
-    --discord-patch NOM   annonce un autre patch, par exemple "Patch #19"
-    --dry-run             affiche le message Discord au lieu de l'envoyer
+Options:
+    --yaml FILE      the server's current _data.yml: its dates, author and "playersRead" list
+                     are kept for every patch, texts are updated from patch.html and new
+                     patches are added (unread by everyone)
+    --only-new       leave the text of patches that are already in the server file untouched
+    --out FILE       plugin file to write (default: _build/_data.yml)
+    --feed FILE      also write an RSS feed (off by default), for example: --feed feed.xml
 """
 import argparse
 import copy
@@ -29,12 +25,11 @@ import json
 import os
 import re
 import sys
-import urllib.request
 from html.parser import HTMLParser
 from xml.sax.saxutils import escape
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://nat688.github.io/Cubesia/'
-COLORS = {'new': 'dark_green', 'added': 'green', 'fixed': 'yellow', 'change': 'blue', 'removed': 'red'}
+COLORS = {'new': 'dark_green', 'added': 'green', 'fixed': 'yellow', 'change': 'blue', 'changed': 'blue', 'removed': 'red'}
 DEFAULT_AUTHOR = '"Nat_68"'
 def slug(title):
     return re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
@@ -97,7 +92,6 @@ def read_patches(path):
         out.append(d)
     return out
 def split_tag(item):
-    """Renvoie (mot-étiquette ou None, parties restantes)."""
     parts = [dict(x) for x in item['parts']]
     if item['depth'] == 1 and parts and parts[0]['kind'] is None:
         m = re.match(r'\s*(\w+)([\s\S]*)$', re.sub(r'\s+', ' ', parts[0]['text']))
@@ -140,6 +134,8 @@ def minecraft_line(item):
     if not word and len(comps) == 1 and isinstance(comps[0], str):
         return dumps(comps[0].strip())
     return dumps({'extra': comps, 'text': ''})
+
+
 def minecraft_lines(patch):
     lines = [dumps({'bold': True, 'text': patch['title']})]
     for item in patch['items']:
@@ -156,6 +152,7 @@ def build_yaml(patches, existing_path, only_new):
     for e in existing:
         if isinstance(e.get('recordedAt'), datetime.datetime):
             e['recordedAt'] = e['recordedAt'].strftime('%Y-%m-%dT%H:%M:%SZ')
+
     def title_of(entry):
         try:
             return json.loads(entry['serializedLines'][0])['text']
@@ -173,10 +170,10 @@ def build_yaml(patches, existing_path, only_new):
                 entry['serializedLines'] = lines
                 updated += 1
             if patch['date'] and not entry['recordedAt'].startswith(patch['date']):
-                warnings.append(f'{patch["title"]} : date {patch["date"]} dans patch.html, {entry["recordedAt"][:10]} dans le fichier du serveur (gardée : celle du serveur)')
+                warnings.append(f'{patch["title"]} : date {patch["date"]} in patch.html, {entry["recordedAt"][:10]} in the server file (kept: date from the server file)')
         else:
             if not patch['date']:
-                warnings.append(f'{patch["title"]} : pas de data-date, la date du jour est utilisée')
+                warnings.append(f'{patch["title"]} : no data-date, the current date is used')
             date = patch['date'] or datetime.date.today().isoformat()
             new_entries.append({'recordedAt': date + 'T00:00:00Z', 'author': author, 'playersRead': [], 'serializedLines': lines})
             added.append(patch['title'])
@@ -224,77 +221,31 @@ def build_feed(patches):
             + (f'\t\t<lastBuildDate>{build}</lastBuildDate>\n' if build else '')
             + f'\t\t<atom:link href="{SITE}feed.xml" rel="self" type="application/rss+xml"/>\n'
             + '\n'.join(items) + '\n\t</channel>\n</rss>\n')
-def to_markdown(item):
-    word, parts = split_tag(item)
-    out = f'**{word}**' if word else ''
-    for kind, text, href in normalise(parts):
-        if kind == 'code':
-            text = f'`{text.strip()}`'
-        elif kind == 'i':
-            text = f'*{text.strip()}*'
-        elif href:
-            url = href if href.startswith('http') else SITE + href.lstrip('/')
-            text = f'[{text}]({url})'
-        out += text
-    return ('\u2003\u2022 ' if item['depth'] > 1 else '\u2022 ') + out
-def discord_payload(patch):
-    lines = [to_markdown(i) for i in patch['items']]
-    desc = '\n'.join(lines)
-    if len(desc) > 4000:
-        desc = desc[:3990].rsplit('\n', 1)[0] + '\n\u2026'
-    embed = {'title': patch['title'], 'url': f'{SITE}patch.html#{patch["id"]}', 'description': desc, 'color': 0x7B35F4,
-             'footer': {'text': 'Cubesia'}}
-    if patch['date']:
-        embed['timestamp'] = patch['date'] + 'T00:00:00.000Z'
-    return {'username': 'Cubesia Patch Notes', 'embeds': [embed]}
-def send_discord(url, payload):
-    req = urllib.request.Request(url, data=json.dumps(payload).encode('utf-8'), method='POST',
-                                 headers={'Content-Type': 'application/json', 'User-Agent': 'CubesiaPatchBot (https://nat688.github.io/Cubesia, 1.0)'})
-    with urllib.request.urlopen(req, timeout=15) as r:
-        return r.status
 def main():
-    ap = argparse.ArgumentParser(description='patch.html -> _data.yml, feed.xml, Discord')
+    ap = argparse.ArgumentParser(description='patch.html -> _data.yml (and an optional RSS feed)')
     ap.add_argument('--html', default=os.path.join(ROOT, 'patch.html'))
     ap.add_argument('--yaml')
     ap.add_argument('--only-new', action='store_true')
     ap.add_argument('--out', default=os.path.join(ROOT, '_build', '_data.yml'))
-    ap.add_argument('--feed', default=os.path.join(ROOT, 'feed.xml'))
-    ap.add_argument('--no-feed', action='store_true')
-    ap.add_argument('--discord', nargs='?', const='ENV', metavar='URL')
-    ap.add_argument('--discord-patch')
-    ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--feed')
     a = ap.parse_args()
     patches = read_patches(a.html)
     if not patches:
-        sys.exit('Aucun patch trouvé dans ' + a.html)
-    print(f'{len(patches)} patchs lus dans patch.html (le plus récent : {patches[0]["title"]})')
+        sys.exit('No patch found in ' + a.html)
+    print(f'{len(patches)} patches read from patch.html (newest: {patches[0]["title"]})')
     try:
         text, updated, added, warnings = build_yaml(patches, a.yaml, a.only_new)
     except ImportError:
-        sys.exit('PyYAML manque : lance  pip install pyyaml')
+        sys.exit('PyYAML is missing: run  pip install pyyaml')
     os.makedirs(os.path.dirname(a.out), exist_ok=True)
     open(a.out, 'w', encoding='utf-8').write(text)
-    print(f'plugin : {a.out}  ({updated} patch(s) mis à jour, {len(added)} nouveau(x) : {", ".join(added) or "aucun"})')
+    print(f'plugin file: {a.out}  ({updated} patch(es) updated, {len(added)} new: {", ".join(added) or "none"})')
     for w in warnings:
-        print('  attention :', w)
+        print('  warning:', w)
     if not a.yaml:
-        print('  attention : sans --yaml, tous les joueurs verront tous les patchs comme non lus')
-    if not a.no_feed:
+        print('  warning: without --yaml, every player will see every patch as unread')
+    if a.feed:
         open(a.feed, 'w', encoding='utf-8').write(build_feed(patches))
-        print('flux RSS :', a.feed)
-    if a.discord or a.dry_run:
-        webhook = a.discord
-        if webhook == 'ENV':
-            webhook = os.environ.get('DISCORD_WEBHOOK_URL')
-            if not webhook and not a.dry_run:
-                sys.exit('Aucune adresse de webhook : écris --discord URL, ou crée la variable DISCORD_WEBHOOK_URL')
-        patch = next((p for p in patches if p['title'] == a.discord_patch), None) if a.discord_patch else patches[0]
-        if not patch:
-            sys.exit('Patch introuvable : ' + a.discord_patch)
-        payload = discord_payload(patch)
-        if a.dry_run or not webhook:
-            print(json.dumps(payload, ensure_ascii=False, indent=2))
-        else:
-            print('Discord : réponse', send_discord(webhook, payload))
+        print('RSS feed:', a.feed)
 if __name__ == '__main__':
     main()
