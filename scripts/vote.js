@@ -15,9 +15,10 @@ const VOTE_SITES = [
 	{ name: 'Vote N°2', key: 'timer_1h30*',   	seconds: 90 * 60,    url:  'https://serveur-minecraft-vote.fr/serveur/2859/voter?pseudo={pseudo}'},
 	{ name: 'Vote N°3', key: 'timer_2h',      	seconds: 2 * 3600,   url: 'https://top-serveurs.net/minecraft/vote/cubesia?pseudo={pseudo}' },
 	{ name: 'Vote N°4', key: 'timer_3h',     	seconds: 3 * 3600,   url: 'https://serveur-minecraft.com/5983?username={pseudo}'},
-	{ name: 'Vote N°5', key: 'timer_3h*',      	seconds: 3 * 3600,   url: 'https://www.liste-serveurs-minecraft.org/vote/?idc=208990&nickname={pseudo}'},
-	{ name: 'Vote N°6', key: 'timer_24h',     	seconds: 24 * 3600,  url: 'https://playerpicked.com/servers/cubesia?pseudo={pseudo}'},
-	{ name: 'Vote N°7', key: 'timer_24h*',    	seconds: 24 * 3600,  url: 'https://www.serveursminecraft.org/serveur/7757/?pseudo={pseudo}'}
+	/*{ name: 'Vote N°5', key: 'timer_3h*',      	seconds: 3 * 3600,   url: 'https://www.liste-serveurs-minecraft.org/vote/?idc=208990&nickname={pseudo}'},*/
+	{ name: 'Vote N°5', key: 'timer_24h',     	seconds: 24 * 3600,  url: 'https://minecraftservers.me/server/cubesia.83308/vote'},
+	{ name: 'Vote N°6', key: 'timer_24h*',     	seconds: 24 * 3600,  url: 'https://playerpicked.com/servers/cubesia?pseudo={pseudo}'},
+	{ name: 'Vote N°7', key: 'timer_24h**',    	seconds: 24 * 3600,  url: 'https://www.serveursminecraft.org/serveur/7757/?pseudo={pseudo}'}
 ];
 const PSEUDO_KEY = 'cubesia-vote-pseudo';
 const input = document.getElementById('pseudo');

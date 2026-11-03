@@ -1,3 +1,8 @@
+"""Checks the Cubesia site: missing files, broken # links and duplicate ids.
+
+Usage (from the project root):   python _tools/check_site.py
+On GitHub, the workflow .github/workflows/check-site.yml runs it on every change.
+"""
 import os
 import re
 import sys
@@ -7,6 +12,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE_URL = 'https://nat688.github.io/Cubesia/'
 SKIP_DIRS = {'.git', '.github', '_site', 'node_modules', '_tools'}
 BIG_IMAGE = 500 * 1024
+OPTIONAL = {'scripts/lucide.min.js'}
 ON_GITHUB = bool(os.environ.get('GITHUB_ACTIONS'))
 class Page(HTMLParser):
     def __init__(self):
@@ -57,7 +63,7 @@ def main():
             if '{{' in i or '{%' in i:
                 continue
             if i in seen:
-                err(name, line, f'id en double : "{i}" (déjà utilisé ligne {seen[i]})')
+                err(name, line, f'duplicate id: "{i}" (already used on line {seen[i]})')
             else:
                 seen[i] = line
         for attr, v, line, tag in page.refs:
@@ -74,17 +80,20 @@ def main():
             else:
                 dest = target_file(path)
                 if dest is None:
-                    kind = 'image' if re.search(r'\.(png|jpe?g|gif|webp|svg|ico)$', path, re.I) else 'fichier'
-                    err(name, line, f'{kind} introuvable : {path}')
+                    kind = 'image' if re.search(r'\.(png|jpe?g|gif|webp|svg|ico)$', path, re.I) else 'file'
+                    if path in OPTIONAL:
+                        warnings.append((name, line, f'optional file missing: {path} (the CDN fallback is used)'))
+                    else:
+                        err(name, line, f'missing {kind}: {path}')
                     continue
             if frag and frag != 'top' and dest.endswith('.html'):
                 ids = {i for i, _ in pages[dest].ids} if dest in pages else set()
                 if frag not in ids:
-                    err(name, line, f'lien # cassé : "#{frag}" n\'existe pas dans {dest}')
+                    err(name, line, f'broken # link: "#{frag}" does not exist in {dest}')
             if dest and tag == 'img':
                 size = os.path.getsize(os.path.join(ROOT, dest))
                 if size > BIG_IMAGE:
-                    warnings.append((name, line, f'image lourde ({size // 1024} Ko) : {dest}'))
+                    warnings.append((name, line, f'large image ({size // 1024} KB): {dest}'))
     def show(level, items):
         for f, l, m in sorted(set(items)):
             if ON_GITHUB:
@@ -93,7 +102,7 @@ def main():
                 print(f'{level.upper():7} {f}:{l}  {m}')
     show('warning', warnings)
     show('error', errors)
-    print(f'\n{len(pages)} pages vérifiées : {len(errors)} erreur(s), {len(warnings)} avertissement(s).')
+    print(f'\n{len(pages)} pages checked: {len(errors)} error(s), {len(warnings)} warning(s).')
     return 1 if errors else 0
 if __name__ == '__main__':
     sys.exit(main())

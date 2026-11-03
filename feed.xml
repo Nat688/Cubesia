@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Cubesia patches</title>
+		<link>https://nat688.github.io/Cubesia/patch.html</link>
+		<description>Patch notes of the Cubesia Minecraft server.</description>
+		<language>en</language>
+		<lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+		<atom:link href="https://nat688.github.io/Cubesia/feed.xml" rel="self" type="application/rss+xml"/>
+		<item>
+			<title>Update #3</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#update-3</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#update-3</guid>
+			<pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a Mining competition.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; chat colors.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; custom (non-vanilla) advancements.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; player levels.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; collections.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; the ability to change spawner mob types using spawn eggs.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; an Overworld map.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a Halloween week calendar.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; voting rewards.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a black market for purchasing various vanilla items.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; casino-style "Treasure" features (under cosmetics).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; redeem code.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; cosmetics (purchasable via &lt;code&gt;/shop&lt;/code&gt;).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; the ability to purchase sell wands.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; the ability to purchase flight time.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; the ability to purchase keys.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; "NoTrample" mechanics.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; all item prices.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; minor bugs.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; unnecessary messages when receiving money.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; all "vanilla" items from /shop.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; color codes for anvils and signs.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #20</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-20</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-20</guid>
+			<pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a 10% tax when listing an item in &lt;code&gt;/ah&lt;/code&gt; and &lt;code&gt;/order&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the Discord NPC skin.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; some issues with crates.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #19</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-19</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-19</guid>
+			<pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; chatgames rewards.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; crates (all redesigned and improved).&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #18</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-18</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-18</guid>
+			<pubDate>Wed, 07 Oct 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a new economy system.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; new blocks to the &lt;code&gt;/sell&lt;/code&gt; command.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the &lt;code&gt;/spawn&lt;/code&gt; cooldown from 30 seconds to 10 seconds.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; enchantment levels for vanilla enchantments (max level based on the specific enchantment).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the "Too Expensive" issue that was still occurring.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; the visible &lt;code&gt;/nightvision&lt;/code&gt; command.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; alerts during "fishing contests."&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #17</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-17</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-17</guid>
+			<pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; the &lt;code&gt;/pw 'warp'&lt;/code&gt; command (previously &lt;code&gt;/pw warp 'warp'&lt;/code&gt;).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the maximum level for vanilla enchantments to 10.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the cost of combining high-level enchantments.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the malfunctioning string dupe glitch.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; issues with fishing competitions regarding fish and rarity.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; the item stacking system.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #16</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-16</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-16</guid>
+			<pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; wood and poplar to the Lumberjack profession.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; the ability to obtain enchantments higher than the standard limit.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; the fix where the 'Too expensive' message no longer appears.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the RTP cooldown (5 minutes -&amp;gt; 1 minute).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; an issue where mobs could not pick up items.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the rank organization in the TAB list.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Update #2</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#update-2</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#update-2</guid>
+			<pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;New&lt;/b&gt; host: &lt;a href="https://realisticnode.com/nat68"&gt;RealisticNode&lt;/a&gt; !&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; support for versions ranging from 1.21.8 to 26.3.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; the ability to use bone meal on flowers, cacti, and sugar cane.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; the ability to leash all passive (including villagers), hostile, and aquatic mobs.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; the fact that bees no longer attack you after their hive is destroyed.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; new death messages.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; string duplication system (like before version 1.21.1).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; leaderboards.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; item stacking system to prevent lag.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; teams.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; in-game server changelog.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; inventory backup system.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; chat games featuring questions, equations, and more.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; flight with a time-based system.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; order system.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; bounty system.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; homes system.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; bank system.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; minions.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #15</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-15</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-15</guid>
+			<pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; support for &lt;code&gt;'&amp;amp;'&lt;/code&gt; color codes on signs, in anvils, and in chat.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the server version to Minecraft 26.2.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the enchantment table's storage so it now retains the lapis lazuli when the player closes the interface.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; cauldrons so they no longer lose water when turning concrete powder into concrete.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; to the utility of the Golden Dandelion.&lt;/li&gt;&lt;li&gt;&amp;nbsp;&amp;nbsp;&amp;ndash; Turns a baby into an adult (right-click).&lt;/li&gt;&lt;li&gt;&amp;nbsp;&amp;nbsp;&amp;ndash; Turns an adult into a baby (right-click).&lt;/li&gt;&lt;li&gt;&amp;nbsp;&amp;nbsp;&amp;ndash; Works on Villagers and all zombie variants.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; the &lt;code&gt;/mechanics&lt;/code&gt; command.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; the item stacking system.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #14</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-14</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-14</guid>
+			<pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a plugin that allows opening players' inventories and Ender Chests.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; items featuring old enchantments that were causing server lag.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the skin for the /pv NPC.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; the old status bars displayed above furnaces.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #13</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-13</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-13</guid>
+			<pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a gold ingot to the bottom right of the &lt;code&gt;/sell&lt;/code&gt; menu; it opens the &lt;code&gt;/sellprice&lt;/code&gt; view.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the value format from &lt;code&gt;x.xx$&lt;/code&gt; to &lt;code&gt;x.xx$/u&lt;/code&gt; &lt;i&gt;(so that items stack normally)&lt;/i&gt;.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Update #1</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#update-1</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#update-1</guid>
+			<pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a new command system.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; PlayerWarps (&lt;code&gt;/pw&lt;/code&gt;).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; &lt;code&gt;/trade "player"&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; &lt;code&gt;/rewards&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; &lt;code&gt;/orders&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; &lt;code&gt;/ah&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a search system to &lt;code&gt;/sellprice&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a new spawn area.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; NPCs.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the enchantment system.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the scoreboard.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; bank mechanics (interest, capacity, etc.).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; &lt;code&gt;/help&lt;/code&gt; to open a GUI.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the crate mechanics.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; a bug where the mouse cursor would reset to the center after clicking in &lt;code&gt;/shop&lt;/code&gt;, &lt;code&gt;/sellprice&lt;/code&gt; and &lt;code&gt;/settings&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; negative permissions.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; bank messages.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; mob levels.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; "welcome" and "players online" messages (to reduce chat clutter upon connection).&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #12</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-12</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-12</guid>
+			<pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; automatic updates for selected plugins.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; improved services for administrators.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; permissions issue for operators.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; numerous bugs affecting administrators.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #11</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-11</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-11</guid>
+			<pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; mob health.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; mob knockback resistance.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; mob speed.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; mob tracking range.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; progress bar for the brewing stand.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; progress bar for the composter.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; bee and honey counters for bee nests and beehives.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; progress bars for the smoker and blast furnace.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; progress bars for the campfire and soul campfire.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; progress bar system for cooking items in the furnace.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #10</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-10</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-10</guid>
+			<pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; &lt;code&gt;dirt_path&lt;/code&gt; as a block obtainable with Silk Touch.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; mob speed.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the shards awarded by the AFK Zone.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #9</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-9</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-9</guid>
+			<pubDate>Sat, 18 Jul 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a gold ingot to the bottom-right corner of the &lt;code&gt;/sell&lt;/code&gt; interface to indicate the &lt;code&gt;/sellprice&lt;/code&gt; command.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a progress bar for the brewing stand.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a progress bar for the composter.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; bee and honey counters for bee nests and beehives.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; progress bars for the smoker and blast furnace.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; progress bars for the campfire and soul campfire.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; an issue where the minion charge could be free.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #8</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-8</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-8</guid>
+			<pubDate>Fri, 17 Jul 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a progress bar system for cooking items in the furnace.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the levels of passive mobs, which were almost always set to 10.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #7</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-7</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-7</guid>
+			<pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the Hammer enchantment with Efficiency VI, which wasn't breaking blocks correctly.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #6</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-6</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-6</guid>
+			<pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; &lt;code&gt;/help&lt;/code&gt; and &lt;code&gt;/helpall&lt;/code&gt; commands, allowing you to view all available server commands (either page by page or all at once).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; items to the Amethyst crate.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; items to the Foot crate.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; in the &lt;code&gt;/shop&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; spawner prices for the "sellall" command.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the glass pane colors depending on the crate.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #5</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-5</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-5</guid>
+			<pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; &lt;code&gt;/settings&lt;/code&gt; – opens a GUI to toggle certain features.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; &lt;code&gt;/website&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; items to the Sapphire crate.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; items to the Crimson crate.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; overall mob levels.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; mob levels near spawn.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; mob speeds.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; &lt;code&gt;/sell&lt;/code&gt; prices.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the commands marked in red.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; the &lt;code&gt;/mechanics&lt;/code&gt; command.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #4</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-4</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-4</guid>
+			<pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; mob level calculation method.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the maximum mob level (100 -&amp;gt; 50).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; level colors.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; maximum levels for passive mobs.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; sell values (to avoid figures like 0.224).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; mob levels that could change after spawning.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #3</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-3</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-3</guid>
+			<pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; a reinforcement system to summon allies (for zombies only).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; arrow damage dealt by mobs based on their level.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; damage dealt by Creepers based on their level.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; item drops from mobs based on their level.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; XP drops from mobs based on their level.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; player detection by mobs based on their level.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; knockback dealt by mobs based on their level.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; knockback resistance for mobs based on their level.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; AFK zone reward (~378/h -&amp;gt; ~750/h).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the English translation of the wiki and rules messages.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the missing &lt;code&gt;/banktop&lt;/code&gt; permission.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; drops for silverfish and villager spawners.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the damage taken by the player, which was too high.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Removed&lt;/b&gt; the automatic voting message.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #2</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-2</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-2</guid>
+			<pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Added&lt;/b&gt; the &lt;code&gt;/sellprice&lt;/code&gt; command – allows you to view the prices of all items.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; messages regarding minion charges, as well as the interface for the various minions.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+		<item>
+			<title>Patch #1</title>
+			<link>https://nat688.github.io/Cubesia/patch.html#patch-1</link>
+			<guid isPermaLink="true">https://nat688.github.io/Cubesia/patch.html#patch-1</guid>
+			<pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+			<description>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Change&lt;/b&gt; the fish selling prices in &lt;code&gt;/sellfish&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the French translation that was showing in the TAB list when it shouldn't.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the &lt;code&gt;/paytoggle&lt;/code&gt; command, which also affected other players.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the &lt;code&gt;/pay&lt;/code&gt; command, which was inaccessible.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the &lt;code&gt;/money top&lt;/code&gt; and &lt;code&gt;/shards top&lt;/code&gt; commands, which were bugged (returning no data).&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the &lt;code&gt;/sellguiprice&lt;/code&gt; command, which was being displayed when it shouldn't have been.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the &lt;code&gt;/banktop&lt;/code&gt; not appearing in the command list.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; the &lt;code&gt;/afk&lt;/code&gt; command that wasn't working.&lt;/li&gt;&lt;li&gt;&lt;b&gt;Fixed&lt;/b&gt; Creepers not dealing damage.&lt;/li&gt;&lt;/ul&gt;</description>
+		</item>
+	</channel>
+</rss>
