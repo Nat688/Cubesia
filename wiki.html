@@ -1,6 +1,5 @@
 ---
 layout: default
-edit: true
 title: Wiki
 ---
 
@@ -46,13 +45,16 @@ title: Wiki
 			<h3 id="cmd-extras"><i data-lucide="sparkles"></i>Extras</h3>
 			<ul class="cmd-list">
 				<li><span class="command">/cosmetics</span> <span class="base">Opens the cosmetics interface.</span></li>
-				<li><span class="command">/redeem &lt;code&gt;</span> <span class="base">Allows you to redeem a code.</span></li>
 				<li><span class="command">/level</span> <span class="command">/lvl</span> <span class="command">/levels</span> <span class="base">Opens the levels interface.</span></li>
 				<li><span class="command">/collection</span> <span class="command">/collections</span> <span class="base">Opens the collections interface.</span></li>
 				<li><span class="command">/colours</span> <span class="command">/chatcolor</span> <span class="command">/chatcolour</span> <span class="base">Opens the chat colors interface.</span></li>
 				<li><span class="command">/calendar</span> <span class="base">Opens the calendar interface.</span></li>
 				<li><span class="command">/miningcomp</span> <span class="base">Shows the current mining competition.</span></li>
 				<li><span class="command">/vote</span> <span class="base">Shows the links to vote for the server.</span></li>
+				<li><span class="command">/minions list</span> <span class="base">Opens the list of your minions.</span></li>
+				<li><span class="command">/minions shop</span> <span class="base">Opens the minion shop.</span></li>
+				<li><span class="command">/minions users</span> <span class="base">Manages the players you trust with your minions.</span></li>
+				<li><span class="command">/minions alerts</span> <span class="base">Toggles the alerts sent when a minion stops working.</span></li>
 			</ul>
 			<h3 id="cmd-utility"><i data-lucide="wrench"></i>Utility</h3>
 			<ul class="cmd-list">
@@ -78,6 +80,9 @@ title: Wiki
 				<li><span class="command">/money top</span> <span class="base">Shows the top players in terms of money.</span></li>
 				<li><span class="command">/shards</span> <span class="base">Shows your current balance in shards.</span></li>
 				<li><span class="command">/gems</span> <span class="base">Shows your current balance in gems (the premium currency used for gem grades).</span></li>
+				<li><span class="command">/invest</span> <span class="base">Opens the investment menu.</span></li>
+				<li><span class="command">/invest &lt;amount&gt;</span> <span class="base">Invests the given amount in one step (<code>10k</code>, <code>2.5m</code> and <code>1b</code> work).</span></li>
+				<li><span class="command">/invest cancel</span> <span class="base">Cancels an investment question that is still open.</span></li>
 				<li><span class="command">/shards top</span> <span class="base">Shows the top players in terms of shards.</span></li>
 				<li><span class="command">/pay</span> <span class="base">Allows you to pay other players.</span></li>
 				<li><span class="command">/paytoggle</span> <span class="base">Toggles payments from other players.</span></li>
@@ -89,6 +94,10 @@ title: Wiki
 				<li><span class="command">/shop</span> <span class="base">Opens the server shop.</span></li>
 				<li><span class="command">/sell</span> <span class="command">/sellgui</span> <span class="base">Allows you to sell your items (except custom fish).</span></li>
 				<li><span class="command">/sellprice</span> <span class="command">/sellprices</span> <span class="base">Opens a GUI to view item prices (tiers in alphabetical order).</span></li>
+				<li><span class="command">/worth</span> <span class="base">Opens the price list of every item, sortable by price or name.</span></li>
+				<li><span class="command">/sellmulti</span> <span class="base">Shows your sell multiplier for each category.</span></li>
+				<li><span class="command">/sellhistory</span> <span class="base">Shows what you have sold so far.</span></li>
+				<li><span class="command">/worthlore</span> <span class="base">Shows or hides the price line under the items of your inventory.</span></li>
 				<li><span class="command">/sellall</span> <span class="base">Allows you to sell your entire inventory.</span></li>
 				<li><span class="command">/autosell</span> <span class="base">Toggles autosell (automatically sells selected items).</span></li>
 				<li><span class="command">/ah</span> <span class="command">/auction</span> <span class="command">/auctionhouse</span> <span class="command">/hdv</span> <span class="base">Opens the auction house (player trading hub).</span></li>
@@ -195,7 +204,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/spawner_stacking.webp" target="_blank" rel="noopener"><img src="images/wiki/spawner_stacking.webp" alt="Spawner stacking" width="1016" height="932" loading="lazy"></a>
 			</div>
-			<h3 id="spawner-egg"><i data-lucide="egg"></i>Changing the mob</h3>
+			<h3 id="spawner-egg" data-added="2026-10-18"><i data-lucide="egg"></i>Changing the mob</h3>
 			<p>You can <b>change the mob</b> of a spawner with a <b>spawn egg</b>: use the spawn egg of the mob you want on the spawner.</p>
 			<p>This lets you reuse your spawners and adapt your mob farms without having to find new ones.</p>
 			<div class="callout">
@@ -417,7 +426,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/ah.webp" target="_blank" rel="noopener"><img src="images/wiki/ah.webp" alt="Auction house" loading="lazy"></a>
 			</div>
-			<h2 id="black-market"><i data-lucide="shopping-bag"></i>Black Market</h2>
+			<h2 id="black-market" data-added="2026-10-18"><i data-lucide="shopping-bag"></i>Black Market</h2>
 			<p>The <b>Black Market</b> is a shop for <b>vanilla items</b>.</p>
 			<p>Its stock <b>changes every hour</b> and follows a <b>rarity system</b>, so the offers you see are never quite the same.</p>
 			<p>Every restock brings <b>15 offers</b> split by rarity: <b>5 common</b>, <b>5 rare</b>, <b>3 epic</b> and <b>2 legendary</b>. Rarer offers are scarcer, so do not wait too long when you spot something you like.</p>
@@ -514,7 +523,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/crates.webp" target="_blank" rel="noopener"><img src="images/wiki/crates.webp" alt="Crates" loading="lazy"></a>
 			</div>
-			<h2 id="voting"><i data-lucide="vote"></i>Vote</h2>
+			<h2 id="voting" data-added="2026-10-18"><i data-lucide="vote"></i>Vote</h2>
 			<p>Voting for Cubesia helps the server grow, and <b>every vote is rewarded</b>.</p>
 			<p>You can vote <b>from the game</b> with <code>/vote</code>, or <b>from the website</b> on the <a href="vote.html">Vote</a> page.</p>
 			<ul>
@@ -600,7 +609,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/settings.webp" target="_blank" rel="noopener"><img src="images/wiki/settings.webp" alt="Settings" loading="lazy"></a>
 			</div>
-			<h2 id="levels"><i data-lucide="trending-up"></i>Levels</h2>
+			<h2 id="levels" data-added="2026-10-18"><i data-lucide="trending-up"></i>Levels</h2>
 			<p><b>Player levels</b> make you stronger over time: each level boosts your stats, such as your <b>health</b> and your <b>strength</b>.</p>
 			<p>Open the levels interface with <code>/level</code> (or <code>/lvl</code>, <code>/levels</code>) to check your progression.</p>
 			<p>There are <b>100 levels</b> to reach. Each level asks for more experience than the last, and every one of them rewards you with <b>money</b>. Along the way you unlock permanent bonuses such as more <b>health</b> (up to 20 hearts), <b>speed</b>, <b>armor</b>, <b>luck</b> and a longer <b>reach</b>.</p>
@@ -649,14 +658,14 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/calendar.webp" target="_blank" rel="noopener"><img src="images/wiki/calendar.webp" alt="Calendar" loading="lazy"></a>
 			</div>
-			<h2 id="advancements"><i data-lucide="award"></i>Advancements</h2>
+			<h2 id="advancements" data-added="2026-10-18"><i data-lucide="award"></i>Advancements</h2>
 			<p>Cubesia adds <b>new, custom advancements</b> with their own style, on top of the vanilla ones.</p>
 			<p>There are <b>86 custom advancements</b> spread over four new tabs: <b>Craftsman's Ledger</b>, <b>Hard Knocks</b>, <b>New Version Discoveries</b> and <b>Wild Life</b>.</p>
 			<p>They are <b>directly integrated into the advancements menu</b> (the <b>L</b> key by default), so there is nothing extra to open.</p>
 			<div class="shots">
 				<a href="images/wiki/advancements.webp" target="_blank" rel="noopener"><img src="images/wiki/advancements.webp" alt="Advancements" loading="lazy"></a>
 			</div>
-			<h2 id="cosmetics"><i data-lucide="shirt"></i>Cosmetics</h2>
+			<h2 id="cosmetics" data-added="2026-10-18"><i data-lucide="shirt"></i>Cosmetics</h2>
 			<p><b>Cosmetics</b> let you customize your experience with extras such as <b>mounts</b> and more.</p>
 			<p>Open the cosmetics menu at any time with <code>/cosmetics</code>. You will find <b>gadgets</b>, <b>particle effects</b>, <b>pets</b>, <b>morphs</b>, <b>hats</b>, <b>suits</b>, <b>emotes</b>, <b>projectile effects</b> and <b>death effects</b>.</p>
 			<p>Looking for a title instead? Take a look at <a href="#tags">Tags</a>.</p>
@@ -808,6 +817,67 @@ title: Wiki
 				<a href="images/wiki/vaults_chest.webp" target="_blank" rel="noopener"><img src="images/wiki/vaults_chest.webp" alt="Vaults chest" width="510" height="385" loading="lazy"></a>
 				<a href="images/wiki/vaults_item-picker.webp" target="_blank" rel="noopener"><img src="images/wiki/vaults_item-picker.webp" alt="Vaults item picker" width="510" height="381" loading="lazy"></a>
 			</div>
+			<h2 id="minions"><i data-lucide="bot"></i>Minions</h2>
+			<p><b>Minions</b> are tireless little workers that mine, farm, fish, fight and even sell for you, <b>even while you are offline</b> (as long as their chunk stays loaded).</p>
+			<p>Buy them with <code>/minions shop</code>. There are <b>8 types</b>, each one paid with money:</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead>
+						<tr><th>Minion</th><th>Price</th><th>Tool</th><th>What it does</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>Collector</td><td>100,000</td><td>Shovel</td><td>Collects the items lying around it.</td></tr>
+						<tr><td>Farmer</td><td>250,000</td><td>Hoe</td><td>Harvests and replants nearby crops.</td></tr>
+						<tr><td>Lumberjack</td><td>250,000</td><td>Axe</td><td>Chops down nearby trees.</td></tr>
+						<tr><td>Miner</td><td>500,000</td><td>Pickaxe</td><td>Mines stone and ores in a line.</td></tr>
+						<tr><td>Fisher</td><td>500,000</td><td>Fishing rod</td><td>Catches fish for you.</td></tr>
+						<tr><td>Slayer</td><td>750,000</td><td>Sword</td><td>Kills the mobs around it.</td></tr>
+						<tr><td>Seller</td><td>1,000,000</td><td>Bow or crossbow</td><td>Sells the items stored in its container.</td></tr>
+						<tr><td>Crafter</td><td>1,000,000</td><td>Any item</td><td>Crafts the items stored in its container.</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<h3 id="minions-use"><i data-lucide="play"></i>Getting started</h3>
+			<ul>
+				<li><b>Place it</b> where you want it to work, then open its menu.</li>
+				<li><b>Give it a tool.</b> A minion without a tool does nothing. The tool is never used up, so it keeps its durability.</li>
+				<li><b>Link a container.</b> Everything the minion produces goes into a chest you link in its menu, up to <b>50 blocks</b> away. A full container stops the minion.</li>
+				<li><b>Charge it.</b> Minions need fuel to work: coal, charcoal, blaze rods, coal blocks or lava buckets. A minion can store up to <b>24 hours</b> of charge.</li>
+				<li><b>Control it.</b> Rotate it, start or stop it, and pick it up with <b>Shift + Right-Click</b>. Only you can do it.</li>
+			</ul>
+			<h3 id="minions-upgrades"><i data-lucide="arrow-up-circle"></i>Upgrades</h3>
+			<p>Every minion has <b>10 levels</b>. Each level increases its <b>range</b>, makes it <b>faster</b> and lets you link more <b>containers</b>. To upgrade, you need money and a number of <b>actions</b> performed by the minion (crops harvested, blocks broken, fish caught, mobs killed, items collected, crafted or sold).</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead>
+						<tr><th>Level</th><th>Range</th><th>Work delay</th><th>Containers</th><th>Price</th><th>Actions</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>1</td><td>2</td><td>200</td><td>1</td><td>-</td><td>-</td></tr>
+						<tr><td>2</td><td>4</td><td>190</td><td>1</td><td>100,000</td><td>200</td></tr>
+						<tr><td>3</td><td>6</td><td>180</td><td>2</td><td>150,000</td><td>1,000</td></tr>
+						<tr><td>4</td><td>8</td><td>170</td><td>2</td><td>200,000</td><td>2,000</td></tr>
+						<tr><td>5</td><td>10</td><td>160</td><td>3</td><td>250,000</td><td>4,000</td></tr>
+						<tr><td>6</td><td>12</td><td>150</td><td>3</td><td>300,000</td><td>7,500</td></tr>
+						<tr><td>7</td><td>14</td><td>140</td><td>3</td><td>400,000</td><td>15,000</td></tr>
+						<tr><td>8</td><td>16</td><td>125</td><td>4</td><td>500,000</td><td>40,000</td></tr>
+						<tr><td>9</td><td>18</td><td>110</td><td>4</td><td>750,000</td><td>100,000</td></tr>
+						<tr><td>10</td><td>20</td><td>100</td><td>5</td><td>1,000,000</td><td>250,000</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<p>A lower work delay means a faster minion: a level 10 minion works twice as fast as a level 1 minion. The range applies to the Collector, Farmer, Lumberjack, Miner, Fisher and Slayer.</p>
+			<h3 id="minions-more"><i data-lucide="users"></i>Alerts and trusted players</h3>
+			<p>When a minion stops because it has no tool, a full container or no charge, you receive a message in the chat and above the hotbar. Turn it off with <code>/minions alerts</code>.</p>
+			<p><code>/minions list</code> shows all of your minions. With <code>/minions users</code>, you can trust other players: they can open your minions, change their tools, charge and upgrade them, while everything else stays reserved for you.</p>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p>Placing a minion requires the permission of its type. If you cannot place one, ask the staff.</p>
+			</div>
+			<div class="shots">
+				<a href="images/wiki/minions.webp" target="_blank" rel="noopener"><img src="images/wiki/minions.webp" alt="Minions" loading="lazy"></a>
+			</div>
+
 			<h2 id="fish"><i data-lucide="fish"></i>Fish</h2>
 			<p>The server features a complete <b>custom fishing system</b> with dozens of unique fish represented by custom <b>player heads</b>, each with its own rarity, value, and collection progress.</p>
 			<p>Every fish you catch is automatically recorded in your personal collection, encouraging exploration and giving you new species to discover across the world.</p>
@@ -838,7 +908,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/fish_gui.webp" target="_blank" rel="noopener"><img src="images/wiki/fish_gui.webp" alt="Fish gui" width="512" height="382" loading="lazy"></a>
 			</div>
-			<h2 id="mining-competition"><i data-lucide="pickaxe"></i>Mining Competition</h2>
+			<h2 id="mining-competition" data-added="2026-10-18"><i data-lucide="pickaxe"></i>Mining Competition</h2>
 			<p><b>Mining competitions</b> are server events in the same spirit as the fishing contests, but made for <b>miners</b>.</p>
 			<p>Compete against the other players while you mine, and use <code>/miningcomp</code> to follow the current competition.</p>
 			<p>A new competition starts every <b>30 minutes</b>. In <b>Stone Rush</b> (5 minutes) you break as many blocks as you can, while <b>Ore Hunt</b> (10 minutes) rewards the best ore collectors. The <b>top 5</b> players of each round win a money reward.</p>
@@ -907,11 +977,75 @@ title: Wiki
 			<p>Every sellable item has a predefined <b>Worth</b>, which is displayed directly in its tooltip, making it easy to know its value before selling.</p>
 			<p>If you want to check prices without opening the selling menu, you can also use <code>/sellprice</code> (or <code>/sellprices</code>) to browse the complete list of item values available on the server.</p>
 			<p>To sell your entire inventory in one go, use <code>/sellall</code>, and use <code>/autosell</code> to enable or disable the automatic selling of the items you selected.</p>
-			<p>Selling is <b>tax-free</b>, and a single transaction can reach up to <b>1,000,000</b>. Note that <code>/sellall</code> never sells enchanted items.</p>
+			<p>Selling is <b>tax-free</b>, and the items of the sell menu keep their value even when they are <b>renamed</b>.</p>
+			<h3 id="sell-multipliers"><i data-lucide="trending-up"></i>Sell multipliers</h3>
+			<p>The more you sell from a category, the better you get at it. Every category has its own <b>multiplier</b>, which starts at <b>x1.0</b> and goes up by <b>+0.1</b> each time you pass a milestone, for a maximum of <b>x3.0</b> after <b>20 milestones</b>.</p>
+			<p>Selling crops only raises the crops multiplier, so a farmer never slows down a miner. Check your progress with <code>/sellmulti</code>.</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead>
+						<tr><th>Category</th><th>Items</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>Blocks</td><td>438</td></tr>
+						<tr><td>Colored</td><td>305</td></tr>
+						<tr><td>Ores</td><td>172</td></tr>
+						<tr><td>Natural</td><td>154</td></tr>
+						<tr><td>Armor &amp; Tools</td><td>107</td></tr>
+						<tr><td>Loot &amp; Rare</td><td>88</td></tr>
+						<tr><td>Decoration</td><td>65</td></tr>
+						<tr><td>Mobs</td><td>57</td></tr>
+						<tr><td>Crops</td><td>43</td></tr>
+						<tr><td>Redstone</td><td>38</td></tr>
+						<tr><td>Fish</td><td>19</td></tr>
+						<tr><td>Enchanted Books</td><td>9</td></tr>
+						<tr><td>Potions</td><td>9</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<h3 id="sell-details"><i data-lucide="list-checks"></i>Good to know</h3>
+			<ul>
+				<li><b>Enchanted items</b> can be sold, and every enchantment level adds <b>10%</b> of the item's price. Curses add nothing.</li>
+				<li><b>Damaged tools and armor</b> are worth less: the price follows the remaining durability.</li>
+				<li><b>Shulker boxes and bundles</b> are emptied and sold, and the empty box is handed back to you.</li>
+				<li><b>Special items</b> such as crate keys are never sold. Anything refused is returned to you.</li>
+				<li><b>Prices in your inventory:</b> a green <b>Worth</b> line is shown under your items. Hide it with <code>/worthlore</code>.</li>
+				<li><b>History:</b> <code>/sellhistory</code> shows what you have sold so far.</li>
+			</ul>
 			<p>This system provides a fast and convenient way to turn your resources into money while helping you plan farms and maximize your profits.</p>
 			<div class="shots">
 				<a href="images/wiki/sell_worth.webp" target="_blank" rel="noopener"><img src="images/wiki/sell_worth.webp" alt="Sell worth" width="331" height="175" loading="lazy"></a>
 			</div>
+			<h2 id="invest"><i data-lucide="piggy-bank"></i>Investments</h2>
+			<p><b>Investments</b> let your money work for you. Put some of your balance into an investment, and it earns you a steady income <b>every second</b> while you are online.</p>
+			<p>Open the menu with <code>/invest</code>. Click to invest, type the amount in the chat, and confirm. Short forms work: <b>10k</b>, <b>2.5m</b> and <b>1b</b>. You can also skip the chat entirely with <code>/invest &lt;amount&gt;</code>, and cancel a question with <code>/invest cancel</code>.</p>
+			<p>For every <b>100,000</b> invested, you earn <b>1 per second</b>. The income is always calculated on the amount you have invested, so it never grows on its own: invest more to earn more.</p>
+			<div class="table_container">
+				<table class="neon_table">
+					<thead>
+						<tr><th>Invested</th><th>Income per second</th><th>Income per hour</th></tr>
+					</thead>
+					<tbody>
+						<tr><td>100,000</td><td>1</td><td>3,600</td></tr>
+						<tr><td>1,000,000</td><td>10</td><td>36,000</td></tr>
+						<tr><td>10,000,000</td><td>100</td><td>360,000</td></tr>
+					</tbody>
+				</table>
+			</div>
+			<p>The smallest investment is <b>1,000</b>, and you can hold up to <b>100,000,000</b> invested.</p>
+			<p>Collect your income by hand from the menu, or switch on <b>auto-collect</b>: every player can use it, and the money then lands directly in your balance, with the amount shown above your hotbar.</p>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p>Your income is earned <b>only while you are online</b>. Nothing builds up while you are away.</p>
+			</div>
+			<div class="callout">
+				<i data-lucide="info"></i>
+				<p><b>Deleting an investment does not refund it.</b> The money is gone for good, which is why the menu asks you to confirm before investing and before deleting.</p>
+			</div>
+			<div class="shots">
+				<a href="images/wiki/invest.webp" target="_blank" rel="noopener"><img src="images/wiki/invest.webp" alt="Investments" loading="lazy"></a>
+			</div>
+
 			<h2 id="clearlag"><i data-lucide="eraser"></i>ClearLag</h2>
 			<p><b>ClearLag</b> keeps the server smooth by regularly cleaning up the world. Every <b>30 minutes</b>, all <b>dropped items</b> and all <b>unneeded entities</b> are removed, which greatly reduces lag for everyone.</p>
 			<p>You will be warned beforehand with a countdown (at <b>60, 10, 3, 2 and 1 seconds</b>), so you have time to pick up what you care about. You can choose how the messages are displayed, or turn them off, using <code>/clearlag togglemessages</code>, <code>/clearlag togglemessage</code> and <code>/clearlag togglesound</code>.</p>
@@ -998,6 +1132,13 @@ title: Wiki
 			<h3 id="night-vision"><i data-lucide="eye"></i>Night Vision</h3>
 			<p>Exploring caves or mining at night is much easier with <code>/nightvision</code>, which <b>toggles night vision</b> on and off whenever you want.</p>
 			<p>Mining, building underground and exploring the ocean floor no longer require torches or potions: simply run the command and see clearly.</p>
+			<h3 id="anvil-colors"><i data-lucide="palette"></i>Anvil Colors</h3>
+			<p>Renaming items just became much more colorful: the <b>anvil</b> now supports <b>color codes</b>, so you can give your tools, weapons and armor a name that truly stands out.</p>
+			<p>Rename an item as usual and type <code>&amp;</code> followed by a color code in the name, for example <code>&amp;a</code> for green, <code>&amp;c</code> for red, <code>&amp;e</code> for yellow or <code>&amp;9</code> for blue. The other Minecraft color codes work the same way.</p>
+			<p>For instance, <code>&amp;aMy &amp;cSword</code> displays <b>My</b> in green and <b>Sword</b> in red on the item.</p>
+			<div class="shots">
+				<a href="images/wiki/anvil_colors.webp" target="_blank" rel="noopener"><img src="images/wiki/anvil_colors.webp" alt="Anvil colors" loading="lazy"></a>
+			</div>
 			<h3 id="enchantment-table"><i data-lucide="gem"></i>Enchantment Table</h3>
 			<p>The <b>Enchantment Table</b> now keeps your <b>Lapis Lazuli</b> in place: when you close the interface, the lapis lazuli <b>remains inside the table</b> instead of being given back to you.</p>
 			<p>This means you no longer have to place your lapis lazuli again every time you reopen the table, which makes enchanting several items in a row much faster and less tedious.</p>
@@ -1063,9 +1204,76 @@ title: Wiki
 			<p>You only need to have enough experience levels to pay for the operation.</p>
 			<h3 id="beyond-vanilla-levels"><i data-lucide="trending-up"></i>Beyond Vanilla Levels</h3>
 			<p>You can now go <b>above the maximum levels of vanilla Minecraft</b>: enchantments are no longer limited to their usual cap, such as <b>Efficiency VI</b>.</p>
+			<p>The experience levels required to enchant have also been <b>lowered</b>, so custom enchantments are easier to obtain from the table.</p>
 			<p>Combined with <a href="#no-too-expensive">No Too Expensive</a>, you can keep upgrading your favorite gear much further than in the base game.</p>
 			<p>The following vanilla enchantments can now reach a higher level on the anvil: <b>Depth Strider V</b>, <b>Efficiency VIII</b>, <b>Feather Falling V</b>, <b>Fortune V</b>, <b>Frost Walker IV</b>, <b>Looting V</b>, <b>Luck of the Sea V</b>, <b>Lure VIII</b>, <b>Multishot V</b>, <b>Protection V</b>, <b>Respiration V</b>, <b>Soul Speed V</b>, <b>Sweeping Edge V</b>, <b>Thorns V</b> and <b>Unbreaking V</b>.</p>
 			<p>You can check the maximum level of every custom enchantment in the <a href="#enchantments">Enchantments</a> tables.</p>
+
+			<h2 id="removed" data-added="2026-10-18"><i data-lucide="archive"></i>Removed</h2>
+			<p>Features that used to exist on Cubesia and are no longer available. Each one links to the patch that removed it.</p>
+
+			<h3 id="removed-features"><i data-lucide="layers"></i>Features</h3>
+			<div class="rm-grid">
+				<article class="rm-card" id="removed-minions">
+					<div class="rm-head"><h4>Minions</h4><span class="rm-tag">Removed</span></div>
+					<p>Automated workers that gathered and produced resources for you. They needed fuel and a favorite tool, could be upgraded through a Minion Level system and were obtained from the Common Crate.</p>
+					<a class="rm-patch" href="patch.html#update-2">Update #2 &middot; Oct 4, 2026</a>
+				</article>
+				<article class="rm-card" id="removed-bank">
+					<div class="rm-head"><h4>Bank</h4><span class="rm-tag">Removed</span></div>
+					<p>A bank system with interest and a limited capacity.</p>
+					<a class="rm-patch" href="patch.html#update-2">Update #2 &middot; Oct 4, 2026</a>
+				</article>
+				<article class="rm-card" id="removed-item-stacking">
+					<div class="rm-head"><h4>Item stacking system</h4><span class="rm-tag">Removed</span></div>
+					<p>Merged dropped items into stacks of up to 64,000 to reduce lag.</p>
+					<a class="rm-patch" href="patch.html#patch-17">Patch #17 &middot; Oct 6, 2026</a>
+				</article>
+				<article class="rm-card" id="removed-mob-levels">
+					<div class="rm-head"><h4>Mob levels</h4><span class="rm-tag">Removed</span></div>
+					<p>Mobs had levels (up to 50) that scaled their damage, drops, XP and more.</p>
+					<a class="rm-patch" href="patch.html#update-1">Update #1 &middot; Aug 5, 2026</a>
+				</article>
+			</div>
+
+			<h3 id="removed-commands"><i data-lucide="terminal"></i>Commands</h3>
+			<ul class="removed-list">
+				<li id="removed-nightvision">
+					<span class="rm-tag">Removed</span>
+					<b>/nightvision command (visible)</b>
+					<span class="rm-note">Removed from the visible commands.</span>
+					<a class="rm-patch" href="patch.html#patch-18">Patch #18 &middot; Oct 7, 2026</a>
+				</li>
+				<li id="removed-mechanics">
+					<span class="rm-tag">Removed</span>
+					<b>/mechanics command</b>
+					<span class="rm-note">A command that was removed because it was not needed.</span>
+					<a class="rm-patch" href="patch.html#patch-5">Patch #5 &middot; Jul 15, 2026</a>
+				</li>
+			</ul>
+
+			<h3 id="removed-interface"><i data-lucide="message-square"></i>Interface &amp; messages</h3>
+			<ul class="removed-list">
+				<li id="removed-fishing-alerts">
+					<span class="rm-tag">Removed</span>
+					<b>Fishing contest alerts</b>
+					<span class="rm-note">The alerts displayed during fishing contests.</span>
+					<a class="rm-patch" href="patch.html#patch-18">Patch #18 &middot; Oct 7, 2026</a>
+				</li>
+				<li id="removed-welcome-messages">
+					<span class="rm-tag">Removed</span>
+					<b>Welcome messages</b>
+					<span class="rm-note">The &ldquo;welcome&rdquo; and &ldquo;players online&rdquo; messages shown when connecting.</span>
+					<a class="rm-patch" href="patch.html#update-1">Update #1 &middot; Aug 5, 2026</a>
+				</li>
+				<li id="removed-progress-bars">
+					<span class="rm-tag">Removed</span>
+					<b>Progress bars and counters</b>
+					<span class="rm-note">The progress bars and counters shown on furnaces, brewing stands, composters, campfires and beehives.</span>
+					<a class="rm-patch" href="patch.html#patch-11">Patch #11 &middot; Jul 21, 2026</a>
+				</li>
+			</ul>
+
 		</main>
 		<aside class="toc" id="toc">
 			<div class="toc-title"><i data-lucide="list"></i>On this page</div>
@@ -1149,6 +1357,14 @@ title: Wiki
 				<li class="group"><a href="#graves"><i data-lucide="skull"></i>Graves</a></li>
 				<li class="group"><a href="#sellwands"><i data-lucide="wand"></i>SellWands</a></li>
 				<li class="group"><a href="#vaults"><i data-lucide="vault"></i>Vaults</a></li>
+				<li class="group">
+					<a href="#minions"><i data-lucide="bot"></i>Minions</a>
+					<ul class="subs">
+						<li><a href="#minions-use"><i data-lucide="play"></i>Getting started</a></li>
+						<li><a href="#minions-upgrades"><i data-lucide="arrow-up-circle"></i>Upgrades</a></li>
+						<li><a href="#minions-more"><i data-lucide="users"></i>Alerts and trusted players</a></li>
+					</ul>
+				</li>
 				<li class="group"><a href="#fish"><i data-lucide="fish"></i>Fish</a></li>
 				<li class="group"><a href="#mining-competition"><i data-lucide="pickaxe"></i>Mining Competition</a></li>
 				<li class="group"><a href="#elevator"><i data-lucide="arrow-up-down"></i>Elevator</a></li>
@@ -1156,7 +1372,16 @@ title: Wiki
 				<li class="group"><a href="#jobs"><i data-lucide="briefcase"></i>Jobs</a></li>
 				<li class="group"><a href="#bounty"><i data-lucide="target"></i>Bounty</a></li>
 				<li class="group"><a href="#combat-tag"><i data-lucide="swords"></i>Combat Tag</a></li>
-				<li class="group"><a href="#sell"><i data-lucide="coins"></i>Sell</a></li>
+				<li class="group">
+					<a href="#sell"><i data-lucide="coins"></i>Sell</a>
+					<ul class="subs">
+						<li><a href="#sell-multipliers"><i data-lucide="trending-up"></i>Sell multipliers</a></li>
+						<li><a href="#sell-details"><i data-lucide="list-checks"></i>Good to know</a></li>
+					</ul>
+				</li>
+				<li class="group">
+					<a href="#invest"><i data-lucide="piggy-bank"></i>Investments</a>
+				</li>
 				<li class="group"><a href="#clearlag"><i data-lucide="eraser"></i>ClearLag</a></li>
 				<li class="group">
 					<a href="#small-changes"><i data-lucide="list-checks"></i>Small Changes</a>
@@ -1171,6 +1396,7 @@ title: Wiki
 						<li><a href="#harvest-master"><i data-lucide="wheat"></i>Harvest Master</a></li>
 						<li><a href="#item-stacker"><i data-lucide="layers"></i>Item Stacker</a></li>
 						<li><a href="#night-vision"><i data-lucide="eye"></i>Night Vision</a></li>
+						<li><a href="#anvil-colors"><i data-lucide="palette"></i>Anvil Colors</a></li>
 						<li><a href="#enchantment-table"><i data-lucide="gem"></i>Enchantment Table</a></li>
 						<!--<li><a href="#color-codes"><i data-lucide="palette"></i>Color Codes</a></li>-->
 						<li><a href="#bees"><i data-lucide="hexagon"></i>Bees</a></li>
@@ -1183,6 +1409,14 @@ title: Wiki
 						<li><a href="#villager-reroll"><i data-lucide="refresh-cw"></i>Villager Reroll</a></li>
 						<li><a href="#no-too-expensive"><i data-lucide="hammer"></i>No Too Expensive</a></li>
 						<li><a href="#beyond-vanilla-levels"><i data-lucide="trending-up"></i>Beyond Vanilla Levels</a></li>
+					</ul>
+				</li>
+				<li class="group">
+					<a href="#removed"><i data-lucide="archive"></i>Removed</a>
+					<ul class="subs">
+						<li><a href="#removed-features"><i data-lucide="layers"></i>Features</a></li>
+						<li><a href="#removed-commands"><i data-lucide="terminal"></i>Commands</a></li>
+						<li><a href="#removed-interface"><i data-lucide="message-square"></i>Interface &amp; messages</a></li>
 					</ul>
 				</li>
 			</ul>
