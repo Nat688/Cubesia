@@ -93,14 +93,11 @@ title: Wiki
 			<h3 id="cmd-shop-sell"><i data-lucide="shopping-cart"></i>Shop &amp; Sell</h3>
 			<ul class="cmd-list">
 				<li><span class="command">/shop</span> <span class="base">Opens the server shop.</span></li>
-				<li><span class="command">/sell</span> <span class="command">/sellgui</span> <span class="base">Allows you to sell your items (except custom fish).</span></li>
-				<li><span class="command">/sellprice</span> <span class="command">/sellprices</span> <span class="base">Opens a GUI to view item prices (tiers in alphabetical order).</span></li>
-				<li><span class="command">/worth</span> <span class="base">Opens the price list of every item, sortable by price or name.</span></li>
+				<li><span class="command">/sell</span> <span class="base">Opens the sell menu: put your items inside to sell them (except custom fish).</span></li>
+				<li><span class="command">/sell hand</span> <span class="base">Sells the item you are holding.</span></li>
+				<li><span class="command">/prices</span> <span class="base">Opens the price list of every item, sortable by price or name.</span></li>
 				<li><span class="command">/sellmulti</span> <span class="base">Shows your sell multiplier for each category.</span></li>
-				<li><span class="command">/sellhistory</span> <span class="base">Shows what you have sold so far.</span></li>
-				<li><span class="command">/worthlore</span> <span class="base">Shows or hides the price line under the items of your inventory.</span></li>
-				<li><span class="command">/sellall</span> <span class="base">Allows you to sell your entire inventory.</span></li>
-				<li><span class="command">/autosell</span> <span class="base">Toggles autosell (automatically sells selected items).</span></li>
+				<li><span class="command">/sellhistory</span> <span class="base">Shows what you have sold so far (add a player name to see theirs).</span></li>
 				<li><span class="command">/ah</span> <span class="command">/auction</span> <span class="command">/auctionhouse</span> <span class="command">/hdv</span> <span class="base">Opens the auction house (player trading hub).</span></li>
 				<li><span class="command">/blackmarket</span> <span class="base">Opens the black market.</span></li>
 			</ul>
@@ -974,10 +971,9 @@ title: Wiki
 			<p>Fight it out, or wait for the timer to end before leaving.</p>
 			<h2 id="sell"><i data-lucide="coins"></i>Sell</h2>
 			<p>The <b>/sell</b> command allows you to quickly sell a wide variety of items without needing to visit a physical shop.</p>
-			<p>Simply open the selling interface with <code>/sell</code> (or <code>/sellgui</code>) and place the items you wish to sell to instantly receive the corresponding amount of money.</p>
-			<p>Every sellable item has a predefined <b>Worth</b>, which is displayed directly in its tooltip, making it easy to know its value before selling.</p>
-			<p>If you want to check prices without opening the selling menu, you can also use <code>/sellprice</code> (or <code>/sellprices</code>) to browse the complete list of item values available on the server.</p>
-			<p>To sell your entire inventory in one go, use <code>/sellall</code>, and use <code>/autosell</code> to enable or disable the automatic selling of the items you selected.</p>
+			<p>Open the selling interface with <code>/sell</code> and place the items you wish to sell to instantly receive the corresponding amount of money.</p>
+			<p>In a hurry? <code>/sell hand</code> sells the item you are holding. Items without a price are always handed back to you, never lost.</p>
+			<p>To browse the value of every item without selling anything, use <code>/prices</code>.</p>
 			<p>Selling is <b>tax-free</b>, and the items of the sell menu keep their value even when they are <b>renamed</b>.</p>
 			<h3 id="sell-multipliers"><i data-lucide="trending-up"></i>Sell multipliers</h3>
 			<p>The more you sell from a category, the better you get at it. Every category has its own <b>multiplier</b>, which starts at <b>x1.0</b> and goes up by <b>+0.1</b> each time you pass a milestone, for a maximum of <b>x3.0</b> after <b>20 milestones</b>.</p>
