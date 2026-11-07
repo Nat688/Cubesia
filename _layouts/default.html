@@ -74,7 +74,8 @@
 		<script>window.lucide || document.write('<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"><\/script>');</script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Pixelify+Sans:wght@400..700&family=Jersey+10&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+		{% if site.minecraft_style %}<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Jersey+10&display=swap">{% endif %}
 		<link rel="stylesheet" type="text/css" href="styles/base.css">
 		{% if site.goatcounter != "" and site.goatcounter %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>{% endif %}
 		<script>try{var t=localStorage.getItem('cubesia-theme'),z=localStorage.getItem('cubesia-zoom');if(t)document.documentElement.dataset.theme=t;if(z)document.documentElement.style.setProperty('--text-zoom',z);}catch(e){}</script>

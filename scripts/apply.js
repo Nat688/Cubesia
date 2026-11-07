@@ -21,14 +21,14 @@
 		const data = Object.fromEntries(new FormData(form));
 		try {
 			const r = await fetch(endpoint, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
-			if (!r.ok) throw new Error('HTTP ' + r.status + ' ' + (await r.text()).slice(0, 120));
+			if (!r.ok) { const e = new Error('HTTP ' + r.status + ' ' + (await r.text()).slice(0, 120)); e.code = r.status; throw e; }
 			try { localStorage.setItem(COOLDOWN, Date.now()); } catch (err) {}
 			form.reset();
 			say('Thank you! Your application was sent.', 'ok');
 		} catch (err) {
 			btn.disabled = false;
 			console.error('Apply form:', err);
-			say('Something went wrong. Please try again later or open a ticket on Discord.', 'error');
+			say('Something went wrong (' + (err.code || 'network error') + '). Please try again later or open a ticket on Discord.', 'error');
 		}
 	});
 })();
