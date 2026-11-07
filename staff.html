@@ -1,0 +1,32 @@
+---
+layout: default
+edit: false
+title: Staff
+description: Meet the Cubesia Minecraft server staff and learn how to contact them through a Discord ticket.
+---
+
+<link rel="stylesheet" type="text/css" href="styles/prices.css">
+<body>
+	<main class="page-narrow">
+		<h1>The <span class="cubesia">staff</span></h1>
+		<p class="lead">The people who keep Cubesia running.</p>
+		{% if site.data.staff.size > 0 %}
+		{% for group in site.data.staff %}
+		<section class="staff-group">
+			<h2 {% if group.color %}style="color: {{ group.color }}"{% endif %}>{{ group.role }}</h2>
+			<div class="staff-grid">
+				{% for m in group.members %}<div class="staff-card"><b>{{ m.name }}</b>{% if m.note %}<span>{{ m.note }}</span>{% endif %}</div>
+				{% endfor %}
+			</div>
+		</section>
+		{% endfor %}
+		{% else %}
+		<p class="empty">The staff list is coming soon.</p>
+		{% endif %}
+		<section class="help-box">
+			<h2>Need help?</h2>
+			<p>Open a <b>support ticket on Discord</b>. Please do not message or ping staff members directly (see the <a href="rules.html#mc-discord">rules</a>).</p>
+			<p>Want to join the team? <a href="apply.html">Apply here</a>.</p>
+		</section>
+	</main>
+</body>

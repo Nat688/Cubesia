@@ -1,0 +1,31 @@
+---
+layout: default
+edit: false
+title: Staff application
+description: Apply to join the Cubesia Minecraft server staff team.
+---
+
+<link rel="stylesheet" type="text/css" href="styles/prices.css">
+<body>
+	<main class="page-narrow" data-endpoint="{{ site.apply_endpoint }}">
+		<h1>Staff <span class="cubesia">application</span></h1>
+		<p class="lead">Tell us about yourself. We read every application and answer on Discord.</p>
+		<form class="apply-form" id="applyForm" novalidate>
+			<div class="row">
+				<label>Minecraft username<input name="mc" required maxlength="20" autocomplete="off"></label>
+				<label>Discord username<input name="discord" required maxlength="40" autocomplete="off"></label>
+			</div>
+			<div class="row">
+				<label>Age<input name="age" type="number" min="10" max="99" required></label>
+				<label>Time zone<input name="tz" required maxlength="40" placeholder="e.g. Europe/Paris"></label>
+			</div>
+			<label>Availability (hours per week, usual times)<input name="availability" required maxlength="200"></label>
+			<label>Previous staff or moderation experience<textarea name="experience" required maxlength="1000"></textarea></label>
+			<label>Why do you want to join the team?<textarea name="why" required maxlength="1500"></textarea></label>
+			<input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+			<button type="submit" id="send">Send my application</button>
+			<p class="form-msg" id="msg" aria-live="polite"></p>
+		</form>
+	</main>
+	<script src="scripts/apply.js"></script>
+</body>

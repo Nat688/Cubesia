@@ -2,6 +2,7 @@
 layout: default
 edit: true
 title: Wiki
+description: The complete Cubesia wiki - commands, grades, spawners, enchantments, crates, jobs, economy and every feature of the Minecraft server.
 ---
 
 <link rel="stylesheet" type="text/css" href="styles/wiki.css">
@@ -10,7 +11,19 @@ title: Wiki
 	<div class="wiki">
 		<main class="wiki-content">
 			<h1>Welcome to the wiki of <span class="cubesia">Cubesia</span></h1>
+			<div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="fr" aria-pressed="false">FR</button></div>
 			<p>Everything you need to know about the server, on a single page: commands, grades, farms, enchantments, events and every little quality-of-life detail that makes Cubesia what it is.</p>
+			<section class="first-steps" id="first-steps-box">
+			<h2 id="first-steps"><i data-lucide="rocket"></i>Your first 10 minutes</h2>
+			<p>Just joined? Do these five things in this order and you will be up and running.</p>
+			<ol class="steps-guide">
+				<li><code>/spawn</code><span>Learn the spawn area: NPCs, shops and everything in one place. See <a href="#commands">Commands</a>.</span></li>
+				<li><code>/rewards</code><span>Claim your free rewards (a Common Key every hour, 250 shards every day). See <a href="#rewards">Rewards</a>.</span></li>
+				<li><code>/afk</code><span>Earn a random reward every minute, even while you are away. See <a href="#afkzone">AFKZone</a>.</span></li>
+				<li><code>/jobs</code><span>Pick a profession and earn money and experience while you play. See <a href="#jobs">Jobs</a>.</span></li>
+				<li><code>/ah</code><span>Sell your loot to other players, or buy what you need. See <a href="#auction-house">Auction House</a>.</span></li>
+			</ol>
+		</section>
 			<h2 id="commands"><i data-lucide="terminal"></i>Commands</h2>
 			<h3 id="cmd-general"><i data-lucide="list"></i>General</h3>
 			<ul class="cmd-list">
@@ -202,7 +215,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/spawner_stacking.webp" target="_blank" rel="noopener"><img src="images/wiki/spawner_stacking.webp" alt="Spawner stacking" width="1016" height="932" loading="lazy"></a>
 			</div>
-			<h3 id="spawner-egg" data-added="2026-10-18"><i data-lucide="egg"></i>Changing the mob</h3>
+			<h3 id="spawner-egg" data-patch="update-3"><i data-lucide="egg"></i>Changing the mob</h3>
 			<p>You can <b>change the mob</b> of a spawner with a <b>spawn egg</b>: use the spawn egg of the mob you want on the spawner.</p>
 			<p>This lets you reuse your spawners and adapt your mob farms without having to find new ones.</p>
 			<div class="callout">
@@ -408,7 +421,7 @@ title: Wiki
 					</tbody>
 				</table>
 			</div>
-			<h2 id="auction-house"><i data-lucide="gavel"></i>Auction House</h2>
+			<h2 id="auction-house" data-patch="update-1"><i data-lucide="gavel"></i>Auction House</h2>
 			<p>The <b>Auction House</b> is the player-driven marketplace of the server, where you can <b>sell your items to other players</b> and browse everything that others have put on sale.</p>
 			<p>Open it at any time with <code>/ah</code> (you can also use <code>/auction</code>, <code>/auctionhouse</code> or <code>/hdv</code>).</p>
 			<p>You are free to <b>set the price you want</b> for each item, so you decide how much your loot, your farms or your rare finds are worth.</p>
@@ -424,7 +437,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/ah.webp" target="_blank" rel="noopener"><img src="images/wiki/ah.webp" alt="Auction house" loading="lazy"></a>
 			</div>
-			<h2 id="black-market" data-added="2026-10-18"><i data-lucide="shopping-bag"></i>Black Market</h2>
+			<h2 id="black-market" data-patch="update-3"><i data-lucide="shopping-bag"></i>Black Market</h2>
 			<p>The <b>Black Market</b> is a shop for <b>vanilla items</b>.</p>
 			<p>Its stock <b>changes every hour</b> and follows a <b>rarity system</b>, so the offers you see are never quite the same.</p>
 			<p>Every restock brings <b>15 offers</b> split by rarity: <b>5 common</b>, <b>5 rare</b>, <b>3 epic</b> and <b>2 legendary</b>. Rarer offers are scarcer, so do not wait too long when you spot something you like.</p>
@@ -432,7 +445,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/blackmarket.webp" target="_blank" rel="noopener"><img src="images/wiki/blackmarket.webp" alt="Black market" loading="lazy"></a>
 			</div>
-			<h2 id="trade"><i data-lucide="handshake"></i>Trade</h2>
+			<h2 id="trade" data-patch="update-1"><i data-lucide="handshake"></i>Trade</h2>
 			<p>The <b>Trade</b> system lets you exchange items directly with another player through a dedicated interface, so you never have to drop anything on the ground and hope for the best.</p>
 			<p>Use <code>/trade &lt;player&gt;</code> (or <code>/trades</code>) to start a trade with the player of your choice.</p>
 			<p>The trade window lets both players put forward their items, making every exchange simple, clear and transparent.</p>
@@ -462,7 +475,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/rtp.webp" target="_blank" rel="noopener"><img src="images/wiki/rtp.webp" alt="Random teleport" loading="lazy"></a>
 			</div>
-			<h2 id="player-warps"><i data-lucide="map-pin"></i>Player Warps</h2>
+			<h2 id="player-warps" data-patch="update-1"><i data-lucide="map-pin"></i>Player Warps</h2>
 			<p><b>Player Warps</b> let every player create a public teleport point, perfect for showing off a build, opening a shop or sharing a farm.</p>
 			<p>Open the menu with <code>/pw</code> (or <code>/playerwarp</code>, <code>/playerwarps</code>, <code>/pwarp</code>, <code>/pwarps</code>) to browse the warps created by other players, sorted by <b>category</b>: <b>Building</b>, <b>Shop</b>, <b>Farm</b>, <b>PvP</b>, <b>Event</b>, <b>Fun</b>, <b>Special</b> and <b>Other</b>.</p>
 			<p>Teleporting has a short <b>3-second countdown</b>, and a warp name can be up to <b>16 characters</b> long. Creating a warp is currently <b>free</b>.</p>
@@ -473,7 +486,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/player_warps.webp" target="_blank" rel="noopener"><img src="images/wiki/player_warps.webp" alt="Player warps" loading="lazy"></a>
 			</div>
-			<h2 id="orders"><i data-lucide="clipboard-list"></i>Orders</h2>
+			<h2 id="orders" data-patch="update-1"><i data-lucide="clipboard-list"></i>Orders</h2>
 			<p><b>Orders</b> let you ask other players for the <b>blocks</b>, <b>items</b> and <b>resources</b> you need.</p>
 			<p>Open the orders interface with <code>/orders</code> (or <code>/order</code>) to create a request or to browse the requests made by other players.</p>
 			<p>When creating an order, you simply select the item you are looking for in the selection menu, and the request becomes visible to everyone on the server.</p>
@@ -487,7 +500,7 @@ title: Wiki
 				<a href="images/wiki/orders.webp" target="_blank" rel="noopener"><img src="images/wiki/orders.webp" alt="Orders" loading="lazy"></a>
 				<a href="images/wiki/order_select.webp" target="_blank" rel="noopener"><img src="images/wiki/order_select.webp" alt="Order select" loading="lazy"></a>
 			</div>
-			<h2 id="rewards"><i data-lucide="gift"></i>Rewards</h2>
+			<h2 id="rewards" data-patch="update-1"><i data-lucide="gift"></i>Rewards</h2>
 			<p><b>Rewards</b> give you free goodies just for playing on the server, such as <b>keys</b> and much more.</p>
 			<p>Open the rewards interface with <code>/rewards</code> (or <code>/reward</code>) to see everything that is available to you.</p>
 			<p>Some rewards can be claimed <b>every hour</b> (a <b>Common Key</b>), while others are available <b>once per day</b> (<b>250 shards</b>), so there is always a reason to come back and check the menu.</p>
@@ -521,7 +534,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/crates.webp" target="_blank" rel="noopener"><img src="images/wiki/crates.webp" alt="Crates" loading="lazy"></a>
 			</div>
-			<h2 id="voting" data-added="2026-10-18"><i data-lucide="vote"></i>Vote</h2>
+			<h2 id="voting" data-patch="update-3"><i data-lucide="vote"></i>Vote</h2>
 			<p>Voting for Cubesia helps the server grow, and <b>every vote is rewarded</b>.</p>
 			<p>You can vote <b>from the game</b> with <code>/vote</code>, or <b>from the website</b> on the <a href="vote.html">Vote</a> page.</p>
 			<ul>
@@ -560,7 +573,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/vote.webp" target="_blank" rel="noopener"><img src="images/wiki/vote.webp" alt="Vote" loading="lazy"></a>
 			</div>
-			<h2 id="teams"><i data-lucide="users"></i>Teams</h2>
+			<h2 id="teams" data-patch="update-2"><i data-lucide="users"></i>Teams</h2>
 			<p><b>Teams</b> let you play together with your friends and share your progress on the server.</p>
 			<p>Open the team interface with <code>/team</code> (or <code>/teams</code>). Each team comes with its own menu, where you can manage everything in one place:</p>
 			<ul>
@@ -577,7 +590,7 @@ title: Wiki
 				<a href="images/wiki/team_gui.webp" target="_blank" rel="noopener"><img src="images/wiki/team_gui.webp" alt="Team gui" loading="lazy"></a>
 				<a href="images/wiki/team_settings.webp" target="_blank" rel="noopener"><img src="images/wiki/team_settings.webp" alt="Team settings" loading="lazy"></a>
 			</div>
-			<h2 id="leaderboards"><i data-lucide="trophy"></i>Leaderboards</h2>
+			<h2 id="leaderboards" data-patch="update-2"><i data-lucide="trophy"></i>Leaderboards</h2>
 			<p><b>Leaderboards</b> let you compete against the other players of the server and see exactly where you stand.</p>
 			<p>Open the leaderboard interface with <code>/leaderboard</code> (or <code>/leaderboards</code>), climb the rankings, outdo your rivals and show everyone that you are among the best players on Cubesia.</p>
 			<p>Rankings are available for <b>balances</b>, <b>shards</b>, <b>kills</b>, <b>mob kills</b>, <b>deaths</b>, <b>damage dealt</b>, <b>playtime</b>, <b>jumps</b>, <b>blocks mined</b>, <b>fish caught</b> and <b>items crafted</b>. Many boards are tracked per <b>day</b>, <b>week</b>, <b>month</b> and <b>year</b>, so newcomers always have a chance to shine.</p>
@@ -593,7 +606,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/profile.webp" target="_blank" rel="noopener"><img src="images/wiki/profile.webp" alt="Profile" loading="lazy"></a>
 			</div>
-			<h2 id="settings"><i data-lucide="settings"></i>Settings</h2>
+			<h2 id="settings" data-patch="patch-5"><i data-lucide="settings"></i>Settings</h2>
 			<p>Make the server yours with <code>/settings</code>. Each option is a simple toggle:</p>
 			<ul>
 				<li><b>Scoreboard</b> – show or hide the sidebar.</li>
@@ -607,7 +620,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/settings.webp" target="_blank" rel="noopener"><img src="images/wiki/settings.webp" alt="Settings" loading="lazy"></a>
 			</div>
-			<h2 id="levels" data-added="2026-10-18"><i data-lucide="trending-up"></i>Levels</h2>
+			<h2 id="levels" data-patch="update-3"><i data-lucide="trending-up"></i>Levels</h2>
 			<p><b>Player levels</b> make you stronger over time: each level boosts your stats, such as your <b>health</b> and your <b>strength</b>.</p>
 			<p>Open the levels interface with <code>/level</code> (or <code>/lvl</code>, <code>/levels</code>) to check your progression.</p>
 			<p>There are <b>100 levels</b> to reach. Each level asks for more experience than the last, and every one of them rewards you with <b>money</b>. Along the way you unlock permanent bonuses such as more <b>health</b> (up to 20 hearts), <b>speed</b>, <b>armor</b>, <b>luck</b> and a longer <b>reach</b>.</p>
@@ -615,7 +628,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/levels.webp" target="_blank" rel="noopener"><img src="images/wiki/levels.webp" alt="Levels" loading="lazy"></a>
 			</div>
-			<h2 id="collections"><i data-lucide="library"></i>Collections</h2>
+			<h2 id="collections" data-patch="update-3"><i data-lucide="library"></i>Collections</h2>
 			<p><b>Collections</b> track everything you gather on the server and reward you for it. As you collect more of an item, you reach <b>milestones</b> and receive rewards.</p>
 			<p>Open the menu with <code>/collection</code> (or <code>/collections</code>). There are <b>88 collections</b> spread over five categories:</p>
 			<div class="table_container">
@@ -656,21 +669,21 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/calendar.webp" target="_blank" rel="noopener"><img src="images/wiki/calendar.webp" alt="Calendar" loading="lazy"></a>
 			</div>
-			<h2 id="advancements" data-added="2026-10-18"><i data-lucide="award"></i>Advancements</h2>
+			<h2 id="advancements" data-patch="update-3"><i data-lucide="award"></i>Advancements</h2>
 			<p>Cubesia adds <b>new, custom advancements</b> with their own style, on top of the vanilla ones.</p>
 			<p>There are <b>86 custom advancements</b> spread over four new tabs: <b>Craftsman's Ledger</b>, <b>Hard Knocks</b>, <b>New Version Discoveries</b> and <b>Wild Life</b>.</p>
 			<p>They are <b>directly integrated into the advancements menu</b> (the <b>L</b> key by default), so there is nothing extra to open.</p>
 			<div class="shots">
 				<a href="images/wiki/advancements.webp" target="_blank" rel="noopener"><img src="images/wiki/advancements.webp" alt="Advancements" loading="lazy"></a>
 			</div>
-			<h2 id="cosmetics" data-added="2026-10-18"><i data-lucide="shirt"></i>Cosmetics</h2>
+			<h2 id="cosmetics" data-patch="update-3"><i data-lucide="shirt"></i>Cosmetics</h2>
 			<p><b>Cosmetics</b> let you customize your experience with extras such as <b>mounts</b> and more.</p>
 			<p>Open the cosmetics menu at any time with <code>/cosmetics</code>. You will find <b>gadgets</b>, <b>particle effects</b>, <b>pets</b>, <b>morphs</b>, <b>hats</b>, <b>suits</b>, <b>emotes</b>, <b>projectile effects</b> and <b>death effects</b>.</p>
 			<p>Looking for a title instead? Take a look at <a href="#tags">Tags</a>.</p>
 			<div class="shots">
 				<a href="images/wiki/cosmetics.webp" target="_blank" rel="noopener"><img src="images/wiki/cosmetics.webp" alt="Cosmetics" loading="lazy"></a>
 			</div>
-			<h2 id="tags"><i data-lucide="tag"></i>Tags</h2>
+			<h2 id="tags" data-patch="update-4"><i data-lucide="tag"></i>Tags</h2>
 			<p><b>Tags</b> are small titles displayed next to your name in the chat, a stylish way to show who you are on Cubesia, whether you are a humble <b>Farmer</b> or an unstoppable <b>Overlord</b>.</p>
 			<p>Open the menu with <code>/tags</code> (or <code>/tag</code>). <b>Click a tag you own</b> to equip it, and use <b>Remove my tag</b> to go back to the default prefix.</p>
 			<p>Tags you do not own yet appear locked. You can buy them in the <b>Cosmetic Shop</b> (<b>Buy tags</b>), with prices starting at <b>100,000</b>. There are <b>34 tags</b> in five rarities:</p>
@@ -689,7 +702,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/tags.webp" target="_blank" rel="noopener"><img src="images/wiki/tags.webp" alt="Tags menu" loading="lazy"></a>
 			</div>
-			<h2 id="chat-games"><i data-lucide="messages-square"></i>Chat Games</h2>
+			<h2 id="chat-games" data-patch="update-2"><i data-lucide="messages-square"></i>Chat Games</h2>
 			<p><b>Chat Games</b> are small games that appear regularly in the chat to bring a little extra fun to the server.</p>
 			<p>They come in many forms, such as <b>trivia questions</b>, <b>math equations</b> and <b>many other challenges</b>.</p>
 			<p>A new game starts roughly every <b>8 to 10 minutes</b>, and you have <b>45 seconds</b> to answer. The games include <b>Math</b>, <b>Trivia</b>, <b>Unscramble</b>, <b>Type</b>, <b>Unreverse</b>, <b>Completion</b> and <b>Guess The Number</b>.</p>
@@ -697,14 +710,14 @@ title: Wiki
 			<div class="shots">
 				<a class="strip" href="images/wiki/game_chat.webp" target="_blank" rel="noopener"><img src="images/wiki/game_chat.webp" alt="Game chat" loading="lazy"></a>
 			</div>
-			<h2 id="server-changelog"><i data-lucide="scroll-text"></i>Server Changelog</h2>
+			<h2 id="server-changelog" data-patch="update-2"><i data-lucide="scroll-text"></i>Server Changelog</h2>
 			<p>The <b>server changelog</b> is available <b>directly in game</b>, so you can follow every update without leaving Minecraft.</p>
 			<p>Use the <code>/changelog</code> command to read it at any time.</p>
 			<p>It lists the changes of each patch (new features, fixes, balance changes and removals) using the same colors as the <a href="patch.html">Patch</a> page of this website.</p>
 			<div class="shots">
 				<a href="images/wiki/changelog.webp" target="_blank" rel="noopener"><img src="images/wiki/changelog.webp" alt="Changelog" loading="lazy"></a>
 			</div>
-			<h2 id="discord"><i data-lucide="message-circle"></i>Discord</h2>
+			<h2 id="discord" data-patch="update-4"><i data-lucide="message-circle"></i>Discord</h2>
 			<p>Cubesia and the Discord server are directly connected, so you can stay with your friends even when you are not in game.</p>
 			<h3 id="discord-link"><i data-lucide="link"></i>Linking your account</h3>
 			<p>Link your Minecraft account to your Discord account to unlock the chat bridge features, receive your <b>roles</b> automatically and earn a <b>one-time reward of 25,000</b>.</p>
@@ -718,13 +731,13 @@ title: Wiki
 			<p>Once your accounts are linked, your <b>in-game roles are mirrored on Discord</b>, and the reverse is also true. This includes the community and staff roles such as <b>VIP</b>, <b>MVP</b>, <b>Friends</b>, <b>Beta Tester</b>, <b>Helper</b>, <b>Moderator</b>, <b>Senior Moderator</b>, <b>Admin</b>, <b>Dev</b> and <b>Owner</b>.</p>
 			<p>Shop <a href="#grades">grades</a> are not synchronized with Discord roles.</p>
 			<p>You can find the invitation any time with <code>/discord</code>.</p>
-			<h2 id="death-messages"><i data-lucide="heart-crack"></i>Death Messages</h2>
+			<h2 id="death-messages" data-patch="update-2"><i data-lucide="heart-crack"></i>Death Messages</h2>
 			<p>The server now features <b>new, custom death messages</b>.</p>
 			<p>Whenever a player dies, a redesigned message is displayed in the chat, making every death a little more memorable.</p>
 			<div class="shots">
 				<a class="strip" href="images/wiki/death_message.webp" target="_blank" rel="noopener"><img src="images/wiki/death_message.webp" alt="Death message" loading="lazy"></a>
 			</div>
-			<h2 id="fly-time"><i data-lucide="plane"></i>Fly Time</h2>
+			<h2 id="fly-time" data-patch="update-2"><i data-lucide="plane"></i>Fly Time</h2>
 			<p><b>Fly time</b> lets you fly around for a limited amount of time, and it can be obtained from the <b>Common Crate</b>.</p>
 			<p>Once you have some fly time, use <code>/fly</code> to take off whenever you want and explore, build or travel across the server from above.</p>
 			<p>Open the crate and, with a bit of luck, fly time will be one of your rewards. Your remaining fly time is kept when you die.</p>
@@ -815,7 +828,7 @@ title: Wiki
 				<a href="images/wiki/vaults_chest.webp" target="_blank" rel="noopener"><img src="images/wiki/vaults_chest.webp" alt="Vaults chest" width="510" height="385" loading="lazy"></a>
 				<a href="images/wiki/vaults_item-picker.webp" target="_blank" rel="noopener"><img src="images/wiki/vaults_item-picker.webp" alt="Vaults item picker" width="510" height="381" loading="lazy"></a>
 			</div>
-			<h2 id="minions"><i data-lucide="bot"></i>Minions</h2>
+			<h2 id="minions" data-patch="update-5"><i data-lucide="bot"></i>Minions</h2>
 			<p><b>Minions</b> are tireless little workers that mine, farm, fish, fight and even sell for you, <b>even while you are offline</b> (as long as their chunk stays loaded).</p>
 			<p>Buy them with <code>/minions shop</code>. There are <b>8 types</b>, each one paid with money:</p>
 			<div class="table_container">
@@ -843,7 +856,7 @@ title: Wiki
 				<li><b>Charge it.</b> Minions need fuel to work: coal, charcoal, blaze rods, coal blocks or lava buckets. A minion can store up to <b>24 hours</b> of charge.</li>
 				<li><b>Control it.</b> Rotate it, start or stop it, and pick it up with <b>Shift + Right-Click</b>. Only you can do it.</li>
 			</ul>
-			<h3 id="minions-upgrades"><i data-lucide="arrow-up-circle"></i>Upgrades</h3>
+			<h3 id="minions-upgrades"><i data-lucide="circle-arrow-up"></i>Upgrades</h3>
 			<p>Every minion has <b>10 levels</b>. Each level increases its <b>range</b>, makes it <b>faster</b> and lets you link more <b>containers</b>. To upgrade, you need money and a number of <b>actions</b> performed by the minion (crops harvested, blocks broken, fish caught, mobs killed, items collected, crafted or sold).</p>
 			<div class="table_container">
 				<table class="neon_table">
@@ -906,7 +919,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/fish_gui.webp" target="_blank" rel="noopener"><img src="images/wiki/fish_gui.webp" alt="Fish gui" width="512" height="382" loading="lazy"></a>
 			</div>
-			<h2 id="mining-competition" data-added="2026-10-18"><i data-lucide="pickaxe"></i>Mining Competition</h2>
+			<h2 id="mining-competition" data-patch="update-3"><i data-lucide="pickaxe"></i>Mining Competition</h2>
 			<p><b>Mining competitions</b> are server events in the same spirit as the fishing contests, but made for <b>miners</b>.</p>
 			<p>Compete against the other players while you mine, and use <code>/miningcomp</code> to follow the current competition.</p>
 			<p>A new competition starts every <b>30 minutes</b>. In <b>Stone Rush</b> (5 minutes) you break as many blocks as you can, while <b>Ore Hunt</b> (10 minutes) rewards the best ore collectors. The <b>top 5</b> players of each round win a money reward.</p>
@@ -924,7 +937,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/elevators.webp" target="_blank" rel="noopener"><img src="images/wiki/elevators.webp" alt="Elevators" width="623" height="383" loading="lazy"></a>
 			</div>
-			<h2 id="carryon"><i data-lucide="hand-grab"></i>CarryOn</h2>
+			<h2 id="carryon" data-patch="update-4"><i data-lucide="grab"></i>CarryOn</h2>
 			<p><b>CarryOn</b> lets you pick up and move almost anything with your own hands: <b>animals</b>, <b>villagers</b>, <b>chests</b> and plenty of other blocks, without breaking them and without losing their contents.</p>
 			<p>To pick something up, <b>sneak</b> and <b>right-click</b> it with <b>both hands empty</b>. To put it down, simply <b>right-click</b> on the block where you want it. You can only reach targets within <b>3 blocks</b>.</p>
 			<p>It works on <b>all entities except bosses</b> and on many blocks such as <b>chests</b>, with the notable exception of <b>spawners</b>, which have their own system (see <a href="#spawners">Spawners</a>).</p>
@@ -1013,7 +1026,7 @@ title: Wiki
 			<div class="shots">
 				<a href="images/wiki/sell_worth.webp" target="_blank" rel="noopener"><img src="images/wiki/sell_worth.webp" alt="Sell worth" width="331" height="175" loading="lazy"></a>
 			</div>
-			<h2 id="invest"><i data-lucide="piggy-bank"></i>Investments</h2>
+			<h2 id="invest" data-patch="update-5"><i data-lucide="piggy-bank"></i>Investments</h2>
 			<p><b>Investments</b> let your money work for you. Put some of your balance into an investment, and it earns you a steady income <b>every second</b> while you are online.</p>
 			<p>Open the menu with <code>/invest</code>. Click to invest, type the amount in the chat, and confirm. Short forms work: <b>10k</b>, <b>2.5m</b> and <b>1b</b>. You can also skip the chat entirely with <code>/invest &lt;amount&gt;</code>, and cancel a question with <code>/invest cancel</code>.</p>
 			<p>For every <b>100,000</b> invested, you earn <b>1 per second</b>. The income is always calculated on the amount you have invested, so it never grows on its own: invest more to earn more.</p>
@@ -1043,7 +1056,7 @@ title: Wiki
 				<a href="images/wiki/invest.webp" target="_blank" rel="noopener"><img src="images/wiki/invest.webp" alt="Investments" loading="lazy"></a>
 			</div>
 
-			<h2 id="clearlag"><i data-lucide="eraser"></i>ClearLag</h2>
+			<h2 id="clearlag" data-patch="update-4"><i data-lucide="eraser"></i>ClearLag</h2>
 			<p><b>ClearLag</b> keeps the server smooth by regularly cleaning up the world. Every <b>30 minutes</b>, all <b>dropped items</b> and all <b>unneeded entities</b> are removed, which greatly reduces lag for everyone.</p>
 			<p>You will be warned beforehand with a countdown (at <b>60, 10, 3, 2 and 1 seconds</b>), so you have time to pick up what you care about. You can choose how the messages are displayed, or turn them off, using <code>/clearlag togglemessages</code>, <code>/clearlag togglemessage</code> and <code>/clearlag togglesound</code>.</p>
 			<p>Do not worry about your companions and valuables: many things are <b>protected</b>.</p>
@@ -1205,7 +1218,7 @@ title: Wiki
 			<p>Combined with <a href="#no-too-expensive">No Too Expensive</a>, you can keep upgrading your favorite gear much further than in the base game.</p>
 			<p>The following vanilla enchantments can now reach a higher level on the anvil: <b>Depth Strider V</b>, <b>Efficiency VIII</b>, <b>Feather Falling V</b>, <b>Fortune V</b>, <b>Frost Walker IV</b>, <b>Looting V</b>, <b>Luck of the Sea V</b>, <b>Lure VIII</b>, <b>Multishot V</b>, <b>Protection V</b>, <b>Respiration V</b>, <b>Soul Speed V</b>, <b>Sweeping Edge V</b>, <b>Thorns V</b> and <b>Unbreaking V</b>.</p>
 			<p>You can check the maximum level of every custom enchantment in the <a href="#enchantments">Enchantments</a> tables.</p>
-			<h2 id="removed" data-added="2026-10-18"><i data-lucide="archive"></i>Removed</h2>
+			<h2 id="removed"><i data-lucide="archive"></i>Removed</h2>
 			<p>Features that used to exist on Cubesia and are no longer available. Each one links to the patch that removed it.</p>
 			<h3 id="removed-features"><i data-lucide="layers"></i>Features</h3>
 			<div class="rm-grid">
@@ -1248,6 +1261,9 @@ title: Wiki
 		<aside class="toc" id="toc">
 			<div class="toc-title"><i data-lucide="list"></i>On this page</div>
 			<ul>
+				<li class="group">
+					<a href="#first-steps"><i data-lucide="rocket"></i>Your first 10 minutes</a>
+				</li>
 				<li class="group">
 					<a href="#commands"><i data-lucide="terminal"></i>Commands</a>
 					<ul class="subs">
@@ -1331,14 +1347,14 @@ title: Wiki
 					<a href="#minions"><i data-lucide="bot"></i>Minions</a>
 					<ul class="subs">
 						<li><a href="#minions-use"><i data-lucide="play"></i>Getting started</a></li>
-						<li><a href="#minions-upgrades"><i data-lucide="arrow-up-circle"></i>Upgrades</a></li>
+						<li><a href="#minions-upgrades"><i data-lucide="circle-arrow-up"></i>Upgrades</a></li>
 						<li><a href="#minions-more"><i data-lucide="users"></i>Alerts and trusted players</a></li>
 					</ul>
 				</li>
 				<li class="group"><a href="#fish"><i data-lucide="fish"></i>Fish</a></li>
 				<li class="group"><a href="#mining-competition"><i data-lucide="pickaxe"></i>Mining Competition</a></li>
 				<li class="group"><a href="#elevator"><i data-lucide="arrow-up-down"></i>Elevator</a></li>
-				<li class="group"><a href="#carryon"><i data-lucide="hand-grab"></i>CarryOn</a></li>
+				<li class="group"><a href="#carryon"><i data-lucide="grab"></i>CarryOn</a></li>
 				<li class="group"><a href="#jobs"><i data-lucide="briefcase"></i>Jobs</a></li>
 				<li class="group"><a href="#bounty"><i data-lucide="target"></i>Bounty</a></li>
 				<li class="group"><a href="#combat-tag"><i data-lucide="swords"></i>Combat Tag</a></li>

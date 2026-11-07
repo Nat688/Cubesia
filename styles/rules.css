@@ -42,3 +42,42 @@
     0% { background-position: left; }
     100% { background-position: right; }
 }
+.updated {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 6px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+.updated svg { width: 16px; height: 16px; }
+.rule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin: 16px 0 28px;
+}
+.rule-card {
+    min-width: 0;
+    padding: 6px 20px 8px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+.wiki .rule-card :is(h3, h4) {
+    margin: 14px 0 8px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    font-size: 1rem;
+    color: var(--strong);
+}
+.wiki .rule-card ul { margin: 0 0 12px; padding-left: 18px; font-size: 0.92rem; line-height: 1.6; }
+.wiki .rule-card ul ul { margin: 6px 0 4px; }
+.wiki .rule-card li { margin-bottom: 8px; }
+.wiki h3 + .rule-grid { margin-top: 12px; }
+@media (max-width: 1250px) {
+    .rule-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+    .rule-grid { grid-template-columns: 1fr; }
+}

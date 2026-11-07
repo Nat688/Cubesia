@@ -46,7 +46,7 @@
 	const cards = [...document.querySelectorAll('.patch details')];
 	cards.forEach(d => {
 		const summary = d.querySelector('summary');
-		const iso = d.dataset.date || PATCH_DATES[summary.textContent.trim()];
+		const iso = d.dataset.date;
 		if (!iso) return;
 		const span = document.createElement('span');
 		span.className = 'date';
@@ -106,6 +106,8 @@
 			tag.setAttribute('aria-pressed', on ? 'true' : 'false');
 		});
 	}
+	const FKEY = 'cubesia-patch-filter';
+	const store = type => { try { type ? localStorage.setItem(FKEY, type) : localStorage.removeItem(FKEY); } catch (e) {} };
 	tags.forEach(tag => {
 		const type = TYPES.find(t => tag.classList.contains(t));
 		tag.setAttribute('role', 'button');
@@ -114,6 +116,7 @@
 		const toggle = () => {
 			current = current === type ? null : type;
 			applyFilter(current);
+			store(current);
 		};
 		tag.addEventListener('click', toggle);
 		tag.addEventListener('keydown', e => {
@@ -123,4 +126,19 @@
 			}
 		});
 	});
+	let savedType = null;
+	try { savedType = localStorage.getItem(FKEY); } catch (e) {}
+	if (TYPES.includes(savedType)) { current = savedType; applyFilter(current); }
+})();
+(function () {
+	function openFromHash() {
+		const id = decodeURIComponent(location.hash.slice(1));
+		const d = id && document.querySelector('.patch details[id="' + id + '"]');
+		if (!d) return;
+		d.hidden = false;
+		d.open = true;
+		setTimeout(() => d.scrollIntoView({ block: 'start' }), 50);
+	}
+	window.addEventListener('hashchange', openFromHash);
+	window.addEventListener('load', openFromHash);
 })();

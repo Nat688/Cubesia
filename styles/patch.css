@@ -2,7 +2,7 @@
     --new:     #00AA00;
     --added:   #55FF55;
     --fixed:   #FFFF55;
-    --change: #5555FF;
+    --change: #8A93FF;
     --removed: #FF5555;
 }
 .new     { color: var(--new);     font-weight: 700; }
@@ -26,7 +26,7 @@
 .tag.new     { --c: 0, 170, 0; }
 .tag.added   { --c: 85, 255, 85; }
 .tag.fixed   { --c: 255, 255, 85; }
-.tag.change  { --c: 85, 85, 255; }
+.tag.change  { --c: 138, 147, 255; }
 .tag.removed { --c: 255, 85, 85; }
 .patch {
     max-width: 860px;
@@ -49,6 +49,7 @@
 .legend .tag { margin: 0; }
 .patch br { display: none; }
 .patch details {
+    scroll-margin-top: 76px;
     margin: 0 0 12px;
     background: var(--surface);
     border: 1px solid var(--border);

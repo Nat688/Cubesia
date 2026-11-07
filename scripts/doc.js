@@ -124,10 +124,11 @@
 			h.appendChild(a);
 		});
 	}
-	if (content) {
+	function bindCopy() {
+		if (!content) return;
 		const targets = $$('.cmd-list .command', content).concat(
 			$$('code', content).filter(c => /^\/[A-Za-z]/.test(c.textContent) && !/[<>&]/.test(c.textContent))
-		);
+		).filter(el => !el.classList.contains('copyable'));
 		targets.forEach(el => {
 			el.classList.add('copyable');
 			el.setAttribute('role', 'button');
@@ -146,6 +147,8 @@
 			});
 		});
 	}
+	window.cubesiaBindCopy = bindCopy;
+	bindCopy();
 	const shots = $$('.shots a');
 	if (shots.length) {
 		let box, img, caption, current = [], pos = 0, opener = null, startX = null;

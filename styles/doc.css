@@ -1,16 +1,20 @@
 @keyframes targetFlash {
-    0%   { background: rgba(154, 140, 255, 0.28); box-shadow: 0 0 0 10px rgba(154, 140, 255, 0.28); }
-    100% { background: transparent; box-shadow: 0 0 0 10px transparent; }
+    0%   { background-color: rgba(154, 140, 255, 0.28); }
+    100% { background-color: transparent; }
+}
+@keyframes cardFlash {
+    0%   { border-color: rgba(154, 140, 255, 0.8); box-shadow: 0 0 0 4px rgba(154, 140, 255, 0.22); }
+    100% { border-color: var(--border); box-shadow: 0 0 0 4px transparent; }
 }
 .wiki-content :is(h2, h3, h4):target {
+    background-clip: content-box;
     border-radius: 6px;
     animation: targetFlash 2.2s ease-out;
 }
 @media (prefers-reduced-motion: reduce) {
     .wiki-content :is(h2, h3, h4):target {
         animation: none;
-        outline: 2px solid rgba(154, 140, 255, 0.6);
-        outline-offset: 6px;
+        background-color: rgba(154, 140, 255, 0.16);
     }
 }
 .copyable {
