@@ -234,7 +234,7 @@ def main():
         text, updated, added, warnings = build_yaml(patches, a.yaml, a.only_new)
     except ImportError:
         sys.exit('PyYAML is missing: run  pip install pyyaml')
-    os.makedirs(os.path.dirname(a.out), exist_ok=True)
+    os.makedirs(os.path.dirname(a.out) or ".", exist_ok=True)
     open(a.out, 'w', encoding='utf-8').write(text)
     print(f'plugin file: {a.out}  ({updated} patch(es) updated, {len(added)} new: {", ".join(added) or "none"})')
     for w in warnings:
