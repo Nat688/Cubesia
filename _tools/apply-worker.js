@@ -1,6 +1,6 @@
 const ALLOWED_ORIGIN = 'https://nat688.github.io';
 const FIELDS = [['mc', 'Minecraft', 20], ['discord', 'Discord', 40], ['age', 'Age', 3], ['tz', 'Time zone', 40],
-	['availability', 'Availability', 200], ['experience', 'Experience', 1000], ['why', 'Motivation', 1500]];
+	['availability', 'Availability', 200], ['experience', 'Experience', 1000], ['why', 'Motivation', 1000]];
 const cors = { 'Access-Control-Allow-Origin': ALLOWED_ORIGIN, 'Access-Control-Allow-Methods': 'POST, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type' };
 export default {
 	async fetch(request, env) {
