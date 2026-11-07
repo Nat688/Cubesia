@@ -111,13 +111,7 @@ html {
     width: var(--tile-w);
     max-width: 100%;
     height: var(--tile-h);
-    padding: 8px;
-    box-sizing: border-box;
-    overflow: hidden;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    transition: border-color .2s, box-shadow .2s;
+    transition: transform .2s, filter .2s;
 }
 .shots img {
     display: block;
@@ -126,11 +120,11 @@ html {
     width: auto;
     height: auto;
     object-fit: contain;
-    border-radius: calc(var(--radius) - 6px);
+    border-radius: 6px;
 }
 .shots a:hover {
-    border-color: var(--hover);
-    box-shadow: 0 8px 26px rgba(255, 159, 67, 0.22);
+    transform: translateY(-3px);
+    filter: brightness(1.08);
 }
 .shots a.strip {
     flex: 1 1 100%;
