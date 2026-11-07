@@ -9,4 +9,4 @@ discord_server_id: "1243590602130718740"
 goatcounter: ""
 apply_endpoint: "https://apply.cubesiamc.workers.dev"
 item_icon_url: "https://minecraft-api.vercel.app/images/items/{id}.png"
-minecraft_style: false
+minecraft_style: true
