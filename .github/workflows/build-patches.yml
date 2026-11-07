@@ -1,0 +1,32 @@
+name: Build patches file
+# Rebuilds _data.yml (the in-game changelog file) whenever patch.html changes.
+# Existing entries of _data.yml (dates, author, playersRead) are kept.
+on:
+  push:
+    paths:
+      - patch.html
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pyyaml
+      - name: Build _data.yml
+        run: |
+          if [ -f _data.yml ]; then
+            python _tools/build_patches.py --yaml _data.yml --out _data.yml
+          else
+            python _tools/build_patches.py --out _data.yml
+          fi
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add _data.yml
+          git diff --staged --quiet || (git commit -m "Update _data.yml from patch.html" && git push)
