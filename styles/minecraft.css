@@ -1,58 +1,104 @@
 :root {
-    --mc-grass: #5fb83e;
-    --mc-dirt: #5a3b22;
-    --mc-stone: #6d6d6d;
-    --mc-stone-hi: #a8a8a8;
-    --mc-stone-lo: #373737;
-    --mc-hover: #7d85b0;
+    --font-body: "Pixelify Sans", "Inter", system-ui, sans-serif;
+    --font-title: "Jersey 10", "Pixelify Sans", "Inter", system-ui, sans-serif;
+    --mc-edge: #0b0910;
+    --mc-hi: rgba(255, 255, 255, 0.16);
+    --mc-lo: rgba(0, 0, 0, 0.40);
+    --mc-btn: #4b4560;
+    --mc-btn-hi: #7d7399;
+    --mc-btn-lo: #2b2638;
+    --mc-btn-hover: #5f5880;
+    --mc-primary: #6a58e0;
+    --mc-primary-hi: #a193ff;
+    --mc-primary-lo: #3b2d96;
     --mc-gold: #ffffa0;
 }
+html[data-theme="light"] {
+    --mc-edge: #3a342b;
+    --mc-hi: rgba(255, 255, 255, 0.7);
+    --mc-lo: rgba(0, 0, 0, 0.14);
+    --mc-btn: #6e6490;
+    --mc-btn-hi: #a59cc4;
+    --mc-btn-lo: #473f66;
+    --mc-btn-hover: #7f75a3;
+}
+body, button, input, select, textarea, code, kbd, pre, .ip-text, .wiki code { font-family: var(--font-body); }
+body { font-size: 1.04rem; }
+h1, .cubesia { font-family: var(--font-title); font-weight: 400; letter-spacing: 0.03em; }
+h1 { font-size: clamp(2.4rem, 6.5vw, 3.9rem) !important; line-height: 1.05; }
+.wiki-content h2, .rewards h2, .calc h2 { font-weight: 700; letter-spacing: 0.01em; }
+.cubesia { filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.45)); }
+html[data-theme="light"] .cubesia { filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.2)); }
 *:not(.dot):not(.keep-round),
 *:not(.dot):not(.keep-round)::before,
-*:not(.dot):not(.keep-round)::after {
-    border-radius: 0 !important;
-}
-header {
-    border-bottom: 0 !important;
-    box-shadow: 0 4px 0 var(--mc-grass), 0 9px 0 var(--mc-dirt), 0 14px 16px rgba(0, 0, 0, 0.35);
-}
-.btn, .btn2, .btn3, .vote-btn, .edit-btn, .chips button, .lang-switch button,
-.calc-line button, .calc-actions button, #prices .add, .apply-form button[type="submit"],
-.patch-tools button, .toc-fab, .to-top {
-    background: var(--mc-stone) !important;
+*:not(.dot):not(.keep-round)::after { border-radius: 0 !important; }
+header { border-bottom: 0 !important; box-shadow: 0 3px 0 var(--mc-edge), 0 8px 18px rgba(0, 0, 0, 0.3); }
+.btn3, .vote-btn, .edit-btn, .chips button, .lang-switch button, .patch-tools button, .toc-fab, .to-top,
+.calc-actions button, .apply-form button[type="submit"], .a11y-toggle, .a11y-panel .row button, .rd-head button,
+.patch-more, .map-go {
+    background: var(--mc-btn) !important;
     background-image: none !important;
     color: #fff !important;
-    border: 2px solid #000 !important;
-    box-shadow: inset 2px 2px 0 var(--mc-stone-hi), inset -2px -2px 0 var(--mc-stone-lo) !important;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--mc-edge) !important;
+    box-shadow: inset 2px 2px 0 var(--mc-btn-hi), inset -3px -3px 0 var(--mc-btn-lo) !important;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
     transform: none !important;
+    transition: background-color .1s;
 }
-.btn:hover, .btn2:hover, .btn3:hover, .vote-btn:hover, .edit-btn:hover, .chips button:hover,
-.lang-switch button:hover, .calc-line button:hover, .calc-actions button:hover, #prices .add:hover,
-.apply-form button[type="submit"]:hover, .patch-tools button:hover, .toc-fab:hover, .to-top:hover,
-.chips button:hover:not(x) {
-    background: var(--mc-hover) !important;
+.btn3, .vote-btn, .edit-btn, .patch-tools button, .calc-actions button, .apply-form button[type="submit"] {
+    min-height: 48px;
+    padding: 12px 24px !important;
+    line-height: 1.2;
+    font-size: 1.05rem;
+}
+.chips button, .lang-switch button { min-height: 38px; padding: 8px 14px !important; }
+.btn3:hover, .vote-btn:hover, .edit-btn:hover, .chips button:hover, .lang-switch button:hover, .patch-tools button:hover,
+.toc-fab:hover, .to-top:hover, .calc-actions button:hover, .apply-form button[type="submit"]:hover,
+.a11y-toggle:hover, .a11y-panel .row button:hover, .rd-head button:hover {
+    background: var(--mc-btn-hover) !important;
     color: var(--mc-gold) !important;
 }
-.btn.active, .btn[aria-current], header a.active,
-.chips button[aria-pressed="true"], .lang-switch button[aria-pressed="true"][aria-pressed="true"] {
-    background: #3f7f2b !important;
-    box-shadow: inset 2px 2px 0 #8fdc6e, inset -2px -2px 0 #1f4a14 !important;
+.vote-btn, .apply-form button[type="submit"], .chips button[aria-pressed="true"], .lang-switch button[aria-pressed="true"],
+.a11y-panel .row button[aria-pressed="true"] {
+    background: var(--mc-primary) !important;
+    box-shadow: inset 2px 2px 0 var(--mc-primary-hi), inset -3px -3px 0 var(--mc-primary-lo) !important;
     color: #fff !important;
 }
-.feature, .patch-card, .map-card, .steps li, .vote-card, .pseudo-box, .reward-card, .reward-table,
-.rule-tile, .summary-box, .calc, .staff-card, .help-box, .rm-card, .callout, .table_container,
-.patch details, .steps-guide li, .cmd-list, .table-wrap, .rule-dialog, .toc, .wiki .removed-list li {
-    border: 2px solid #000 !important;
-    box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.10), inset -2px -2px 0 rgba(0, 0, 0, 0.35);
+.vote-btn:hover, .apply-form button[type="submit"]:hover { background: #7b6bf0 !important; color: var(--mc-gold) !important; }
+header a, header .btn, header .btn2 {
+    background: var(--mc-btn) !important;
+    border: 2px solid var(--mc-edge) !important;
+    box-shadow: inset 2px 2px 0 var(--mc-btn-hi), inset -3px -3px 0 var(--mc-btn-lo) !important;
 }
-html[data-theme="light"] .feature, html[data-theme="light"] .patch-card, html[data-theme="light"] .map-card,
-html[data-theme="light"] .steps li, html[data-theme="light"] .vote-card, html[data-theme="light"] .rule-tile,
-html[data-theme="light"] .calc, html[data-theme="light"] .patch details {
-    border-color: #6d6558 !important;
-    box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.6), inset -2px -2px 0 rgba(0, 0, 0, 0.12);
+header a:hover { background: var(--mc-btn-hover) !important; }
+header a.active, header a[aria-current] {
+    background: var(--mc-primary) !important;
+    box-shadow: inset 2px 2px 0 var(--mc-primary-hi), inset -3px -3px 0 var(--mc-primary-lo) !important;
 }
-.rule-tile:hover, .feature:hover, .vote-card:hover { border-color: #000 !important; outline: 2px solid var(--mc-grass); outline-offset: -2px; }
-.rule-tile { background: linear-gradient(var(--surface), var(--surface)); }
-.item-icon, img { image-rendering: auto; }
+.a11y-toggle { width: 48px; height: 48px; }
+.feature, .patch-card, .map-card, .steps li, .vote-card, .pseudo-box, .reward-card, .reward-table, .summary-box,
+.calc, .staff-card, .help-box, .rm-card, .callout, .table_container, .table-wrap, .patch details, .steps-guide li,
+.cmd-list, .rule-tile, .rule-dialog, .toc, .a11y-panel, .notice, .rewards .reward-table, .join-card {
+    border: 2px solid var(--mc-edge) !important;
+    box-shadow: inset 2px 2px 0 var(--mc-hi), inset -2px -2px 0 var(--mc-lo);
+}
+.feature:hover, .vote-card:hover, .map-card:hover, .patch-card:hover, .rule-tile:hover {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+}
+input:not([type="checkbox"]):not([type="radio"]), textarea, select, .toc-search {
+    background: rgba(0, 0, 0, 0.35) !important;
+    border: 2px solid var(--mc-edge) !important;
+    box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.55), inset -2px -2px 0 var(--mc-hi) !important;
+}
+html[data-theme="light"] input:not([type="checkbox"]):not([type="radio"]), html[data-theme="light"] textarea,
+html[data-theme="light"] select { background: rgba(255, 255, 255, 0.7) !important; }
 .badge, .tag, .rm-tag, .patch-chip, .new-badge, .mini-tag { border-width: 2px !important; }
+.wiki table, .reward-table, #prices { border: 2px solid var(--mc-edge); }
+.wiki th, .wiki td { border-color: var(--mc-edge) !important; }
+* { scrollbar-width: auto; scrollbar-color: var(--mc-btn-hi) rgba(0, 0, 0, 0.35); }
+::-webkit-scrollbar { width: 14px; height: 14px; }
+::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.35); }
+::-webkit-scrollbar-thumb { background: var(--mc-btn); border: 2px solid var(--mc-edge); box-shadow: inset 2px 2px 0 var(--mc-btn-hi), inset -2px -2px 0 var(--mc-btn-lo); }
+::selection { background: var(--mc-primary); color: #fff; }
+.item-icon { image-rendering: pixelated; }
