@@ -841,6 +841,9 @@
 "<code>/jobs</code><span>Pick a profession and earn money and experience while you play. See <a href=\"#jobs\">Jobs</a>.</span>": "<code>/jobs</code><span>Choisissez un métier et gagnez de l'argent et de l'expérience en jouant. Voir <a href=\"#jobs\">Métiers</a>.</span>",
 "<code>/ah</code><span>Sell your loot to other players, or buy what you need. See <a href=\"#auction-house\">Auction House</a>.</span>": "<code>/ah</code><span>Vendez votre butin aux autres joueurs, ou achetez ce dont vous avez besoin. Voir <a href=\"#auction-house\">Hôtel des ventes</a>.</span>",
 "Silk Touch<!--, Silk Spawner-->": "Toucher de soie<!--, Silk Spawner-->",
-"Potions": "Potions"
+"Potions": "Potions",
+"Looking for the price of an item? Browse the <a href=\"prices.html\">sell price list</a> and use its calculator. Your sell multipliers only apply when you sell with <code>/sell</code>.": "Vous cherchez le prix d'un objet ? Consultez la <a href=\"prices.html\">liste des prix de vente</a> et son calculateur. Vos multiplicateurs de vente ne s'appliquent que lorsque vous vendez avec <code>/sell</code>.",
+"The price of each item is in the <a href=\"prices.html\">sell price list</a>. Your <code>/sell</code> multipliers do not apply to Sell Wands: each wand has its own multiplier.": "Le prix de chaque objet figure dans la <a href=\"prices.html\">liste des prix de vente</a>. Vos multiplicateurs de <code>/sell</code> ne s'appliquent pas aux Sell Wands : chaque wand a son propre multiplicateur.",
+"The Seller minion uses the prices of the <a href=\"prices.html\">sell price list</a>. Your <code>/sell</code> multipliers do not apply to it.": "Le minion Seller utilise les prix de la <a href=\"prices.html\">liste des prix de vente</a>. Vos multiplicateurs de <code>/sell</code> ne s'appliquent pas à lui."
 }
 }
