@@ -94,6 +94,20 @@ def main():
                 size = os.path.getsize(os.path.join(ROOT, dest))
                 if size > BIG_IMAGE:
                     warnings.append((name, line, f'large image ({size // 1024} KB): {dest}'))
+    # data-patch values in the wiki must exist in patch.html
+    if 'wiki.html' in pages and 'patch.html' in pages:
+        patch_ids = {i for i, _ in pages['patch.html'].ids}
+        used = set()
+        with open(os.path.join(ROOT, 'wiki.html'), encoding='utf-8') as f:
+            for n, text in enumerate(f, 1):
+                for m in re.finditer(r'data-patch="([^"]*)"', text):
+                    used.add(m.group(1))
+                    if m.group(1) not in patch_ids:
+                        err('wiki.html', n, f'data-patch="{m.group(1)}" does not exist in patch.html')
+        for kind in ('patch', 'update'):
+            nums = [int(i.split('-')[1]) for i in patch_ids if re.fullmatch(kind + r'-\d+', i)]
+            if nums and f'{kind}-{max(nums)}' not in used:
+                warnings.append(('wiki.html', 0, f'no wiki section uses the latest {kind} ({kind}-{max(nums)}): add data-patch="{kind}-{max(nums)}" to the new sections'))
     def show(level, items):
         for f, l, m in sorted(set(items)):
             if ON_GITHUB:
