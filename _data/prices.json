@@ -1,0 +1,9026 @@
+[
+{
+"id": "ABANDONED_CAMP_MAP",
+"name": "Abandoned Camp Map",
+"section": "Loot & Rare",
+"price": 50
+},
+{
+"id": "ACACIA_BOAT",
+"name": "Acacia Boat",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "ACACIA_BUTTON",
+"name": "Acacia Button",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "ACACIA_CHEST_BOAT",
+"name": "Acacia Chest Boat",
+"section": "Blocks",
+"price": 9
+},
+{
+"id": "ACACIA_DOOR",
+"name": "Acacia Door",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "ACACIA_FENCE",
+"name": "Acacia Fence",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "ACACIA_FENCE_GATE",
+"name": "Acacia Fence Gate",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "ACACIA_HANGING_SIGN",
+"name": "Acacia Hanging Sign",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "ACACIA_LEAVES",
+"name": "Acacia Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "ACACIA_LOG",
+"name": "Acacia Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "ACACIA_PLANKS",
+"name": "Acacia Planks",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "ACACIA_PRESSURE_PLATE",
+"name": "Acacia Pressure Plate",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "ACACIA_SAPLING",
+"name": "Acacia Sapling",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "ACACIA_SHELF",
+"name": "Acacia Shelf",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "ACACIA_SIGN",
+"name": "Acacia Sign",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "ACACIA_SLAB",
+"name": "Acacia Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "ACACIA_STAIRS",
+"name": "Acacia Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "ACACIA_TRAPDOOR",
+"name": "Acacia Trapdoor",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "ACACIA_WOOD",
+"name": "Acacia Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "ACTIVATOR_RAIL",
+"name": "Activator Rail",
+"section": "Redstone",
+"price": 12
+},
+{
+"id": "ALLIUM",
+"name": "Allium",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "AMETHYST_BLOCK",
+"name": "Amethyst Block",
+"section": "Blocks",
+"price": 30
+},
+{
+"id": "AMETHYST_CLUSTER",
+"name": "Amethyst Cluster",
+"section": "Ores",
+"price": 32
+},
+{
+"id": "AMETHYST_SHARD",
+"name": "Amethyst Shard",
+"section": "Ores",
+"price": 8
+},
+{
+"id": "ANCIENT_DEBRIS",
+"name": "Ancient Debris",
+"section": "Ores",
+"price": 250
+},
+{
+"id": "ANDESITE",
+"name": "Andesite",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "ANDESITE_SLAB",
+"name": "Andesite Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "ANDESITE_STAIRS",
+"name": "Andesite Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "ANDESITE_WALL",
+"name": "Andesite Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "ANGLER_POTTERY_SHERD",
+"name": "Angler Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "ANVIL",
+"name": "Anvil",
+"section": "Blocks",
+"price": 360
+},
+{
+"id": "APPLE",
+"name": "Apple",
+"section": "Crops",
+"price": 5
+},
+{
+"id": "ARCHER_POTTERY_SHERD",
+"name": "Archer Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "ARMADILLO_SCUTE",
+"name": "Armadillo Scute",
+"section": "Mobs",
+"price": 15
+},
+{
+"id": "ARMOR_STAND",
+"name": "Armor Stand",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "ARMS_UP_POTTERY_SHERD",
+"name": "Arms Up Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "ARROW",
+"name": "Arrow",
+"section": "Armor & Tools",
+"price": 1
+},
+{
+"id": "AXOLOTL_BUCKET",
+"name": "Axolotl Bucket",
+"section": "Fish",
+"price": 60
+},
+{
+"id": "AZALEA",
+"name": "Azalea",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "AZALEA_LEAVES",
+"name": "Azalea Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "AZURE_BLUET",
+"name": "Azure Bluet",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "BAKED_POTATO",
+"name": "Baked Potato",
+"section": "Crops",
+"price": 5
+},
+{
+"id": "BAMBOO",
+"name": "Bamboo",
+"section": "Crops",
+"price": 4
+},
+{
+"id": "BAMBOO_BLOCK",
+"name": "Bamboo Block",
+"section": "Blocks",
+"price": 36
+},
+{
+"id": "BAMBOO_BUTTON",
+"name": "Bamboo Button",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "BAMBOO_CHEST_RAFT",
+"name": "Bamboo Chest Raft",
+"section": "Blocks",
+"price": 9
+},
+{
+"id": "BAMBOO_DOOR",
+"name": "Bamboo Door",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "BAMBOO_FENCE",
+"name": "Bamboo Fence",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "BAMBOO_FENCE_GATE",
+"name": "Bamboo Fence Gate",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "BAMBOO_HANGING_SIGN",
+"name": "Bamboo Hanging Sign",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "BAMBOO_MOSAIC",
+"name": "Bamboo Mosaic",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "BAMBOO_MOSAIC_SLAB",
+"name": "Bamboo Mosaic Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "BAMBOO_MOSAIC_STAIRS",
+"name": "Bamboo Mosaic Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "BAMBOO_PLANKS",
+"name": "Bamboo Planks",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "BAMBOO_PRESSURE_PLATE",
+"name": "Bamboo Pressure Plate",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "BAMBOO_RAFT",
+"name": "Bamboo Raft",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "BAMBOO_SHELF",
+"name": "Bamboo Shelf",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "BAMBOO_SIGN",
+"name": "Bamboo Sign",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "BAMBOO_SLAB",
+"name": "Bamboo Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "BAMBOO_STAIRS",
+"name": "Bamboo Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "BAMBOO_TRAPDOOR",
+"name": "Bamboo Trapdoor",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "BARREL",
+"name": "Barrel",
+"section": "Blocks",
+"price": 5
+},
+{
+"id": "BASALT",
+"name": "Basalt",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "BEACON",
+"name": "Beacon",
+"section": "Loot & Rare",
+"price": 1500
+},
+{
+"id": "BEE_NEST",
+"name": "Bee Nest",
+"section": "Blocks",
+"price": 22
+},
+{
+"id": "BEEF",
+"name": "Beef",
+"section": "Mobs",
+"price": 3
+},
+{
+"id": "BEEHIVE",
+"name": "Beehive",
+"section": "Blocks",
+"price": 22
+},
+{
+"id": "BEETROOT",
+"name": "Beetroot",
+"section": "Crops",
+"price": 4
+},
+{
+"id": "BEETROOT_SEEDS",
+"name": "Beetroot Seeds",
+"section": "Crops",
+"price": 1
+},
+{
+"id": "BEETROOT_SOUP",
+"name": "Beetroot Soup",
+"section": "Crops",
+"price": 24
+},
+{
+"id": "BELL",
+"name": "Bell",
+"section": "Loot & Rare",
+"price": 50
+},
+{
+"id": "BIG_DRIPLEAF",
+"name": "Big Dripleaf",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "BIRCH_BOAT",
+"name": "Birch Boat",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "BIRCH_BUTTON",
+"name": "Birch Button",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "BIRCH_CHEST_BOAT",
+"name": "Birch Chest Boat",
+"section": "Blocks",
+"price": 9
+},
+{
+"id": "BIRCH_DOOR",
+"name": "Birch Door",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "BIRCH_FENCE",
+"name": "Birch Fence",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "BIRCH_FENCE_GATE",
+"name": "Birch Fence Gate",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "BIRCH_HANGING_SIGN",
+"name": "Birch Hanging Sign",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "BIRCH_LEAVES",
+"name": "Birch Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "BIRCH_LOG",
+"name": "Birch Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "BIRCH_PLANKS",
+"name": "Birch Planks",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "BIRCH_PRESSURE_PLATE",
+"name": "Birch Pressure Plate",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "BIRCH_SAPLING",
+"name": "Birch Sapling",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "BIRCH_SHELF",
+"name": "Birch Shelf",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "BIRCH_SIGN",
+"name": "Birch Sign",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "BIRCH_SLAB",
+"name": "Birch Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "BIRCH_STAIRS",
+"name": "Birch Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "BIRCH_TRAPDOOR",
+"name": "Birch Trapdoor",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "BIRCH_WOOD",
+"name": "Birch Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "BLACK_BANNER",
+"name": "Black Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "BLACK_BED",
+"name": "Black Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "BLACK_CANDLE",
+"name": "Black Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "BLACK_CARPET",
+"name": "Black Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "BLACK_CONCRETE",
+"name": "Black Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "BLACK_CONCRETE_POWDER",
+"name": "Black Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "BLACK_CONCRETE_SLAB",
+"name": "Black Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "BLACK_CONCRETE_STAIRS",
+"name": "Black Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "BLACK_CUSHION",
+"name": "Black Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "BLACK_DYE",
+"name": "Black Dye",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "BLACK_GLAZED_TERRACOTTA",
+"name": "Black Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "BLACK_HARNESS",
+"name": "Black Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "BLACK_SHULKER_BOX",
+"name": "Black Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "BLACK_STAINED_GLASS",
+"name": "Black Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "BLACK_STAINED_GLASS_PANE",
+"name": "Black Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "BLACK_TERRACOTTA",
+"name": "Black Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "BLACK_WOOL",
+"name": "Black Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "BLACK_WOOL_SLAB",
+"name": "Black Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "BLACK_WOOL_STAIRS",
+"name": "Black Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "BLACKSTONE",
+"name": "Blackstone",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "BLACKSTONE_SLAB",
+"name": "Blackstone Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "BLACKSTONE_STAIRS",
+"name": "Blackstone Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "BLACKSTONE_WALL",
+"name": "Blackstone Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "BLADE_POTTERY_SHERD",
+"name": "Blade Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "BLAST_FURNACE",
+"name": "Blast Furnace",
+"section": "Blocks",
+"price": 70
+},
+{
+"id": "BLAZE_POWDER",
+"name": "Blaze Powder",
+"section": "Mobs",
+"price": 6
+},
+{
+"id": "BLAZE_ROD",
+"name": "Blaze Rod",
+"section": "Mobs",
+"price": 10
+},
+{
+"id": "BLUE_BANNER",
+"name": "Blue Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "BLUE_BED",
+"name": "Blue Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "BLUE_CANDLE",
+"name": "Blue Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "BLUE_CARPET",
+"name": "Blue Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "BLUE_CONCRETE",
+"name": "Blue Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "BLUE_CONCRETE_POWDER",
+"name": "Blue Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "BLUE_CONCRETE_SLAB",
+"name": "Blue Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "BLUE_CONCRETE_STAIRS",
+"name": "Blue Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "BLUE_CUSHION",
+"name": "Blue Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "BLUE_DYE",
+"name": "Blue Dye",
+"section": "Colored",
+"price": 5
+},
+{
+"id": "BLUE_EGG",
+"name": "Blue Egg",
+"section": "Mobs",
+"price": 2
+},
+{
+"id": "BLUE_GLAZED_TERRACOTTA",
+"name": "Blue Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "BLUE_HARNESS",
+"name": "Blue Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "BLUE_ICE",
+"name": "Blue Ice",
+"section": "Natural",
+"price": 100
+},
+{
+"id": "BLUE_ORCHID",
+"name": "Blue Orchid",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "BLUE_SHULKER_BOX",
+"name": "Blue Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "BLUE_STAINED_GLASS",
+"name": "Blue Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "BLUE_STAINED_GLASS_PANE",
+"name": "Blue Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "BLUE_TERRACOTTA",
+"name": "Blue Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "BLUE_WOOL",
+"name": "Blue Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "BLUE_WOOL_SLAB",
+"name": "Blue Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "BLUE_WOOL_STAIRS",
+"name": "Blue Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "BOLT_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Bolt Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "BONE",
+"name": "Bone",
+"section": "Mobs",
+"price": 3
+},
+{
+"id": "BONE_BLOCK",
+"name": "Bone Block",
+"section": "Mobs",
+"price": 9
+},
+{
+"id": "BONE_MEAL",
+"name": "Bone Meal",
+"section": "Crops",
+"price": 1
+},
+{
+"id": "BOOK",
+"name": "Book",
+"section": "Enchanted Books",
+"price": 3
+},
+{
+"id": "BOOKSHELF",
+"name": "Bookshelf",
+"section": "Enchanted Books",
+"price": 13
+},
+{
+"id": "BOW",
+"name": "Bow",
+"section": "Armor & Tools",
+"price": 8
+},
+{
+"id": "BOWL",
+"name": "Bowl",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "BRAIN_CORAL",
+"name": "Brain Coral",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "BRAIN_CORAL_BLOCK",
+"name": "Brain Coral Block",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "BRAIN_CORAL_FAN",
+"name": "Brain Coral Fan",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "BREAD",
+"name": "Bread",
+"section": "Crops",
+"price": 7
+},
+{
+"id": "BREEZE_ROD",
+"name": "Breeze Rod",
+"section": "Mobs",
+"price": 15
+},
+{
+"id": "BREWER_POTTERY_SHERD",
+"name": "Brewer Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "BREWING_STAND",
+"name": "Brewing Stand",
+"section": "Potions",
+"price": 8
+},
+{
+"id": "BRICK",
+"name": "Brick",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "BRICK_SLAB",
+"name": "Brick Slab",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "BRICK_STAIRS",
+"name": "Brick Stairs",
+"section": "Blocks",
+"price": 4
+},
+{
+"id": "BRICK_WALL",
+"name": "Brick Wall",
+"section": "Blocks",
+"price": 4
+},
+{
+"id": "BRICKS",
+"name": "Bricks",
+"section": "Blocks",
+"price": 4
+},
+{
+"id": "BROWN_BANNER",
+"name": "Brown Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "BROWN_BED",
+"name": "Brown Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "BROWN_CANDLE",
+"name": "Brown Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "BROWN_CARPET",
+"name": "Brown Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "BROWN_CONCRETE",
+"name": "Brown Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "BROWN_CONCRETE_POWDER",
+"name": "Brown Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "BROWN_CONCRETE_SLAB",
+"name": "Brown Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "BROWN_CONCRETE_STAIRS",
+"name": "Brown Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "BROWN_CUSHION",
+"name": "Brown Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "BROWN_DYE",
+"name": "Brown Dye",
+"section": "Colored",
+"price": 5
+},
+{
+"id": "BROWN_EGG",
+"name": "Brown Egg",
+"section": "Mobs",
+"price": 2
+},
+{
+"id": "BROWN_GLAZED_TERRACOTTA",
+"name": "Brown Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "BROWN_HARNESS",
+"name": "Brown Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "BROWN_MUSHROOM",
+"name": "Brown Mushroom",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "BROWN_MUSHROOM_BLOCK",
+"name": "Brown Mushroom Block",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "BROWN_SHULKER_BOX",
+"name": "Brown Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "BROWN_STAINED_GLASS",
+"name": "Brown Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "BROWN_STAINED_GLASS_PANE",
+"name": "Brown Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "BROWN_TERRACOTTA",
+"name": "Brown Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "BROWN_WOOL",
+"name": "Brown Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "BROWN_WOOL_SLAB",
+"name": "Brown Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "BROWN_WOOL_STAIRS",
+"name": "Brown Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "BRUSH",
+"name": "Brush",
+"section": "Armor & Tools",
+"price": 4
+},
+{
+"id": "BUBBLE_CORAL",
+"name": "Bubble Coral",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "BUBBLE_CORAL_BLOCK",
+"name": "Bubble Coral Block",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "BUBBLE_CORAL_FAN",
+"name": "Bubble Coral Fan",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "BUCKET",
+"name": "Bucket",
+"section": "Armor & Tools",
+"price": 34
+},
+{
+"id": "BURIED_ANCIENT_CITY_MAP",
+"name": "Buried Ancient City Map",
+"section": "Loot & Rare",
+"price": 50
+},
+{
+"id": "BURIED_MINESHAFT_MAP",
+"name": "Buried Mineshaft Map",
+"section": "Loot & Rare",
+"price": 50
+},
+{
+"id": "BURIED_TREASURE_MAP",
+"name": "Buried Treasure Map",
+"section": "Loot & Rare",
+"price": 50
+},
+{
+"id": "BURN_POTTERY_SHERD",
+"name": "Burn Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "BUSH",
+"name": "Bush",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "CACTUS",
+"name": "Cactus",
+"section": "Crops",
+"price": 8
+},
+{
+"id": "CACTUS_FLOWER",
+"name": "Cactus Flower",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "CAKE",
+"name": "Cake",
+"section": "Crops",
+"price": 38
+},
+{
+"id": "CALCITE",
+"name": "Calcite",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CALIBRATED_SCULK_SENSOR",
+"name": "Calibrated Sculk Sensor",
+"section": "Redstone",
+"price": 50
+},
+{
+"id": "CAMPFIRE",
+"name": "Campfire",
+"section": "Blocks",
+"price": 13
+},
+{
+"id": "CANDLE",
+"name": "Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "CARROT",
+"name": "Carrot",
+"section": "Crops",
+"price": 4
+},
+{
+"id": "CARROT_ON_A_STICK",
+"name": "Carrot On A Stick",
+"section": "Armor & Tools",
+"price": 8
+},
+{
+"id": "CARTOGRAPHY_TABLE",
+"name": "Cartography Table",
+"section": "Blocks",
+"price": 5
+},
+{
+"id": "CARVED_PUMPKIN",
+"name": "Carved Pumpkin",
+"section": "Crops",
+"price": 12
+},
+{
+"id": "CAULDRON",
+"name": "Cauldron",
+"section": "Potions",
+"price": 80
+},
+{
+"id": "CHAINMAIL_BOOTS",
+"name": "Chainmail Boots",
+"section": "Armor & Tools",
+"price": 35
+},
+{
+"id": "CHAINMAIL_CHESTPLATE",
+"name": "Chainmail Chestplate",
+"section": "Armor & Tools",
+"price": 65
+},
+{
+"id": "CHAINMAIL_HELMET",
+"name": "Chainmail Helmet",
+"section": "Armor & Tools",
+"price": 40
+},
+{
+"id": "CHAINMAIL_LEGGINGS",
+"name": "Chainmail Leggings",
+"section": "Armor & Tools",
+"price": 55
+},
+{
+"id": "CHARCOAL",
+"name": "Charcoal",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "CHERRY_BOAT",
+"name": "Cherry Boat",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "CHERRY_BUTTON",
+"name": "Cherry Button",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "CHERRY_CHEST_BOAT",
+"name": "Cherry Chest Boat",
+"section": "Blocks",
+"price": 9
+},
+{
+"id": "CHERRY_DOOR",
+"name": "Cherry Door",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "CHERRY_FENCE",
+"name": "Cherry Fence",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CHERRY_FENCE_GATE",
+"name": "Cherry Fence Gate",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CHERRY_HANGING_SIGN",
+"name": "Cherry Hanging Sign",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "CHERRY_LEAVES",
+"name": "Cherry Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "CHERRY_LOG",
+"name": "Cherry Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "CHERRY_PLANKS",
+"name": "Cherry Planks",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "CHERRY_PRESSURE_PLATE",
+"name": "Cherry Pressure Plate",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "CHERRY_SAPLING",
+"name": "Cherry Sapling",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "CHERRY_SHELF",
+"name": "Cherry Shelf",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "CHERRY_SIGN",
+"name": "Cherry Sign",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "CHERRY_SLAB",
+"name": "Cherry Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "CHERRY_STAIRS",
+"name": "Cherry Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "CHERRY_TRAPDOOR",
+"name": "Cherry Trapdoor",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CHERRY_WOOD",
+"name": "Cherry Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "CHEST",
+"name": "Chest",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "CHEST_MINECART",
+"name": "Chest Minecart",
+"section": "Redstone",
+"price": 60
+},
+{
+"id": "CHICKEN",
+"name": "Chicken",
+"section": "Mobs",
+"price": 3
+},
+{
+"id": "CHIPPED_ANVIL",
+"name": "Chipped Anvil",
+"section": "Blocks",
+"price": 360
+},
+{
+"id": "CHISELED_BOOKSHELF",
+"name": "Chiseled Bookshelf",
+"section": "Blocks",
+"price": 5
+},
+{
+"id": "CHISELED_CINNABAR",
+"name": "Chiseled Cinnabar",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CHISELED_COPPER",
+"name": "Chiseled Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "CHISELED_DEEPSLATE",
+"name": "Chiseled Deepslate",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CHISELED_NETHER_BRICKS",
+"name": "Chiseled Nether Bricks",
+"section": "Blocks",
+"price": 4
+},
+{
+"id": "CHISELED_POLISHED_BLACKSTONE",
+"name": "Chiseled Polished Blackstone",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CHISELED_QUARTZ_BLOCK",
+"name": "Chiseled Quartz Block",
+"section": "Blocks",
+"price": 20
+},
+{
+"id": "CHISELED_RED_SANDSTONE",
+"name": "Chiseled Red Sandstone",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CHISELED_RESIN_BRICKS",
+"name": "Chiseled Resin Bricks",
+"section": "Blocks",
+"price": 16
+},
+{
+"id": "CHISELED_SANDSTONE",
+"name": "Chiseled Sandstone",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CHISELED_STONE_BRICKS",
+"name": "Chiseled Stone Bricks",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CHISELED_SULFUR",
+"name": "Chiseled Sulfur",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CHISELED_TUFF",
+"name": "Chiseled Tuff",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CHISELED_TUFF_BRICKS",
+"name": "Chiseled Tuff Bricks",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CHORUS_FLOWER",
+"name": "Chorus Flower",
+"section": "Crops",
+"price": 10
+},
+{
+"id": "CHORUS_FRUIT",
+"name": "Chorus Fruit",
+"section": "Crops",
+"price": 8
+},
+{
+"id": "CINNABAR",
+"name": "Cinnabar",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CINNABAR_BRICK_SLAB",
+"name": "Cinnabar Brick Slab",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CINNABAR_BRICK_STAIRS",
+"name": "Cinnabar Brick Stairs",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CINNABAR_BRICK_WALL",
+"name": "Cinnabar Brick Wall",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CINNABAR_BRICKS",
+"name": "Cinnabar Bricks",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CINNABAR_SLAB",
+"name": "Cinnabar Slab",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CINNABAR_STAIRS",
+"name": "Cinnabar Stairs",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CINNABAR_WALL",
+"name": "Cinnabar Wall",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CLAY",
+"name": "Clay",
+"section": "Natural",
+"price": 8
+},
+{
+"id": "CLAY_BALL",
+"name": "Clay Ball",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "CLOCK",
+"name": "Clock",
+"section": "Armor & Tools",
+"price": 55
+},
+{
+"id": "CLOSED_EYEBLOSSOM",
+"name": "Closed Eyeblossom",
+"section": "Natural",
+"price": 5
+},
+{
+"id": "COAL",
+"name": "Coal",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "COAL_BLOCK",
+"name": "Coal Block",
+"section": "Ores",
+"price": 36
+},
+{
+"id": "COAL_ORE",
+"name": "Coal Ore",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "COARSE_DIRT",
+"name": "Coarse Dirt",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "COAST_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Coast Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "COBBLED_DEEPSLATE",
+"name": "Cobbled Deepslate",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "COBBLED_DEEPSLATE_SLAB",
+"name": "Cobbled Deepslate Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "COBBLED_DEEPSLATE_STAIRS",
+"name": "Cobbled Deepslate Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "COBBLED_DEEPSLATE_WALL",
+"name": "Cobbled Deepslate Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "COBBLESTONE",
+"name": "Cobblestone",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "COBBLESTONE_SLAB",
+"name": "Cobblestone Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "COBBLESTONE_STAIRS",
+"name": "Cobblestone Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "COBBLESTONE_WALL",
+"name": "Cobblestone Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "COBWEB",
+"name": "Cobweb",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "COCOA_BEANS",
+"name": "Cocoa Beans",
+"section": "Crops",
+"price": 5
+},
+{
+"id": "COD",
+"name": "Cod",
+"section": "Fish",
+"price": 3
+},
+{
+"id": "COD_BUCKET",
+"name": "Cod Bucket",
+"section": "Fish",
+"price": 38
+},
+{
+"id": "COMPARATOR",
+"name": "Comparator",
+"section": "Redstone",
+"price": 15
+},
+{
+"id": "COMPASS",
+"name": "Compass",
+"section": "Armor & Tools",
+"price": 45
+},
+{
+"id": "COMPOSTER",
+"name": "Composter",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CONDUIT",
+"name": "Conduit",
+"section": "Loot & Rare",
+"price": 1250
+},
+{
+"id": "COOKED_BEEF",
+"name": "Cooked Beef",
+"section": "Mobs",
+"price": 4
+},
+{
+"id": "COOKED_CHICKEN",
+"name": "Cooked Chicken",
+"section": "Mobs",
+"price": 4
+},
+{
+"id": "COOKED_COD",
+"name": "Cooked Cod",
+"section": "Fish",
+"price": 4
+},
+{
+"id": "COOKED_MUTTON",
+"name": "Cooked Mutton",
+"section": "Mobs",
+"price": 4
+},
+{
+"id": "COOKED_PORKCHOP",
+"name": "Cooked Porkchop",
+"section": "Mobs",
+"price": 4
+},
+{
+"id": "COOKED_RABBIT",
+"name": "Cooked Rabbit",
+"section": "Mobs",
+"price": 4
+},
+{
+"id": "COOKED_SALMON",
+"name": "Cooked Salmon",
+"section": "Fish",
+"price": 5
+},
+{
+"id": "COOKIE",
+"name": "Cookie",
+"section": "Crops",
+"price": 2
+},
+{
+"id": "COPPER_AXE",
+"name": "Copper Axe",
+"section": "Armor & Tools",
+"price": 6
+},
+{
+"id": "COPPER_BARS",
+"name": "Copper Bars",
+"section": "Ores",
+"price": 0.7
+},
+{
+"id": "COPPER_BLOCK",
+"name": "Copper Block",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "COPPER_BOOTS",
+"name": "Copper Boots",
+"section": "Armor & Tools",
+"price": 8
+},
+{
+"id": "COPPER_BULB",
+"name": "Copper Bulb",
+"section": "Ores",
+"price": 16
+},
+{
+"id": "COPPER_CHAIN",
+"name": "Copper Chain",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "COPPER_CHEST",
+"name": "Copper Chest",
+"section": "Ores",
+"price": 22
+},
+{
+"id": "COPPER_CHESTPLATE",
+"name": "Copper Chestplate",
+"section": "Armor & Tools",
+"price": 16
+},
+{
+"id": "COPPER_DOOR",
+"name": "Copper Door",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "COPPER_GOLEM_STATUE",
+"name": "Copper Golem Statue",
+"section": "Ores",
+"price": 25
+},
+{
+"id": "COPPER_GRATE",
+"name": "Copper Grate",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "COPPER_HELMET",
+"name": "Copper Helmet",
+"section": "Armor & Tools",
+"price": 10
+},
+{
+"id": "COPPER_HOE",
+"name": "Copper Hoe",
+"section": "Armor & Tools",
+"price": 4
+},
+{
+"id": "COPPER_HORSE_ARMOR",
+"name": "Copper Horse Armor",
+"section": "Armor & Tools",
+"price": 12
+},
+{
+"id": "COPPER_INGOT",
+"name": "Copper Ingot",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "COPPER_LANTERN",
+"name": "Copper Lantern",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "COPPER_LEGGINGS",
+"name": "Copper Leggings",
+"section": "Armor & Tools",
+"price": 14
+},
+{
+"id": "COPPER_NAUTILUS_ARMOR",
+"name": "Copper Nautilus Armor",
+"section": "Armor & Tools",
+"price": 10
+},
+{
+"id": "COPPER_NUGGET",
+"name": "Copper Nugget",
+"section": "Ores",
+"price": 0.2
+},
+{
+"id": "COPPER_ORE",
+"name": "Copper Ore",
+"section": "Ores",
+"price": 6
+},
+{
+"id": "COPPER_PICKAXE",
+"name": "Copper Pickaxe",
+"section": "Armor & Tools",
+"price": 6
+},
+{
+"id": "COPPER_SHOVEL",
+"name": "Copper Shovel",
+"section": "Armor & Tools",
+"price": 2
+},
+{
+"id": "COPPER_SPEAR",
+"name": "Copper Spear",
+"section": "Armor & Tools",
+"price": 2
+},
+{
+"id": "COPPER_SWORD",
+"name": "Copper Sword",
+"section": "Armor & Tools",
+"price": 4
+},
+{
+"id": "COPPER_TORCH",
+"name": "Copper Torch",
+"section": "Ores",
+"price": 1
+},
+{
+"id": "COPPER_TRAPDOOR",
+"name": "Copper Trapdoor",
+"section": "Ores",
+"price": 8
+},
+{
+"id": "CORNFLOWER",
+"name": "Cornflower",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "CRACKED_DEEPSLATE_BRICKS",
+"name": "Cracked Deepslate Bricks",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CRACKED_DEEPSLATE_TILES",
+"name": "Cracked Deepslate Tiles",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CRACKED_NETHER_BRICKS",
+"name": "Cracked Nether Bricks",
+"section": "Blocks",
+"price": 4
+},
+{
+"id": "CRACKED_POLISHED_BLACKSTONE_BRICKS",
+"name": "Cracked Polished Blackstone Bricks",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CRACKED_STONE_BRICKS",
+"name": "Cracked Stone Bricks",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CRAFTER",
+"name": "Crafter",
+"section": "Redstone",
+"price": 75
+},
+{
+"id": "CRAFTING_TABLE",
+"name": "Crafting Table",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "CREAKING_HEART",
+"name": "Creaking Heart",
+"section": "Loot & Rare",
+"price": 100
+},
+{
+"id": "CREEPER_BANNER_PATTERN",
+"name": "Creeper Banner Pattern",
+"section": "Decoration",
+"price": 10
+},
+{
+"id": "CREEPER_HEAD",
+"name": "Creeper Head",
+"section": "Mobs",
+"price": 100
+},
+{
+"id": "CRIMSON_BUTTON",
+"name": "Crimson Button",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "CRIMSON_DOOR",
+"name": "Crimson Door",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "CRIMSON_FENCE",
+"name": "Crimson Fence",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CRIMSON_FENCE_GATE",
+"name": "Crimson Fence Gate",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CRIMSON_FUNGUS",
+"name": "Crimson Fungus",
+"section": "Natural",
+"price": 5
+},
+{
+"id": "CRIMSON_HANGING_SIGN",
+"name": "Crimson Hanging Sign",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "CRIMSON_HYPHAE",
+"name": "Crimson Hyphae",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "CRIMSON_NYLIUM",
+"name": "Crimson Nylium",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "CRIMSON_PLANKS",
+"name": "Crimson Planks",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "CRIMSON_PRESSURE_PLATE",
+"name": "Crimson Pressure Plate",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "CRIMSON_ROOTS",
+"name": "Crimson Roots",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "CRIMSON_SHELF",
+"name": "Crimson Shelf",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "CRIMSON_SIGN",
+"name": "Crimson Sign",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "CRIMSON_SLAB",
+"name": "Crimson Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "CRIMSON_STAIRS",
+"name": "Crimson Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "CRIMSON_STEM",
+"name": "Crimson Stem",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "CRIMSON_TRAPDOOR",
+"name": "Crimson Trapdoor",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CROSSBOW",
+"name": "Crossbow",
+"section": "Armor & Tools",
+"price": 12
+},
+{
+"id": "CRYING_OBSIDIAN",
+"name": "Crying Obsidian",
+"section": "Natural",
+"price": 20
+},
+{
+"id": "CUT_COPPER",
+"name": "Cut Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "CUT_COPPER_SLAB",
+"name": "Cut Copper Slab",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "CUT_COPPER_STAIRS",
+"name": "Cut Copper Stairs",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "CUT_RED_SANDSTONE",
+"name": "Cut Red Sandstone",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CUT_RED_SANDSTONE_SLAB",
+"name": "Cut Red Sandstone Slab",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CUT_SANDSTONE",
+"name": "Cut Sandstone",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "CUT_SANDSTONE_SLAB",
+"name": "Cut Sandstone Slab",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "CYAN_BANNER",
+"name": "Cyan Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "CYAN_BED",
+"name": "Cyan Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "CYAN_CANDLE",
+"name": "Cyan Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "CYAN_CARPET",
+"name": "Cyan Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "CYAN_CONCRETE",
+"name": "Cyan Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "CYAN_CONCRETE_POWDER",
+"name": "Cyan Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "CYAN_CONCRETE_SLAB",
+"name": "Cyan Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "CYAN_CONCRETE_STAIRS",
+"name": "Cyan Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "CYAN_CUSHION",
+"name": "Cyan Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "CYAN_DYE",
+"name": "Cyan Dye",
+"section": "Colored",
+"price": 6
+},
+{
+"id": "CYAN_GLAZED_TERRACOTTA",
+"name": "Cyan Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "CYAN_HARNESS",
+"name": "Cyan Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "CYAN_SHULKER_BOX",
+"name": "Cyan Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "CYAN_STAINED_GLASS",
+"name": "Cyan Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "CYAN_STAINED_GLASS_PANE",
+"name": "Cyan Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "CYAN_TERRACOTTA",
+"name": "Cyan Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "CYAN_WOOL",
+"name": "Cyan Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "CYAN_WOOL_SLAB",
+"name": "Cyan Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "CYAN_WOOL_STAIRS",
+"name": "Cyan Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "DAMAGED_ANVIL",
+"name": "Damaged Anvil",
+"section": "Blocks",
+"price": 360
+},
+{
+"id": "DANDELION",
+"name": "Dandelion",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DANGER_POTTERY_SHERD",
+"name": "Danger Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "DARK_OAK_BOAT",
+"name": "Dark Oak Boat",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "DARK_OAK_BUTTON",
+"name": "Dark Oak Button",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "DARK_OAK_CHEST_BOAT",
+"name": "Dark Oak Chest Boat",
+"section": "Blocks",
+"price": 9
+},
+{
+"id": "DARK_OAK_DOOR",
+"name": "Dark Oak Door",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "DARK_OAK_FENCE",
+"name": "Dark Oak Fence",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "DARK_OAK_FENCE_GATE",
+"name": "Dark Oak Fence Gate",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "DARK_OAK_HANGING_SIGN",
+"name": "Dark Oak Hanging Sign",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "DARK_OAK_LEAVES",
+"name": "Dark Oak Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "DARK_OAK_LOG",
+"name": "Dark Oak Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "DARK_OAK_PLANKS",
+"name": "Dark Oak Planks",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "DARK_OAK_PRESSURE_PLATE",
+"name": "Dark Oak Pressure Plate",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "DARK_OAK_SAPLING",
+"name": "Dark Oak Sapling",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "DARK_OAK_SHELF",
+"name": "Dark Oak Shelf",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "DARK_OAK_SIGN",
+"name": "Dark Oak Sign",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "DARK_OAK_SLAB",
+"name": "Dark Oak Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "DARK_OAK_STAIRS",
+"name": "Dark Oak Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "DARK_OAK_TRAPDOOR",
+"name": "Dark Oak Trapdoor",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "DARK_OAK_WOOD",
+"name": "Dark Oak Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "DARK_PRISMARINE",
+"name": "Dark Prismarine",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "DARK_PRISMARINE_SLAB",
+"name": "Dark Prismarine Slab",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "DARK_PRISMARINE_STAIRS",
+"name": "Dark Prismarine Stairs",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "DAYLIGHT_DETECTOR",
+"name": "Daylight Detector",
+"section": "Redstone",
+"price": 20
+},
+{
+"id": "DEAD_BRAIN_CORAL",
+"name": "Dead Brain Coral",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_BRAIN_CORAL_BLOCK",
+"name": "Dead Brain Coral Block",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_BRAIN_CORAL_FAN",
+"name": "Dead Brain Coral Fan",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_BUBBLE_CORAL",
+"name": "Dead Bubble Coral",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_BUBBLE_CORAL_BLOCK",
+"name": "Dead Bubble Coral Block",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_BUBBLE_CORAL_FAN",
+"name": "Dead Bubble Coral Fan",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_BUSH",
+"name": "Dead Bush",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "DEAD_FIRE_CORAL",
+"name": "Dead Fire Coral",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_FIRE_CORAL_BLOCK",
+"name": "Dead Fire Coral Block",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_FIRE_CORAL_FAN",
+"name": "Dead Fire Coral Fan",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_HORN_CORAL",
+"name": "Dead Horn Coral",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_HORN_CORAL_BLOCK",
+"name": "Dead Horn Coral Block",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_HORN_CORAL_FAN",
+"name": "Dead Horn Coral Fan",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_TUBE_CORAL",
+"name": "Dead Tube Coral",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_TUBE_CORAL_BLOCK",
+"name": "Dead Tube Coral Block",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DEAD_TUBE_CORAL_FAN",
+"name": "Dead Tube Coral Fan",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "DECORATED_POT",
+"name": "Decorated Pot",
+"section": "Decoration",
+"price": 4
+},
+{
+"id": "DEEPSLATE",
+"name": "Deepslate",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "DEEPSLATE_BRICK_SLAB",
+"name": "Deepslate Brick Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "DEEPSLATE_BRICK_STAIRS",
+"name": "Deepslate Brick Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "DEEPSLATE_BRICK_WALL",
+"name": "Deepslate Brick Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "DEEPSLATE_BRICKS",
+"name": "Deepslate Bricks",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "DEEPSLATE_COAL_ORE",
+"name": "Deepslate Coal Ore",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "DEEPSLATE_COPPER_ORE",
+"name": "Deepslate Copper Ore",
+"section": "Ores",
+"price": 6
+},
+{
+"id": "DEEPSLATE_DIAMOND_ORE",
+"name": "Deepslate Diamond Ore",
+"section": "Ores",
+"price": 120
+},
+{
+"id": "DEEPSLATE_EMERALD_ORE",
+"name": "Deepslate Emerald Ore",
+"section": "Ores",
+"price": 60
+},
+{
+"id": "DEEPSLATE_GOLD_ORE",
+"name": "Deepslate Gold Ore",
+"section": "Ores",
+"price": 12
+},
+{
+"id": "DEEPSLATE_IRON_ORE",
+"name": "Deepslate Iron Ore",
+"section": "Ores",
+"price": 10
+},
+{
+"id": "DEEPSLATE_LAPIS_ORE",
+"name": "Deepslate Lapis Ore",
+"section": "Ores",
+"price": 30
+},
+{
+"id": "DEEPSLATE_REDSTONE_ORE",
+"name": "Deepslate Redstone Ore",
+"section": "Ores",
+"price": 12
+},
+{
+"id": "DEEPSLATE_TILE_SLAB",
+"name": "Deepslate Tile Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "DEEPSLATE_TILE_STAIRS",
+"name": "Deepslate Tile Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "DEEPSLATE_TILE_WALL",
+"name": "Deepslate Tile Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "DEEPSLATE_TILES",
+"name": "Deepslate Tiles",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "DESERT_PYRAMID_MAP",
+"name": "Desert Pyramid Map",
+"section": "Loot & Rare",
+"price": 50
+},
+{
+"id": "DETECTOR_RAIL",
+"name": "Detector Rail",
+"section": "Redstone",
+"price": 12
+},
+{
+"id": "DIAMOND",
+"name": "Diamond",
+"section": "Ores",
+"price": 120
+},
+{
+"id": "DIAMOND_AXE",
+"name": "Diamond Axe",
+"section": "Armor & Tools",
+"price": 320
+},
+{
+"id": "DIAMOND_BLOCK",
+"name": "Diamond Block",
+"section": "Ores",
+"price": 1080
+},
+{
+"id": "DIAMOND_BOOTS",
+"name": "Diamond Boots",
+"section": "Armor & Tools",
+"price": 420
+},
+{
+"id": "DIAMOND_CHESTPLATE",
+"name": "Diamond Chestplate",
+"section": "Armor & Tools",
+"price": 830
+},
+{
+"id": "DIAMOND_HELMET",
+"name": "Diamond Helmet",
+"section": "Armor & Tools",
+"price": 520
+},
+{
+"id": "DIAMOND_HOE",
+"name": "Diamond Hoe",
+"section": "Armor & Tools",
+"price": 220
+},
+{
+"id": "DIAMOND_HORSE_ARMOR",
+"name": "Diamond Horse Armor",
+"section": "Armor & Tools",
+"price": 300
+},
+{
+"id": "DIAMOND_LEGGINGS",
+"name": "Diamond Leggings",
+"section": "Armor & Tools",
+"price": 730
+},
+{
+"id": "DIAMOND_NAUTILUS_ARMOR",
+"name": "Diamond Nautilus Armor",
+"section": "Armor & Tools",
+"price": 300
+},
+{
+"id": "DIAMOND_ORE",
+"name": "Diamond Ore",
+"section": "Ores",
+"price": 120
+},
+{
+"id": "DIAMOND_PICKAXE",
+"name": "Diamond Pickaxe",
+"section": "Armor & Tools",
+"price": 320
+},
+{
+"id": "DIAMOND_SHOVEL",
+"name": "Diamond Shovel",
+"section": "Armor & Tools",
+"price": 120
+},
+{
+"id": "DIAMOND_SPEAR",
+"name": "Diamond Spear",
+"section": "Armor & Tools",
+"price": 120
+},
+{
+"id": "DIAMOND_SWORD",
+"name": "Diamond Sword",
+"section": "Armor & Tools",
+"price": 130
+},
+{
+"id": "DIORITE",
+"name": "Diorite",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "DIORITE_SLAB",
+"name": "Diorite Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "DIORITE_STAIRS",
+"name": "Diorite Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "DIORITE_WALL",
+"name": "Diorite Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "DIRT",
+"name": "Dirt",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "DISC_FRAGMENT_5",
+"name": "Disc Fragment 5",
+"section": "Loot & Rare",
+"price": 10
+},
+{
+"id": "DISPENSER",
+"name": "Dispenser",
+"section": "Redstone",
+"price": 16
+},
+{
+"id": "DRAGON_BREATH",
+"name": "Dragon Breath",
+"section": "Mobs",
+"price": 40
+},
+{
+"id": "DRAGON_EGG",
+"name": "Dragon Egg",
+"section": "Loot & Rare",
+"price": 3000
+},
+{
+"id": "DRAGON_HEAD",
+"name": "Dragon Head",
+"section": "Mobs",
+"price": 200
+},
+{
+"id": "DRIED_GHAST",
+"name": "Dried Ghast",
+"section": "Mobs",
+"price": 200
+},
+{
+"id": "DRIED_KELP",
+"name": "Dried Kelp",
+"section": "Crops",
+"price": 6
+},
+{
+"id": "DRIED_KELP_BLOCK",
+"name": "Dried Kelp Block",
+"section": "Crops",
+"price": 54
+},
+{
+"id": "DRIPSTONE_BLOCK",
+"name": "Dripstone Block",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "DROPPER",
+"name": "Dropper",
+"section": "Redstone",
+"price": 9
+},
+{
+"id": "DUNE_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Dune Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "ECHO_SHARD",
+"name": "Echo Shard",
+"section": "Loot & Rare",
+"price": 100
+},
+{
+"id": "EGG",
+"name": "Egg",
+"section": "Mobs",
+"price": 2
+},
+{
+"id": "ELYTRA",
+"name": "Elytra",
+"section": "Armor & Tools",
+"price": 1500
+},
+{
+"id": "EMERALD",
+"name": "Emerald",
+"section": "Ores",
+"price": 60
+},
+{
+"id": "EMERALD_BLOCK",
+"name": "Emerald Block",
+"section": "Ores",
+"price": 540
+},
+{
+"id": "EMERALD_ORE",
+"name": "Emerald Ore",
+"section": "Ores",
+"price": 60
+},
+{
+"id": "ENCHANTED_BOOK",
+"name": "Enchanted Book",
+"section": "Enchanted Books",
+"price": 60
+},
+{
+"id": "ENCHANTED_GOLDEN_APPLE",
+"name": "Enchanted Golden Apple",
+"section": "Armor & Tools",
+"price": 2000
+},
+{
+"id": "ENCHANTING_TABLE",
+"name": "Enchanting Table",
+"section": "Enchanted Books",
+"price": 280
+},
+{
+"id": "END_CRYSTAL",
+"name": "End Crystal",
+"section": "Loot & Rare",
+"price": 55
+},
+{
+"id": "END_ROD",
+"name": "End Rod",
+"section": "Loot & Rare",
+"price": 4
+},
+{
+"id": "END_STONE",
+"name": "End Stone",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "END_STONE_BRICK_SLAB",
+"name": "End Stone Brick Slab",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "END_STONE_BRICK_STAIRS",
+"name": "End Stone Brick Stairs",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "END_STONE_BRICK_WALL",
+"name": "End Stone Brick Wall",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "END_STONE_BRICKS",
+"name": "End Stone Bricks",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "ENDER_CHEST",
+"name": "Ender Chest",
+"section": "Blocks",
+"price": 110
+},
+{
+"id": "ENDER_EYE",
+"name": "Ender Eye",
+"section": "Mobs",
+"price": 18
+},
+{
+"id": "ENDER_PEARL",
+"name": "Ender Pearl",
+"section": "Mobs",
+"price": 12
+},
+{
+"id": "EXPERIENCE_BOTTLE",
+"name": "Experience Bottle",
+"section": "Enchanted Books",
+"price": 12
+},
+{
+"id": "EXPLORER_POTTERY_SHERD",
+"name": "Explorer Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "EXPOSED_CHISELED_COPPER",
+"name": "Exposed Chiseled Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "EXPOSED_COPPER",
+"name": "Exposed Copper",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "EXPOSED_COPPER_BARS",
+"name": "Exposed Copper Bars",
+"section": "Ores",
+"price": 0.7
+},
+{
+"id": "EXPOSED_COPPER_BULB",
+"name": "Exposed Copper Bulb",
+"section": "Ores",
+"price": 16
+},
+{
+"id": "EXPOSED_COPPER_CHAIN",
+"name": "Exposed Copper Chain",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "EXPOSED_COPPER_CHEST",
+"name": "Exposed Copper Chest",
+"section": "Ores",
+"price": 22
+},
+{
+"id": "EXPOSED_COPPER_DOOR",
+"name": "Exposed Copper Door",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "EXPOSED_COPPER_GOLEM_STATUE",
+"name": "Exposed Copper Golem Statue",
+"section": "Ores",
+"price": 25
+},
+{
+"id": "EXPOSED_COPPER_GRATE",
+"name": "Exposed Copper Grate",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "EXPOSED_COPPER_LANTERN",
+"name": "Exposed Copper Lantern",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "EXPOSED_COPPER_TRAPDOOR",
+"name": "Exposed Copper Trapdoor",
+"section": "Ores",
+"price": 8
+},
+{
+"id": "EXPOSED_CUT_COPPER",
+"name": "Exposed Cut Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "EXPOSED_CUT_COPPER_SLAB",
+"name": "Exposed Cut Copper Slab",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "EXPOSED_CUT_COPPER_STAIRS",
+"name": "Exposed Cut Copper Stairs",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "EXPOSED_LIGHTNING_ROD",
+"name": "Exposed Lightning Rod",
+"section": "Ores",
+"price": 6
+},
+{
+"id": "EYE_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Eye Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "FEATHER",
+"name": "Feather",
+"section": "Mobs",
+"price": 2
+},
+{
+"id": "FERMENTED_SPIDER_EYE",
+"name": "Fermented Spider Eye",
+"section": "Potions",
+"price": 4
+},
+{
+"id": "FERN",
+"name": "Fern",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "FIRE_CHARGE",
+"name": "Fire Charge",
+"section": "Mobs",
+"price": 5
+},
+{
+"id": "FIRE_CORAL",
+"name": "Fire Coral",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "FIRE_CORAL_BLOCK",
+"name": "Fire Coral Block",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "FIRE_CORAL_FAN",
+"name": "Fire Coral Fan",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "FIREFLY_BUSH",
+"name": "Firefly Bush",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "FIREWORK_ROCKET",
+"name": "Firework Rocket",
+"section": "Redstone",
+"price": 2
+},
+{
+"id": "FIREWORK_STAR",
+"name": "Firework Star",
+"section": "Redstone",
+"price": 6
+},
+{
+"id": "FISHING_ROD",
+"name": "Fishing Rod",
+"section": "Armor & Tools",
+"price": 5
+},
+{
+"id": "FLETCHING_TABLE",
+"name": "Fletching Table",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "FLINT",
+"name": "Flint",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "FLINT_AND_STEEL",
+"name": "Flint And Steel",
+"section": "Armor & Tools",
+"price": 14
+},
+{
+"id": "FLOW_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Flow Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "FLOW_BANNER_PATTERN",
+"name": "Flow Banner Pattern",
+"section": "Decoration",
+"price": 50
+},
+{
+"id": "FLOW_POTTERY_SHERD",
+"name": "Flow Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "FLOWER_BANNER_PATTERN",
+"name": "Flower Banner Pattern",
+"section": "Decoration",
+"price": 5
+},
+{
+"id": "FLOWER_POT",
+"name": "Flower Pot",
+"section": "Decoration",
+"price": 3
+},
+{
+"id": "FLOWERING_AZALEA",
+"name": "Flowering Azalea",
+"section": "Natural",
+"price": 5
+},
+{
+"id": "FLOWERING_AZALEA_LEAVES",
+"name": "Flowering Azalea Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "FRIEND_POTTERY_SHERD",
+"name": "Friend Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "FURNACE",
+"name": "Furnace",
+"section": "Blocks",
+"price": 8
+},
+{
+"id": "FURNACE_MINECART",
+"name": "Furnace Minecart",
+"section": "Redstone",
+"price": 60
+},
+{
+"id": "GHAST_TEAR",
+"name": "Ghast Tear",
+"section": "Mobs",
+"price": 25
+},
+{
+"id": "GILDED_BLACKSTONE",
+"name": "Gilded Blackstone",
+"section": "Blocks",
+"price": 5
+},
+{
+"id": "GLASS",
+"name": "Glass",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "GLASS_BOTTLE",
+"name": "Glass Bottle",
+"section": "Potions",
+"price": 1
+},
+{
+"id": "GLASS_PANE",
+"name": "Glass Pane",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "GLISTERING_MELON_SLICE",
+"name": "Glistering Melon Slice",
+"section": "Crops",
+"price": 11
+},
+{
+"id": "GLOBE_BANNER_PATTERN",
+"name": "Globe Banner Pattern",
+"section": "Decoration",
+"price": 10
+},
+{
+"id": "GLOW_BERRIES",
+"name": "Glow Berries",
+"section": "Crops",
+"price": 5
+},
+{
+"id": "GLOW_INK_SAC",
+"name": "Glow Ink Sac",
+"section": "Mobs",
+"price": 6
+},
+{
+"id": "GLOW_ITEM_FRAME",
+"name": "Glow Item Frame",
+"section": "Decoration",
+"price": 12
+},
+{
+"id": "GLOW_LICHEN",
+"name": "Glow Lichen",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "GLOWSTONE",
+"name": "Glowstone",
+"section": "Blocks",
+"price": 16
+},
+{
+"id": "GLOWSTONE_DUST",
+"name": "Glowstone Dust",
+"section": "Potions",
+"price": 4
+},
+{
+"id": "GOAT_HORN",
+"name": "Goat Horn",
+"section": "Mobs",
+"price": 40
+},
+{
+"id": "GOLD_BLOCK",
+"name": "Gold Block",
+"section": "Ores",
+"price": 135
+},
+{
+"id": "GOLD_INGOT",
+"name": "Gold Ingot",
+"section": "Ores",
+"price": 15
+},
+{
+"id": "GOLD_NUGGET",
+"name": "Gold Nugget",
+"section": "Ores",
+"price": 1
+},
+{
+"id": "GOLD_ORE",
+"name": "Gold Ore",
+"section": "Ores",
+"price": 12
+},
+{
+"id": "GOLDEN_APPLE",
+"name": "Golden Apple",
+"section": "Armor & Tools",
+"price": 150
+},
+{
+"id": "GOLDEN_AXE",
+"name": "Golden Axe",
+"section": "Armor & Tools",
+"price": 42
+},
+{
+"id": "GOLDEN_BOOTS",
+"name": "Golden Boots",
+"section": "Armor & Tools",
+"price": 55
+},
+{
+"id": "GOLDEN_CARROT",
+"name": "Golden Carrot",
+"section": "Crops",
+"price": 12
+},
+{
+"id": "GOLDEN_CHESTPLATE",
+"name": "Golden Chestplate",
+"section": "Armor & Tools",
+"price": 110
+},
+{
+"id": "GOLDEN_DANDELION",
+"name": "Golden Dandelion",
+"section": "Decoration",
+"price": 9
+},
+{
+"id": "GOLDEN_HELMET",
+"name": "Golden Helmet",
+"section": "Armor & Tools",
+"price": 70
+},
+{
+"id": "GOLDEN_HOE",
+"name": "Golden Hoe",
+"section": "Armor & Tools",
+"price": 28
+},
+{
+"id": "GOLDEN_HORSE_ARMOR",
+"name": "Golden Horse Armor",
+"section": "Armor & Tools",
+"price": 90
+},
+{
+"id": "GOLDEN_LEGGINGS",
+"name": "Golden Leggings",
+"section": "Armor & Tools",
+"price": 100
+},
+{
+"id": "GOLDEN_NAUTILUS_ARMOR",
+"name": "Golden Nautilus Armor",
+"section": "Armor & Tools",
+"price": 70
+},
+{
+"id": "GOLDEN_PICKAXE",
+"name": "Golden Pickaxe",
+"section": "Armor & Tools",
+"price": 42
+},
+{
+"id": "GOLDEN_SHOVEL",
+"name": "Golden Shovel",
+"section": "Armor & Tools",
+"price": 15
+},
+{
+"id": "GOLDEN_SPEAR",
+"name": "Golden Spear",
+"section": "Armor & Tools",
+"price": 15
+},
+{
+"id": "GOLDEN_SWORD",
+"name": "Golden Sword",
+"section": "Armor & Tools",
+"price": 28
+},
+{
+"id": "GRANITE",
+"name": "Granite",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "GRANITE_SLAB",
+"name": "Granite Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "GRANITE_STAIRS",
+"name": "Granite Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "GRANITE_WALL",
+"name": "Granite Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "GRASS_BLOCK",
+"name": "Grass Block",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "GRAVEL",
+"name": "Gravel",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "GRAY_BANNER",
+"name": "Gray Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "GRAY_BED",
+"name": "Gray Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "GRAY_CANDLE",
+"name": "Gray Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "GRAY_CARPET",
+"name": "Gray Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "GRAY_CONCRETE",
+"name": "Gray Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "GRAY_CONCRETE_POWDER",
+"name": "Gray Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "GRAY_CONCRETE_SLAB",
+"name": "Gray Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "GRAY_CONCRETE_STAIRS",
+"name": "Gray Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "GRAY_CUSHION",
+"name": "Gray Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "GRAY_DYE",
+"name": "Gray Dye",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "GRAY_GLAZED_TERRACOTTA",
+"name": "Gray Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "GRAY_HARNESS",
+"name": "Gray Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "GRAY_SHULKER_BOX",
+"name": "Gray Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "GRAY_STAINED_GLASS",
+"name": "Gray Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "GRAY_STAINED_GLASS_PANE",
+"name": "Gray Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "GRAY_TERRACOTTA",
+"name": "Gray Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "GRAY_WOOL",
+"name": "Gray Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "GRAY_WOOL_SLAB",
+"name": "Gray Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "GRAY_WOOL_STAIRS",
+"name": "Gray Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "GREEN_BANNER",
+"name": "Green Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "GREEN_BED",
+"name": "Green Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "GREEN_CANDLE",
+"name": "Green Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "GREEN_CARPET",
+"name": "Green Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "GREEN_CONCRETE",
+"name": "Green Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "GREEN_CONCRETE_POWDER",
+"name": "Green Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "GREEN_CONCRETE_SLAB",
+"name": "Green Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "GREEN_CONCRETE_STAIRS",
+"name": "Green Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "GREEN_CUSHION",
+"name": "Green Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "GREEN_DYE",
+"name": "Green Dye",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "GREEN_GLAZED_TERRACOTTA",
+"name": "Green Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "GREEN_HARNESS",
+"name": "Green Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "GREEN_SHULKER_BOX",
+"name": "Green Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "GREEN_STAINED_GLASS",
+"name": "Green Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "GREEN_STAINED_GLASS_PANE",
+"name": "Green Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "GREEN_TERRACOTTA",
+"name": "Green Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "GREEN_WOOL",
+"name": "Green Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "GREEN_WOOL_SLAB",
+"name": "Green Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "GREEN_WOOL_STAIRS",
+"name": "Green Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "GRINDSTONE",
+"name": "Grindstone",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "GUNPOWDER",
+"name": "Gunpowder",
+"section": "Mobs",
+"price": 6
+},
+{
+"id": "GUSTER_BANNER_PATTERN",
+"name": "Guster Banner Pattern",
+"section": "Decoration",
+"price": 50
+},
+{
+"id": "GUSTER_POTTERY_SHERD",
+"name": "Guster Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "HANGING_ROOTS",
+"name": "Hanging Roots",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "HAY_BLOCK",
+"name": "Hay Block",
+"section": "Crops",
+"price": 56
+},
+{
+"id": "HEART_OF_THE_SEA",
+"name": "Heart Of The Sea",
+"section": "Fish",
+"price": 800
+},
+{
+"id": "HEART_POTTERY_SHERD",
+"name": "Heart Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "HEARTBREAK_POTTERY_SHERD",
+"name": "Heartbreak Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "HEAVY_CORE",
+"name": "Heavy Core",
+"section": "Loot & Rare",
+"price": 800
+},
+{
+"id": "HEAVY_WEIGHTED_PRESSURE_PLATE",
+"name": "Heavy Weighted Pressure Plate",
+"section": "Redstone",
+"price": 24
+},
+{
+"id": "HONEY_BLOCK",
+"name": "Honey Block",
+"section": "Mobs",
+"price": 32
+},
+{
+"id": "HONEY_BOTTLE",
+"name": "Honey Bottle",
+"section": "Mobs",
+"price": 8
+},
+{
+"id": "HONEYCOMB",
+"name": "Honeycomb",
+"section": "Mobs",
+"price": 6
+},
+{
+"id": "HONEYCOMB_BLOCK",
+"name": "Honeycomb Block",
+"section": "Mobs",
+"price": 24
+},
+{
+"id": "HOPPER",
+"name": "Hopper",
+"section": "Redstone",
+"price": 60
+},
+{
+"id": "HOPPER_MINECART",
+"name": "Hopper Minecart",
+"section": "Redstone",
+"price": 110
+},
+{
+"id": "HORN_CORAL",
+"name": "Horn Coral",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "HORN_CORAL_BLOCK",
+"name": "Horn Coral Block",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "HORN_CORAL_FAN",
+"name": "Horn Coral Fan",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "HOST_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Host Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "HOWL_POTTERY_SHERD",
+"name": "Howl Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "ICE",
+"name": "Ice",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "INK_SAC",
+"name": "Ink Sac",
+"section": "Mobs",
+"price": 2
+},
+{
+"id": "IRON_AXE",
+"name": "Iron Axe",
+"section": "Armor & Tools",
+"price": 35
+},
+{
+"id": "IRON_BARS",
+"name": "Iron Bars",
+"section": "Blocks",
+"price": 4
+},
+{
+"id": "IRON_BLOCK",
+"name": "Iron Block",
+"section": "Ores",
+"price": 108
+},
+{
+"id": "IRON_BOOTS",
+"name": "Iron Boots",
+"section": "Armor & Tools",
+"price": 45
+},
+{
+"id": "IRON_CHAIN",
+"name": "Iron Chain",
+"section": "Blocks",
+"price": 14
+},
+{
+"id": "IRON_CHESTPLATE",
+"name": "Iron Chestplate",
+"section": "Armor & Tools",
+"price": 85
+},
+{
+"id": "IRON_DOOR",
+"name": "Iron Door",
+"section": "Blocks",
+"price": 24
+},
+{
+"id": "IRON_HELMET",
+"name": "Iron Helmet",
+"section": "Armor & Tools",
+"price": 55
+},
+{
+"id": "IRON_HOE",
+"name": "Iron Hoe",
+"section": "Armor & Tools",
+"price": 24
+},
+{
+"id": "IRON_HORSE_ARMOR",
+"name": "Iron Horse Armor",
+"section": "Armor & Tools",
+"price": 45
+},
+{
+"id": "IRON_INGOT",
+"name": "Iron Ingot",
+"section": "Ores",
+"price": 12
+},
+{
+"id": "IRON_LEGGINGS",
+"name": "Iron Leggings",
+"section": "Armor & Tools",
+"price": 75
+},
+{
+"id": "IRON_NAUTILUS_ARMOR",
+"name": "Iron Nautilus Armor",
+"section": "Armor & Tools",
+"price": 45
+},
+{
+"id": "IRON_NUGGET",
+"name": "Iron Nugget",
+"section": "Ores",
+"price": 1
+},
+{
+"id": "IRON_ORE",
+"name": "Iron Ore",
+"section": "Ores",
+"price": 10
+},
+{
+"id": "IRON_PICKAXE",
+"name": "Iron Pickaxe",
+"section": "Armor & Tools",
+"price": 35
+},
+{
+"id": "IRON_SHOVEL",
+"name": "Iron Shovel",
+"section": "Armor & Tools",
+"price": 15
+},
+{
+"id": "IRON_SPEAR",
+"name": "Iron Spear",
+"section": "Armor & Tools",
+"price": 12
+},
+{
+"id": "IRON_SWORD",
+"name": "Iron Sword",
+"section": "Armor & Tools",
+"price": 25
+},
+{
+"id": "IRON_TRAPDOOR",
+"name": "Iron Trapdoor",
+"section": "Blocks",
+"price": 48
+},
+{
+"id": "ITEM_FRAME",
+"name": "Item Frame",
+"section": "Decoration",
+"price": 6
+},
+{
+"id": "JUKEBOX",
+"name": "Jukebox",
+"section": "Redstone",
+"price": 120
+},
+{
+"id": "JUNGLE_BOAT",
+"name": "Jungle Boat",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "JUNGLE_BUTTON",
+"name": "Jungle Button",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "JUNGLE_CHEST_BOAT",
+"name": "Jungle Chest Boat",
+"section": "Blocks",
+"price": 9
+},
+{
+"id": "JUNGLE_DOOR",
+"name": "Jungle Door",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "JUNGLE_FENCE",
+"name": "Jungle Fence",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "JUNGLE_FENCE_GATE",
+"name": "Jungle Fence Gate",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "JUNGLE_HANGING_SIGN",
+"name": "Jungle Hanging Sign",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "JUNGLE_LEAVES",
+"name": "Jungle Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "JUNGLE_LOG",
+"name": "Jungle Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "JUNGLE_PLANKS",
+"name": "Jungle Planks",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "JUNGLE_PRESSURE_PLATE",
+"name": "Jungle Pressure Plate",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "JUNGLE_SAPLING",
+"name": "Jungle Sapling",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "JUNGLE_SHELF",
+"name": "Jungle Shelf",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "JUNGLE_SIGN",
+"name": "Jungle Sign",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "JUNGLE_SLAB",
+"name": "Jungle Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "JUNGLE_STAIRS",
+"name": "Jungle Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "JUNGLE_TRAPDOOR",
+"name": "Jungle Trapdoor",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "JUNGLE_WOOD",
+"name": "Jungle Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "KELP",
+"name": "Kelp",
+"section": "Natural",
+"price": 5
+},
+{
+"id": "LADDER",
+"name": "Ladder",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "LANTERN",
+"name": "Lantern",
+"section": "Blocks",
+"price": 9
+},
+{
+"id": "LAPIS_BLOCK",
+"name": "Lapis Block",
+"section": "Ores",
+"price": 45
+},
+{
+"id": "LAPIS_LAZULI",
+"name": "Lapis Lazuli",
+"section": "Ores",
+"price": 5
+},
+{
+"id": "LAPIS_ORE",
+"name": "Lapis Ore",
+"section": "Ores",
+"price": 30
+},
+{
+"id": "LARGE_AMETHYST_BUD",
+"name": "Large Amethyst Bud",
+"section": "Ores",
+"price": 24
+},
+{
+"id": "LARGE_FERN",
+"name": "Large Fern",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "LAVA_BUCKET",
+"name": "Lava Bucket",
+"section": "Armor & Tools",
+"price": 34
+},
+{
+"id": "LEAD",
+"name": "Lead",
+"section": "Armor & Tools",
+"price": 7
+},
+{
+"id": "LEAF_LITTER",
+"name": "Leaf Litter",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "LEATHER",
+"name": "Leather",
+"section": "Mobs",
+"price": 4
+},
+{
+"id": "LEATHER_BOOTS",
+"name": "Leather Boots",
+"section": "Armor & Tools",
+"price": 16
+},
+{
+"id": "LEATHER_CHESTPLATE",
+"name": "Leather Chestplate",
+"section": "Armor & Tools",
+"price": 32
+},
+{
+"id": "LEATHER_HELMET",
+"name": "Leather Helmet",
+"section": "Armor & Tools",
+"price": 20
+},
+{
+"id": "LEATHER_HORSE_ARMOR",
+"name": "Leather Horse Armor",
+"section": "Mobs",
+"price": 20
+},
+{
+"id": "LEATHER_LEGGINGS",
+"name": "Leather Leggings",
+"section": "Armor & Tools",
+"price": 28
+},
+{
+"id": "LECTERN",
+"name": "Lectern",
+"section": "Blocks",
+"price": 14
+},
+{
+"id": "LEVER",
+"name": "Lever",
+"section": "Redstone",
+"price": 1
+},
+{
+"id": "LIGHT_BLUE_BANNER",
+"name": "Light Blue Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "LIGHT_BLUE_BED",
+"name": "Light Blue Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "LIGHT_BLUE_CANDLE",
+"name": "Light Blue Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "LIGHT_BLUE_CARPET",
+"name": "Light Blue Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "LIGHT_BLUE_CONCRETE",
+"name": "Light Blue Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIGHT_BLUE_CONCRETE_POWDER",
+"name": "Light Blue Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIGHT_BLUE_CONCRETE_SLAB",
+"name": "Light Blue Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "LIGHT_BLUE_CONCRETE_STAIRS",
+"name": "Light Blue Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIGHT_BLUE_CUSHION",
+"name": "Light Blue Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIGHT_BLUE_DYE",
+"name": "Light Blue Dye",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIGHT_BLUE_GLAZED_TERRACOTTA",
+"name": "Light Blue Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "LIGHT_BLUE_HARNESS",
+"name": "Light Blue Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "LIGHT_BLUE_SHULKER_BOX",
+"name": "Light Blue Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "LIGHT_BLUE_STAINED_GLASS",
+"name": "Light Blue Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "LIGHT_BLUE_STAINED_GLASS_PANE",
+"name": "Light Blue Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "LIGHT_BLUE_TERRACOTTA",
+"name": "Light Blue Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "LIGHT_BLUE_WOOL",
+"name": "Light Blue Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "LIGHT_BLUE_WOOL_SLAB",
+"name": "Light Blue Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "LIGHT_BLUE_WOOL_STAIRS",
+"name": "Light Blue Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "LIGHT_GRAY_BANNER",
+"name": "Light Gray Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "LIGHT_GRAY_BED",
+"name": "Light Gray Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "LIGHT_GRAY_CANDLE",
+"name": "Light Gray Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "LIGHT_GRAY_CARPET",
+"name": "Light Gray Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "LIGHT_GRAY_CONCRETE",
+"name": "Light Gray Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIGHT_GRAY_CONCRETE_POWDER",
+"name": "Light Gray Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIGHT_GRAY_CONCRETE_SLAB",
+"name": "Light Gray Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "LIGHT_GRAY_CONCRETE_STAIRS",
+"name": "Light Gray Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIGHT_GRAY_CUSHION",
+"name": "Light Gray Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIGHT_GRAY_DYE",
+"name": "Light Gray Dye",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIGHT_GRAY_GLAZED_TERRACOTTA",
+"name": "Light Gray Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "LIGHT_GRAY_HARNESS",
+"name": "Light Gray Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "LIGHT_GRAY_SHULKER_BOX",
+"name": "Light Gray Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "LIGHT_GRAY_STAINED_GLASS",
+"name": "Light Gray Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "LIGHT_GRAY_STAINED_GLASS_PANE",
+"name": "Light Gray Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "LIGHT_GRAY_TERRACOTTA",
+"name": "Light Gray Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "LIGHT_GRAY_WOOL",
+"name": "Light Gray Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "LIGHT_GRAY_WOOL_SLAB",
+"name": "Light Gray Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "LIGHT_GRAY_WOOL_STAIRS",
+"name": "Light Gray Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "LIGHT_WEIGHTED_PRESSURE_PLATE",
+"name": "Light Weighted Pressure Plate",
+"section": "Redstone",
+"price": 30
+},
+{
+"id": "LIGHTNING_ROD",
+"name": "Lightning Rod",
+"section": "Redstone",
+"price": 6
+},
+{
+"id": "LILAC",
+"name": "Lilac",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "LILY_OF_THE_VALLEY",
+"name": "Lily Of The Valley",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "LILY_PAD",
+"name": "Lily Pad",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "LIME_BANNER",
+"name": "Lime Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "LIME_BED",
+"name": "Lime Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "LIME_CANDLE",
+"name": "Lime Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "LIME_CARPET",
+"name": "Lime Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "LIME_CONCRETE",
+"name": "Lime Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIME_CONCRETE_POWDER",
+"name": "Lime Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIME_CONCRETE_SLAB",
+"name": "Lime Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "LIME_CONCRETE_STAIRS",
+"name": "Lime Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIME_CUSHION",
+"name": "Lime Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "LIME_DYE",
+"name": "Lime Dye",
+"section": "Colored",
+"price": 4
+},
+{
+"id": "LIME_GLAZED_TERRACOTTA",
+"name": "Lime Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "LIME_HARNESS",
+"name": "Lime Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "LIME_SHULKER_BOX",
+"name": "Lime Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "LIME_STAINED_GLASS",
+"name": "Lime Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "LIME_STAINED_GLASS_PANE",
+"name": "Lime Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "LIME_TERRACOTTA",
+"name": "Lime Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "LIME_WOOL",
+"name": "Lime Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "LIME_WOOL_SLAB",
+"name": "Lime Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "LIME_WOOL_STAIRS",
+"name": "Lime Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "LINGERING_POTION",
+"name": "Lingering Potion",
+"section": "Potions",
+"price": 15
+},
+{
+"id": "LODESTONE",
+"name": "Lodestone",
+"section": "Loot & Rare",
+"price": 1200
+},
+{
+"id": "LOOM",
+"name": "Loom",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "MACE",
+"name": "Mace",
+"section": "Armor & Tools",
+"price": 600
+},
+{
+"id": "MAGENTA_BANNER",
+"name": "Magenta Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "MAGENTA_BED",
+"name": "Magenta Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "MAGENTA_CANDLE",
+"name": "Magenta Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "MAGENTA_CARPET",
+"name": "Magenta Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "MAGENTA_CONCRETE",
+"name": "Magenta Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "MAGENTA_CONCRETE_POWDER",
+"name": "Magenta Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "MAGENTA_CONCRETE_SLAB",
+"name": "Magenta Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "MAGENTA_CONCRETE_STAIRS",
+"name": "Magenta Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "MAGENTA_CUSHION",
+"name": "Magenta Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "MAGENTA_DYE",
+"name": "Magenta Dye",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "MAGENTA_GLAZED_TERRACOTTA",
+"name": "Magenta Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "MAGENTA_HARNESS",
+"name": "Magenta Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "MAGENTA_SHULKER_BOX",
+"name": "Magenta Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "MAGENTA_STAINED_GLASS",
+"name": "Magenta Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "MAGENTA_STAINED_GLASS_PANE",
+"name": "Magenta Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "MAGENTA_TERRACOTTA",
+"name": "Magenta Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "MAGENTA_WOOL",
+"name": "Magenta Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "MAGENTA_WOOL_SLAB",
+"name": "Magenta Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "MAGENTA_WOOL_STAIRS",
+"name": "Magenta Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "MAGMA_BLOCK",
+"name": "Magma Block",
+"section": "Blocks",
+"price": 28
+},
+{
+"id": "MAGMA_CREAM",
+"name": "Magma Cream",
+"section": "Mobs",
+"price": 7
+},
+{
+"id": "MANGROVE_BOAT",
+"name": "Mangrove Boat",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "MANGROVE_BUTTON",
+"name": "Mangrove Button",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "MANGROVE_CHEST_BOAT",
+"name": "Mangrove Chest Boat",
+"section": "Blocks",
+"price": 9
+},
+{
+"id": "MANGROVE_DOOR",
+"name": "Mangrove Door",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "MANGROVE_FENCE",
+"name": "Mangrove Fence",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "MANGROVE_FENCE_GATE",
+"name": "Mangrove Fence Gate",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "MANGROVE_HANGING_SIGN",
+"name": "Mangrove Hanging Sign",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "MANGROVE_LEAVES",
+"name": "Mangrove Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "MANGROVE_LOG",
+"name": "Mangrove Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "MANGROVE_PLANKS",
+"name": "Mangrove Planks",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "MANGROVE_PRESSURE_PLATE",
+"name": "Mangrove Pressure Plate",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "MANGROVE_PROPAGULE",
+"name": "Mangrove Propagule",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "MANGROVE_ROOTS",
+"name": "Mangrove Roots",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "MANGROVE_SHELF",
+"name": "Mangrove Shelf",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "MANGROVE_SIGN",
+"name": "Mangrove Sign",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "MANGROVE_SLAB",
+"name": "Mangrove Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "MANGROVE_STAIRS",
+"name": "Mangrove Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "MANGROVE_TRAPDOOR",
+"name": "Mangrove Trapdoor",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "MANGROVE_WOOD",
+"name": "Mangrove Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "MAP",
+"name": "Map",
+"section": "Enchanted Books",
+"price": 50
+},
+{
+"id": "MEDIUM_AMETHYST_BUD",
+"name": "Medium Amethyst Bud",
+"section": "Ores",
+"price": 16
+},
+{
+"id": "MELON",
+"name": "Melon",
+"section": "Crops",
+"price": 18
+},
+{
+"id": "MELON_SEEDS",
+"name": "Melon Seeds",
+"section": "Crops",
+"price": 1
+},
+{
+"id": "MELON_SLICE",
+"name": "Melon Slice",
+"section": "Crops",
+"price": 3
+},
+{
+"id": "MILK_BUCKET",
+"name": "Milk Bucket",
+"section": "Armor & Tools",
+"price": 34
+},
+{
+"id": "MINECART",
+"name": "Minecart",
+"section": "Redstone",
+"price": 55
+},
+{
+"id": "MINER_POTTERY_SHERD",
+"name": "Miner Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "MOJANG_BANNER_PATTERN",
+"name": "Mojang Banner Pattern",
+"section": "Decoration",
+"price": 50
+},
+{
+"id": "MOSS_BLOCK",
+"name": "Moss Block",
+"section": "Natural",
+"price": 6
+},
+{
+"id": "MOSS_CARPET",
+"name": "Moss Carpet",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "MOSSY_COBBLESTONE",
+"name": "Mossy Cobblestone",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "MOSSY_COBBLESTONE_SLAB",
+"name": "Mossy Cobblestone Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "MOSSY_COBBLESTONE_STAIRS",
+"name": "Mossy Cobblestone Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "MOSSY_COBBLESTONE_WALL",
+"name": "Mossy Cobblestone Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "MOSSY_STONE_BRICK_SLAB",
+"name": "Mossy Stone Brick Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "MOSSY_STONE_BRICK_STAIRS",
+"name": "Mossy Stone Brick Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "MOSSY_STONE_BRICK_WALL",
+"name": "Mossy Stone Brick Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "MOSSY_STONE_BRICKS",
+"name": "Mossy Stone Bricks",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "MOURNER_POTTERY_SHERD",
+"name": "Mourner Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "MUD",
+"name": "Mud",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "MUD_BRICK_SLAB",
+"name": "Mud Brick Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "MUD_BRICK_STAIRS",
+"name": "Mud Brick Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "MUD_BRICK_WALL",
+"name": "Mud Brick Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "MUD_BRICKS",
+"name": "Mud Bricks",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "MUDDY_MANGROVE_ROOTS",
+"name": "Muddy Mangrove Roots",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "MUSHROOM_STEM",
+"name": "Mushroom Stem",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "MUSHROOM_STEW",
+"name": "Mushroom Stew",
+"section": "Crops",
+"price": 4
+},
+{
+"id": "MUSIC_DISC_11",
+"name": "Music Disc 11",
+"section": "Loot & Rare",
+"price": 60
+},
+{
+"id": "MUSIC_DISC_13",
+"name": "Music Disc 13",
+"section": "Loot & Rare",
+"price": 60
+},
+{
+"id": "MUSIC_DISC_5",
+"name": "Music Disc 5",
+"section": "Loot & Rare",
+"price": 100
+},
+{
+"id": "MUSIC_DISC_BLOCKS",
+"name": "Music Disc Blocks",
+"section": "Loot & Rare",
+"price": 60
+},
+{
+"id": "MUSIC_DISC_BOUNCE",
+"name": "Music Disc Bounce",
+"section": "Loot & Rare",
+"price": 100
+},
+{
+"id": "MUSIC_DISC_CAT",
+"name": "Music Disc Cat",
+"section": "Loot & Rare",
+"price": 60
+},
+{
+"id": "MUSIC_DISC_CHIRP",
+"name": "Music Disc Chirp",
+"section": "Loot & Rare",
+"price": 60
+},
+{
+"id": "MUSIC_DISC_CREATOR",
+"name": "Music Disc Creator",
+"section": "Loot & Rare",
+"price": 100
+},
+{
+"id": "MUSIC_DISC_CREATOR_MUSIC_BOX",
+"name": "Music Disc Creator Music Box",
+"section": "Loot & Rare",
+"price": 100
+},
+{
+"id": "MUSIC_DISC_FAR",
+"name": "Music Disc Far",
+"section": "Loot & Rare",
+"price": 60
+},
+{
+"id": "MUSIC_DISC_LAVA_CHICKEN",
+"name": "Music Disc Lava Chicken",
+"section": "Loot & Rare",
+"price": 100
+},
+{
+"id": "MUSIC_DISC_MALL",
+"name": "Music Disc Mall",
+"section": "Loot & Rare",
+"price": 60
+},
+{
+"id": "MUSIC_DISC_MELLOHI",
+"name": "Music Disc Mellohi",
+"section": "Loot & Rare",
+"price": 60
+},
+{
+"id": "MUSIC_DISC_OTHERSIDE",
+"name": "Music Disc Otherside",
+"section": "Loot & Rare",
+"price": 100
+},
+{
+"id": "MUSIC_DISC_PIGSTEP",
+"name": "Music Disc Pigstep",
+"section": "Loot & Rare",
+"price": 100
+},
+{
+"id": "MUSIC_DISC_PRECIPICE",
+"name": "Music Disc Precipice",
+"section": "Loot & Rare",
+"price": 100
+},
+{
+"id": "MUSIC_DISC_RELIC",
+"name": "Music Disc Relic",
+"section": "Loot & Rare",
+"price": 100
+},
+{
+"id": "MUSIC_DISC_STAL",
+"name": "Music Disc Stal",
+"section": "Loot & Rare",
+"price": 60
+},
+{
+"id": "MUSIC_DISC_STRAD",
+"name": "Music Disc Strad",
+"section": "Loot & Rare",
+"price": 60
+},
+{
+"id": "MUSIC_DISC_TEARS",
+"name": "Music Disc Tears",
+"section": "Loot & Rare",
+"price": 100
+},
+{
+"id": "MUSIC_DISC_WAIT",
+"name": "Music Disc Wait",
+"section": "Loot & Rare",
+"price": 60
+},
+{
+"id": "MUSIC_DISC_WARD",
+"name": "Music Disc Ward",
+"section": "Loot & Rare",
+"price": 60
+},
+{
+"id": "MUTTON",
+"name": "Mutton",
+"section": "Mobs",
+"price": 3
+},
+{
+"id": "MYCELIUM",
+"name": "Mycelium",
+"section": "Natural",
+"price": 5
+},
+{
+"id": "NAME_TAG",
+"name": "Name Tag",
+"section": "Mobs",
+"price": 2
+},
+{
+"id": "NAUTILUS_SHELL",
+"name": "Nautilus Shell",
+"section": "Fish",
+"price": 60
+},
+{
+"id": "NETHER_BRICK",
+"name": "Nether Brick",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "NETHER_BRICK_FENCE",
+"name": "Nether Brick Fence",
+"section": "Blocks",
+"price": 4
+},
+{
+"id": "NETHER_BRICK_SLAB",
+"name": "Nether Brick Slab",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "NETHER_BRICK_STAIRS",
+"name": "Nether Brick Stairs",
+"section": "Blocks",
+"price": 4
+},
+{
+"id": "NETHER_BRICK_WALL",
+"name": "Nether Brick Wall",
+"section": "Blocks",
+"price": 4
+},
+{
+"id": "NETHER_BRICKS",
+"name": "Nether Bricks",
+"section": "Blocks",
+"price": 4
+},
+{
+"id": "NETHER_GOLD_ORE",
+"name": "Nether Gold Ore",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "NETHER_QUARTZ_ORE",
+"name": "Nether Quartz Ore",
+"section": "Ores",
+"price": 5
+},
+{
+"id": "NETHER_SPROUTS",
+"name": "Nether Sprouts",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "NETHER_STAR",
+"name": "Nether Star",
+"section": "Mobs",
+"price": 1500
+},
+{
+"id": "NETHER_WART",
+"name": "Nether Wart",
+"section": "Crops",
+"price": 8
+},
+{
+"id": "NETHER_WART_BLOCK",
+"name": "Nether Wart Block",
+"section": "Crops",
+"price": 72
+},
+{
+"id": "NETHERITE_AXE",
+"name": "Netherite Axe",
+"section": "Armor & Tools",
+"price": 1200
+},
+{
+"id": "NETHERITE_BLOCK",
+"name": "Netherite Block",
+"section": "Ores",
+"price": 10800
+},
+{
+"id": "NETHERITE_BOOTS",
+"name": "Netherite Boots",
+"section": "Armor & Tools",
+"price": 1250
+},
+{
+"id": "NETHERITE_CHESTPLATE",
+"name": "Netherite Chestplate",
+"section": "Armor & Tools",
+"price": 1500
+},
+{
+"id": "NETHERITE_HELMET",
+"name": "Netherite Helmet",
+"section": "Armor & Tools",
+"price": 1300
+},
+{
+"id": "NETHERITE_HOE",
+"name": "Netherite Hoe",
+"section": "Armor & Tools",
+"price": 1100
+},
+{
+"id": "NETHERITE_HORSE_ARMOR",
+"name": "Netherite Horse Armor",
+"section": "Armor & Tools",
+"price": 1400
+},
+{
+"id": "NETHERITE_INGOT",
+"name": "Netherite Ingot",
+"section": "Ores",
+"price": 1200
+},
+{
+"id": "NETHERITE_LEGGINGS",
+"name": "Netherite Leggings",
+"section": "Armor & Tools",
+"price": 1400
+},
+{
+"id": "NETHERITE_NAUTILUS_ARMOR",
+"name": "Netherite Nautilus Armor",
+"section": "Armor & Tools",
+"price": 1400
+},
+{
+"id": "NETHERITE_PICKAXE",
+"name": "Netherite Pickaxe",
+"section": "Armor & Tools",
+"price": 1200
+},
+{
+"id": "NETHERITE_SCRAP",
+"name": "Netherite Scrap",
+"section": "Ores",
+"price": 280
+},
+{
+"id": "NETHERITE_SHOVEL",
+"name": "Netherite Shovel",
+"section": "Armor & Tools",
+"price": 1000
+},
+{
+"id": "NETHERITE_SPEAR",
+"name": "Netherite Spear",
+"section": "Armor & Tools",
+"price": 1300
+},
+{
+"id": "NETHERITE_SWORD",
+"name": "Netherite Sword",
+"section": "Armor & Tools",
+"price": 1000
+},
+{
+"id": "NETHERITE_UPGRADE_SMITHING_TEMPLATE",
+"name": "Netherite Upgrade Smithing Template",
+"section": "Loot & Rare",
+"price": 400
+},
+{
+"id": "NETHERRACK",
+"name": "Netherrack",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "NOTE_BLOCK",
+"name": "Note Block",
+"section": "Redstone",
+"price": 9
+},
+{
+"id": "OAK_BOAT",
+"name": "Oak Boat",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "OAK_BUTTON",
+"name": "Oak Button",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "OAK_CHEST_BOAT",
+"name": "Oak Chest Boat",
+"section": "Blocks",
+"price": 9
+},
+{
+"id": "OAK_DOOR",
+"name": "Oak Door",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "OAK_FENCE",
+"name": "Oak Fence",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "OAK_FENCE_GATE",
+"name": "Oak Fence Gate",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "OAK_HANGING_SIGN",
+"name": "Oak Hanging Sign",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "OAK_LEAVES",
+"name": "Oak Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "OAK_LOG",
+"name": "Oak Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "OAK_PLANKS",
+"name": "Oak Planks",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "OAK_PRESSURE_PLATE",
+"name": "Oak Pressure Plate",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "OAK_SAPLING",
+"name": "Oak Sapling",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "OAK_SHELF",
+"name": "Oak Shelf",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "OAK_SIGN",
+"name": "Oak Sign",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "OAK_SLAB",
+"name": "Oak Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "OAK_STAIRS",
+"name": "Oak Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "OAK_TRAPDOOR",
+"name": "Oak Trapdoor",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "OAK_WOOD",
+"name": "Oak Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "OBSERVER",
+"name": "Observer",
+"section": "Redstone",
+"price": 15
+},
+{
+"id": "OBSIDIAN",
+"name": "Obsidian",
+"section": "Natural",
+"price": 12
+},
+{
+"id": "OCHRE_FROGLIGHT",
+"name": "Ochre Froglight",
+"section": "Blocks",
+"price": 8
+},
+{
+"id": "OMINOUS_BOTTLE",
+"name": "Ominous Bottle",
+"section": "Loot & Rare",
+"price": 40
+},
+{
+"id": "OMINOUS_TRIAL_KEY",
+"name": "Ominous Trial Key",
+"section": "Loot & Rare",
+"price": 50
+},
+{
+"id": "OPEN_EYEBLOSSOM",
+"name": "Open Eyeblossom",
+"section": "Natural",
+"price": 5
+},
+{
+"id": "ORANGE_BANNER",
+"name": "Orange Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "ORANGE_BED",
+"name": "Orange Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "ORANGE_CANDLE",
+"name": "Orange Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "ORANGE_CARPET",
+"name": "Orange Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "ORANGE_CONCRETE",
+"name": "Orange Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "ORANGE_CONCRETE_POWDER",
+"name": "Orange Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "ORANGE_CONCRETE_SLAB",
+"name": "Orange Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "ORANGE_CONCRETE_STAIRS",
+"name": "Orange Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "ORANGE_CUSHION",
+"name": "Orange Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "ORANGE_DYE",
+"name": "Orange Dye",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "ORANGE_GLAZED_TERRACOTTA",
+"name": "Orange Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "ORANGE_HARNESS",
+"name": "Orange Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "ORANGE_POPLAR_LEAVES",
+"name": "Orange Poplar Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "ORANGE_SHULKER_BOX",
+"name": "Orange Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "ORANGE_STAINED_GLASS",
+"name": "Orange Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "ORANGE_STAINED_GLASS_PANE",
+"name": "Orange Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "ORANGE_TERRACOTTA",
+"name": "Orange Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "ORANGE_TULIP",
+"name": "Orange Tulip",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "ORANGE_WOOL",
+"name": "Orange Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "ORANGE_WOOL_SLAB",
+"name": "Orange Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "ORANGE_WOOL_STAIRS",
+"name": "Orange Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "OXEYE_DAISY",
+"name": "Oxeye Daisy",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "OXIDIZED_CHISELED_COPPER",
+"name": "Oxidized Chiseled Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "OXIDIZED_COPPER",
+"name": "Oxidized Copper",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "OXIDIZED_COPPER_BARS",
+"name": "Oxidized Copper Bars",
+"section": "Ores",
+"price": 0.7
+},
+{
+"id": "OXIDIZED_COPPER_BULB",
+"name": "Oxidized Copper Bulb",
+"section": "Ores",
+"price": 16
+},
+{
+"id": "OXIDIZED_COPPER_CHAIN",
+"name": "Oxidized Copper Chain",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "OXIDIZED_COPPER_CHEST",
+"name": "Oxidized Copper Chest",
+"section": "Ores",
+"price": 22
+},
+{
+"id": "OXIDIZED_COPPER_DOOR",
+"name": "Oxidized Copper Door",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "OXIDIZED_COPPER_GOLEM_STATUE",
+"name": "Oxidized Copper Golem Statue",
+"section": "Ores",
+"price": 25
+},
+{
+"id": "OXIDIZED_COPPER_GRATE",
+"name": "Oxidized Copper Grate",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "OXIDIZED_COPPER_LANTERN",
+"name": "Oxidized Copper Lantern",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "OXIDIZED_COPPER_TRAPDOOR",
+"name": "Oxidized Copper Trapdoor",
+"section": "Ores",
+"price": 8
+},
+{
+"id": "OXIDIZED_CUT_COPPER",
+"name": "Oxidized Cut Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "OXIDIZED_CUT_COPPER_SLAB",
+"name": "Oxidized Cut Copper Slab",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "OXIDIZED_CUT_COPPER_STAIRS",
+"name": "Oxidized Cut Copper Stairs",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "OXIDIZED_LIGHTNING_ROD",
+"name": "Oxidized Lightning Rod",
+"section": "Ores",
+"price": 6
+},
+{
+"id": "PACKED_ICE",
+"name": "Packed Ice",
+"section": "Natural",
+"price": 20
+},
+{
+"id": "PACKED_MUD",
+"name": "Packed Mud",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "PAINTING",
+"name": "Painting",
+"section": "Decoration",
+"price": 6
+},
+{
+"id": "PALE_HANGING_MOSS",
+"name": "Pale Hanging Moss",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "PALE_MOSS_BLOCK",
+"name": "Pale Moss Block",
+"section": "Natural",
+"price": 6
+},
+{
+"id": "PALE_MOSS_CARPET",
+"name": "Pale Moss Carpet",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "PALE_OAK_BOAT",
+"name": "Pale Oak Boat",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "PALE_OAK_BUTTON",
+"name": "Pale Oak Button",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "PALE_OAK_CHEST_BOAT",
+"name": "Pale Oak Chest Boat",
+"section": "Blocks",
+"price": 9
+},
+{
+"id": "PALE_OAK_DOOR",
+"name": "Pale Oak Door",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "PALE_OAK_FENCE",
+"name": "Pale Oak Fence",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "PALE_OAK_FENCE_GATE",
+"name": "Pale Oak Fence Gate",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "PALE_OAK_HANGING_SIGN",
+"name": "Pale Oak Hanging Sign",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "PALE_OAK_LEAVES",
+"name": "Pale Oak Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "PALE_OAK_PLANKS",
+"name": "Pale Oak Planks",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "PALE_OAK_PRESSURE_PLATE",
+"name": "Pale Oak Pressure Plate",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "PALE_OAK_SAPLING",
+"name": "Pale Oak Sapling",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "PALE_OAK_SHELF",
+"name": "Pale Oak Shelf",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "PALE_OAK_SIGN",
+"name": "Pale Oak Sign",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "PALE_OAK_SLAB",
+"name": "Pale Oak Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "PALE_OAK_STAIRS",
+"name": "Pale Oak Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "PALE_OAK_TRAPDOOR",
+"name": "Pale Oak Trapdoor",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "PALE_OAK_WOOD",
+"name": "Pale Oak Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "PAPER",
+"name": "Paper",
+"section": "Enchanted Books",
+"price": 1
+},
+{
+"id": "PEARLESCENT_FROGLIGHT",
+"name": "Pearlescent Froglight",
+"section": "Blocks",
+"price": 8
+},
+{
+"id": "PEONY",
+"name": "Peony",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "PHANTOM_MEMBRANE",
+"name": "Phantom Membrane",
+"section": "Mobs",
+"price": 8
+},
+{
+"id": "PIGLIN_BANNER_PATTERN",
+"name": "Piglin Banner Pattern",
+"section": "Decoration",
+"price": 30
+},
+{
+"id": "PIGLIN_HEAD",
+"name": "Piglin Head",
+"section": "Mobs",
+"price": 100
+},
+{
+"id": "PINK_BANNER",
+"name": "Pink Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "PINK_BED",
+"name": "Pink Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "PINK_CANDLE",
+"name": "Pink Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "PINK_CARPET",
+"name": "Pink Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "PINK_CONCRETE",
+"name": "Pink Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "PINK_CONCRETE_POWDER",
+"name": "Pink Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "PINK_CONCRETE_SLAB",
+"name": "Pink Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "PINK_CONCRETE_STAIRS",
+"name": "Pink Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "PINK_CUSHION",
+"name": "Pink Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "PINK_DYE",
+"name": "Pink Dye",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "PINK_GLAZED_TERRACOTTA",
+"name": "Pink Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "PINK_HARNESS",
+"name": "Pink Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "PINK_PETALS",
+"name": "Pink Petals",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "PINK_SHULKER_BOX",
+"name": "Pink Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "PINK_STAINED_GLASS",
+"name": "Pink Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "PINK_STAINED_GLASS_PANE",
+"name": "Pink Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "PINK_TERRACOTTA",
+"name": "Pink Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "PINK_TULIP",
+"name": "Pink Tulip",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "PINK_WOOL",
+"name": "Pink Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "PINK_WOOL_SLAB",
+"name": "Pink Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "PINK_WOOL_STAIRS",
+"name": "Pink Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "PISTON",
+"name": "Piston",
+"section": "Redstone",
+"price": 20
+},
+{
+"id": "PITCHER_PLANT",
+"name": "Pitcher Plant",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "PITCHER_POD",
+"name": "Pitcher Pod",
+"section": "Crops",
+"price": 2
+},
+{
+"id": "PLENTY_POTTERY_SHERD",
+"name": "Plenty Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "PODZOL",
+"name": "Podzol",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "POINTED_DRIPSTONE",
+"name": "Pointed Dripstone",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "POISONOUS_POTATO",
+"name": "Poisonous Potato",
+"section": "Crops",
+"price": 1
+},
+{
+"id": "POLISHED_ANDESITE",
+"name": "Polished Andesite",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_ANDESITE_SLAB",
+"name": "Polished Andesite Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "POLISHED_ANDESITE_STAIRS",
+"name": "Polished Andesite Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_BASALT",
+"name": "Polished Basalt",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_BLACKSTONE",
+"name": "Polished Blackstone",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_BLACKSTONE_BRICK_SLAB",
+"name": "Polished Blackstone Brick Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "POLISHED_BLACKSTONE_BRICK_STAIRS",
+"name": "Polished Blackstone Brick Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_BLACKSTONE_BRICK_WALL",
+"name": "Polished Blackstone Brick Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_BLACKSTONE_BRICKS",
+"name": "Polished Blackstone Bricks",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_BLACKSTONE_BUTTON",
+"name": "Polished Blackstone Button",
+"section": "Redstone",
+"price": 1
+},
+{
+"id": "POLISHED_BLACKSTONE_PRESSURE_PLATE",
+"name": "Polished Blackstone Pressure Plate",
+"section": "Redstone",
+"price": 2
+},
+{
+"id": "POLISHED_BLACKSTONE_SLAB",
+"name": "Polished Blackstone Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "POLISHED_BLACKSTONE_STAIRS",
+"name": "Polished Blackstone Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_BLACKSTONE_WALL",
+"name": "Polished Blackstone Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_CINNABAR",
+"name": "Polished Cinnabar",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "POLISHED_CINNABAR_SLAB",
+"name": "Polished Cinnabar Slab",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_CINNABAR_STAIRS",
+"name": "Polished Cinnabar Stairs",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "POLISHED_CINNABAR_WALL",
+"name": "Polished Cinnabar Wall",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "POLISHED_DEEPSLATE",
+"name": "Polished Deepslate",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_DEEPSLATE_SLAB",
+"name": "Polished Deepslate Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "POLISHED_DEEPSLATE_STAIRS",
+"name": "Polished Deepslate Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_DEEPSLATE_WALL",
+"name": "Polished Deepslate Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_DIORITE",
+"name": "Polished Diorite",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_DIORITE_SLAB",
+"name": "Polished Diorite Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "POLISHED_DIORITE_STAIRS",
+"name": "Polished Diorite Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_GRANITE",
+"name": "Polished Granite",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_GRANITE_SLAB",
+"name": "Polished Granite Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "POLISHED_GRANITE_STAIRS",
+"name": "Polished Granite Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_SULFUR",
+"name": "Polished Sulfur",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "POLISHED_SULFUR_SLAB",
+"name": "Polished Sulfur Slab",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_SULFUR_STAIRS",
+"name": "Polished Sulfur Stairs",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "POLISHED_SULFUR_WALL",
+"name": "Polished Sulfur Wall",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "POLISHED_TUFF",
+"name": "Polished Tuff",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_TUFF_SLAB",
+"name": "Polished Tuff Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "POLISHED_TUFF_STAIRS",
+"name": "Polished Tuff Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POLISHED_TUFF_WALL",
+"name": "Polished Tuff Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POPLAR_BOAT",
+"name": "Poplar Boat",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "POPLAR_BUTTON",
+"name": "Poplar Button",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "POPLAR_CHEST_BOAT",
+"name": "Poplar Chest Boat",
+"section": "Blocks",
+"price": 9
+},
+{
+"id": "POPLAR_DOOR",
+"name": "Poplar Door",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "POPLAR_FENCE",
+"name": "Poplar Fence",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "POPLAR_FENCE_GATE",
+"name": "Poplar Fence Gate",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "POPLAR_HANGING_SIGN",
+"name": "Poplar Hanging Sign",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "POPLAR_LOG",
+"name": "Poplar Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "POPLAR_PLANKS",
+"name": "Poplar Planks",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "POPLAR_PRESSURE_PLATE",
+"name": "Poplar Pressure Plate",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "POPLAR_SAPLING",
+"name": "Poplar Sapling",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "POPLAR_SHELF",
+"name": "Poplar Shelf",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "POPLAR_SIGN",
+"name": "Poplar Sign",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "POPLAR_SLAB",
+"name": "Poplar Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "POPLAR_STAIRS",
+"name": "Poplar Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "POPLAR_TRAPDOOR",
+"name": "Poplar Trapdoor",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "POPLAR_WOOD",
+"name": "Poplar Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "POPPED_CHORUS_FRUIT",
+"name": "Popped Chorus Fruit",
+"section": "Crops",
+"price": 8
+},
+{
+"id": "POPPY",
+"name": "Poppy",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "PORKCHOP",
+"name": "Porkchop",
+"section": "Mobs",
+"price": 3
+},
+{
+"id": "POTATO",
+"name": "Potato",
+"section": "Crops",
+"price": 4
+},
+{
+"id": "POTENT_SULFUR",
+"name": "Potent Sulfur",
+"section": "Blocks",
+"price": 10
+},
+{
+"id": "POTION",
+"name": "Potion",
+"section": "Potions",
+"price": 10
+},
+{
+"id": "POWDER_SNOW_BUCKET",
+"name": "Powder Snow Bucket",
+"section": "Armor & Tools",
+"price": 34
+},
+{
+"id": "POWERED_RAIL",
+"name": "Powered Rail",
+"section": "Redstone",
+"price": 15
+},
+{
+"id": "PRISMARINE",
+"name": "Prismarine",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "PRISMARINE_BRICK_SLAB",
+"name": "Prismarine Brick Slab",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "PRISMARINE_BRICK_STAIRS",
+"name": "Prismarine Brick Stairs",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "PRISMARINE_BRICKS",
+"name": "Prismarine Bricks",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "PRISMARINE_CRYSTALS",
+"name": "Prismarine Crystals",
+"section": "Fish",
+"price": 8
+},
+{
+"id": "PRISMARINE_SHARD",
+"name": "Prismarine Shard",
+"section": "Fish",
+"price": 6
+},
+{
+"id": "PRISMARINE_SLAB",
+"name": "Prismarine Slab",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "PRISMARINE_STAIRS",
+"name": "Prismarine Stairs",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "PRISMARINE_WALL",
+"name": "Prismarine Wall",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "PRIZE_POTTERY_SHERD",
+"name": "Prize Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "PUFFERFISH",
+"name": "Pufferfish",
+"section": "Fish",
+"price": 6
+},
+{
+"id": "PUFFERFISH_BUCKET",
+"name": "Pufferfish Bucket",
+"section": "Fish",
+"price": 40
+},
+{
+"id": "PUMPKIN",
+"name": "Pumpkin",
+"section": "Crops",
+"price": 12
+},
+{
+"id": "PUMPKIN_PIE",
+"name": "Pumpkin Pie",
+"section": "Crops",
+"price": 24
+},
+{
+"id": "PUMPKIN_SEEDS",
+"name": "Pumpkin Seeds",
+"section": "Crops",
+"price": 1
+},
+{
+"id": "PURPLE_BANNER",
+"name": "Purple Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "PURPLE_BED",
+"name": "Purple Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "PURPLE_CANDLE",
+"name": "Purple Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "PURPLE_CARPET",
+"name": "Purple Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "PURPLE_CONCRETE",
+"name": "Purple Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "PURPLE_CONCRETE_POWDER",
+"name": "Purple Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "PURPLE_CONCRETE_SLAB",
+"name": "Purple Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "PURPLE_CONCRETE_STAIRS",
+"name": "Purple Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "PURPLE_CUSHION",
+"name": "Purple Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "PURPLE_DYE",
+"name": "Purple Dye",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "PURPLE_GLAZED_TERRACOTTA",
+"name": "Purple Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "PURPLE_HARNESS",
+"name": "Purple Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "PURPLE_SHULKER_BOX",
+"name": "Purple Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "PURPLE_STAINED_GLASS",
+"name": "Purple Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "PURPLE_STAINED_GLASS_PANE",
+"name": "Purple Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "PURPLE_TERRACOTTA",
+"name": "Purple Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "PURPLE_WOOL",
+"name": "Purple Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "PURPLE_WOOL_SLAB",
+"name": "Purple Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "PURPLE_WOOL_STAIRS",
+"name": "Purple Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "PURPUR_BLOCK",
+"name": "Purpur Block",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "PURPUR_PILLAR",
+"name": "Purpur Pillar",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "PURPUR_SLAB",
+"name": "Purpur Slab",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "PURPUR_STAIRS",
+"name": "Purpur Stairs",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "QUARTZ",
+"name": "Quartz",
+"section": "Ores",
+"price": 5
+},
+{
+"id": "QUARTZ_BLOCK",
+"name": "Quartz Block",
+"section": "Blocks",
+"price": 20
+},
+{
+"id": "QUARTZ_BRICKS",
+"name": "Quartz Bricks",
+"section": "Blocks",
+"price": 20
+},
+{
+"id": "QUARTZ_PILLAR",
+"name": "Quartz Pillar",
+"section": "Blocks",
+"price": 20
+},
+{
+"id": "QUARTZ_SLAB",
+"name": "Quartz Slab",
+"section": "Blocks",
+"price": 10
+},
+{
+"id": "QUARTZ_STAIRS",
+"name": "Quartz Stairs",
+"section": "Blocks",
+"price": 20
+},
+{
+"id": "RABBIT",
+"name": "Rabbit",
+"section": "Mobs",
+"price": 3
+},
+{
+"id": "RABBIT_FOOT",
+"name": "Rabbit Foot",
+"section": "Mobs",
+"price": 10
+},
+{
+"id": "RABBIT_HIDE",
+"name": "Rabbit Hide",
+"section": "Mobs",
+"price": 2
+},
+{
+"id": "RABBIT_STEW",
+"name": "Rabbit Stew",
+"section": "Crops",
+"price": 14
+},
+{
+"id": "RAIL",
+"name": "Rail",
+"section": "Redstone",
+"price": 4
+},
+{
+"id": "RAISER_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Raiser Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "RAW_COPPER",
+"name": "Raw Copper",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "RAW_COPPER_BLOCK",
+"name": "Raw Copper Block",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "RAW_GOLD",
+"name": "Raw Gold",
+"section": "Ores",
+"price": 12
+},
+{
+"id": "RAW_GOLD_BLOCK",
+"name": "Raw Gold Block",
+"section": "Ores",
+"price": 108
+},
+{
+"id": "RAW_IRON",
+"name": "Raw Iron",
+"section": "Ores",
+"price": 10
+},
+{
+"id": "RAW_IRON_BLOCK",
+"name": "Raw Iron Block",
+"section": "Ores",
+"price": 90
+},
+{
+"id": "RECOVERY_COMPASS",
+"name": "Recovery Compass",
+"section": "Loot & Rare",
+"price": 800
+},
+{
+"id": "RED_BANNER",
+"name": "Red Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "RED_BED",
+"name": "Red Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "RED_CANDLE",
+"name": "Red Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "RED_CARPET",
+"name": "Red Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "RED_CONCRETE",
+"name": "Red Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "RED_CONCRETE_POWDER",
+"name": "Red Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "RED_CONCRETE_SLAB",
+"name": "Red Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "RED_CONCRETE_STAIRS",
+"name": "Red Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "RED_CUSHION",
+"name": "Red Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "RED_DYE",
+"name": "Red Dye",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "RED_GLAZED_TERRACOTTA",
+"name": "Red Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "RED_HARNESS",
+"name": "Red Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "RED_MUSHROOM",
+"name": "Red Mushroom",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "RED_MUSHROOM_BLOCK",
+"name": "Red Mushroom Block",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "RED_NETHER_BRICK_SLAB",
+"name": "Red Nether Brick Slab",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "RED_NETHER_BRICK_STAIRS",
+"name": "Red Nether Brick Stairs",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "RED_NETHER_BRICK_WALL",
+"name": "Red Nether Brick Wall",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "RED_NETHER_BRICKS",
+"name": "Red Nether Bricks",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "RED_POPLAR_LEAVES",
+"name": "Red Poplar Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "RED_SAND",
+"name": "Red Sand",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "RED_SANDSTONE",
+"name": "Red Sandstone",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "RED_SANDSTONE_SLAB",
+"name": "Red Sandstone Slab",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "RED_SANDSTONE_STAIRS",
+"name": "Red Sandstone Stairs",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "RED_SANDSTONE_WALL",
+"name": "Red Sandstone Wall",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "RED_SHRUB",
+"name": "Red Shrub",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "RED_SHULKER_BOX",
+"name": "Red Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "RED_STAINED_GLASS",
+"name": "Red Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "RED_STAINED_GLASS_PANE",
+"name": "Red Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "RED_TERRACOTTA",
+"name": "Red Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "RED_TULIP",
+"name": "Red Tulip",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "RED_WOOL",
+"name": "Red Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "RED_WOOL_SLAB",
+"name": "Red Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "RED_WOOL_STAIRS",
+"name": "Red Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "REDSTONE",
+"name": "Redstone",
+"section": "Ores",
+"price": 3
+},
+{
+"id": "REDSTONE_BLOCK",
+"name": "Redstone Block",
+"section": "Ores",
+"price": 27
+},
+{
+"id": "REDSTONE_LAMP",
+"name": "Redstone Lamp",
+"section": "Redstone",
+"price": 26
+},
+{
+"id": "REDSTONE_ORE",
+"name": "Redstone Ore",
+"section": "Ores",
+"price": 12
+},
+{
+"id": "REDSTONE_TORCH",
+"name": "Redstone Torch",
+"section": "Redstone",
+"price": 3
+},
+{
+"id": "REPEATER",
+"name": "Repeater",
+"section": "Redstone",
+"price": 10
+},
+{
+"id": "RESIN_BLOCK",
+"name": "Resin Block",
+"section": "Blocks",
+"price": 36
+},
+{
+"id": "RESIN_BRICK",
+"name": "Resin Brick",
+"section": "Blocks",
+"price": 4
+},
+{
+"id": "RESIN_BRICK_SLAB",
+"name": "Resin Brick Slab",
+"section": "Blocks",
+"price": 8
+},
+{
+"id": "RESIN_BRICK_STAIRS",
+"name": "Resin Brick Stairs",
+"section": "Blocks",
+"price": 16
+},
+{
+"id": "RESIN_BRICK_WALL",
+"name": "Resin Brick Wall",
+"section": "Blocks",
+"price": 16
+},
+{
+"id": "RESIN_BRICKS",
+"name": "Resin Bricks",
+"section": "Blocks",
+"price": 16
+},
+{
+"id": "RESIN_CLUMP",
+"name": "Resin Clump",
+"section": "Blocks",
+"price": 4
+},
+{
+"id": "RESPAWN_ANCHOR",
+"name": "Respawn Anchor",
+"section": "Loot & Rare",
+"price": 160
+},
+{
+"id": "RIB_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Rib Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "ROOTED_DIRT",
+"name": "Rooted Dirt",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "ROSE_BUSH",
+"name": "Rose Bush",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "ROTTEN_FLESH",
+"name": "Rotten Flesh",
+"section": "Mobs",
+"price": 1
+},
+{
+"id": "SADDLE",
+"name": "Saddle",
+"section": "Mobs",
+"price": 24
+},
+{
+"id": "SALMON",
+"name": "Salmon",
+"section": "Fish",
+"price": 4
+},
+{
+"id": "SALMON_BUCKET",
+"name": "Salmon Bucket",
+"section": "Fish",
+"price": 38
+},
+{
+"id": "SAND",
+"name": "Sand",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "SANDSTONE",
+"name": "Sandstone",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SANDSTONE_SLAB",
+"name": "Sandstone Slab",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "SANDSTONE_STAIRS",
+"name": "Sandstone Stairs",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SANDSTONE_WALL",
+"name": "Sandstone Wall",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SAVANNA_VILLAGE_MAP",
+"name": "Savanna Village Map",
+"section": "Loot & Rare",
+"price": 50
+},
+{
+"id": "SCAFFOLDING",
+"name": "Scaffolding",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "SCRAPE_POTTERY_SHERD",
+"name": "Scrape Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "SCULK",
+"name": "Sculk",
+"section": "Natural",
+"price": 5
+},
+{
+"id": "SCULK_CATALYST",
+"name": "Sculk Catalyst",
+"section": "Natural",
+"price": 20
+},
+{
+"id": "SCULK_SENSOR",
+"name": "Sculk Sensor",
+"section": "Redstone",
+"price": 30
+},
+{
+"id": "SCULK_SHRIEKER",
+"name": "Sculk Shrieker",
+"section": "Natural",
+"price": 40
+},
+{
+"id": "SCULK_VEIN",
+"name": "Sculk Vein",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "SEA_LANTERN",
+"name": "Sea Lantern",
+"section": "Blocks",
+"price": 20
+},
+{
+"id": "SEA_PICKLE",
+"name": "Sea Pickle",
+"section": "Natural",
+"price": 20
+},
+{
+"id": "SEAGRASS",
+"name": "Seagrass",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "SENTRY_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Sentry Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "SHAPER_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Shaper Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "SHEAF_POTTERY_SHERD",
+"name": "Sheaf Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "SHEARS",
+"name": "Shears",
+"section": "Armor & Tools",
+"price": 20
+},
+{
+"id": "SHELF_MUSHROOM",
+"name": "Shelf Mushroom",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "SHELTER_POTTERY_SHERD",
+"name": "Shelter Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "SHIELD",
+"name": "Shield",
+"section": "Armor & Tools",
+"price": 15
+},
+{
+"id": "SHORT_DRY_GRASS",
+"name": "Short Dry Grass",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "SHORT_GRASS",
+"name": "Short Grass",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "SHROOMLIGHT",
+"name": "Shroomlight",
+"section": "Blocks",
+"price": 6
+},
+{
+"id": "SHULKER_BOX",
+"name": "Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "SHULKER_SHELL",
+"name": "Shulker Shell",
+"section": "Mobs",
+"price": 90
+},
+{
+"id": "SILENCE_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Silence Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "SKELETON_SKULL",
+"name": "Skeleton Skull",
+"section": "Mobs",
+"price": 100
+},
+{
+"id": "SKULL_BANNER_PATTERN",
+"name": "Skull Banner Pattern",
+"section": "Decoration",
+"price": 10
+},
+{
+"id": "SKULL_POTTERY_SHERD",
+"name": "Skull Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "SLIME_BALL",
+"name": "Slime Ball",
+"section": "Mobs",
+"price": 6
+},
+{
+"id": "SLIME_BLOCK",
+"name": "Slime Block",
+"section": "Mobs",
+"price": 54
+},
+{
+"id": "SMALL_AMETHYST_BUD",
+"name": "Small Amethyst Bud",
+"section": "Ores",
+"price": 8
+},
+{
+"id": "SMALL_DRIPLEAF",
+"name": "Small Dripleaf",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "SMITHING_TABLE",
+"name": "Smithing Table",
+"section": "Blocks",
+"price": 25
+},
+{
+"id": "SMOKER",
+"name": "Smoker",
+"section": "Blocks",
+"price": 20
+},
+{
+"id": "SMOOTH_BASALT",
+"name": "Smooth Basalt",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "SMOOTH_QUARTZ",
+"name": "Smooth Quartz",
+"section": "Blocks",
+"price": 20
+},
+{
+"id": "SMOOTH_QUARTZ_SLAB",
+"name": "Smooth Quartz Slab",
+"section": "Blocks",
+"price": 10
+},
+{
+"id": "SMOOTH_QUARTZ_STAIRS",
+"name": "Smooth Quartz Stairs",
+"section": "Blocks",
+"price": 20
+},
+{
+"id": "SMOOTH_RED_SANDSTONE",
+"name": "Smooth Red Sandstone",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SMOOTH_RED_SANDSTONE_SLAB",
+"name": "Smooth Red Sandstone Slab",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "SMOOTH_RED_SANDSTONE_STAIRS",
+"name": "Smooth Red Sandstone Stairs",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SMOOTH_SANDSTONE",
+"name": "Smooth Sandstone",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SMOOTH_SANDSTONE_SLAB",
+"name": "Smooth Sandstone Slab",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "SMOOTH_SANDSTONE_STAIRS",
+"name": "Smooth Sandstone Stairs",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SMOOTH_STONE",
+"name": "Smooth Stone",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "SMOOTH_STONE_SLAB",
+"name": "Smooth Stone Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "SNIFFER_EGG",
+"name": "Sniffer Egg",
+"section": "Natural",
+"price": 100
+},
+{
+"id": "SNORT_POTTERY_SHERD",
+"name": "Snort Pottery Sherd",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "SNOUT_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Snout Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "SNOW",
+"name": "Snow",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "SNOW_BLOCK",
+"name": "Snow Block",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "SNOWBALL",
+"name": "Snowball",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "SNOWY_VILLAGE_MAP",
+"name": "Snowy Village Map",
+"section": "Loot & Rare",
+"price": 50
+},
+{
+"id": "SOUL_CAMPFIRE",
+"name": "Soul Campfire",
+"section": "Blocks",
+"price": 15
+},
+{
+"id": "SOUL_LANTERN",
+"name": "Soul Lantern",
+"section": "Blocks",
+"price": 9
+},
+{
+"id": "SOUL_SAND",
+"name": "Soul Sand",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "SOUL_SOIL",
+"name": "Soul Soil",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "SOUL_TORCH",
+"name": "Soul Torch",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "SPECTRAL_ARROW",
+"name": "Spectral Arrow",
+"section": "Armor & Tools",
+"price": 4
+},
+{
+"id": "SPIDER_EYE",
+"name": "Spider Eye",
+"section": "Mobs",
+"price": 2
+},
+{
+"id": "SPIRE_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Spire Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "SPLASH_POTION",
+"name": "Splash Potion",
+"section": "Potions",
+"price": 12
+},
+{
+"id": "SPONGE",
+"name": "Sponge",
+"section": "Blocks",
+"price": 50
+},
+{
+"id": "SPORE_BLOSSOM",
+"name": "Spore Blossom",
+"section": "Natural",
+"price": 5
+},
+{
+"id": "SPRUCE_BOAT",
+"name": "Spruce Boat",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "SPRUCE_BUTTON",
+"name": "Spruce Button",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "SPRUCE_CHEST_BOAT",
+"name": "Spruce Chest Boat",
+"section": "Blocks",
+"price": 9
+},
+{
+"id": "SPRUCE_DOOR",
+"name": "Spruce Door",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "SPRUCE_FENCE",
+"name": "Spruce Fence",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "SPRUCE_FENCE_GATE",
+"name": "Spruce Fence Gate",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SPRUCE_HANGING_SIGN",
+"name": "Spruce Hanging Sign",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "SPRUCE_LEAVES",
+"name": "Spruce Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "SPRUCE_LOG",
+"name": "Spruce Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "SPRUCE_PLANKS",
+"name": "Spruce Planks",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "SPRUCE_PRESSURE_PLATE",
+"name": "Spruce Pressure Plate",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "SPRUCE_SAPLING",
+"name": "Spruce Sapling",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "SPRUCE_SHELF",
+"name": "Spruce Shelf",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "SPRUCE_SIGN",
+"name": "Spruce Sign",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "SPRUCE_SLAB",
+"name": "Spruce Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "SPRUCE_STAIRS",
+"name": "Spruce Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "SPRUCE_TRAPDOOR",
+"name": "Spruce Trapdoor",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SPRUCE_WOOD",
+"name": "Spruce Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "SPYGLASS",
+"name": "Spyglass",
+"section": "Armor & Tools",
+"price": 12
+},
+{
+"id": "STICK",
+"name": "Stick",
+"section": "Blocks",
+"price": 0.3
+},
+{
+"id": "STICKY_PISTON",
+"name": "Sticky Piston",
+"section": "Redstone",
+"price": 25
+},
+{
+"id": "STONE",
+"name": "Stone",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "STONE_AXE",
+"name": "Stone Axe",
+"section": "Armor & Tools",
+"price": 3
+},
+{
+"id": "STONE_BRICK_SLAB",
+"name": "Stone Brick Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "STONE_BRICK_STAIRS",
+"name": "Stone Brick Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "STONE_BRICK_WALL",
+"name": "Stone Brick Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "STONE_BRICKS",
+"name": "Stone Bricks",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "STONE_BUTTON",
+"name": "Stone Button",
+"section": "Redstone",
+"price": 1
+},
+{
+"id": "STONE_HOE",
+"name": "Stone Hoe",
+"section": "Armor & Tools",
+"price": 2
+},
+{
+"id": "STONE_PICKAXE",
+"name": "Stone Pickaxe",
+"section": "Armor & Tools",
+"price": 3
+},
+{
+"id": "STONE_PRESSURE_PLATE",
+"name": "Stone Pressure Plate",
+"section": "Redstone",
+"price": 2
+},
+{
+"id": "STONE_SHOVEL",
+"name": "Stone Shovel",
+"section": "Armor & Tools",
+"price": 1.5
+},
+{
+"id": "STONE_SLAB",
+"name": "Stone Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "STONE_SPEAR",
+"name": "Stone Spear",
+"section": "Armor & Tools",
+"price": 1.5
+},
+{
+"id": "STONE_STAIRS",
+"name": "Stone Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "STONE_SWORD",
+"name": "Stone Sword",
+"section": "Armor & Tools",
+"price": 2
+},
+{
+"id": "STONECUTTER",
+"name": "Stonecutter",
+"section": "Blocks",
+"price": 15
+},
+{
+"id": "STRAW_BED",
+"name": "Straw Bed",
+"section": "Decoration",
+"price": 10
+},
+{
+"id": "STRING",
+"name": "String",
+"section": "Mobs",
+"price": 3
+},
+{
+"id": "STRIPPED_ACACIA_LOG",
+"name": "Stripped Acacia Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "STRIPPED_ACACIA_WOOD",
+"name": "Stripped Acacia Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "STRIPPED_BAMBOO_BLOCK",
+"name": "Stripped Bamboo Block",
+"section": "Blocks",
+"price": 36
+},
+{
+"id": "STRIPPED_BIRCH_LOG",
+"name": "Stripped Birch Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "STRIPPED_BIRCH_WOOD",
+"name": "Stripped Birch Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "STRIPPED_CHERRY_LOG",
+"name": "Stripped Cherry Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "STRIPPED_CHERRY_WOOD",
+"name": "Stripped Cherry Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "STRIPPED_CRIMSON_HYPHAE",
+"name": "Stripped Crimson Hyphae",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "STRIPPED_CRIMSON_STEM",
+"name": "Stripped Crimson Stem",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "STRIPPED_DARK_OAK_LOG",
+"name": "Stripped Dark Oak Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "STRIPPED_DARK_OAK_WOOD",
+"name": "Stripped Dark Oak Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "STRIPPED_JUNGLE_LOG",
+"name": "Stripped Jungle Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "STRIPPED_JUNGLE_WOOD",
+"name": "Stripped Jungle Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "STRIPPED_MANGROVE_LOG",
+"name": "Stripped Mangrove Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "STRIPPED_MANGROVE_WOOD",
+"name": "Stripped Mangrove Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "STRIPPED_OAK_LOG",
+"name": "Stripped Oak Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "STRIPPED_OAK_WOOD",
+"name": "Stripped Oak Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "STRIPPED_PALE_OAK_LOG",
+"name": "Stripped Pale Oak Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "STRIPPED_PALE_OAK_WOOD",
+"name": "Stripped Pale Oak Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "STRIPPED_POPLAR_LOG",
+"name": "Stripped Poplar Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "STRIPPED_POPLAR_WOOD",
+"name": "Stripped Poplar Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "STRIPPED_SPRUCE_LOG",
+"name": "Stripped Spruce Log",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "STRIPPED_SPRUCE_WOOD",
+"name": "Stripped Spruce Wood",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "STRIPPED_WARPED_HYPHAE",
+"name": "Stripped Warped Hyphae",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "STRIPPED_WARPED_STEM",
+"name": "Stripped Warped Stem",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "SUGAR",
+"name": "Sugar",
+"section": "Crops",
+"price": 10
+},
+{
+"id": "SUGAR_CANE",
+"name": "Sugar Cane",
+"section": "Crops",
+"price": 10
+},
+{
+"id": "SULFUR",
+"name": "Sulfur",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SULFUR_BRICK_SLAB",
+"name": "Sulfur Brick Slab",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "SULFUR_BRICK_STAIRS",
+"name": "Sulfur Brick Stairs",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SULFUR_BRICK_WALL",
+"name": "Sulfur Brick Wall",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SULFUR_BRICKS",
+"name": "Sulfur Bricks",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SULFUR_CUBE_BUCKET",
+"name": "Sulfur Cube Bucket",
+"section": "Fish",
+"price": 60
+},
+{
+"id": "SULFUR_SLAB",
+"name": "Sulfur Slab",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "SULFUR_SPIKE",
+"name": "Sulfur Spike",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "SULFUR_STAIRS",
+"name": "Sulfur Stairs",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SULFUR_WALL",
+"name": "Sulfur Wall",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "SUNFLOWER",
+"name": "Sunflower",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "SUSPICIOUS_STEW",
+"name": "Suspicious Stew",
+"section": "Crops",
+"price": 5
+},
+{
+"id": "SWEET_BERRIES",
+"name": "Sweet Berries",
+"section": "Crops",
+"price": 4
+},
+{
+"id": "TADPOLE_BUCKET",
+"name": "Tadpole Bucket",
+"section": "Fish",
+"price": 40
+},
+{
+"id": "TALL_DRY_GRASS",
+"name": "Tall Dry Grass",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "TALL_GRASS",
+"name": "Tall Grass",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "TARGET",
+"name": "Target",
+"section": "Redstone",
+"price": 65
+},
+{
+"id": "TERRACOTTA",
+"name": "Terracotta",
+"section": "Blocks",
+"price": 8
+},
+{
+"id": "TIDE_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Tide Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "TINTED_GLASS",
+"name": "Tinted Glass",
+"section": "Blocks",
+"price": 8
+},
+{
+"id": "TIPPED_ARROW",
+"name": "Tipped Arrow",
+"section": "Potions",
+"price": 2
+},
+{
+"id": "TNT",
+"name": "Tnt",
+"section": "Blocks",
+"price": 20
+},
+{
+"id": "TNT_MINECART",
+"name": "Tnt Minecart",
+"section": "Redstone",
+"price": 70
+},
+{
+"id": "TORCH",
+"name": "Torch",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "TORCHFLOWER",
+"name": "Torchflower",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "TORCHFLOWER_SEEDS",
+"name": "Torchflower Seeds",
+"section": "Crops",
+"price": 2
+},
+{
+"id": "TOTEM_OF_UNDYING",
+"name": "Totem Of Undying",
+"section": "Mobs",
+"price": 150
+},
+{
+"id": "TRAPPED_CHEST",
+"name": "Trapped Chest",
+"section": "Redstone",
+"price": 18
+},
+{
+"id": "TRIAL_KEY",
+"name": "Trial Key",
+"section": "Loot & Rare",
+"price": 20
+},
+{
+"id": "TRIDENT",
+"name": "Trident",
+"section": "Armor & Tools",
+"price": 400
+},
+{
+"id": "TRIPWIRE_HOOK",
+"name": "Tripwire Hook",
+"section": "Redstone",
+"price": 12
+},
+{
+"id": "TROPICAL_FISH",
+"name": "Tropical Fish",
+"section": "Fish",
+"price": 8
+},
+{
+"id": "TROPICAL_FISH_BUCKET",
+"name": "Tropical Fish Bucket",
+"section": "Fish",
+"price": 42
+},
+{
+"id": "TUBE_CORAL",
+"name": "Tube Coral",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "TUBE_CORAL_BLOCK",
+"name": "Tube Coral Block",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "TUBE_CORAL_FAN",
+"name": "Tube Coral Fan",
+"section": "Decoration",
+"price": 2
+},
+{
+"id": "TUFF",
+"name": "Tuff",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "TUFF_BRICK_SLAB",
+"name": "Tuff Brick Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "TUFF_BRICK_STAIRS",
+"name": "Tuff Brick Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "TUFF_BRICK_WALL",
+"name": "Tuff Brick Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "TUFF_BRICKS",
+"name": "Tuff Bricks",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "TUFF_SLAB",
+"name": "Tuff Slab",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "TUFF_STAIRS",
+"name": "Tuff Stairs",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "TUFF_WALL",
+"name": "Tuff Wall",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "TURTLE_EGG",
+"name": "Turtle Egg",
+"section": "Fish",
+"price": 30
+},
+{
+"id": "TURTLE_HELMET",
+"name": "Turtle Helmet",
+"section": "Armor & Tools",
+"price": 140
+},
+{
+"id": "TURTLE_SCUTE",
+"name": "Turtle Scute",
+"section": "Fish",
+"price": 30
+},
+{
+"id": "TWISTING_VINES",
+"name": "Twisting Vines",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "VERDANT_FROGLIGHT",
+"name": "Verdant Froglight",
+"section": "Blocks",
+"price": 8
+},
+{
+"id": "VEX_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Vex Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "VINE",
+"name": "Vine",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "WARD_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Ward Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "WARM_OCEAN_RUINS_MAP",
+"name": "Warm Ocean Ruins Map",
+"section": "Loot & Rare",
+"price": 50
+},
+{
+"id": "WARPED_BUTTON",
+"name": "Warped Button",
+"section": "Blocks",
+"price": 0.5
+},
+{
+"id": "WARPED_DOOR",
+"name": "Warped Door",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "WARPED_FENCE",
+"name": "Warped Fence",
+"section": "Blocks",
+"price": 1
+},
+{
+"id": "WARPED_FENCE_GATE",
+"name": "Warped Fence Gate",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "WARPED_FUNGUS",
+"name": "Warped Fungus",
+"section": "Natural",
+"price": 5
+},
+{
+"id": "WARPED_FUNGUS_ON_A_STICK",
+"name": "Warped Fungus On A Stick",
+"section": "Armor & Tools",
+"price": 8
+},
+{
+"id": "WARPED_HANGING_SIGN",
+"name": "Warped Hanging Sign",
+"section": "Blocks",
+"price": 7
+},
+{
+"id": "WARPED_HYPHAE",
+"name": "Warped Hyphae",
+"section": "Natural",
+"price": 4
+},
+{
+"id": "WARPED_NYLIUM",
+"name": "Warped Nylium",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "WARPED_PLANKS",
+"name": "Warped Planks",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "WARPED_PRESSURE_PLATE",
+"name": "Warped Pressure Plate",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "WARPED_ROOTS",
+"name": "Warped Roots",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "WARPED_SHELF",
+"name": "Warped Shelf",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "WARPED_SIGN",
+"name": "Warped Sign",
+"section": "Blocks",
+"price": 1.5
+},
+{
+"id": "WARPED_SLAB",
+"name": "Warped Slab",
+"section": "Blocks",
+"price": 0.35
+},
+{
+"id": "WARPED_STAIRS",
+"name": "Warped Stairs",
+"section": "Blocks",
+"price": 0.75
+},
+{
+"id": "WARPED_STEM",
+"name": "Warped Stem",
+"section": "Natural",
+"price": 3
+},
+{
+"id": "WARPED_TRAPDOOR",
+"name": "Warped Trapdoor",
+"section": "Blocks",
+"price": 2
+},
+{
+"id": "WARPED_WART_BLOCK",
+"name": "Warped Wart Block",
+"section": "Natural",
+"price": 20
+},
+{
+"id": "WATER_BUCKET",
+"name": "Water Bucket",
+"section": "Armor & Tools",
+"price": 34
+},
+{
+"id": "WAXED_CHISELED_COPPER",
+"name": "Waxed Chiseled Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_COPPER_BARS",
+"name": "Waxed Copper Bars",
+"section": "Ores",
+"price": 0.7
+},
+{
+"id": "WAXED_COPPER_BLOCK",
+"name": "Waxed Copper Block",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "WAXED_COPPER_BULB",
+"name": "Waxed Copper Bulb",
+"section": "Ores",
+"price": 16
+},
+{
+"id": "WAXED_COPPER_CHAIN",
+"name": "Waxed Copper Chain",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WAXED_COPPER_CHEST",
+"name": "Waxed Copper Chest",
+"section": "Ores",
+"price": 22
+},
+{
+"id": "WAXED_COPPER_DOOR",
+"name": "Waxed Copper Door",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_COPPER_GOLEM_STATUE",
+"name": "Waxed Copper Golem Statue",
+"section": "Ores",
+"price": 25
+},
+{
+"id": "WAXED_COPPER_GRATE",
+"name": "Waxed Copper Grate",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "WAXED_COPPER_LANTERN",
+"name": "Waxed Copper Lantern",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WAXED_COPPER_TRAPDOOR",
+"name": "Waxed Copper Trapdoor",
+"section": "Ores",
+"price": 8
+},
+{
+"id": "WAXED_CUT_COPPER",
+"name": "Waxed Cut Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_CUT_COPPER_SLAB",
+"name": "Waxed Cut Copper Slab",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WAXED_CUT_COPPER_STAIRS",
+"name": "Waxed Cut Copper Stairs",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_EXPOSED_CHISELED_COPPER",
+"name": "Waxed Exposed Chiseled Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_EXPOSED_COPPER",
+"name": "Waxed Exposed Copper",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "WAXED_EXPOSED_COPPER_BARS",
+"name": "Waxed Exposed Copper Bars",
+"section": "Ores",
+"price": 0.7
+},
+{
+"id": "WAXED_EXPOSED_COPPER_BULB",
+"name": "Waxed Exposed Copper Bulb",
+"section": "Ores",
+"price": 16
+},
+{
+"id": "WAXED_EXPOSED_COPPER_CHAIN",
+"name": "Waxed Exposed Copper Chain",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WAXED_EXPOSED_COPPER_CHEST",
+"name": "Waxed Exposed Copper Chest",
+"section": "Ores",
+"price": 22
+},
+{
+"id": "WAXED_EXPOSED_COPPER_DOOR",
+"name": "Waxed Exposed Copper Door",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_EXPOSED_COPPER_GOLEM_STATUE",
+"name": "Waxed Exposed Copper Golem Statue",
+"section": "Ores",
+"price": 25
+},
+{
+"id": "WAXED_EXPOSED_COPPER_GRATE",
+"name": "Waxed Exposed Copper Grate",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "WAXED_EXPOSED_COPPER_LANTERN",
+"name": "Waxed Exposed Copper Lantern",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WAXED_EXPOSED_COPPER_TRAPDOOR",
+"name": "Waxed Exposed Copper Trapdoor",
+"section": "Ores",
+"price": 8
+},
+{
+"id": "WAXED_EXPOSED_CUT_COPPER",
+"name": "Waxed Exposed Cut Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_EXPOSED_CUT_COPPER_SLAB",
+"name": "Waxed Exposed Cut Copper Slab",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WAXED_EXPOSED_CUT_COPPER_STAIRS",
+"name": "Waxed Exposed Cut Copper Stairs",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_EXPOSED_LIGHTNING_ROD",
+"name": "Waxed Exposed Lightning Rod",
+"section": "Ores",
+"price": 6
+},
+{
+"id": "WAXED_LIGHTNING_ROD",
+"name": "Waxed Lightning Rod",
+"section": "Ores",
+"price": 6
+},
+{
+"id": "WAXED_OXIDIZED_CHISELED_COPPER",
+"name": "Waxed Oxidized Chiseled Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_OXIDIZED_COPPER",
+"name": "Waxed Oxidized Copper",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "WAXED_OXIDIZED_COPPER_BARS",
+"name": "Waxed Oxidized Copper Bars",
+"section": "Ores",
+"price": 0.7
+},
+{
+"id": "WAXED_OXIDIZED_COPPER_BULB",
+"name": "Waxed Oxidized Copper Bulb",
+"section": "Ores",
+"price": 16
+},
+{
+"id": "WAXED_OXIDIZED_COPPER_CHAIN",
+"name": "Waxed Oxidized Copper Chain",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WAXED_OXIDIZED_COPPER_CHEST",
+"name": "Waxed Oxidized Copper Chest",
+"section": "Ores",
+"price": 22
+},
+{
+"id": "WAXED_OXIDIZED_COPPER_DOOR",
+"name": "Waxed Oxidized Copper Door",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_OXIDIZED_COPPER_GOLEM_STATUE",
+"name": "Waxed Oxidized Copper Golem Statue",
+"section": "Ores",
+"price": 25
+},
+{
+"id": "WAXED_OXIDIZED_COPPER_GRATE",
+"name": "Waxed Oxidized Copper Grate",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "WAXED_OXIDIZED_COPPER_LANTERN",
+"name": "Waxed Oxidized Copper Lantern",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WAXED_OXIDIZED_COPPER_TRAPDOOR",
+"name": "Waxed Oxidized Copper Trapdoor",
+"section": "Ores",
+"price": 8
+},
+{
+"id": "WAXED_OXIDIZED_CUT_COPPER",
+"name": "Waxed Oxidized Cut Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_OXIDIZED_CUT_COPPER_SLAB",
+"name": "Waxed Oxidized Cut Copper Slab",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WAXED_OXIDIZED_CUT_COPPER_STAIRS",
+"name": "Waxed Oxidized Cut Copper Stairs",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_OXIDIZED_LIGHTNING_ROD",
+"name": "Waxed Oxidized Lightning Rod",
+"section": "Ores",
+"price": 6
+},
+{
+"id": "WAXED_WEATHERED_CHISELED_COPPER",
+"name": "Waxed Weathered Chiseled Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_WEATHERED_COPPER",
+"name": "Waxed Weathered Copper",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "WAXED_WEATHERED_COPPER_BARS",
+"name": "Waxed Weathered Copper Bars",
+"section": "Ores",
+"price": 0.7
+},
+{
+"id": "WAXED_WEATHERED_COPPER_BULB",
+"name": "Waxed Weathered Copper Bulb",
+"section": "Ores",
+"price": 16
+},
+{
+"id": "WAXED_WEATHERED_COPPER_CHAIN",
+"name": "Waxed Weathered Copper Chain",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WAXED_WEATHERED_COPPER_CHEST",
+"name": "Waxed Weathered Copper Chest",
+"section": "Ores",
+"price": 22
+},
+{
+"id": "WAXED_WEATHERED_COPPER_DOOR",
+"name": "Waxed Weathered Copper Door",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_WEATHERED_COPPER_GOLEM_STATUE",
+"name": "Waxed Weathered Copper Golem Statue",
+"section": "Ores",
+"price": 25
+},
+{
+"id": "WAXED_WEATHERED_COPPER_GRATE",
+"name": "Waxed Weathered Copper Grate",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "WAXED_WEATHERED_COPPER_LANTERN",
+"name": "Waxed Weathered Copper Lantern",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WAXED_WEATHERED_COPPER_TRAPDOOR",
+"name": "Waxed Weathered Copper Trapdoor",
+"section": "Ores",
+"price": 8
+},
+{
+"id": "WAXED_WEATHERED_CUT_COPPER",
+"name": "Waxed Weathered Cut Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_WEATHERED_CUT_COPPER_SLAB",
+"name": "Waxed Weathered Cut Copper Slab",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WAXED_WEATHERED_CUT_COPPER_STAIRS",
+"name": "Waxed Weathered Cut Copper Stairs",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WAXED_WEATHERED_LIGHTNING_ROD",
+"name": "Waxed Weathered Lightning Rod",
+"section": "Ores",
+"price": 6
+},
+{
+"id": "WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Wayfinder Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "WEATHERED_CHISELED_COPPER",
+"name": "Weathered Chiseled Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WEATHERED_COPPER",
+"name": "Weathered Copper",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "WEATHERED_COPPER_BARS",
+"name": "Weathered Copper Bars",
+"section": "Ores",
+"price": 0.7
+},
+{
+"id": "WEATHERED_COPPER_BULB",
+"name": "Weathered Copper Bulb",
+"section": "Ores",
+"price": 16
+},
+{
+"id": "WEATHERED_COPPER_CHAIN",
+"name": "Weathered Copper Chain",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WEATHERED_COPPER_CHEST",
+"name": "Weathered Copper Chest",
+"section": "Ores",
+"price": 22
+},
+{
+"id": "WEATHERED_COPPER_DOOR",
+"name": "Weathered Copper Door",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WEATHERED_COPPER_GOLEM_STATUE",
+"name": "Weathered Copper Golem Statue",
+"section": "Ores",
+"price": 25
+},
+{
+"id": "WEATHERED_COPPER_GRATE",
+"name": "Weathered Copper Grate",
+"section": "Ores",
+"price": 18
+},
+{
+"id": "WEATHERED_COPPER_LANTERN",
+"name": "Weathered Copper Lantern",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WEATHERED_COPPER_TRAPDOOR",
+"name": "Weathered Copper Trapdoor",
+"section": "Ores",
+"price": 8
+},
+{
+"id": "WEATHERED_CUT_COPPER",
+"name": "Weathered Cut Copper",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WEATHERED_CUT_COPPER_SLAB",
+"name": "Weathered Cut Copper Slab",
+"section": "Ores",
+"price": 2
+},
+{
+"id": "WEATHERED_CUT_COPPER_STAIRS",
+"name": "Weathered Cut Copper Stairs",
+"section": "Ores",
+"price": 4
+},
+{
+"id": "WEATHERED_LIGHTNING_ROD",
+"name": "Weathered Lightning Rod",
+"section": "Ores",
+"price": 6
+},
+{
+"id": "WEEPING_VINES",
+"name": "Weeping Vines",
+"section": "Natural",
+"price": 2
+},
+{
+"id": "WET_SPONGE",
+"name": "Wet Sponge",
+"section": "Blocks",
+"price": 50
+},
+{
+"id": "WHEAT",
+"name": "Wheat",
+"section": "Crops",
+"price": 6
+},
+{
+"id": "WHEAT_SEEDS",
+"name": "Wheat Seeds",
+"section": "Crops",
+"price": 1
+},
+{
+"id": "WHITE_BANNER",
+"name": "White Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "WHITE_BED",
+"name": "White Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "WHITE_CANDLE",
+"name": "White Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "WHITE_CARPET",
+"name": "White Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "WHITE_CONCRETE",
+"name": "White Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "WHITE_CONCRETE_POWDER",
+"name": "White Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "WHITE_CONCRETE_SLAB",
+"name": "White Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "WHITE_CONCRETE_STAIRS",
+"name": "White Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "WHITE_CUSHION",
+"name": "White Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "WHITE_DYE",
+"name": "White Dye",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "WHITE_GLAZED_TERRACOTTA",
+"name": "White Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "WHITE_HARNESS",
+"name": "White Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "WHITE_SHULKER_BOX",
+"name": "White Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "WHITE_STAINED_GLASS",
+"name": "White Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "WHITE_STAINED_GLASS_PANE",
+"name": "White Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "WHITE_TERRACOTTA",
+"name": "White Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "WHITE_TULIP",
+"name": "White Tulip",
+"section": "Decoration",
+"price": 1
+},
+{
+"id": "WHITE_WOOL",
+"name": "White Wool",
+"section": "Blocks",
+"price": 3
+},
+{
+"id": "WHITE_WOOL_SLAB",
+"name": "White Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "WHITE_WOOL_STAIRS",
+"name": "White Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "WILD_ARMOR_TRIM_SMITHING_TEMPLATE",
+"name": "Wild Armor Trim Smithing Template",
+"section": "Loot & Rare",
+"price": 300
+},
+{
+"id": "WILDFLOWERS",
+"name": "Wildflowers",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "WIND_CHARGE",
+"name": "Wind Charge",
+"section": "Mobs",
+"price": 4
+},
+{
+"id": "WITHER_ROSE",
+"name": "Wither Rose",
+"section": "Decoration",
+"price": 60
+},
+{
+"id": "WITHER_SKELETON_SKULL",
+"name": "Wither Skeleton Skull",
+"section": "Mobs",
+"price": 250
+},
+{
+"id": "WOLF_ARMOR",
+"name": "Wolf Armor",
+"section": "Armor & Tools",
+"price": 80
+},
+{
+"id": "WOODEN_AXE",
+"name": "Wooden Axe",
+"section": "Armor & Tools",
+"price": 3
+},
+{
+"id": "WOODEN_HOE",
+"name": "Wooden Hoe",
+"section": "Armor & Tools",
+"price": 2
+},
+{
+"id": "WOODEN_PICKAXE",
+"name": "Wooden Pickaxe",
+"section": "Armor & Tools",
+"price": 3
+},
+{
+"id": "WOODEN_SHOVEL",
+"name": "Wooden Shovel",
+"section": "Armor & Tools",
+"price": 1
+},
+{
+"id": "WOODEN_SPEAR",
+"name": "Wooden Spear",
+"section": "Armor & Tools",
+"price": 1
+},
+{
+"id": "WOODEN_SWORD",
+"name": "Wooden Sword",
+"section": "Armor & Tools",
+"price": 1.5
+},
+{
+"id": "WRITABLE_BOOK",
+"name": "Writable Book",
+"section": "Enchanted Books",
+"price": 5
+},
+{
+"id": "WRITTEN_BOOK",
+"name": "Written Book",
+"section": "Enchanted Books",
+"price": 6
+},
+{
+"id": "YELLOW_BANNER",
+"name": "Yellow Banner",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "YELLOW_BED",
+"name": "Yellow Bed",
+"section": "Colored",
+"price": 11
+},
+{
+"id": "YELLOW_CANDLE",
+"name": "Yellow Candle",
+"section": "Colored",
+"price": 9
+},
+{
+"id": "YELLOW_CARPET",
+"name": "Yellow Carpet",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "YELLOW_CONCRETE",
+"name": "Yellow Concrete",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "YELLOW_CONCRETE_POWDER",
+"name": "Yellow Concrete Powder",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "YELLOW_CONCRETE_SLAB",
+"name": "Yellow Concrete Slab",
+"section": "Colored",
+"price": 0.5
+},
+{
+"id": "YELLOW_CONCRETE_STAIRS",
+"name": "Yellow Concrete Stairs",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "YELLOW_CUSHION",
+"name": "Yellow Cushion",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "YELLOW_DYE",
+"name": "Yellow Dye",
+"section": "Colored",
+"price": 1
+},
+{
+"id": "YELLOW_GLAZED_TERRACOTTA",
+"name": "Yellow Glazed Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "YELLOW_HARNESS",
+"name": "Yellow Harness",
+"section": "Colored",
+"price": 18
+},
+{
+"id": "YELLOW_POPLAR_LEAVES",
+"name": "Yellow Poplar Leaves",
+"section": "Natural",
+"price": 1
+},
+{
+"id": "YELLOW_SHULKER_BOX",
+"name": "Yellow Shulker Box",
+"section": "Colored",
+"price": 180
+},
+{
+"id": "YELLOW_STAINED_GLASS",
+"name": "Yellow Stained Glass",
+"section": "Colored",
+"price": 2
+},
+{
+"id": "YELLOW_STAINED_GLASS_PANE",
+"name": "Yellow Stained Glass Pane",
+"section": "Colored",
+"price": 0.75
+},
+{
+"id": "YELLOW_TERRACOTTA",
+"name": "Yellow Terracotta",
+"section": "Colored",
+"price": 8
+},
+{
+"id": "YELLOW_WOOL",
+"name": "Yellow Wool",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "YELLOW_WOOL_SLAB",
+"name": "Yellow Wool Slab",
+"section": "Colored",
+"price": 1.5
+},
+{
+"id": "YELLOW_WOOL_STAIRS",
+"name": "Yellow Wool Stairs",
+"section": "Colored",
+"price": 3
+},
+{
+"id": "ZOMBIE_HEAD",
+"name": "Zombie Head",
+"section": "Mobs",
+"price": 100
+}
+]
