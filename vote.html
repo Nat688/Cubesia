@@ -2,6 +2,7 @@
 layout: default
 edit: false
 title: Vote
+description: Vote for the Cubesia Minecraft server on every listing site and earn money, keys and vote party rewards.
 ---
 
 <link rel="stylesheet" type="text/css" href="styles/vote.css">
@@ -16,5 +17,39 @@ title: Vote
 		<p class="pseudo-hint" id="pseudoHint" aria-live="polite"></p>
 	</div>
 	<section class="vote-section" id="voteSection"></section>
+	<section class="rewards" aria-labelledby="rewardsTitle">
+		<h2 id="rewardsTitle">Your rewards</h2>
+		<div class="reward-grid">
+			<div class="reward-card"><i data-lucide="coins"></i><b>Every vote</b><span><strong>10,000</strong> money and <strong>1x Common Key</strong>, on each site you vote on.</span></div>
+			<div class="reward-card"><i data-lucide="party-popper"></i><b>Vote party</b><span>Every <strong>20 votes</strong> a vote party starts: every online player receives <strong>25,000</strong>.</span></div>
+			<div class="reward-card"><i data-lucide="trophy"></i><b>Goals &amp; milestones</b><span>Extra rewards every week and for your total number of votes, listed below.</span></div>
+		</div>
+		<div class="reward-tables">
+			<table class="reward-table">
+				<caption>Weekly goals</caption>
+				<thead><tr><th>Votes this week</th><th>Reward</th></tr></thead>
+				<tbody>
+					<tr><td>5</td><td>15,000</td></tr>
+					<tr><td>10</td><td>16 Steak</td></tr>
+					<tr><td>20</td><td>50,000</td></tr>
+					<tr><td>25</td><td>1 Wither Skeleton Skull</td></tr>
+					<tr><td>40</td><td>8 Diamonds</td></tr>
+					<tr><td>50</td><td>150,000</td></tr>
+				</tbody>
+			</table>
+			<table class="reward-table">
+				<caption>All-time milestones</caption>
+				<thead><tr><th>Total votes</th><th>Reward</th></tr></thead>
+				<tbody>
+					<tr><td>50</td><td>25,000</td></tr>
+					<tr><td>100</td><td>100,000</td></tr>
+					<tr><td>250</td><td>400,000</td></tr>
+					<tr><td>1,000</td><td>1,000,000</td></tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="reward-note">Check your progress in game with <code>/vote</code>. More details in the <a href="wiki.html#voting">wiki</a>.</p>
+	</section>
+	<script>lucide.createIcons();</script>
 	<script src="scripts/vote.js"></script>
 </body>
