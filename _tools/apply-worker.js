@@ -1,10 +1,3 @@
-// Cloudflare Worker that receives the staff application form and posts it to a Discord webhook.
-// The webhook URL stays secret here (never put it in the website, anyone could spam it).
-//
-// Setup:
-//  1. Create a Worker on https://dash.cloudflare.com and paste this file.
-//  2. Settings > Variables: add the secret DISCORD_WEBHOOK (your webhook URL).
-//  3. Put the Worker URL in _config.yml as apply_endpoint.
 const ALLOWED_ORIGIN = 'https://nat688.github.io';
 const FIELDS = [['mc', 'Minecraft', 20], ['discord', 'Discord', 40], ['age', 'Age', 3], ['tz', 'Time zone', 40],
 	['availability', 'Availability', 200], ['experience', 'Experience', 1000], ['why', 'Motivation', 1500]];
