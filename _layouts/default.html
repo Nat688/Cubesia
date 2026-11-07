@@ -1,14 +1,14 @@
 {% if site.maintenance %}
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" type="image/png" href="images/favicon.png">
 		<title>Maintenance</title>
 		<link rel="stylesheet" type="text/css" href="styles/maintenance.css">
-		<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"></script>
+		<script src="scripts/lucide.min.js"></script>
 		<script>window.lucide || document.write('<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"><\/script>');</script>
 	</head>
 	<body>
@@ -45,7 +45,7 @@
 {% else %}
 
 <!DOCTYPE html> 
-<html lang="fr">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,13 +69,15 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<link rel="alternate" type="application/rss+xml" title="Cubesia patches" href="feed.xml">
 		<link rel="apple-touch-icon" href="images/favicon.png">
-		<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"></script>
+		<script src="scripts/lucide.min.js"></script>
 		<script>window.lucide || document.write('<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"><\/script>');</script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 		<link rel="stylesheet" type="text/css" href="styles/base.css">
+		{% if site.goatcounter != "" and site.goatcounter %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>{% endif %}
 	</head>
+	<a class="skip-link" href="#content">Skip to content</a>
 	<header>
 		<a href="https://nat688.github.io/Cubesia/index.html" class="btn">
 			<i data-lucide="house"></i>
@@ -116,9 +118,17 @@
 				})();
 		</script>
 	</header>
+	<div id="content" tabindex="-1">
 	{{ content }}
+	</div>
+	<nav class="site-links" aria-label="More pages">
+		<a href="staff.html">Staff</a>
+		<a href="prices.html">Sell prices</a>
+		<a href="apply.html">Apply</a>
+		<a href="map.html">Map</a>
+	</nav>
 	{% unless page.edit == false %}
-	<p class="edit-page"><a href="https://github.com/Nat688/Cubesia/edit/main/{{ page.path }}" target="_blank" rel="noopener">Edit this page on GitHub</a></p>
+	<p class="edit-page"><a class="edit-btn" href="https://github.com/Nat688/Cubesia/edit/main/{{ page.path }}" target="_blank" rel="noopener"><i data-lucide="pencil"></i>Edit this page on GitHub</a></p>
 	{% endunless %}
 </html>
 
