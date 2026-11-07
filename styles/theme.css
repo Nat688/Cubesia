@@ -1,0 +1,148 @@
+:root {
+    --mc-grass: #5fb83e;
+    --mc-dirt: #5a3b22;
+    --mc-stone: #6d6d6d;
+    --mc-stone-hi: #a8a8a8;
+    --mc-stone-lo: #373737;
+    --mc-hover: #7d85b0;
+    --mc-gold: #ffffa0;
+    --pixel: "Press Start 2P", "Silkscreen", ui-monospace, monospace;
+}
+html[data-theme="light"] {
+    color-scheme: light;
+    --bg: #e8e2d6;
+    --bg-header: #3b3b3b;
+    --surface: #f7f3ea;
+    --surface-2: #ece6d8;
+    --border: #b9b09e;
+    --text: #1f1b18;
+    --muted: #5c554d;
+    --accent: #4c38c9;
+    --accent-2: #b45300;
+}
+html[data-theme="light"] .wiki {
+    --strong: #14110f;
+    --card: #f7f3ea;
+    --hover: #b45300;
+}
+html[data-theme="light"] body {
+    background: var(--bg);
+}
+html[data-theme="light"] code,
+html[data-theme="light"] .wiki code,
+html[data-theme="light"] .page-wide code,
+html[data-theme="light"] .page-narrow code {
+    background: #dcd5c5;
+    color: #2b2016;
+}
+html[data-theme="light"] .btn3,
+html[data-theme="light"] .vote-btn { color: #fff; }
+html[data-theme="light"] .new-badge { color: #0b2a0b; }
+@media (prefers-color-scheme: light) {
+    html:not([data-theme]) { color-scheme: light; }
+}
+html:not([data-theme="light"]) body {
+    background:
+        repeating-conic-gradient(rgba(255, 255, 255, 0.018) 0 25%, transparent 0 50%) 0 0 / 32px 32px,
+        var(--bg);
+    background-attachment: fixed;
+}
+*:not(.dot):not(.keep-round),
+*:not(.dot):not(.keep-round)::before,
+*:not(.dot):not(.keep-round)::after {
+    border-radius: 0 !important;
+}
+header {
+    border-bottom: 0 !important;
+    box-shadow: 0 4px 0 var(--mc-grass), 0 9px 0 var(--mc-dirt), 0 14px 16px rgba(0, 0, 0, 0.35);
+}
+h1, .wiki-content h2, .patch h2, .rewards h2, .calc h2, .rd-head h2 {
+    font-family: var(--pixel);
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.5;
+}
+h1 { font-size: clamp(1.1rem, 3.2vw, 1.9rem) !important; }
+.wiki-content h2 { font-size: 1.05rem !important; }
+.cubesia { text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.45); }
+.btn, .btn2, .btn3, .vote-btn, .edit-btn, .chips button, .lang-switch button,
+.calc-line button, .calc-actions button, #prices .add, .apply-form button[type="submit"],
+.patch-tools button, .toc-fab, .to-top, .a11y-panel button {
+    background: var(--mc-stone) !important;
+    background-image: none !important;
+    color: #fff !important;
+    border: 2px solid #000 !important;
+    box-shadow: inset 2px 2px 0 var(--mc-stone-hi), inset -2px -2px 0 var(--mc-stone-lo) !important;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+    transform: none !important;
+}
+.btn:hover, .btn2:hover, .btn3:hover, .vote-btn:hover, .edit-btn:hover, .chips button:hover,
+.lang-switch button:hover, .calc-line button:hover, .calc-actions button:hover, #prices .add:hover,
+.apply-form button[type="submit"]:hover, .patch-tools button:hover, .toc-fab:hover, .to-top:hover,
+.a11y-panel button:hover {
+    background: var(--mc-hover) !important;
+    color: var(--mc-gold) !important;
+}
+.btn.active, .btn[aria-current], header a.active,
+.chips button[aria-pressed="true"], .lang-switch button[aria-pressed="true"], .a11y-panel button[aria-pressed="true"] {
+    background: #3f7f2b !important;
+    box-shadow: inset 2px 2px 0 #8fdc6e, inset -2px -2px 0 #1f4a14 !important;
+    color: #fff !important;
+}
+.btn3, .vote-btn, .apply-form button[type="submit"] { font-family: var(--pixel); font-size: 0.72rem; }
+.feature, .patch-card, .map-card, .steps li, .vote-card, .pseudo-box, .reward-card, .reward-table,
+.rule-tile, .summary-box, .calc, .staff-card, .help-box, .rm-card, .callout, .table_container,
+.patch details, .steps-guide li, .cmd-list, .table-wrap, .rule-dialog, .toc, .wiki .removed-list li {
+    border: 2px solid #000 !important;
+    box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.10), inset -2px -2px 0 rgba(0, 0, 0, 0.35);
+}
+html[data-theme="light"] .feature, html[data-theme="light"] .patch-card, html[data-theme="light"] .map-card,
+html[data-theme="light"] .steps li, html[data-theme="light"] .vote-card, html[data-theme="light"] .rule-tile,
+html[data-theme="light"] .calc, html[data-theme="light"] .patch details {
+    border-color: #6d6558 !important;
+    box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.6), inset -2px -2px 0 rgba(0, 0, 0, 0.12);
+}
+.rule-tile:hover, .feature:hover, .vote-card:hover { border-color: #000 !important; outline: 2px solid var(--mc-grass); outline-offset: -2px; }
+.rule-tile { background: linear-gradient(var(--surface), var(--surface)); }
+.item-icon, img { image-rendering: auto; }
+.badge, .tag, .rm-tag, .patch-chip, .new-badge, .mini-tag { border-width: 2px !important; font-family: var(--pixel); font-size: 0.6rem !important; }
+.site-links a { font-family: var(--pixel); font-size: 0.62rem; }
+.a11y-toggle {
+    position: fixed;
+    left: 14px;
+    bottom: 14px;
+    z-index: 9000;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    font: 700 0.95rem var(--pixel);
+    cursor: pointer;
+    background: var(--mc-stone);
+    color: #fff;
+    border: 2px solid #000;
+    box-shadow: inset 2px 2px 0 var(--mc-stone-hi), inset -2px -2px 0 var(--mc-stone-lo);
+}
+.a11y-toggle:hover { background: var(--mc-hover); color: var(--mc-gold); }
+.a11y-panel {
+    position: fixed;
+    left: 14px;
+    bottom: 66px;
+    z-index: 9000;
+    display: grid;
+    gap: 10px;
+    width: 230px;
+    padding: 14px;
+    background: var(--surface);
+    color: var(--text);
+    border: 2px solid #000;
+    box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.1), inset -2px -2px 0 rgba(0, 0, 0, 0.35);
+}
+.a11y-panel[hidden] { display: none; }
+.a11y-panel b { font-size: 0.8rem; }
+.a11y-panel .row { display: flex; gap: 6px; }
+.a11y-panel .row button { flex: 1; padding: 6px 4px; font: inherit; font-size: 0.85rem; cursor: pointer; }
+#content { zoom: var(--text-zoom, 1); }
+html[data-theme="light"] .toc a, html[data-theme="light"] .toc .subs a { color: #4a443d; }
+html[data-theme="light"] .toc a.active, html[data-theme="light"] .toc a:hover { color: var(--accent); }
+html[data-theme="light"] .wiki-content p, html[data-theme="light"] .wiki-content li { color: #2b2622; }
+.wiki .rule-tile :is(h3, h4) { white-space: normal; overflow-wrap: anywhere; max-width: 100%; }
