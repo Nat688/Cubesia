@@ -1,7 +1,7 @@
 ##########################
 ##   MAINTENANCE MODE   ##
 ##########################
-maintenance: false
+maintenance: true
 # "true" or "false" #
 
 # Optional features (leave empty to disable)
