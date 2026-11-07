@@ -1,0 +1,33 @@
+---
+layout: default
+edit: false
+title: Sell prices
+description: Search the sell price of every item on the Cubesia Minecraft server.
+---
+
+<link rel="stylesheet" type="text/css" href="styles/prices.css">
+<body>
+	<main class="page-narrow">
+		<h1>Sell <span class="cubesia">prices</span></h1>
+		<p class="lead">The price you get for each item with <code>/sell</code>. The same list is available in game with <code>/sellprice</code>.</p>
+		{% if site.data.prices.size > 0 %}
+		<div class="tools">
+			<input type="search" id="q" placeholder="Search an item..." aria-label="Search an item" autocomplete="off">
+			<span id="count" aria-live="polite"></span>
+		</div>
+		<div class="table-wrap">
+			<table id="prices">
+				<thead><tr><th><button type="button" data-sort="name">Item</button></th>{% assign has_sec = site.data.prices[0].section %}{% if has_sec != "" %}<th><button type="button" data-sort="section">Category</button></th>{% endif %}<th class="num"><button type="button" data-sort="price">Price</button></th></tr></thead>
+				<tbody>
+					{% for p in site.data.prices %}<tr><td>{{ p.name }}</td>{% if has_sec != "" %}<td>{{ p.section }}</td>{% endif %}<td class="num" data-v="{{ p.price }}">{{ p.price }}</td></tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+		<p class="empty" id="empty" hidden>No item found.</p>
+		{% else %}
+		<p class="empty">The price list is being prepared. Use <code>/sellprice</code> in game in the meantime.</p>
+		{% endif %}
+	</main>
+	<script src="scripts/prices.js"></script>
+</body>
