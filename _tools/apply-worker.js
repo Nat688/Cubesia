@@ -15,11 +15,12 @@ export default {
 			if (!value) return new Response('Missing ' + key, { status: 400, headers: cors });
 			fields.push({ name, value, inline: value.length < 40 });
 		}
+		if (!env.DISCORD_WEBHOOK) return new Response('DISCORD_WEBHOOK secret is not set', { status: 500, headers: cors });
 		const res = await fetch(env.DISCORD_WEBHOOK, {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ allowed_mentions: { parse: [] }, embeds: [{ title: 'New staff application', color: 0x7b6cff, fields }] })
 		});
-		return new Response(res.ok ? 'ok' : 'error', { status: res.ok ? 200 : 502, headers: cors });
+		return new Response(res.ok ? 'ok' : 'Discord refused the message (' + res.status + ')', { status: res.ok ? 200 : 502, headers: cors });
 	}
 };
