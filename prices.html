@@ -2,29 +2,46 @@
 layout: default
 edit: false
 title: Sell prices
-description: Search the sell price of every item on the Cubesia Minecraft server.
+description: Search the sell price of every item on the Cubesia Minecraft server and calculate how much your items are worth with your sell multipliers.
 ---
 
 <link rel="stylesheet" type="text/css" href="styles/prices.css">
 <body>
-	<main class="page-narrow">
+	<main class="page-wide" data-icon-url="{{ site.item_icon_url }}">
 		<h1>Sell <span class="cubesia">prices</span></h1>
 		<p class="lead">The price you get for each item with <code>/sell</code>. The same list is available in game with <code>/sellprice</code>.</p>
 		{% if site.data.prices.size > 0 %}
-		<div class="tools">
-			<input type="search" id="q" placeholder="Search an item..." aria-label="Search an item" autocomplete="off">
-			<span id="count" aria-live="polite"></span>
+		<div class="prices-layout">
+			<section class="prices-main" aria-label="Price list">
+				<div class="tools">
+					<input type="search" id="q" placeholder="Search an item (e.g. diamond, wheat...)" aria-label="Search an item" autocomplete="off">
+					<span id="count" aria-live="polite"></span>
+				</div>
+				<div class="chips" id="chips" role="group" aria-label="Categories"></div>
+				<div class="table-wrap">
+					<table id="prices">
+						<thead><tr><th class="ico"><span class="sr-only">Icon</span></th><th><button type="button" data-col="1" data-type="text">Item</button></th><th><button type="button" data-col="2" data-type="text">Category</button></th><th class="num"><button type="button" data-col="3" data-type="num">Price</button></th><th class="act"><span class="sr-only">Add to calculator</span></th></tr></thead>
+						<tbody>
+							{% for p in site.data.prices %}<tr data-id="{{ p.id | downcase }}" data-cat="{{ p.section }}" data-price="{{ p.price }}"><td class="ico"></td><td>{{ p.name }}</td><td>{{ p.section }}</td><td class="num">{{ p.price }}</td><td class="act"><button type="button" class="add" aria-label="Add {{ p.name }} to the calculator" title="Add to calculator">+</button></td></tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+				<p class="empty" id="empty" hidden>No item found.</p>
+			</section>
+			<aside class="calc" id="calc" aria-label="Sell calculator">
+				<h2>Sell calculator</h2>
+				<p class="calc-help">Add items with the <b>+</b> button, set the quantity and your multipliers.</p>
+				<div class="calc-lines" id="lines"><p class="calc-empty">No item yet.</p></div>
+				<div class="calc-total"><span>Total</span><strong id="total">0</strong></div>
+				<div class="calc-actions"><button type="button" id="clear">Clear</button></div>
+				<details class="mults">
+					<summary>My sell multipliers</summary>
+					<p class="calc-help">Your multiplier of each category (see <code>/sellmulti</code> in game). 1 = no bonus.</p>
+					<div id="mults" class="mult-grid"></div>
+				</details>
+			</aside>
 		</div>
-		<div class="table-wrap">
-			<table id="prices">
-				<thead><tr><th><button type="button" data-sort="name">Item</button></th>{% assign has_sec = site.data.prices[0].section %}{% if has_sec != "" %}<th><button type="button" data-sort="section">Category</button></th>{% endif %}<th class="num"><button type="button" data-sort="price">Price</button></th></tr></thead>
-				<tbody>
-					{% for p in site.data.prices %}<tr><td>{{ p.name }}</td>{% if has_sec != "" %}<td>{{ p.section }}</td>{% endif %}<td class="num" data-v="{{ p.price }}">{{ p.price }}</td></tr>
-					{% endfor %}
-				</tbody>
-			</table>
-		</div>
-		<p class="empty" id="empty" hidden>No item found.</p>
 		{% else %}
 		<p class="empty">The price list is being prepared. Use <code>/sellprice</code> in game in the meantime.</p>
 		{% endif %}

@@ -175,7 +175,7 @@ def build_yaml(patches, existing_path, only_new):
             new_entries.append({'recordedAt': date + 'T00:00:00Z', 'author': author, 'playersRead': [], 'serializedLines': lines})
             added.append(patch['title'])
     entries = [copy.deepcopy(e) for e in existing] + sorted(new_entries, key=lambda e: e['recordedAt'])
-    text = yaml.dump({'entries': entries}, default_flow_style=None, sort_keys=False, allow_unicode=True, width=80)
+    text = yaml.dump({'entries': entries}, default_flow_style=None, sort_keys=False, allow_unicode=True, width=10**9)
     return text, updated, added, warnings
 def to_html(item):
     word, parts = split_tag(item)

@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="styles/maintenance.css">
 		<script src="scripts/lucide.min.js"></script>
 		<script>window.lucide || document.write('<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"><\/script>');</script>
+		<script>try{var t=localStorage.getItem('cubesia-theme'),z=localStorage.getItem('cubesia-zoom');if(t)document.documentElement.dataset.theme=t;if(z)document.documentElement.style.setProperty('--text-zoom',z);}catch(e){}</script>
 	</head>
 	<body>
 		<div class="container">
@@ -73,9 +74,10 @@
 		<script>window.lucide || document.write('<script src="https://unpkg.com/lucide@0.525.0/dist/umd/lucide.min.js"><\/script>');</script>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&display=swap">
 		<link rel="stylesheet" type="text/css" href="styles/base.css">
 		{% if site.goatcounter != "" and site.goatcounter %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>{% endif %}
+		<script>try{var t=localStorage.getItem('cubesia-theme'),z=localStorage.getItem('cubesia-zoom');if(t)document.documentElement.dataset.theme=t;if(z)document.documentElement.style.setProperty('--text-zoom',z);}catch(e){}</script>
 	</head>
 	<a class="skip-link" href="#content">Skip to content</a>
 	<header>
@@ -102,7 +104,6 @@
 		</a>	
         <script>
 				lucide.createIcons();
-
 				(function () {
 					const norm = p => p.replace(/\/index\.html$/, '/').replace(/\.html$/, '').replace(/\/$/, '');
 					const here = norm(location.pathname);
@@ -121,6 +122,8 @@
 	<div id="content" tabindex="-1">
 	{{ content }}
 	</div>
+	<link rel="stylesheet" type="text/css" href="styles/theme.css">
+	<script src="scripts/theme.js"></script>
 	<nav class="site-links" aria-label="More pages">
 		<a href="staff.html">Staff</a>
 		<a href="prices.html">Sell prices</a>

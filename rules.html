@@ -2,7 +2,7 @@
 layout: default
 edit: false
 title: Rules
-updated: 2026-11-06
+updated: 2026-11-07
 description: The rules of the Cubesia Minecraft server and of its Discord.
 ---
 
@@ -13,7 +13,7 @@ description: The rules of the Cubesia Minecraft server and of its Discord.
 	<div class="wiki">
 		<main class="wiki-content">
 			<h1><span class="cubesia">Cubesia</span> rules</h1>
-			<p>The rules of the Minecraft server and of its Discord, on a single page.</p>
+			<p>The rules of the Minecraft server and of its Discord, on a single page. Click a square to read it.</p>
 			<p class="updated"><i data-lucide="calendar-days"></i>Last updated: <time datetime="{{ page.updated }}">{{ page.updated | date: "%B %-d, %Y" }}</time></p>
 			<h2 id="summary"><i data-lucide="list-checks"></i>In short</h2>
 			<div class="summary-box">
@@ -31,134 +31,198 @@ description: The rules of the Cubesia Minecraft server and of its Discord.
 			</div>
 			<h2 id="minecraft-rules"><i data-lucide="gamepad-2"></i><span><span class="minecraft">Minecraft</span> server rules</span></h2>
 			<div class="rule-grid">
-			<section class="rule-card">
-				<h3 id="mc-gameplay">Article A: Gameplay</h3>
-				<ul>
-					<li>Exploiting bugs is prohibited. Any bugs must be reported in the <b>bug-report</b> channel on our Discord server.</li>
-					<li>Any form of cheating is strictly prohibited (TP-kill, mods providing an unfair advantage, auto-sell, etc.). Anti-AFK mods are allowed.</li>
-				</ul>
-			</section>
-			<section class="rule-card">
-				<h3 id="mc-account">Article B: Your Account</h3>
-				<ul>
-					<li>You are fully <b>responsible for your Minecraft account</b>.</li>
-					<li>No compensation or refund will be provided if you lend your account to someone else.</li>
-					<li>Inappropriate usernames (racist, offensive, political, homophobic, etc.) and inappropriate skins (political, nudity, etc.) are not allowed.</li>
-				</ul>
-			</section>
-			<section class="rule-card">
-				<h3 id="mc-chat">Article C: Chat Rules</h3>
-				<ul>
-					<li>All discussions must remain respectful.</li>
-					<li>Changing the default text font or typography is not allowed.</li>
-					<li>The server's primary language is French. However, English is tolerated for English-speaking players.</li>
-					<li><b>The following messages are prohibited:</b>
-				<ul>
-					<li>Provocation, insults, or harassment directed at an individual or community.</li>
-					<li>Serious discriminatory or hateful content, including racism, misogyny, homophobia, transphobia, or political propaganda.</li>
-					<li>Suggestive or inappropriate content (sexual, racist, etc.).</li>
-					<li>Topics likely to start arguments (sports, politics, religion, geopolitical conflicts, etc.).</li>
-					<li>Trolling or obscene content.</li>
-					<li>Spam (repeated messages or words), flooding (repeating the same character or emoji excessively, e.g. <i>Thankssssssssssssss</i>), and excessive use of CAPITAL LETTERS.</li>
-					<li>Threats, harassment, dark humor, sharing private information, requesting social media accounts, or similar behavior.</li>
-				</ul></li>
-					<li><b>These rules apply everywhere on the server, including:</b>
-				<ul>
-					<li>Public chat.</li>
-					<li>Private messages.</li>
-					<li>Signs.</li>
-					<li>Renamed items.</li>
-					<li>And any other form of communication.</li>
-				</ul></li>
-					<li>Posting links in chat is prohibited.</li>
-					<li>Advertising anything that competes with or harms Cubesia is prohibited.</li>
-				</ul>
-			</section>
-			<section class="rule-card">
-				<h3 id="mc-discord">Article D: Discord</h3>
-				<ul>
-					<li>Discord is Cubesia' primary communication platform. Joining it is highly recommended to receive <b>update announcements</b>, other <b>important information</b>, and to create <b>support tickets</b>.</li>
-					<li>If you encounter a problem, have a question, want to make a suggestion, or need to report a bug, please use Discord. Contacting staff members directly through private messages is not allowed.</li>
-				</ul>
-			</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="gamepad-2" class="tile-icon"></i>
+					<h3 id="mc-gameplay">Article A: Gameplay</h3>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<ul>
+						<li>Exploiting bugs is prohibited. Any bugs must be reported in the <b>bug-report</b> channel on our Discord server.</li>
+						<li>Any form of cheating is strictly prohibited (TP-kill, mods providing an unfair advantage, auto-sell, etc.). Anti-AFK mods are allowed.</li>
+					</ul>
+					</div>
+				</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="user-round" class="tile-icon"></i>
+					<h3 id="mc-account">Article B: Your Account</h3>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<ul>
+						<li>You are fully <b>responsible for your Minecraft account</b>.</li>
+						<li>No compensation or refund will be provided if you lend your account to someone else.</li>
+						<li>Inappropriate usernames (racist, offensive, political, homophobic, etc.) and inappropriate skins (political, nudity, etc.) are not allowed.</li>
+					</ul>
+					</div>
+				</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="message-circle" class="tile-icon"></i>
+					<h3 id="mc-chat">Article C: Chat Rules</h3>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<ul>
+						<li>All discussions must remain respectful.</li>
+						<li>Changing the default text font or typography is not allowed.</li>
+						<li>The server's primary language is French. However, English is tolerated for English-speaking players.</li>
+					</ul>
+					</div>
+				</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="ban" class="tile-icon"></i>
+					<h3 id="mc-chat-prohibited">Article C: Prohibited Messages</h3>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<p><b>The following messages are prohibited:</b></p>
+					<ul>
+						<li>Provocation, insults, or harassment directed at an individual or community.</li>
+						<li>Serious discriminatory or hateful content, including racism, misogyny, homophobia, transphobia, or political propaganda.</li>
+						<li>Suggestive or inappropriate content (sexual, racist, etc.).</li>
+						<li>Topics likely to start arguments (sports, politics, religion, geopolitical conflicts, etc.).</li>
+						<li>Trolling or obscene content.</li>
+						<li>Spam (repeated messages or words), flooding (repeating the same character or emoji excessively, e.g. <i>Thankssssssssssssss</i>), and excessive use of CAPITAL LETTERS.</li>
+						<li>Threats, harassment, dark humor, sharing private information, requesting social media accounts, or similar behavior.</li>
+					</ul>
+					</div>
+				</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="megaphone" class="tile-icon"></i>
+					<h3 id="mc-chat-scope">Article C: Where It Applies</h3>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<p><b>These rules apply everywhere on the server, including:</b></p>
+					<ul>
+						<li>Public chat.</li>
+						<li>Private messages.</li>
+						<li>Signs.</li>
+						<li>Renamed items.</li>
+						<li>And any other form of communication.</li>
+					</ul>
+					<ul>
+						<li>Posting links in chat is prohibited.</li>
+						<li>Advertising anything that competes with or harms Cubesia is prohibited.</li>
+					</ul>
+					</div>
+				</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="messages-square" class="tile-icon"></i>
+					<h3 id="mc-discord">Article D: Discord</h3>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<ul>
+						<li>Discord is Cubesia' primary communication platform. Joining it is highly recommended to receive <b>update announcements</b>, other <b>important information</b>, and to create <b>support tickets</b>.</li>
+						<li>If you encounter a problem, have a question, want to make a suggestion, or need to report a bug, please use Discord. Contacting staff members directly through private messages is not allowed.</li>
+					</ul>
+					</div>
+				</section>
 			</div>
 			<h2 id="discord-rules"><i data-lucide="message-circle"></i><span><span class="discord">Discord</span> server rules</span></h2>
 			<h3 id="discord-profile">Part I: Your Profile</h3>
 			<div class="rule-grid">
-			<section class="rule-card">
-				<h4 id="discord-pictures">Article A: Profile Pictures</h4>
-				<ul>
-					<li>Your profile picture must not contain obscene, explicit, or political content.</li>
-					<li>Profile pictures must not be offensive toward any individual or group.</li>
-					<li>Using another user's personal photograph as your profile picture is prohibited.</li>
-					<li>Any image containing sexual or explicit content is prohibited.</li>
-				</ul>
-			</section>
-			<section class="rule-card">
-				<h4 id="discord-usernames">Article B: Usernames</h4>
-				<ul>
-					<li>Your username must not reference historical or political figures.</li>
-					<li>Your username must begin with a standard keyboard character so it can be mentioned properly.</li>
-					<li>Displaying another player's personal or private information in your username is prohibited.</li>
-				</ul>
-			</section>
-			<section class="rule-card">
-				<h4 id="discord-statuses">Article C: Statuses &amp; Bios</h4>
-				<ul>
-					<li>Your status and bio must not contain political content or encourage hatred.</li>
-					<li>Links leading to scams or malicious websites are prohibited in your bio.</li>
-					<li>Any form of disrespect toward another person may result in sanctions.</li>
-				</ul>
-			</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="image" class="tile-icon"></i>
+					<h4 id="discord-pictures">Article A: Profile Pictures</h4>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<ul>
+						<li>Your profile picture must not contain obscene, explicit, or political content.</li>
+						<li>Profile pictures must not be offensive toward any individual or group.</li>
+						<li>Using another user's personal photograph as your profile picture is prohibited.</li>
+						<li>Any image containing sexual or explicit content is prohibited.</li>
+					</ul>
+					</div>
+				</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="at-sign" class="tile-icon"></i>
+					<h4 id="discord-usernames">Article B: Usernames</h4>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<ul>
+						<li>Your username must not reference historical or political figures.</li>
+						<li>Your username must begin with a standard keyboard character so it can be mentioned properly.</li>
+						<li>Displaying another player's personal or private information in your username is prohibited.</li>
+					</ul>
+					</div>
+				</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="smile" class="tile-icon"></i>
+					<h4 id="discord-statuses">Article C: Statuses &amp; Bios</h4>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<ul>
+						<li>Your status and bio must not contain political content or encourage hatred.</li>
+						<li>Links leading to scams or malicious websites are prohibited in your bio.</li>
+						<li>Any form of disrespect toward another person may result in sanctions.</li>
+					</ul>
+					</div>
+				</section>
 			</div>
 			<h3 id="discord-text">Part II: Text Channels</h3>
 			<div class="rule-grid">
-			<section class="rule-card">
-				<h4 id="discord-spam">Article A: Spam &amp; Chat Pollution</h4>
-				<ul>
-					<li>Just like in-game, spam and flooding are prohibited.</li>
-					<li>Posting links other than the Cubesia website, the server IP, or the server's official social media pages is prohibited.</li>
-					<li>Excessively mentioning roles or members is strictly prohibited.</li>
-					<li>Pinging staff members is strictly prohibited, whether in tickets or public chat.</li>
-				</ul>
-			</section>
-			<section class="rule-card">
-				<h4 id="discord-text-conduct">Article B: Expected Conduct</h4>
-				<ul>
-					<li>You are expected to remain respectful when interacting with other players.</li>
-					<li>In support tickets, insults, provocation, mockery, or false accusations may result in sanctions, including permanent bans from both the Minecraft server and Discord.</li>
-					<li>Good manners are expected, especially when speaking with staff members.</li>
-					<li>Saying "Hello" when opening a support ticket is always appreciated 😉.</li>
-				</ul>
-			</section>
-			<section class="rule-card">
-				<h4 id="discord-topics">Article C: Discussion Topics</h4>
-				<ul>
-					<li>As with your profile, political discussions are not allowed.</li>
-					<li>You must not insult or disrespect other players.</li>
-					<li>Racism, homophobia, xenophobia, and all other forms of hate speech are strictly prohibited.</li>
-					<li>Any form of harassment is prohibited and will result in severe sanctions.</li>
-				</ul>
-			</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="ban" class="tile-icon"></i>
+					<h4 id="discord-spam">Article A: Spam &amp; Chat Pollution</h4>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<ul>
+						<li>Just like in-game, spam and flooding are prohibited.</li>
+						<li>Posting links other than the Cubesia website, the server IP, or the server's official social media pages is prohibited.</li>
+						<li>Excessively mentioning roles or members is strictly prohibited.</li>
+						<li>Pinging staff members is strictly prohibited, whether in tickets or public chat.</li>
+					</ul>
+					</div>
+				</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="handshake" class="tile-icon"></i>
+					<h4 id="discord-text-conduct">Article B: Expected Conduct</h4>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<ul>
+						<li>You are expected to remain respectful when interacting with other players.</li>
+						<li>In support tickets, insults, provocation, mockery, or false accusations may result in sanctions, including permanent bans from both the Minecraft server and Discord.</li>
+						<li>Good manners are expected, especially when speaking with staff members.</li>
+						<li>Saying "Hello" when opening a support ticket is always appreciated 😉.</li>
+					</ul>
+					</div>
+				</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="messages-square" class="tile-icon"></i>
+					<h4 id="discord-topics">Article C: Discussion Topics</h4>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<ul>
+						<li>As with your profile, political discussions are not allowed.</li>
+						<li>You must not insult or disrespect other players.</li>
+						<li>Racism, homophobia, xenophobia, and all other forms of hate speech are strictly prohibited.</li>
+						<li>Any form of harassment is prohibited and will result in severe sanctions.</li>
+					</ul>
+					</div>
+				</section>
 			</div>
 			<h3 id="discord-voice">Part III: Voice Channels</h3>
 			<div class="rule-grid">
-			<section class="rule-card">
-				<h4 id="discord-voice-conduct">Article A: Expected Conduct</h4>
-				<ul>
-					<li>Just like in text chat, you must remain respectful toward other players.</li>
-					<li>You are free to discuss any appropriate topic, but please be mindful of the age of the people in your voice channel.</li>
-					<li>If you wish to have a private conversation, you may use one of the limited-access voice channels or create a private voice channel.</li>
-				</ul>
-			</section>
-			<section class="rule-card">
-				<h4 id="discord-voice-prohibited">Article B: Prohibited Behavior</h4>
-				<ul>
-					<li>Shouting into your microphone with the intention of annoying other users is prohibited.</li>
-					<li>Using a soundboard to disturb or annoy other users is prohibited.</li>
-					<li>Sharing personal or private information over voice chat is prohibited.</li>
-				</ul>
-			</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="mic" class="tile-icon"></i>
+					<h4 id="discord-voice-conduct">Article A: Expected Conduct</h4>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<ul>
+						<li>Just like in text chat, you must remain respectful toward other players.</li>
+						<li>You are free to discuss any appropriate topic, but please be mindful of the age of the people in your voice channel.</li>
+						<li>If you wish to have a private conversation, you may use one of the limited-access voice channels or create a private voice channel.</li>
+					</ul>
+					</div>
+				</section>
+				<section class="rule-tile" tabindex="0" role="button" aria-haspopup="dialog">
+					<i data-lucide="volume-x" class="tile-icon"></i>
+					<h4 id="discord-voice-prohibited">Article B: Prohibited Behavior</h4>
+					<p class="tile-count"></p>
+					<div class="tile-body">
+					<ul>
+						<li>Shouting into your microphone with the intention of annoying other users is prohibited.</li>
+						<li>Using a soundboard to disturb or annoy other users is prohibited.</li>
+						<li>Sharing personal or private information over voice chat is prohibited.</li>
+					</ul>
+					</div>
+				</section>
 			</div>
 		</main>
 		<aside class="toc" id="toc">
@@ -171,6 +235,8 @@ description: The rules of the Cubesia Minecraft server and of its Discord.
 						<li><a href="#mc-gameplay">Article A: Gameplay</a></li>
 						<li><a href="#mc-account">Article B: Your Account</a></li>
 						<li><a href="#mc-chat">Article C: Chat Rules</a></li>
+						<li><a href="#mc-chat-prohibited">Article C: Prohibited Messages</a></li>
+						<li><a href="#mc-chat-scope">Article C: Where It Applies</a></li>
 						<li><a href="#mc-discord">Article D: Discord</a></li>
 					</ul>
 				</li>
@@ -187,4 +253,5 @@ description: The rules of the Cubesia Minecraft server and of its Discord.
 	</div>
 	<script>lucide.createIcons();</script>
 	<script src="scripts/doc.js"></script>
+	<script src="scripts/rules.js"></script>
 </body>
