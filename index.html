@@ -23,6 +23,7 @@ edit: false
 			<div class="meta">
 				<span class="badge"><i data-lucide="gamepad-2"></i>Minecraft 1.21.8 - 26.3</span>
 				<span class="badge status" id="status" hidden><span class="dot"></span><span class="status-text"></span></span>
+				<span class="badge status online" id="discordStatus" data-server="{{ site.discord_server_id }}" hidden><span class="dot"></span><span class="status-text"></span></span>
 			</div>
 			<div class="btn-container">
 				<a href="patch.html" class="btn3"><i data-lucide="history"></i>Patch</a>
@@ -138,6 +139,17 @@ edit: false
 					status.hidden = false;
 				})
 				.catch(() => {});
+			const dc = document.getElementById('discordStatus');
+			if (dc.dataset.server) {
+				fetch('https://discord.com/api/guilds/' + dc.dataset.server + '/widget.json')
+					.then(r => r.json())
+					.then(d => {
+						if (typeof d.presence_count !== 'number') return;
+						dc.querySelector('.status-text').textContent = d.presence_count + ' on Discord';
+						dc.hidden = false;
+					})
+					.catch(() => {});
+			}
 			const MAP = { new: 'new', added: 'added', fixed: 'fixed', change: 'change', removed: 'removed' };
 			const card = document.getElementById('patchCard');
 			fetch('patch.html', { cache: 'no-cache' })
