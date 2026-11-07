@@ -111,3 +111,28 @@
     .rule-tile .tile-icon { width: 34px; height: 34px; }
     .wiki .rule-tile :is(h3, h4) { font-size: 0.92rem; }
 }
+.wiki .summary-box, .wiki .rule-tile, .wiki .toc, .rule-dialog, .rd-head button, .wiki .lang-switch,
+.wiki .rule-tile *, .rule-dialog * {
+    border-radius: 0;
+}
+.wiki .summary-box, .wiki .rule-tile, .rule-dialog {
+    border: 2px solid #000;
+    box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.10), inset -2px -2px 0 rgba(0, 0, 0, 0.35);
+}
+.wiki .rule-tile:hover {
+    border-color: #000;
+    outline: 2px solid #5fb83e;
+    outline-offset: -2px;
+    transform: none;
+}
+.rd-head button {
+    border: 2px solid #000;
+    background: #6d6d6d;
+    color: #fff;
+    box-shadow: inset 2px 2px 0 #a8a8a8, inset -2px -2px 0 #373737;
+}
+.rd-head button:hover { background: #7d85b0; color: #ffffa0; }
+html[data-theme="light"] .wiki .summary-box, html[data-theme="light"] .wiki .rule-tile, html[data-theme="light"] .rule-dialog {
+    border-color: #6d6558;
+    box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.6), inset -2px -2px 0 rgba(0, 0, 0, 0.12);
+}

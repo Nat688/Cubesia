@@ -1,21 +1,14 @@
 @keyframes targetFlash {
-    0%   { background-color: rgba(154, 140, 255, 0.28); }
-    100% { background-color: transparent; }
+    0%   { color: var(--accent-2); }
+    100% { color: var(--strong, var(--text)); }
 }
 @keyframes cardFlash {
     0%   { border-color: rgba(154, 140, 255, 0.8); box-shadow: 0 0 0 4px rgba(154, 140, 255, 0.22); }
     100% { border-color: var(--border); box-shadow: 0 0 0 4px transparent; }
 }
-.wiki-content :is(h2, h3, h4):target {
-    background-clip: content-box;
-    border-radius: 6px;
-    animation: targetFlash 2.2s ease-out;
-}
+.wiki-content :is(h2, h3, h4):target { animation: targetFlash 2.2s ease-out; }
 @media (prefers-reduced-motion: reduce) {
-    .wiki-content :is(h2, h3, h4):target {
-        animation: none;
-        background-color: rgba(154, 140, 255, 0.16);
-    }
+    .wiki-content :is(h2, h3, h4):target { animation: none; color: var(--accent-2); }
 }
 .copyable {
     position: relative;

@@ -10,6 +10,7 @@ description: Search the sell price of every item on the Cubesia Minecraft server
 	<main class="page-wide" data-icon-url="{{ site.item_icon_url }}">
 		<h1>Sell <span class="cubesia">prices</span></h1>
 		<p class="lead">The price you get for each item with <code>/sell</code>. The same list is available in game with <code>/sellprice</code>.</p>
+		<p class="notice"><i data-lucide="info"></i><span>Your sell multipliers (<code>/sellmulti</code>) only apply when you sell with <code>/sell</code>. Other ways of selling, like Sell Wands or Seller minions, do not use them.</span></p>
 		{% if site.data.prices.size > 0 %}
 		<div class="prices-layout">
 			<section class="prices-main" aria-label="Price list">
@@ -37,7 +38,7 @@ description: Search the sell price of every item on the Cubesia Minecraft server
 				<div class="calc-actions"><button type="button" id="clear">Clear</button></div>
 				<details class="mults">
 					<summary>My sell multipliers</summary>
-					<p class="calc-help">Your multiplier of each category (see <code>/sellmulti</code> in game). 1 = no bonus.</p>
+					<p class="calc-help">Your multiplier of each category (see <code>/sellmulti</code> in game). 1 = no bonus. It only applies to <code>/sell</code>.</p>
 					<div id="mults" class="mult-grid"></div>
 				</details>
 			</aside>
@@ -46,5 +47,6 @@ description: Search the sell price of every item on the Cubesia Minecraft server
 		<p class="empty">The price list is being prepared. Use <code>/sellprice</code> in game in the meantime.</p>
 		{% endif %}
 	</main>
+	<script>lucide.createIcons();</script>
 	<script src="scripts/prices.js"></script>
 </body>

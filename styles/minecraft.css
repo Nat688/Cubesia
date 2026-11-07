@@ -1,0 +1,58 @@
+:root {
+    --mc-grass: #5fb83e;
+    --mc-dirt: #5a3b22;
+    --mc-stone: #6d6d6d;
+    --mc-stone-hi: #a8a8a8;
+    --mc-stone-lo: #373737;
+    --mc-hover: #7d85b0;
+    --mc-gold: #ffffa0;
+}
+*:not(.dot):not(.keep-round),
+*:not(.dot):not(.keep-round)::before,
+*:not(.dot):not(.keep-round)::after {
+    border-radius: 0 !important;
+}
+header {
+    border-bottom: 0 !important;
+    box-shadow: 0 4px 0 var(--mc-grass), 0 9px 0 var(--mc-dirt), 0 14px 16px rgba(0, 0, 0, 0.35);
+}
+.btn, .btn2, .btn3, .vote-btn, .edit-btn, .chips button, .lang-switch button,
+.calc-line button, .calc-actions button, #prices .add, .apply-form button[type="submit"],
+.patch-tools button, .toc-fab, .to-top {
+    background: var(--mc-stone) !important;
+    background-image: none !important;
+    color: #fff !important;
+    border: 2px solid #000 !important;
+    box-shadow: inset 2px 2px 0 var(--mc-stone-hi), inset -2px -2px 0 var(--mc-stone-lo) !important;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+    transform: none !important;
+}
+.btn:hover, .btn2:hover, .btn3:hover, .vote-btn:hover, .edit-btn:hover, .chips button:hover,
+.lang-switch button:hover, .calc-line button:hover, .calc-actions button:hover, #prices .add:hover,
+.apply-form button[type="submit"]:hover, .patch-tools button:hover, .toc-fab:hover, .to-top:hover,
+.chips button:hover:not(x) {
+    background: var(--mc-hover) !important;
+    color: var(--mc-gold) !important;
+}
+.btn.active, .btn[aria-current], header a.active,
+.chips button[aria-pressed="true"], .lang-switch button[aria-pressed="true"][aria-pressed="true"] {
+    background: #3f7f2b !important;
+    box-shadow: inset 2px 2px 0 #8fdc6e, inset -2px -2px 0 #1f4a14 !important;
+    color: #fff !important;
+}
+.feature, .patch-card, .map-card, .steps li, .vote-card, .pseudo-box, .reward-card, .reward-table,
+.rule-tile, .summary-box, .calc, .staff-card, .help-box, .rm-card, .callout, .table_container,
+.patch details, .steps-guide li, .cmd-list, .table-wrap, .rule-dialog, .toc, .wiki .removed-list li {
+    border: 2px solid #000 !important;
+    box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.10), inset -2px -2px 0 rgba(0, 0, 0, 0.35);
+}
+html[data-theme="light"] .feature, html[data-theme="light"] .patch-card, html[data-theme="light"] .map-card,
+html[data-theme="light"] .steps li, html[data-theme="light"] .vote-card, html[data-theme="light"] .rule-tile,
+html[data-theme="light"] .calc, html[data-theme="light"] .patch details {
+    border-color: #6d6558 !important;
+    box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.6), inset -2px -2px 0 rgba(0, 0, 0, 0.12);
+}
+.rule-tile:hover, .feature:hover, .vote-card:hover { border-color: #000 !important; outline: 2px solid var(--mc-grass); outline-offset: -2px; }
+.rule-tile { background: linear-gradient(var(--surface), var(--surface)); }
+.item-icon, img { image-rendering: auto; }
+.badge, .tag, .rm-tag, .patch-chip, .new-badge, .mini-tag { border-width: 2px !important; }
