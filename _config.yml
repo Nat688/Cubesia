@@ -3,3 +3,8 @@
 ##########################
 maintenance: false
 # "true" or "false" #
+
+# Optional features (leave empty to disable)
+discord_server_id: "1243590602130718740"   # Discord server ID, widget must be enabled in Server Settings
+goatcounter: ""         # your GoatCounter code, e.g. "cubesia"
+apply_endpoint: "apply.cubesiamc.workers.dev"      # URL of the apply worker (see _tools/apply-worker.js)
