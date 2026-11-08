@@ -87,3 +87,12 @@ html[data-theme="light"] .new-badge { color: #0b2a0b; }
 html[data-theme="light"] .toc a, html[data-theme="light"] .toc .subs a { color: #4a443d; }
 html[data-theme="light"] .toc a.active, html[data-theme="light"] .toc a:hover { color: var(--accent); }
 html[data-theme="light"] .wiki-content p, html[data-theme="light"] .wiki-content li { color: #2b2622; }
+html[data-theme="light"] header {
+    --surface: #181414;
+    --surface-2: #1f1b1b;
+    --border: #2a2323;
+    --text: #e8e4e4;
+    --muted: #9d9797;
+    --accent: #9a8cff;
+    --accent-2: #ff9f43;
+}
