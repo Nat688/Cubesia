@@ -1,6 +1,6 @@
 :root {
-    --font-body: "Pixelify Sans", "Inter", system-ui, sans-serif;
-    --font-title: "Jersey 10", "Pixelify Sans", "Inter", system-ui, sans-serif;
+    --font-body: "Jersey 15", "Pixelify Sans", "Inter", system-ui, sans-serif;
+    --font-title: "Jersey 10", "Jersey 15", "Inter", system-ui, sans-serif;
     --mc-edge: #0b0910;
     --mc-hi: rgba(255, 255, 255, 0.16);
     --mc-lo: rgba(0, 0, 0, 0.40);
@@ -23,10 +23,12 @@ html[data-theme="light"] {
     --mc-btn-hover: #7f75a3;
 }
 body, button, input, select, textarea, code, kbd, pre, .ip-text, .wiki code { font-family: var(--font-body); }
-body { font-size: 1.04rem; }
+body { font-size: 1.22rem; letter-spacing: 0.02em; }
+.wiki-content, .wiki-content p, .wiki-content li { line-height: 1.55; }
 h1, .cubesia { font-family: var(--font-title); font-weight: 400; letter-spacing: 0.03em; }
 h1 { font-size: clamp(2.4rem, 6.5vw, 3.9rem) !important; line-height: 1.05; }
-.wiki-content h2, .rewards h2, .calc h2 { font-weight: 700; letter-spacing: 0.01em; }
+h2, h3, .rewards h2, .calc h2 { font-weight: 400; letter-spacing: 0.04em; }
+h2 { font-size: 1.7em; }
 .cubesia { filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.45)); }
 html[data-theme="light"] .cubesia { filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.2)); }
 *:not(.dot):not(.keep-round),
@@ -78,7 +80,7 @@ header a.active, header a[aria-current] {
 .a11y-toggle { width: 48px; height: 48px; }
 .feature, .patch-card, .map-card, .steps li, .vote-card, .pseudo-box, .reward-card, .reward-table, .summary-box,
 .calc, .staff-card, .help-box, .rm-card, .callout, .table_container, .table-wrap, .patch details, .steps-guide li,
-.cmd-list, .rule-tile, .rule-dialog, .toc, .a11y-panel, .notice, .rewards .reward-table, .join-card {
+.rule-tile, .rule-dialog, .a11y-panel, .notice, .rewards .reward-table, .join-card {
     border: 2px solid var(--mc-edge) !important;
     box-shadow: inset 2px 2px 0 var(--mc-hi), inset -2px -2px 0 var(--mc-lo);
 }
@@ -86,19 +88,44 @@ header a.active, header a[aria-current] {
     outline: 2px solid var(--accent);
     outline-offset: -2px;
 }
-input:not([type="checkbox"]):not([type="radio"]), textarea, select, .toc-search {
-    background: rgba(0, 0, 0, 0.35) !important;
-    border: 2px solid var(--mc-edge) !important;
-    box-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.55), inset -2px -2px 0 var(--mc-hi) !important;
+input:not([type="checkbox"]):not([type="radio"]), textarea, select {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border: 2px solid var(--mc-btn-lo) !important;
+    box-shadow: none !important;
+    color: var(--text);
+}
+input:not([type="checkbox"]):not([type="radio"]):focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--mc-primary-hi) !important;
+}
+.toc-search, .toc input {
+    width: 100%;
+    padding: 9px 12px !important;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.3) !important;
+    border: 2px solid var(--mc-btn-lo) !important;
+    box-shadow: none !important;
 }
 html[data-theme="light"] input:not([type="checkbox"]):not([type="radio"]), html[data-theme="light"] textarea,
-html[data-theme="light"] select { background: rgba(255, 255, 255, 0.7) !important; }
+html[data-theme="light"] select, html[data-theme="light"] .toc-search { background: rgba(255, 255, 255, 0.75) !important; }
+.toc { border-left: 2px solid var(--mc-btn-lo) !important; }
+.toc a { padding-top: 7px; padding-bottom: 7px; }
+.cmd-list { border: 0 !important; box-shadow: none !important; }
+.cmd-list li { border-bottom: 2px dotted var(--mc-btn-lo) !important; padding-top: 9px; padding-bottom: 9px; }
+.cmd-list .command {
+    padding: 3px 11px !important;
+    background: var(--mc-btn) !important;
+    border: 2px solid var(--mc-edge) !important;
+    box-shadow: inset 2px 2px 0 var(--mc-btn-hi), inset -2px -2px 0 var(--mc-btn-lo) !important;
+    color: #fff !important;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+    font-size: 1.05em;
+}
+.cmd-list .command.copied { background: var(--mc-primary) !important; color: var(--mc-gold) !important; }
+.cmd-list .base { color: var(--text); }
 .badge, .tag, .rm-tag, .patch-chip, .new-badge, .mini-tag { border-width: 2px !important; }
 .wiki table, .reward-table, #prices { border: 2px solid var(--mc-edge); }
 .wiki th, .wiki td { border-color: var(--mc-edge) !important; }
-* { scrollbar-width: auto; scrollbar-color: var(--mc-btn-hi) rgba(0, 0, 0, 0.35); }
-::-webkit-scrollbar { width: 14px; height: 14px; }
-::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.35); }
-::-webkit-scrollbar-thumb { background: var(--mc-btn); border: 2px solid var(--mc-edge); box-shadow: inset 2px 2px 0 var(--mc-btn-hi), inset -2px -2px 0 var(--mc-btn-lo); }
+* { scrollbar-width: auto; scrollbar-color: var(--mc-btn-hi) rgba(0, 0, 0, 0.3); }
 ::selection { background: var(--mc-primary); color: #fff; }
 .item-icon { image-rendering: pixelated; }
