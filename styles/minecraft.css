@@ -103,12 +103,11 @@ input:not([type="checkbox"]):not([type="radio"]):focus, textarea:focus, select:f
     padding: 9px 12px !important;
     font-size: 1rem;
     background: rgba(0, 0, 0, 0.3) !important;
-    border: 2px solid var(--mc-btn-lo) !important;
+    border: 2px solid var(--border) !important;
     box-shadow: none !important;
 }
 html[data-theme="light"] input:not([type="checkbox"]):not([type="radio"]), html[data-theme="light"] textarea,
 html[data-theme="light"] select, html[data-theme="light"] .toc-search { background: rgba(255, 255, 255, 0.75) !important; }
-.toc { border-left: 2px solid var(--mc-btn-lo) !important; }
 .toc a { padding-top: 7px; padding-bottom: 7px; }
 .cmd-list { border: 0 !important; box-shadow: none !important; }
 .cmd-list li { border-bottom: 2px dotted var(--mc-btn-lo) !important; padding-top: 9px; padding-bottom: 9px; }
@@ -126,6 +125,15 @@ html[data-theme="light"] select, html[data-theme="light"] .toc-search { backgrou
 .badge, .tag, .rm-tag, .patch-chip, .new-badge, .mini-tag { border-width: 2px !important; }
 .wiki table, .reward-table, #prices { border: 2px solid var(--mc-edge); }
 .wiki th, .wiki td { border-color: var(--mc-edge) !important; }
-* { scrollbar-width: auto; scrollbar-color: var(--mc-btn-hi) rgba(0, 0, 0, 0.3); }
+* { scrollbar-width: auto !important; scrollbar-color: auto !important; }
+::-webkit-scrollbar { width: 14px; height: 14px; }
+::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.35); }
+::-webkit-scrollbar-thumb { background: var(--mc-btn); border: 2px solid var(--mc-edge); box-shadow: inset 2px 2px 0 var(--mc-btn-hi), inset -2px -2px 0 var(--mc-btn-lo); }
+::-webkit-scrollbar-thumb:hover { background: var(--mc-btn-hover); }
+::-webkit-scrollbar-button { display: none; width: 0; height: 0; }
+::-webkit-scrollbar-corner { background: rgba(0, 0, 0, 0.35); }
+@supports not selector(::-webkit-scrollbar) {
+    * { scrollbar-width: auto !important; scrollbar-color: var(--mc-btn-hi) rgba(0, 0, 0, 0.3) !important; }
+}
 ::selection { background: var(--mc-primary); color: #fff; }
 .item-icon { image-rendering: pixelated; }
