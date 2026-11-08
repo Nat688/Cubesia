@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cubesia - font test</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Jersey+20&family=Jersey+25&family=Pixelify+Sans&family=Silkscreen&family=VT323&family=DotGothic16&family=Tiny5&family=Micro+5&family=Handjet&family=Press+Start+2P&display=swap">
+<style>
+body { margin: 0; padding: 24px; background: #120f0f; color: #e8e4e4; font-family: system-ui, sans-serif; }
+h1 { margin: 0 0 6px; }
+p.hint { margin: 0 0 24px; color: #9d9797; }
+.card { margin: 0 0 14px; padding: 14px 18px; background: #181414; border: 1px solid #2a2323; }
+.name { margin-bottom: 8px; color: #9a8cff; font: 0.8rem system-ui, sans-serif; }
+.title { font-size: 3rem; line-height: 1.1; }
+.text { font-size: 1.25rem; line-height: 1.5; }
+code { background: #2b2d31; padding: 2px 8px; }
+</style>
+</head>
+<body>
+<h1>Font test</h1>
+<p class="hint">Open this file in your browser (needs internet). Tell me the name of the font you prefer for the text, and the one for the titles, then change <code>--font-body</code> / <code>--font-title</code> in styles/minecraft.css and the family names in the Google Fonts links (layout and scripts/theme.js).</p>
+<div id="list"></div>
+<script>
+const fonts = ['Jersey 10', 'Jersey 15', 'Jersey 20', 'Jersey 25', 'Pixelify Sans', 'Silkscreen', 'VT323', 'DotGothic16', 'Tiny5', 'Micro 5', 'Handjet', 'Press Start 2P'];
+document.getElementById('list').innerHTML = fonts.map(f =>
+  `<div class="card" style="font-family:'${f}'"><div class="name">${f}</div>` +
+  `<div class="title">Cubesia Minecraft Server</div>` +
+  `<div class="text">Opens the auction house (player trading hub). <code>/ah sell 2.5M</code> - Rewards, Jobs, Spawners 0123456789</div></div>`).join('');
+</script>
+</body>
+</html>
