@@ -123,8 +123,8 @@
 	<div id="content" tabindex="-1">
 	{{ content }}
 	</div>
-	{% if site.minecraft_style %}<link id="mc-css" rel="stylesheet" type="text/css" href="styles/minecraft.css">{% endif %}
 	<link rel="stylesheet" type="text/css" href="styles/theme.css">
+	{% if site.minecraft_style %}<link id="mc-css" rel="stylesheet" type="text/css" href="styles/minecraft.css">{% endif %}
 	<script src="scripts/theme.js"></script>
 	{% unless page.edit == false %}
 	<p class="edit-page"><a class="edit-btn" href="https://github.com/Nat688/Cubesia/edit/main/{{ page.path }}" target="_blank" rel="noopener"><i data-lucide="pencil"></i>Edit this page on GitHub</a></p>
