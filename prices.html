@@ -29,18 +29,35 @@ description: Search the sell price of every item on the Cubesia Minecraft server
 					</table>
 				</div>
 				<p class="empty" id="empty" hidden>No item found.</p>
+				<p class="notice" id="iconNote" hidden><i data-lucide="image-off"></i><span>The item icons could not be loaded. Check <code>item_icon_url</code> in <code>_config.yml</code>.</span></p>
 			</section>
 			<aside class="calc" id="calc" aria-label="Sell calculator">
-				<h2>Sell calculator</h2>
-				<p class="calc-help">Add items with the <b>+</b> button, set the quantity and your multipliers.</p>
-				<div class="calc-lines" id="lines"><p class="calc-empty">No item yet.</p></div>
-				<div class="calc-total"><span>Total</span><strong id="total">0</strong></div>
-				<div class="calc-actions"><button type="button" id="clear">Clear</button></div>
-				<details class="mults">
-					<summary>My sell multipliers</summary>
-					<p class="calc-help">Your multiplier of each category (see <code>/sellmulti</code> in game). 1 = no bonus. It only applies to <code>/sell</code>.</p>
-					<div id="mults" class="mult-grid"></div>
-				</details>
+				<div class="calc-head">
+					<h2>Sell calculator</h2>
+					<button type="button" id="clear" class="calc-clear"><i data-lucide="trash-2"></i>Clear</button>
+				</div>
+				<div class="calc-lines" id="lines"></div>
+				<div class="calc-total">
+					<div class="ct-row"><span>Base value</span><span id="base">0</span></div>
+					<div class="ct-row"><span>Multiplier bonus</span><span id="bonus">0</span></div>
+					<div class="ct-row ct-main"><span>Total</span><strong id="total">0</strong></div>
+				</div>
+				<section class="mults">
+					<button type="button" class="mults-toggle" id="multsToggle" aria-expanded="false" aria-controls="multsBody">
+						<span class="mt-label"><i data-lucide="sliders-horizontal"></i>My sell multipliers</span>
+						<span class="mults-sum" id="multsSum"></span>
+						<i data-lucide="chevron-down" class="chev"></i>
+					</button>
+					<div class="mults-body" id="multsBody" hidden>
+						<p class="calc-help">The multiplier of each category (see <code>/sellmulti</code> in game). 1 = no bonus. It only applies to <code>/sell</code>.</p>
+						<div class="mults-all">
+							<label>Set all to <input type="number" id="allMult" min="0" max="10" step="0.1" value="1"></label>
+							<button type="button" id="applyAll">Apply</button>
+							<button type="button" id="resetMults">Reset</button>
+						</div>
+						<div id="mults" class="mult-grid"></div>
+					</div>
+				</section>
 			</aside>
 		</div>
 		{% else %}
