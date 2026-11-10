@@ -5,19 +5,28 @@
 	const $ = id => document.getElementById(id);
 	const body = table.tBodies[0];
 	const rows = [...body.rows];
-	const iconUrl = document.querySelector('[data-icon-url]').dataset.iconUrl;
+	const iconUrls = (document.querySelector('[data-icon-url]').dataset.iconUrl || '').split('|').map(s => s.trim()).filter(Boolean);
 	const fmt = n => n.toLocaleString('en-US', { maximumFractionDigits: 2 });
 	const store = {
 		get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } },
 		set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 	};
-	function iconFor(id, alt) {
+	let iconOk = 0, iconFail = 0;
+	function iconFor(id) {
 		const img = new Image(28, 28);
 		img.alt = '';
 		img.loading = 'lazy';
 		img.className = 'item-icon';
-		img.src = iconUrl.replace('{id}', id);
-		img.onerror = () => { img.style.visibility = 'hidden'; };
+		let n = 0;
+		const next = () => {
+			if (n < iconUrls.length) { img.src = iconUrls[n++].replace('{id}', id); return; }
+			img.style.visibility = 'hidden';
+			iconFail++;
+			if (iconFail >= 12 && iconOk === 0) $('iconNote').hidden = false;
+		};
+		img.onload = () => { iconOk++; $('iconNote').hidden = true; };
+		img.onerror = next;
+		next();
 		return img;
 	}
 	rows.forEach(r => r.cells[0].appendChild(iconFor(r.dataset.id)));
@@ -66,44 +75,50 @@
 	const byId = Object.fromEntries(rows.map(r => [r.dataset.id, r]));
 	let lines = store.get('cubesia-calc-lines', []).filter(l => byId[l.id]);
 	let mults = store.get('cubesia-calc-mults', {});
-	const linesEl = $('lines'), totalEl = $('total');
+	const linesEl = $('lines'), totalEl = $('total'), baseEl = $('base'), bonusEl = $('bonus');
+	const mult = c => +(mults[c] ?? 1);
+	const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+	const btn = (text, label, onClick) => { const b = el('button', null, text); b.type = 'button'; b.setAttribute('aria-label', label); b.addEventListener('click', onClick); return b; };
 	function renderLines() {
 		linesEl.textContent = '';
 		if (!lines.length) {
-			const p = document.createElement('p');
-			p.className = 'calc-empty';
-			p.textContent = 'No item yet.';
-			linesEl.appendChild(p);
+			const box = el('div', 'calc-empty');
+			box.append(el('i'), el('p', null, 'No item yet. Use the + buttons in the list to add items.'));
+			box.firstChild.setAttribute('data-lucide', 'shopping-basket');
+			linesEl.appendChild(box);
 		}
-		let total = 0;
+		let base = 0, total = 0;
 		lines.forEach((l, i) => {
 			const r = byId[l.id];
-			const price = +r.dataset.price, m = +(mults[r.dataset.cat] || 1);
-			const sub = price * l.qty * m;
-			total += sub;
-			const row = document.createElement('div');
-			row.className = 'calc-line';
-			row.appendChild(iconFor(l.id));
-			const name = document.createElement('span');
-			name.className = 'cl-name';
-			name.textContent = r.cells[1].textContent;
-			const qty = document.createElement('input');
+			const price = +r.dataset.price, m = mult(r.dataset.cat);
+			base += price * l.qty;
+			total += price * l.qty * m;
+			const row = el('div', 'calc-line');
+			const top = el('div', 'cl-top');
+			const name = el('span', 'cl-name', r.cells[1].textContent);
+			const sub = el('span', 'cl-sub', fmt(price * l.qty * m));
+			top.append(iconFor(l.id), name, sub, btn('\u00D7', 'Remove ' + name.textContent, () => { lines.splice(i, 1); save(); }));
+			const bottom = el('div', 'cl-bottom');
+			const stepper = el('div', 'stepper');
+			const qty = el('input');
 			qty.type = 'number'; qty.min = 1; qty.value = l.qty;
 			qty.setAttribute('aria-label', 'Quantity of ' + name.textContent);
 			qty.addEventListener('change', () => { l.qty = Math.max(1, Math.floor(+qty.value || 1)); save(); });
-			const stack = document.createElement('button');
-			stack.type = 'button'; stack.textContent = '\u00D764'; stack.title = 'One stack';
-			stack.addEventListener('click', () => { l.qty = 64; save(); });
-			const s = document.createElement('span');
-			s.className = 'cl-sub';
-			s.textContent = fmt(sub);
-			const del = document.createElement('button');
-			del.type = 'button'; del.textContent = '\u00D7'; del.setAttribute('aria-label', 'Remove ' + name.textContent);
-			del.addEventListener('click', () => { lines.splice(i, 1); save(); });
-			row.append(name, qty, stack, s, del);
+			stepper.append(btn('\u2212', 'Less', () => { l.qty = Math.max(1, l.qty - 1); save(); }), qty, btn('+', 'More', () => { l.qty++; save(); }));
+			const stack = btn('64', 'One stack of 64', () => { l.qty = 64; save(); });
+			stack.className = 'cl-stack';
+			const unit = el('span', 'cl-unit', fmt(price) + (m !== 1 ? ' \u00D7 ' + fmt(m) : '') + ' each');
+			bottom.append(stepper, stack, unit);
+			row.append(top, bottom);
 			linesEl.appendChild(row);
 		});
+		baseEl.textContent = fmt(base);
+		const bonus = total - base;
+		bonusEl.textContent = (bonus > 0 ? '+' : '') + fmt(bonus);
 		totalEl.textContent = fmt(total);
+		const custom = Object.values(mults).filter(v => +v !== 1).length;
+		$('multsSum').textContent = custom ? custom + ' custom' : 'all \u00D71';
+		if (window.lucide) lucide.createIcons();
 	}
 	function save() { store.set('cubesia-calc-lines', lines); store.set('cubesia-calc-mults', mults); renderLines(); }
 	body.addEventListener('click', e => {
@@ -115,15 +130,32 @@
 		save();
 	});
 	$('clear').addEventListener('click', () => { lines = []; save(); });
-	const multsEl = $('mults');
-	cats.forEach(c => {
-		const lab = document.createElement('label');
-		lab.textContent = c;
-		const inp = document.createElement('input');
-		inp.type = 'number'; inp.min = 0; inp.step = 0.01; inp.value = mults[c] || 1;
-		inp.addEventListener('change', () => { mults[c] = Math.max(0, +inp.value || 1); save(); });
-		lab.appendChild(inp);
-		multsEl.appendChild(lab);
+	const toggle = $('multsToggle'), multsBody = $('multsBody');
+	toggle.addEventListener('click', () => {
+		const open = multsBody.hidden;
+		multsBody.hidden = !open;
+		toggle.setAttribute('aria-expanded', String(open));
+		toggle.classList.toggle('open', open);
 	});
+	const multsEl = $('mults');
+	const clamp = v => Math.min(10, Math.max(0, Math.round((+v || 0) * 100) / 100));
+	function renderMults() {
+		multsEl.textContent = '';
+		cats.forEach(c => {
+			const cell = el('div', 'mult-cell');
+			cell.appendChild(el('span', 'mc-name', c));
+			const stepper = el('div', 'stepper');
+			const inp = el('input');
+			inp.type = 'number'; inp.min = 0; inp.max = 10; inp.step = 0.1; inp.value = mult(c);
+			inp.setAttribute('aria-label', 'Multiplier of ' + c);
+			inp.addEventListener('change', () => { mults[c] = clamp(inp.value); save(); renderMults(); });
+			stepper.append(btn('\u2212', 'Less', () => { mults[c] = clamp(mult(c) - 0.1); save(); renderMults(); }), inp, btn('+', 'More', () => { mults[c] = clamp(mult(c) + 0.1); save(); renderMults(); }));
+			cell.appendChild(stepper);
+			multsEl.appendChild(cell);
+		});
+	}
+	$('applyAll').addEventListener('click', () => { const v = clamp($('allMult').value); cats.forEach(c => { mults[c] = v; }); save(); renderMults(); });
+	$('resetMults').addEventListener('click', () => { mults = {}; $('allMult').value = 1; save(); renderMults(); });
+	renderMults();
 	renderLines();
 })();
