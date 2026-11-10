@@ -10,11 +10,6 @@ html[data-theme="light"] {
     --accent: #4c38c9;
     --accent-2: #b45300;
 }
-html[data-theme="light"] .wiki {
-    --strong: #14110f;
-    --card: #f7f3ea;
-    --hover: #b45300;
-}
 html[data-theme="light"] body {
     background: var(--bg);
 }
@@ -25,7 +20,6 @@ html[data-theme="light"] .page-narrow code {
     background: #dcd5c5;
     color: #2b2016;
 }
-html[data-theme="light"] .btn3,
 html[data-theme="light"] .vote-btn { color: #fff; }
 html[data-theme="light"] .new-badge { color: #0b2a0b; }
 @media (prefers-color-scheme: light) {
@@ -96,3 +90,40 @@ html[data-theme="light"] header {
     --accent: #9a8cff;
     --accent-2: #ff9f43;
 }
+html[data-theme="light"] { --scroll-thumb: #b3a994; --scroll-thumb-hover: #968c76; }
+:root { --scroll-thumb: #3a3131; --scroll-thumb-hover: #5a4d4d; }
+html, html * { scrollbar-width: auto !important; scrollbar-color: auto !important; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--scroll-thumb); border-radius: 10px; border: 2px solid var(--bg); }
+::-webkit-scrollbar-thumb:hover { background: var(--scroll-thumb-hover); }
+::-webkit-scrollbar-button { display: none; width: 0; height: 0; }
+@supports not selector(::-webkit-scrollbar) {
+    html, html * { scrollbar-width: thin !important; scrollbar-color: var(--scroll-thumb) transparent !important; }
+}
+html[data-theme="light"] .patch { --new: #0b6b0b; --added: #1a7f1a; --fixed: #8a6a00; --change: #3f4ad1; --removed: #c0262d; }
+html[data-theme="light"] .mini-tag.fixed { color: #8a6a00; }
+html[data-theme="light"] .mini-tag.removed { color: #c0262d; }
+html[data-theme="light"] .mini-tag.change { color: #3f4ad1; }
+html[data-theme="light"] .btn, html[data-theme="light"] .btn2, html[data-theme="light"] .btn3, html[data-theme="light"] .patch-tools button { color: var(--text); }
+html[data-theme="light"] header .btn, html[data-theme="light"] header .btn2 { color: #f1f1f1; }
+html[data-theme="light"] .steps b, html[data-theme="light"] .feature b, html[data-theme="light"] .patch-card h3, html[data-theme="light"] .map-text b, html[data-theme="light"] .patch li b, html[data-theme="light"] .patch details h4, html[data-theme="light"] .join-card > b { color: var(--text); }
+html[data-theme="light"] .patch-card li, html[data-theme="light"] .patch li { color: var(--muted); }
+html[data-theme="light"] .callout, html[data-theme="light"] .callout :is(i, svg) { color: var(--text); }
+html[data-theme="light"] .callout.warning :is(i, svg) { color: #8a6a00; }
+html[data-theme="light"] .callout.danger :is(i, svg) { color: #c0262d; }
+html[data-theme="light"] .form-msg.error, html[data-theme="light"] .pseudo-hint.error { color: #c0262d; }
+html[data-theme="light"] .form-msg.ok { color: #1a7f1a; }
+html[data-theme="light"] .cmd-list .command { color: #6b2fb0; background: rgba(107, 47, 176, 0.1); border-color: rgba(107, 47, 176, 0.35); }
+html[data-theme="light"] .cmd-list .base { color: #3a46c4; }
+html[data-theme="light"] .wiki { --text: #3a342e; --strong: #14110f; --accent: #4c38c9; --hover: #b45300; --card: #f7f3ea; --border: #b9b09e; }
+html[data-theme="light"] .tag.new { --c: 11, 107, 11; }
+html[data-theme="light"] .tag.added { --c: 26, 127, 26; }
+html[data-theme="light"] .tag.fixed { --c: 138, 106, 0; }
+html[data-theme="light"] .tag.change { --c: 63, 74, 209; }
+html[data-theme="light"] .tag.removed { --c: 192, 38, 45; }
+html[data-theme="light"] .mini-tag.new { color: #0b6b0b; }
+html[data-theme="light"] .mini-tag.added { color: #1a7f1a; }
+html[data-theme="light"] .vote-card.ready .vote-timer { color: #1a7f1a; }
+html[data-theme="light"] .rm-tag { color: #5c554d; }
+html[data-theme="light"] .staff-group h2, html[data-theme="light"] .staff-role { color: var(--text); }
