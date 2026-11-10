@@ -36,7 +36,7 @@ html[data-theme="light"] .cubesia { filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 
 *:not(.dot):not(.keep-round)::after { border-radius: 0 !important; }
 header { border-bottom: 0 !important; box-shadow: 0 3px 0 var(--mc-edge), 0 8px 18px rgba(0, 0, 0, 0.3); }
 .btn3, .vote-btn, .edit-btn, .chips button, .lang-switch button, .patch-tools button, .toc-fab, .to-top,
-.calc-actions button, .apply-form button[type="submit"], .a11y-toggle, .a11y-panel .row button, .rd-head button,
+.calc-clear, .mults-all button, .stepper button, .cl-stack, .calc-line .cl-top > button, .apply-form button[type="submit"], .a11y-toggle, .a11y-panel .row button, .rd-head button,
 .patch-more, .map-go {
     background: var(--mc-btn) !important;
     background-image: none !important;
@@ -47,7 +47,7 @@ header { border-bottom: 0 !important; box-shadow: 0 3px 0 var(--mc-edge), 0 8px 
     transform: none !important;
     transition: background-color .1s;
 }
-.btn3, .vote-btn, .edit-btn, .patch-tools button, .calc-actions button, .apply-form button[type="submit"] {
+.btn3, .vote-btn, .edit-btn, .patch-tools button, .apply-form button[type="submit"] {
     min-height: 48px;
     padding: 12px 24px !important;
     line-height: 1.2;
@@ -55,7 +55,7 @@ header { border-bottom: 0 !important; box-shadow: 0 3px 0 var(--mc-edge), 0 8px 
 }
 .chips button, .lang-switch button { min-height: 38px; padding: 8px 14px !important; }
 .btn3:hover, .vote-btn:hover, .edit-btn:hover, .chips button:hover, .lang-switch button:hover, .patch-tools button:hover,
-.toc-fab:hover, .to-top:hover, .calc-actions button:hover, .apply-form button[type="submit"]:hover,
+.toc-fab:hover, .to-top:hover, .calc-clear, .mults-all button, .stepper button, .cl-stack, .calc-line .cl-top > button:hover, .apply-form button[type="submit"]:hover,
 .a11y-toggle:hover, .a11y-panel .row button:hover, .rd-head button:hover {
     background: var(--mc-btn-hover) !important;
     color: var(--mc-gold) !important;
@@ -79,7 +79,7 @@ header a.active, header a[aria-current] {
 }
 .a11y-toggle { width: 48px; height: 48px; }
 .feature, .patch-card, .map-card, .steps li, .vote-card, .pseudo-box, .reward-card, .reward-table, .summary-box,
-.calc, .staff-card, .help-box, .rm-card, .callout, .table_container, .table-wrap, .patch details, .steps-guide li,
+.calc, .staff-card, .contact-box, .rm-card, .callout, .table_container, .table-wrap, .patch details, .steps-guide li,
 .rule-tile, .rule-dialog, .a11y-panel, .notice, .rewards .reward-table, .join-card {
     border: 2px solid var(--mc-edge) !important;
     box-shadow: inset 2px 2px 0 var(--mc-hi), inset -2px -2px 0 var(--mc-lo);
