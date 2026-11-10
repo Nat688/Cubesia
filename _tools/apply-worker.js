@@ -5,6 +5,7 @@ const cors = { 'Access-Control-Allow-Origin': ALLOWED_ORIGIN, 'Access-Control-Al
 export default {
 	async fetch(request, env) {
 		if (request.method === 'OPTIONS') return new Response(null, { headers: cors });
+		if (request.method === 'GET') return new Response('Apply worker is running. Discord webhook secret: ' + (env.DISCORD_WEBHOOK ? 'set' : 'MISSING'), { status: 200 });
 		if (request.method !== 'POST' || request.headers.get('Origin') !== ALLOWED_ORIGIN) return new Response('Forbidden', { status: 403, headers: cors });
 		let data;
 		try { data = await request.json(); } catch (e) { return new Response('Bad request', { status: 400, headers: cors }); }
