@@ -44,7 +44,7 @@
 .apply-form .row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .apply-form .hp { position: absolute; left: -9999px; }
 .apply-form button[type="submit"] {
-    justify-self: start;
+    justify-self: center;
     padding: 12px 28px;
     border: 0;
     border-radius: 999px;
@@ -55,7 +55,7 @@
     cursor: pointer;
 }
 .apply-form button[disabled] { opacity: 0.5; cursor: not-allowed; }
-.form-msg { min-height: 1.4em; margin: 0; }
+.form-msg { min-height: 1.4em; margin: 0; text-align: center; }
 .form-msg.ok { color: #55FF55; }
 .form-msg.error { color: #FF5555; }
 @media (max-width: 600px) { .apply-form .row { grid-template-columns: 1fr; } }
@@ -153,3 +153,4 @@
     line-height: 1.5;
 }
 .notice svg { flex-shrink: 0; width: 18px; height: 18px; margin-top: 2px; color: var(--accent); }
+.item-icon.ph { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 6px; background: hsl(var(--h) 35% 26%); color: hsl(var(--h) 70% 82%); font-size: 0.8rem; font-weight: 700; line-height: 1; }

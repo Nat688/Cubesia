@@ -12,16 +12,34 @@
 		set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 	};
 	let iconOk = 0, iconFail = 0;
+	const titleName = n => n.trim().replace(/\s+/g, '_');
+	function derived(id) {
+		const out = [];
+		const m = id.match(/^(.*?)(?:_stairs|_slab|_fence_gate|_fence|_pressure_plate|_button|_wall|_trapdoor|_door|_hanging_sign|_sign|_boat|_chest_boat|_raft|_chest_raft|_shelf)$/);
+		if (m) out.push(m[1] + '_planks', m[1], m[1] + 's', m[1] + '_block', m[1] + '_bricks');
+		if (/_wood$/.test(id)) out.push(id.replace(/_wood$/, '_log'));
+		return out.filter(x => x !== id);
+	}
+	function hue(str) { let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) % 360; return h; }
 	function iconFor(id) {
+		const row = byId[id];
+		const name = row ? row.cells[1].textContent : id;
+		const cat = row ? row.dataset.cat : '';
 		const img = new Image(28, 28);
 		img.alt = '';
 		img.loading = 'lazy';
 		img.className = 'item-icon';
+		const urls = [];
+		iconUrls.forEach(t => urls.push(t.replace('{id}', id).replace('{name}', titleName(name))));
+		iconUrls.filter(t => t.includes('{id}') && !t.includes('{name}')).forEach(t => derived(id).forEach(d => urls.push(t.replace('{id}', d))));
 		let n = 0;
 		const next = () => {
-			if (n < iconUrls.length) { img.src = iconUrls[n++].replace('{id}', id); return; }
-			img.style.visibility = 'hidden';
+			if (n < urls.length) { img.src = urls[n++]; return; }
 			iconFail++;
+			const ph = el('span', 'item-icon ph', name.charAt(0).toUpperCase());
+			ph.style.setProperty('--h', hue(cat + name));
+			if (img.parentNode) img.replaceWith(ph);
+			img.dataset.failed = '1';
 			if (iconFail >= 12 && iconOk === 0) $('iconNote').hidden = false;
 		};
 		img.onload = () => { iconOk++; $('iconNote').hidden = true; };
@@ -29,6 +47,8 @@
 		next();
 		return img;
 	}
+	const byId = Object.fromEntries(rows.map(r => [r.dataset.id, r]));
+	const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
 	rows.forEach(r => r.cells[0].appendChild(iconFor(r.dataset.id)));
 	const q = $('q'), count = $('count'), empty = $('empty'), chips = $('chips');
 	const cats = [...new Set(rows.map(r => r.dataset.cat))].filter(Boolean).sort();
@@ -72,12 +92,10 @@
 			: a.cells[col].textContent.localeCompare(c.cells[col].textContent) * dir);
 		rows.forEach(r => body.appendChild(r));
 	}));
-	const byId = Object.fromEntries(rows.map(r => [r.dataset.id, r]));
 	let lines = store.get('cubesia-calc-lines', []).filter(l => byId[l.id]);
 	let mults = store.get('cubesia-calc-mults', {});
 	const linesEl = $('lines'), totalEl = $('total'), baseEl = $('base'), bonusEl = $('bonus');
 	const mult = c => +(mults[c] ?? 1);
-	const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
 	const btn = (text, label, onClick) => { const b = el('button', null, text); b.type = 'button'; b.setAttribute('aria-label', label); b.addEventListener('click', onClick); return b; };
 	function renderLines() {
 		linesEl.textContent = '';

@@ -8,5 +8,5 @@ maintenance: false
 discord_server_id: "1243590602130718740"
 goatcounter: ""
 apply_endpoint: "https://apply.cubesiamc.workers.dev"
-item_icon_url: "https://cdn.jsdelivr.net/gh/PrismarineJS/minecraft-assets@master/data/26.1/items/{id}.png|https://cdn.jsdelivr.net/gh/PrismarineJS/minecraft-assets@master/data/26.1/blocks/{id}.png"
+item_icon_url: "https://minecraft.wiki/w/Special:FilePath/Invicon_{name}.png|https://cdn.jsdelivr.net/gh/PrismarineJS/minecraft-assets@master/data/1.21.1/items/{id}.png|https://cdn.jsdelivr.net/gh/PrismarineJS/minecraft-assets@master/data/1.21.1/blocks/{id}.png"
 minecraft_style: false
