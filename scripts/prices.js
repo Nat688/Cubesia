@@ -5,20 +5,20 @@
 	const $ = id => document.getElementById(id);
 	const body = table.tBodies[0];
 	const rows = [...body.rows];
-	const iconUrls = (document.querySelector('[data-icon-url]').dataset.iconUrl || '').split('|').map(s => s.trim()).filter(Boolean);
+	const main = document.querySelector('[data-icon-url]');
+	const iconUrls = (main.dataset.iconUrl || '').split('|').map(s => s.trim()).filter(Boolean);
 	const fmt = n => n.toLocaleString('en-US', { maximumFractionDigits: 2 });
 	const store = {
 		get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } },
 		set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 	};
 	let iconOk = 0, iconFail = 0;
-	const titleName = n => n.trim().replace(/\s+/g, '_');
-	function derived(id) {
-		const out = [];
-		const m = id.match(/^(.*?)(?:_stairs|_slab|_fence_gate|_fence|_pressure_plate|_button|_wall|_trapdoor|_door|_hanging_sign|_sign|_boat|_chest_boat|_raft|_chest_raft|_shelf)$/);
-		if (m) out.push(m[1] + '_planks', m[1], m[1] + 's', m[1] + '_block', m[1] + '_bricks');
-		if (/_wood$/.test(id)) out.push(id.replace(/_wood$/, '_log'));
-		return out.filter(x => x !== id);
+	const BLOCK_OF = { iron: 'Iron', gold: 'Gold', diamond: 'Diamond', emerald: 'Emerald', lapis: 'Lapis_Lazuli', redstone: 'Redstone', coal: 'Coal', copper: 'Copper', netherite: 'Netherite', amethyst: 'Amethyst', quartz: 'Quartz', raw_iron: 'Raw_Iron', raw_gold: 'Raw_Gold', raw_copper: 'Raw_Copper' };
+	function wikiName(id, name) {
+		const m = id.match(/^(.*)_block$/);
+		if (m && BLOCK_OF[m[1]]) return 'Block_of_' + BLOCK_OF[m[1]];
+		if (id === 'ender_eye') return 'Eye_of_Ender';
+		return name.trim().replace(/\s+/g, '_').replace(/_(Of|The|And|On|In|With)(?=_)/g, (x, w) => '_' + w.toLowerCase());
 	}
 	function hue(str) { let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) % 360; return h; }
 	function iconFor(id) {
@@ -30,8 +30,7 @@
 		img.loading = 'lazy';
 		img.className = 'item-icon';
 		const urls = [];
-		iconUrls.forEach(t => urls.push(t.replace('{id}', id).replace('{name}', titleName(name))));
-		iconUrls.filter(t => t.includes('{id}') && !t.includes('{name}')).forEach(t => derived(id).forEach(d => urls.push(t.replace('{id}', d))));
+		iconUrls.forEach(t => urls.push(t.replace('{id}', id).replace('{name}', wikiName(id, name))));
 		let n = 0;
 		const next = () => {
 			if (n < urls.length) { img.src = urls[n++]; return; }
