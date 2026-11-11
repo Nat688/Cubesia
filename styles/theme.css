@@ -127,3 +127,9 @@ html[data-theme="light"] .mini-tag.added { color: #1a7f1a; }
 html[data-theme="light"] .vote-card.ready .vote-timer { color: #1a7f1a; }
 html[data-theme="light"] .rm-tag { color: #5c554d; }
 html[data-theme="light"] .staff-group h2, html[data-theme="light"] .staff-role { color: var(--text); }
+html[data-theme="light"] .item-icon.ph { background: hsl(var(--h) 40% 82%); color: hsl(var(--h) 50% 28%); }
+html[data-theme="light"] .btn:hover, html[data-theme="light"] .btn2:hover, html[data-theme="light"] .btn3:hover { background: #ddd6c6; color: var(--text); }
+html[data-theme="light"] header .btn:hover, html[data-theme="light"] header .btn2:hover { background: #262121; color: #f1f1f1; }
+html[data-theme="light"] .tag.added { --c: 20, 105, 26; }
+html[data-theme="light"] .tag.fixed { --c: 122, 92, 0; }
+html[data-theme="light"] .tag.removed { --c: 176, 28, 36; }
