@@ -13,12 +13,29 @@
 		set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 	};
 	let iconOk = 0, iconFail = 0;
+	const missingIcons = new Set();
+	window.cubesiaIconsMissing = () => [...missingIcons];
 	const BLOCK_OF = { iron: 'Iron', gold: 'Gold', diamond: 'Diamond', emerald: 'Emerald', lapis: 'Lapis_Lazuli', redstone: 'Redstone', coal: 'Coal', copper: 'Copper', netherite: 'Netherite', amethyst: 'Amethyst', quartz: 'Quartz', raw_iron: 'Raw_Iron', raw_gold: 'Raw_Gold', raw_copper: 'Raw_Copper' };
+	const ALT = { beef: 'Raw_Beef', porkchop: 'Raw_Porkchop', chicken: 'Raw_Chicken', mutton: 'Raw_Mutton', rabbit: 'Raw_Rabbit', cod: 'Raw_Cod', salmon: 'Raw_Salmon', redstone: 'Redstone_Dust', quartz: 'Nether_Quartz', map: 'Empty_Map', cooked_beef: 'Steak', hay_block: 'Hay_Bale', experience_bottle: "Bottle_o'_Enchanting", writable_book: 'Book_and_Quill', leather_helmet: 'Leather_Cap', leather_chestplate: 'Leather_Tunic', leather_leggings: 'Leather_Pants', netherite_upgrade_smithing_template: 'Netherite_Upgrade', waxed_copper_block: 'Waxed_Block_of_Copper', resin_block: 'Block_of_Resin', bamboo_block: 'Block_of_Bamboo', stripped_bamboo_block: 'Block_of_Stripped_Bamboo', tnt: 'TNT', tnt_minecart: 'Minecart_with_TNT', disc_fragment_5: 'Disc_Fragment', creeper_banner_pattern: 'Creeper_Charge_Banner_Pattern', flower_banner_pattern: 'Flower_Charge_Banner_Pattern', skull_banner_pattern: 'Skull_Charge_Banner_Pattern', mojang_banner_pattern: 'Thing_Banner_Pattern', bamboo_chest_raft: 'Bamboo_Raft_with_Chest' };
+	const MOB_BUCKET = /^(axolotl|cod|pufferfish|salmon|tadpole|tropical_fish)_bucket$/;
+	const cap = w => w.charAt(0).toUpperCase() + w.slice(1);
 	function wikiName(id, name) {
 		const m = id.match(/^(.*)_block$/);
 		if (m && BLOCK_OF[m[1]]) return 'Block_of_' + BLOCK_OF[m[1]];
 		if (id === 'ender_eye') return 'Eye_of_Ender';
 		return name.trim().replace(/\s+/g, '_').replace(/_(Of|The|And|On|In|With)(?=_)/g, (x, w) => '_' + w.toLowerCase());
+	}
+	function wikiNames(id, name) {
+		const list = [];
+		if (ALT[id]) list.push(ALT[id]);
+		const bucket = id.match(MOB_BUCKET);
+		if (bucket) list.push('Bucket_of_' + bucket[1].split('_').map(cap).join('_'));
+		const boat = id.match(/^(.*)_chest_boat$/);
+		if (boat) list.push(boat[1].split('_').map(cap).join('_') + '_Boat_with_Chest');
+		const trim = id.match(/^(.*)_armor_trim_smithing_template$/);
+		if (trim) list.push(trim[1].split('_').map(cap).join('_') + '_Armor_Trim');
+		list.push(wikiName(id, name));
+		return [...new Set(list)];
 	}
 	function hue(str) { let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) % 360; return h; }
 	function iconFor(id) {
@@ -30,11 +47,12 @@
 		img.loading = 'lazy';
 		img.className = 'item-icon';
 		const urls = [];
-		iconUrls.forEach(t => urls.push(t.replace('{id}', id).replace('{name}', wikiName(id, name))));
+		wikiNames(id, name).forEach(n => iconUrls.forEach(t => urls.push(t.replace('{id}', id).replace('{name}', n))));
 		let n = 0;
 		const next = () => {
 			if (n < urls.length) { img.src = urls[n++]; return; }
 			iconFail++;
+			missingIcons.add(id);
 			const ph = el('span', 'item-icon ph', name.charAt(0).toUpperCase());
 			ph.style.setProperty('--h', hue(cat + name));
 			if (img.parentNode) img.replaceWith(ph);

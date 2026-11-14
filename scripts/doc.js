@@ -49,14 +49,18 @@
 	if (toc && content && !$('.toc-search', toc)) {
 		const heads = $$(HEADINGS, content);
 		const index = new Map();
-		heads.forEach(h => {
-			const level = Number(h.tagName[1]);
-			let text = h.textContent;
-			for (let n = h.nextElementSibling; n && !(/^H[1-6]$/.test(n.tagName) && Number(n.tagName[1]) <= level); n = n.nextElementSibling) {
-				text += ' ' + n.textContent;
-			}
-			index.set(h.id, text.toLowerCase().replace(/\s+/g, ' '));
-		});
+		const fold = s => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ');
+		const buildIndex = () => {
+			heads.forEach(h => {
+				const level = Number(h.tagName[1]);
+				let text = h.textContent;
+				for (let n = h.nextElementSibling; n && !(/^H[1-6]$/.test(n.tagName) && Number(n.tagName[1]) <= level); n = n.nextElementSibling) {
+					text += ' ' + n.textContent;
+				}
+				index.set(h.id, fold(text));
+			});
+		};
+		buildIndex();
 		const input = document.createElement('input');
 		input.type = 'search';
 		input.className = 'toc-search';
@@ -69,7 +73,7 @@
 		$('.toc-title', toc).after(input);
 		$(':scope > ul', toc).after(empty);
 		const filter = () => {
-			const terms = input.value.toLowerCase().split(/\s+/).filter(Boolean);
+			const terms = fold(input.value).split(/\s+/).filter(Boolean);
 			const matches = a => terms.every(t => (index.get(a.getAttribute('href').slice(1)) || '').includes(t));
 			toc.classList.toggle('searching', terms.length > 0);
 			let shown = 0;
@@ -86,6 +90,7 @@
 			});
 			empty.hidden = terms.length === 0 || shown > 0;
 		};
+		window.cubesiaReindex = () => { buildIndex(); filter(); };
 		input.addEventListener('input', filter);
 		input.addEventListener('keydown', e => {
 			if (e.key === 'Escape') { input.value = ''; filter(); }

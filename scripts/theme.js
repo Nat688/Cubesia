@@ -17,12 +17,15 @@
 	function applyStyle() {
 		const on = wantMC();
 		let css = document.getElementById('mc-css'), fonts = document.getElementById('mc-fonts');
+		const ready = () => root.classList.remove('mc-pending');
 		if (on) {
 			if (!fonts) { fonts = document.createElement('link'); fonts.id = 'mc-fonts'; fonts.rel = 'stylesheet'; fonts.href = FONTS; document.head.appendChild(fonts); }
 			if (!css) { css = document.createElement('link'); css.id = 'mc-css'; css.rel = 'stylesheet'; css.href = 'styles/minecraft.css'; document.body.appendChild(css); }
+			if (css.sheet) ready(); else { css.addEventListener('load', ready); css.addEventListener('error', ready); setTimeout(ready, 2000); }
 		} else {
 			if (css) css.remove();
 			if (fonts) fonts.remove();
+			ready();
 		}
 	}
 	function setStyle(v) { write(KEY_S, v); applyStyle(); mark(); }
