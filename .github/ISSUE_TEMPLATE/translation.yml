@@ -1,0 +1,38 @@
+name: Translation issue
+description: A text is missing, wrong or badly translated (EN / FR).
+title: "[Translation] "
+labels: ["translation", "needs-triage"]
+body:
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options: [French (FR), English (EN)]
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of problem
+      options: [Missing translation, Wrong translation, Typo, Inconsistent wording, Other]
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where is it?
+      description: Page and section, or a link ending with the # anchor.
+      placeholder: https://nat688.github.io/Cubesia/wiki.html#auction-house
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current text
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed text
+      description: Optional. Server names (ranks, items, features) stay in English.

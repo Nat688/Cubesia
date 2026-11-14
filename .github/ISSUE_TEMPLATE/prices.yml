@@ -1,0 +1,27 @@
+name: Prices issue
+description: A wrong price, a missing item or a wrong icon on the Prices page.
+title: "[Prices] "
+labels: ["prices", "needs-triage"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of problem
+      options: [Wrong price, Missing item, Wrong icon, Calculator problem, Other]
+    validations:
+      required: true
+  - type: input
+    id: item
+    attributes:
+      label: Item
+      description: Item name or id, as shown on the page.
+      placeholder: bamboo_chest_raft
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What you see, and what it should be. Multipliers used in the calculator if relevant.
+    validations:
+      required: true

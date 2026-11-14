@@ -1,13 +1,11 @@
 ---
 name: ❓ Question
-about: Poser une question sur le projet
+about: Ask a question about the project
 title: "❓ Question"
-labels: help
+labels: question, needs-triage
 assignees: ""
 ---
-
 ## Question
-Décrire la question ou le problème rencontré.
-
-## Contexte
-Tout détail utile pour comprendre la situation.
+Describe your question or the problem you ran into.
+## Context
+Any detail that helps us understand the situation.

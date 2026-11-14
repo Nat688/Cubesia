@@ -1,37 +1,30 @@
 ---
 name: 🐛 Bug Report
-about: Signaler un bug pour nous aider à améliorer le projet
+about: Report a bug to help us improve the project
 title: "🐛 Bug Report"
-labels: bug
+labels: bug, needs-triage
 assignees: ""
 ---
-
 ## Description
-Une description claire et concise du bug.
-
-## Étapes pour reproduire
-1. Aller sur `...`
-2. Cliquer sur `...`
-3. Faire défiler jusqu'à `...`
-
-## Comportement attendu
-Une description claire de ce qui **devrait** se passer.
-
-## Comportement observé
-Une description de ce qui **se passe réellement**.
-
-## Captures d'écran / Logs
-Si applicable, ajoutez des captures d'écran ou logs pour aider à comprendre le problème.
-
-## Environnement
- - OS: [ex: Windows 11]
- - Navigateur: [ex: Chrome]
- - Version: [ex: 1.2.0]
-
-## Informations supplémentaires
-Ajoutez tout autre contexte utile concernant le problème.
-
+A clear and concise description of the bug.
+## Steps to reproduce
+1. Go to `...`
+2. Click on `...`
+3. Scroll down to `...`
+## Expected behavior
+A clear description of what **should** happen.
+## Actual behavior
+A description of what **actually happens**.
+## Screenshots / Logs
+If applicable, add screenshots or logs to help explain the problem.
+## Environment
+ - OS: [e.g. Windows 11]
+ - Browser: [e.g. Chrome]
+ - Page: [e.g. Wiki]
+ - Display settings: [e.g. light theme, Minecraft style, French wiki]
+## Additional information
+Add any other context about the problem.
 ## Checklist
-* [ ] J'ai vérifié qu'il n'existe pas déjà une issue similaire
-* [ ] J'ai fourni les étapes pour reproduire le bug
-* [ ] J'ai ajouté les logs ou captures si possible
+* [ ] I checked that a similar issue does not already exist
+* [ ] I provided the steps to reproduce the bug
+* [ ] I added logs or screenshots if possible
