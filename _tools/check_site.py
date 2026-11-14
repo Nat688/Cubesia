@@ -1,8 +1,3 @@
-"""Checks the Cubesia site: missing files, broken # links and duplicate ids.
-
-Usage (from the project root):   python _tools/check_site.py
-On GitHub, the workflow .github/workflows/check-site.yml runs it on every change.
-"""
 import os
 import re
 import sys
@@ -94,7 +89,6 @@ def main():
                 size = os.path.getsize(os.path.join(ROOT, dest))
                 if size > BIG_IMAGE:
                     warnings.append((name, line, f'large image ({size // 1024} KB): {dest}'))
-    # data-patch values in the wiki must exist in patch.html
     if 'wiki.html' in pages and 'patch.html' in pages:
         patch_ids = {i for i, _ in pages['patch.html'].ids}
         used = set()

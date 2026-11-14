@@ -1,10 +1,3 @@
-"""Builds _data/prices.json (used by prices.html) from the server's worth.yml.
-
-Usage (from the project root):   python _tools/build_prices.py path/to/worth.yml
-Accepts the SKSell prices.yml (categories: <key>: {display-name, items: {ITEM: price}}),
-a flat file (ITEM: price) or one with sections (section: {ITEM: price}).
-Keys that are not plain numbers (bonus settings, etc.) are ignored.
-"""
 import json
 import os
 import sys
