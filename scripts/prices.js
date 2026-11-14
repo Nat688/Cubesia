@@ -47,13 +47,21 @@
 		return [...new Set(list)];
 	}
 	function hue(str) { let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) % 360; return h; }
+	const MAX_LOADS = CHECK ? 16 : 6;
+	const queue = [];
+	let active = 0;
+	function pump() {
+		while (active < MAX_LOADS && queue.length) { active++; queue.shift()(); }
+	}
+	const io = 'IntersectionObserver' in window ? new IntersectionObserver(entries => entries.forEach(e => {
+		if (e.isIntersecting) { io.unobserve(e.target); e.target.start(); }
+	}), { rootMargin: '300px' }) : null;
 	function iconFor(id) {
 		const row = byId[id];
 		const name = row ? row.cells[1].textContent : id;
 		const cat = row ? row.dataset.cat : '';
 		const img = new Image(28, 28);
 		img.alt = '';
-		img.loading = CHECK ? 'eager' : 'lazy';
 		img.className = 'item-icon';
 		const urls = [];
 		wikiNames(id, name).forEach(n => iconUrls.forEach(t => {
@@ -63,8 +71,7 @@
 		}));
 		tried[id] = urls;
 		let n = 0;
-		const next = () => {
-			if (n < urls.length) { img.src = urls[n++]; return; }
+		const fail = () => {
 			iconFail++;
 			missingIcons.add(id);
 			if (CHECK) { iconDone++; report(); }
@@ -72,12 +79,17 @@
 			ph.style.setProperty('--h', hue(cat + name));
 			if (CHECK) { ph.style.background = '#c62828'; ph.style.color = '#fff'; }
 			if (img.parentNode) img.replaceWith(ph);
-			img.dataset.failed = '1';
 			if (iconFail >= 12 && iconOk === 0) $('iconNote').hidden = false;
 		};
-		img.onload = () => { iconOk++; $('iconNote').hidden = true; if (CHECK) { iconDone++; report(); } };
-		img.onerror = next;
-		next();
+		const attempt = () => {
+			if (n >= urls.length) { fail(); return; }
+			queue.push(() => { img.src = urls[n++]; });
+			pump();
+		};
+		img.onload = () => { active--; pump(); iconOk++; $('iconNote').hidden = true; if (CHECK) { iconDone++; report(); } };
+		img.onerror = () => { active--; pump(); attempt(); };
+		img.start = attempt;
+		if (CHECK || !io) attempt(); else io.observe(img);
 		return img;
 	}
 	function report() {
@@ -185,7 +197,10 @@
 			const top = el('div', 'cl-top');
 			const name = el('span', 'cl-name', r.cells[1].textContent);
 			const sub = el('span', 'cl-sub', fmt(price * l.qty * m));
-			top.append(iconFor(l.id), name, sub, btn('\u00D7', 'Remove ' + name.textContent, () => { lines.splice(i, 1); save(); }));
+			const unit = el('span', 'cl-unit', fmt(price) + (m !== 1 ? ' \u00D7 ' + fmt(m) : '') + ' each');
+			const info = el('div', 'cl-info');
+			info.append(name, unit);
+			top.append(iconFor(l.id), info, btn('\u00D7', 'Remove ' + name.textContent, () => { lines.splice(i, 1); save(); }));
 			const bottom = el('div', 'cl-bottom');
 			const stepper = el('div', 'stepper');
 			const qty = el('input');
@@ -195,8 +210,7 @@
 			stepper.append(btn('\u2212', 'Less', () => { l.qty = Math.max(1, l.qty - 1); save(); }), qty, btn('+', 'More', () => { l.qty++; save(); }));
 			const stack = btn('64', 'One stack of 64', () => { l.qty = 64; save(); });
 			stack.className = 'cl-stack';
-			const unit = el('span', 'cl-unit', fmt(price) + (m !== 1 ? ' \u00D7 ' + fmt(m) : '') + ' each');
-			bottom.append(stepper, stack, unit);
+			bottom.append(stepper, stack, sub);
 			row.append(top, bottom);
 			linesEl.appendChild(row);
 		});
