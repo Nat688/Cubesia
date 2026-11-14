@@ -362,7 +362,6 @@ details > summary {
     }
 }
 #discordStatus .dot { background: #7289DA; }
-
 .join-card {
     display: flex;
     flex-direction: column;
