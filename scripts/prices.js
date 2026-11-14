@@ -16,7 +16,7 @@
 	const missingIcons = new Set();
 	window.cubesiaIconsMissing = () => [...missingIcons];
 	const BLOCK_OF = { iron: 'Iron', gold: 'Gold', diamond: 'Diamond', emerald: 'Emerald', lapis: 'Lapis_Lazuli', redstone: 'Redstone', coal: 'Coal', copper: 'Copper', netherite: 'Netherite', amethyst: 'Amethyst', quartz: 'Quartz', raw_iron: 'Raw_Iron', raw_gold: 'Raw_Gold', raw_copper: 'Raw_Copper' };
-	const ALT = { beef: 'Raw_Beef', porkchop: 'Raw_Porkchop', chicken: 'Raw_Chicken', mutton: 'Raw_Mutton', rabbit: 'Raw_Rabbit', cod: 'Raw_Cod', salmon: 'Raw_Salmon', redstone: 'Redstone_Dust', quartz: 'Nether_Quartz', map: 'Empty_Map', cooked_beef: 'Steak', hay_block: 'Hay_Bale', experience_bottle: "Bottle_o'_Enchanting", writable_book: 'Book_and_Quill', leather_helmet: 'Leather_Cap', leather_chestplate: 'Leather_Tunic', leather_leggings: 'Leather_Pants', netherite_upgrade_smithing_template: 'Netherite_Upgrade', waxed_copper_block: 'Waxed_Block_of_Copper', resin_block: 'Block_of_Resin', bamboo_block: 'Block_of_Bamboo', stripped_bamboo_block: 'Block_of_Stripped_Bamboo', tnt: 'TNT', tnt_minecart: 'Minecart_with_TNT', disc_fragment_5: 'Disc_Fragment', creeper_banner_pattern: 'Creeper_Charge_Banner_Pattern', flower_banner_pattern: 'Flower_Charge_Banner_Pattern', skull_banner_pattern: 'Skull_Charge_Banner_Pattern', mojang_banner_pattern: 'Thing_Banner_Pattern', bamboo_chest_raft: 'Bamboo_Raft_with_Chest' };
+	const ALT = { beef: 'Raw_Beef', porkchop: 'Raw_Porkchop', chicken: 'Raw_Chicken', mutton: 'Raw_Mutton', rabbit: 'Raw_Rabbit', cod: 'Raw_Cod', salmon: 'Raw_Salmon', redstone: 'Redstone_Dust', quartz: 'Nether_Quartz', map: 'Empty_Map', cooked_beef: 'Steak', hay_block: 'Hay_Bale', experience_bottle: "Bottle_o'_Enchanting", writable_book: 'Book_and_Quill', leather_helmet: 'Leather_Cap', leather_chestplate: 'Leather_Tunic', leather_leggings: 'Leather_Pants', netherite_upgrade_smithing_template: 'Netherite_Upgrade', waxed_copper_block: 'Waxed_Block_of_Copper', resin_block: 'Block_of_Resin', bamboo_block: 'Block_of_Bamboo', stripped_bamboo_block: 'Block_of_Stripped_Bamboo', tnt: 'TNT', tnt_minecart: 'Minecart_with_TNT', disc_fragment_5: 'Disc_Fragment', bamboo_chest_raft: 'Bamboo_Raft_with_Chest', comparator: 'Redstone_Comparator', repeater: 'Redstone_Repeater', dragon_breath: "Dragon's_Breath", lapis_ore: 'Lapis_Lazuli_Ore', deepslate_lapis_ore: 'Deepslate_Lapis_Lazuli_Ore', furnace_minecart: 'Minecart_with_Furnace', hopper_minecart: 'Minecart_with_Hopper', chest_minecart: 'Minecart_with_Chest', command_block_minecart: 'Minecart_with_Command_Block', potion: 'Water_Bottle', splash_potion: 'Splash_Water_Bottle', lingering_potion: 'Lingering_Water_Bottle', music_disc_creator_music_box: 'Music_Disc_Creator_(Music_Box)' };
 	const MOB_BUCKET = /^(axolotl|cod|pufferfish|salmon|tadpole|tropical_fish)_bucket$/;
 	const cap = w => w.charAt(0).toUpperCase() + w.slice(1);
 	function wikiName(id, name) {
@@ -34,6 +34,9 @@
 		if (boat) list.push(boat[1].split('_').map(cap).join('_') + '_Boat_with_Chest');
 		const trim = id.match(/^(.*)_armor_trim_smithing_template$/);
 		if (trim) list.push(trim[1].split('_').map(cap).join('_') + '_Armor_Trim');
+		const disc = id.match(/^music_disc_(.+)$/);
+		if (disc) list.push('Music_Disc_(' + disc[1].split('_').map(cap).join('_') + ')');
+		if (/_banner_pattern$/.test(id)) list.push('Banner_Pattern');
 		list.push(wikiName(id, name));
 		return [...new Set(list)];
 	}
@@ -47,7 +50,13 @@
 		img.loading = 'lazy';
 		img.className = 'item-icon';
 		const urls = [];
-		wikiNames(id, name).forEach(n => iconUrls.forEach(t => urls.push(t.replace('{id}', id).replace('{name}', n))));
+		wikiNames(id, name).forEach(n => iconUrls.forEach(t => {
+			const u = t.replace('{id}', id).replace('{name}', n);
+			urls.push(u);
+			if (/\.png(\?.*)?$/.test(u)) urls.push(u.replace(/\.png(\?.*)?$/, '.gif$1'));
+		}));
+		if (/_spear$/.test(id)) urls.push('images/icon/spear.webp');
+		if (/^music_disc_/.test(id)) urls.push('images/icon/music-disc.svg');
 		let n = 0;
 		const next = () => {
 			if (n < urls.length) { img.src = urls[n++]; return; }
