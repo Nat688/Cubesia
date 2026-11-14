@@ -38,12 +38,13 @@
 		const trim = id.match(/^(.*)_armor_trim_smithing_template$/);
 		if (trim) list.push(trim[1].split('_').map(cap).join('_') + '_Armor_Trim');
 		const disc = id.match(/^music_disc_(.+)$/);
-		if (disc) list.push('Music_Disc_(' + disc[1].split('_').map(cap).join('_') + ')');
+		if (disc) list.push('Music_Disc_' + disc[1].toLowerCase());
 		if (/_banner_pattern$/.test(id)) list.push('Banner_Pattern');
 		list.push(wikiName(id, name));
 		if (/^waxed_/.test(id)) list.push(...wikiNames(id.slice(6), name.replace(/^Waxed /, '')));
 		const sentence = n => n.charAt(0) + n.slice(1).toLowerCase();
-		list.push(...list.map(sentence));
+		const lastLower = n => n.replace(/_([^_]+)$/, (m, w) => '_' + w.toLowerCase());
+		list.push(...list.map(sentence), ...list.map(lastLower));
 		return [...new Set(list)];
 	}
 	function hue(str) { let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) % 360; return h; }
