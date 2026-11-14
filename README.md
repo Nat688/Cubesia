@@ -110,9 +110,9 @@ All settings are in `_config.yml`.
 - The icon URL is `item_icon_url` with `{name}` replaced by the item name, for example `Diamond_Sword`.
 - When the wiki uses another name, `scripts/prices.js` tries alternatives in this order:
   - the `ALT` table (`beef` is `Raw_Beef`, `turtle_helmet` is `Turtle_Shell`...);
-  - `Bucket_of_X` for mob buckets, `X_Boat_with_Chest`, `X_Armor_Trim`, `Banner_Pattern`, `Music_Disc_(X)`;
+  - `Bucket_of_X` for mob buckets, `X_Boat_with_Chest`, `X_Armor_Trim`, `Banner_Pattern`, `Music_Disc_x` (track name in lowercase, e.g. `Music_Disc_cat`);
   - the name without `Waxed` for waxed copper items;
-  - the same names in sentence case (`Copper_torch`);
+  - the same names in sentence case (`Copper_torch`) and with the last word in lowercase (`Music_Disc_cat`);
   - each name is also tried as `.gif` (animated or enchanted items).
 - No fake icon is used: an item without a real icon shows a colored tile with its first letter.
 ### Checking icons
