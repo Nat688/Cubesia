@@ -14,16 +14,19 @@
 	};
 	let iconOk = 0, iconFail = 0;
 	const missingIcons = new Set();
+	const CHECK = /[?&]iconcheck\b/.test(location.search);
+	const tried = {};
+	let iconDone = 0;
 	window.cubesiaIconsMissing = () => [...missingIcons];
 	const BLOCK_OF = { iron: 'Iron', gold: 'Gold', diamond: 'Diamond', emerald: 'Emerald', lapis: 'Lapis_Lazuli', redstone: 'Redstone', coal: 'Coal', copper: 'Copper', netherite: 'Netherite', amethyst: 'Amethyst', quartz: 'Quartz', raw_iron: 'Raw_Iron', raw_gold: 'Raw_Gold', raw_copper: 'Raw_Copper' };
-	const ALT = { beef: 'Raw_Beef', porkchop: 'Raw_Porkchop', chicken: 'Raw_Chicken', mutton: 'Raw_Mutton', rabbit: 'Raw_Rabbit', cod: 'Raw_Cod', salmon: 'Raw_Salmon', redstone: 'Redstone_Dust', quartz: 'Nether_Quartz', map: 'Empty_Map', cooked_beef: 'Steak', hay_block: 'Hay_Bale', experience_bottle: "Bottle_o'_Enchanting", writable_book: 'Book_and_Quill', leather_helmet: 'Leather_Cap', leather_chestplate: 'Leather_Tunic', leather_leggings: 'Leather_Pants', netherite_upgrade_smithing_template: 'Netherite_Upgrade', waxed_copper_block: 'Waxed_Block_of_Copper', resin_block: 'Block_of_Resin', bamboo_block: 'Block_of_Bamboo', stripped_bamboo_block: 'Block_of_Stripped_Bamboo', tnt: 'TNT', tnt_minecart: 'Minecart_with_TNT', disc_fragment_5: 'Disc_Fragment', bamboo_chest_raft: 'Bamboo_Raft_with_Chest', comparator: 'Redstone_Comparator', repeater: 'Redstone_Repeater', dragon_breath: "Dragon's_Breath", lapis_ore: 'Lapis_Lazuli_Ore', deepslate_lapis_ore: 'Deepslate_Lapis_Lazuli_Ore', furnace_minecart: 'Minecart_with_Furnace', hopper_minecart: 'Minecart_with_Hopper', chest_minecart: 'Minecart_with_Chest', command_block_minecart: 'Minecart_with_Command_Block', potion: 'Water_Bottle', splash_potion: 'Splash_Water_Bottle', lingering_potion: 'Lingering_Water_Bottle', music_disc_creator_music_box: 'Music_Disc_Creator_(Music_Box)' };
+	const ALT = { turtle_helmet: 'Turtle_Shell', rabbit_foot: "Rabbit's_Foot", slime_ball: 'Slimeball', vine: 'Vines', beef: 'Raw_Beef', porkchop: 'Raw_Porkchop', chicken: 'Raw_Chicken', mutton: 'Raw_Mutton', rabbit: 'Raw_Rabbit', cod: 'Raw_Cod', salmon: 'Raw_Salmon', redstone: 'Redstone_Dust', quartz: 'Nether_Quartz', map: 'Empty_Map', cooked_beef: 'Steak', hay_block: 'Hay_Bale', experience_bottle: "Bottle_o'_Enchanting", writable_book: 'Book_and_Quill', leather_helmet: 'Leather_Cap', leather_chestplate: 'Leather_Tunic', leather_leggings: 'Leather_Pants', netherite_upgrade_smithing_template: 'Netherite_Upgrade', waxed_copper_block: 'Waxed_Block_of_Copper', resin_block: 'Block_of_Resin', bamboo_block: 'Block_of_Bamboo', stripped_bamboo_block: 'Block_of_Stripped_Bamboo', tnt: 'TNT', tnt_minecart: 'Minecart_with_TNT', disc_fragment_5: 'Disc_Fragment', bamboo_chest_raft: 'Bamboo_Raft_with_Chest', comparator: 'Redstone_Comparator', repeater: 'Redstone_Repeater', dragon_breath: "Dragon's_Breath", lapis_ore: 'Lapis_Lazuli_Ore', deepslate_lapis_ore: 'Deepslate_Lapis_Lazuli_Ore', furnace_minecart: 'Minecart_with_Furnace', hopper_minecart: 'Minecart_with_Hopper', chest_minecart: 'Minecart_with_Chest', command_block_minecart: 'Minecart_with_Command_Block', potion: 'Water_Bottle', splash_potion: 'Splash_Water_Bottle', lingering_potion: 'Lingering_Water_Bottle', music_disc_creator_music_box: 'Music_Disc_Creator_(Music_Box)' };
 	const MOB_BUCKET = /^(axolotl|cod|pufferfish|salmon|tadpole|tropical_fish)_bucket$/;
 	const cap = w => w.charAt(0).toUpperCase() + w.slice(1);
 	function wikiName(id, name) {
 		const m = id.match(/^(.*)_block$/);
 		if (m && BLOCK_OF[m[1]]) return 'Block_of_' + BLOCK_OF[m[1]];
 		if (id === 'ender_eye') return 'Eye_of_Ender';
-		return name.trim().replace(/\s+/g, '_').replace(/_(Of|The|And|On|In|With)(?=_)/g, (x, w) => '_' + w.toLowerCase());
+		return name.trim().replace(/\s+/g, '_').replace(/_(Of|The|And|On|In|With|A)(?=_)/g, (x, w) => '_' + w.toLowerCase());
 	}
 	function wikiNames(id, name) {
 		const list = [];
@@ -38,6 +41,7 @@
 		if (disc) list.push('Music_Disc_(' + disc[1].split('_').map(cap).join('_') + ')');
 		if (/_banner_pattern$/.test(id)) list.push('Banner_Pattern');
 		list.push(wikiName(id, name));
+		if (/^waxed_/.test(id)) list.push(...wikiNames(id.slice(6), name.replace(/^Waxed /, '')));
 		return [...new Set(list)];
 	}
 	function hue(str) { let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) % 360; return h; }
@@ -47,7 +51,7 @@
 		const cat = row ? row.dataset.cat : '';
 		const img = new Image(28, 28);
 		img.alt = '';
-		img.loading = 'lazy';
+		img.loading = CHECK ? 'eager' : 'lazy';
 		img.className = 'item-icon';
 		const urls = [];
 		wikiNames(id, name).forEach(n => iconUrls.forEach(t => {
@@ -56,22 +60,62 @@
 			if (/\.png(\?.*)?$/.test(u)) urls.push(u.replace(/\.png(\?.*)?$/, '.gif$1'));
 		}));
 		if (/_spear$/.test(id)) urls.push('images/icon/spear.webp');
-		if (/^music_disc_/.test(id)) urls.push('images/icon/music-disc.svg');
+		if (/^music_disc_/.test(id)) urls.push('data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2016%2016%22%20shape-rendering=%22crispEdges%22%3E%3Cpath%20fill=%22%231c1c24%22%20d=%22M5%201h6v1h2v2h2v8h-2v2h-2v2H5v-2H3v-2H1V4h2V2h2z%22/%3E%3Cpath%20fill=%22%233a3a48%22%20d=%22M5%202h4v1H6v1H4v3H3V4h2z%22/%3E%3Cpath%20fill=%22%23e8a33d%22%20d=%22M6%206h4v4H6z%22/%3E%3Cpath%20fill=%22%231c1c24%22%20d=%22M7%207h2v2H7z%22/%3E%3C/svg%3E');
+		tried[id] = urls;
 		let n = 0;
 		const next = () => {
 			if (n < urls.length) { img.src = urls[n++]; return; }
 			iconFail++;
 			missingIcons.add(id);
+			if (CHECK) { iconDone++; report(); }
 			const ph = el('span', 'item-icon ph', name.charAt(0).toUpperCase());
 			ph.style.setProperty('--h', hue(cat + name));
+			if (CHECK) { ph.style.background = '#c62828'; ph.style.color = '#fff'; }
 			if (img.parentNode) img.replaceWith(ph);
 			img.dataset.failed = '1';
 			if (iconFail >= 12 && iconOk === 0) $('iconNote').hidden = false;
 		};
-		img.onload = () => { iconOk++; $('iconNote').hidden = true; };
+		img.onload = () => { iconOk++; $('iconNote').hidden = true; if (CHECK) { iconDone++; report(); } };
 		img.onerror = next;
 		next();
 		return img;
+	}
+	function report() {
+		const box = $('iconReport') || (() => {
+			const b = el('div');
+			b.id = 'iconReport';
+			b.style.cssText = 'margin:1rem 0;padding:1rem;border:2px solid #c62828;border-radius:8px;background:rgba(198,40,40,.12);font:14px/1.5 system-ui,sans-serif';
+			table.parentNode.insertBefore(b, table);
+			return b;
+		})();
+		const total = rows.length;
+		box.replaceChildren();
+		const head = el('b', null, iconDone < total ? `Checking icons... ${iconDone} / ${total}` : `Done: ${iconOk} icons found, ${missingIcons.size} not found`);
+		head.style.color = missingIcons.size ? '#ff6b6b' : '#4caf50';
+		box.appendChild(head);
+		if (iconDone < total) return;
+		if (!missingIcons.size) return;
+		const ul = el('ul');
+		ul.style.cssText = 'margin:.6rem 0 0;padding-left:1.2rem;max-height:420px;overflow:auto';
+		[...missingIcons].sort().forEach(id => {
+			const li = el('li');
+			const row = byId[id];
+			li.style.color = '#ff6b6b';
+			li.appendChild(document.createTextNode((row ? row.cells[1].textContent : id) + '  '));
+			const a = el('a', null, tried[id][0]);
+			a.href = tried[id][0];
+			a.target = '_blank';
+			a.rel = 'noopener';
+			a.style.color = '#ff9e9e';
+			li.appendChild(a);
+			ul.appendChild(li);
+		});
+		box.appendChild(ul);
+		const copy = el('button', 'btn', 'Copy the list');
+		copy.type = 'button';
+		copy.style.marginTop = '.6rem';
+		copy.addEventListener('click', () => navigator.clipboard.writeText([...missingIcons].sort().map(id => byId[id].cells[1].textContent).join('\n')));
+		box.appendChild(copy);
 	}
 	const byId = Object.fromEntries(rows.map(r => [r.dataset.id, r]));
 	const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
