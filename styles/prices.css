@@ -155,3 +155,4 @@
 }
 .notice svg { flex-shrink: 0; width: 18px; height: 18px; margin-top: 2px; color: var(--accent); }
 .item-icon.ph { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 6px; background: hsl(var(--h) 35% 26%); color: hsl(var(--h) 70% 82%); font-size: 0.8rem; font-weight: 700; line-height: 1; }
+#iconNote { margin-top: 2rem; }

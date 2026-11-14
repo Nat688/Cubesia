@@ -20,7 +20,7 @@
 	window.cubesiaIconsMissing = () => [...missingIcons];
 	const BLOCK_OF = { iron: 'Iron', gold: 'Gold', diamond: 'Diamond', emerald: 'Emerald', lapis: 'Lapis_Lazuli', redstone: 'Redstone', coal: 'Coal', copper: 'Copper', netherite: 'Netherite', amethyst: 'Amethyst', quartz: 'Quartz', raw_iron: 'Raw_Iron', raw_gold: 'Raw_Gold', raw_copper: 'Raw_Copper' };
 	const ALT = { turtle_helmet: 'Turtle_Shell', rabbit_foot: "Rabbit's_Foot", slime_ball: 'Slimeball', vine: 'Vines', beef: 'Raw_Beef', porkchop: 'Raw_Porkchop', chicken: 'Raw_Chicken', mutton: 'Raw_Mutton', rabbit: 'Raw_Rabbit', cod: 'Raw_Cod', salmon: 'Raw_Salmon', redstone: 'Redstone_Dust', quartz: 'Nether_Quartz', map: 'Empty_Map', cooked_beef: 'Steak', hay_block: 'Hay_Bale', experience_bottle: "Bottle_o'_Enchanting", writable_book: 'Book_and_Quill', leather_helmet: 'Leather_Cap', leather_chestplate: 'Leather_Tunic', leather_leggings: 'Leather_Pants', netherite_upgrade_smithing_template: 'Netherite_Upgrade', waxed_copper_block: 'Waxed_Block_of_Copper', resin_block: 'Block_of_Resin', bamboo_block: 'Block_of_Bamboo', stripped_bamboo_block: 'Block_of_Stripped_Bamboo', tnt: 'TNT', tnt_minecart: 'Minecart_with_TNT', disc_fragment_5: 'Disc_Fragment', bamboo_chest_raft: 'Bamboo_Raft_with_Chest', comparator: 'Redstone_Comparator', repeater: 'Redstone_Repeater', dragon_breath: "Dragon's_Breath", lapis_ore: 'Lapis_Lazuli_Ore', deepslate_lapis_ore: 'Deepslate_Lapis_Lazuli_Ore', furnace_minecart: 'Minecart_with_Furnace', hopper_minecart: 'Minecart_with_Hopper', chest_minecart: 'Minecart_with_Chest', command_block_minecart: 'Minecart_with_Command_Block', potion: 'Water_Bottle', splash_potion: 'Splash_Water_Bottle', lingering_potion: 'Lingering_Water_Bottle', music_disc_creator_music_box: 'Music_Disc_Creator_(Music_Box)' };
-	const MOB_BUCKET = /^(axolotl|cod|pufferfish|salmon|tadpole|tropical_fish)_bucket$/;
+	const MOB_BUCKET = /^(?!water_|lava_|milk_|powder_snow_)(.+)_bucket$/;
 	const cap = w => w.charAt(0).toUpperCase() + w.slice(1);
 	function wikiName(id, name) {
 		const m = id.match(/^(.*)_block$/);
@@ -42,6 +42,8 @@
 		if (/_banner_pattern$/.test(id)) list.push('Banner_Pattern');
 		list.push(wikiName(id, name));
 		if (/^waxed_/.test(id)) list.push(...wikiNames(id.slice(6), name.replace(/^Waxed /, '')));
+		const sentence = n => n.charAt(0) + n.slice(1).toLowerCase();
+		list.push(...list.map(sentence));
 		return [...new Set(list)];
 	}
 	function hue(str) { let h = 0; for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) % 360; return h; }
@@ -59,8 +61,6 @@
 			urls.push(u);
 			if (/\.png(\?.*)?$/.test(u)) urls.push(u.replace(/\.png(\?.*)?$/, '.gif$1'));
 		}));
-		if (/_spear$/.test(id)) urls.push('images/icon/spear.webp');
-		if (/^music_disc_/.test(id)) urls.push('data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2016%2016%22%20shape-rendering=%22crispEdges%22%3E%3Cpath%20fill=%22%231c1c24%22%20d=%22M5%201h6v1h2v2h2v8h-2v2h-2v2H5v-2H3v-2H1V4h2V2h2z%22/%3E%3Cpath%20fill=%22%233a3a48%22%20d=%22M5%202h4v1H6v1H4v3H3V4h2z%22/%3E%3Cpath%20fill=%22%23e8a33d%22%20d=%22M6%206h4v4H6z%22/%3E%3Cpath%20fill=%22%231c1c24%22%20d=%22M7%207h2v2H7z%22/%3E%3C/svg%3E');
 		tried[id] = urls;
 		let n = 0;
 		const next = () => {
