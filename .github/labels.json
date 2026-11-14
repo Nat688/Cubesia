@@ -1,0 +1,15 @@
+[
+  {"name": "bug", "color": "d73a4a", "description": "Something is broken"},
+  {"name": "translation", "color": "1d76db", "description": "Missing or wrong EN / FR text"},
+  {"name": "content", "color": "0e8a16", "description": "Wiki, patch notes or rules content"},
+  {"name": "prices", "color": "fbca04", "description": "Prices page, items and icons"},
+  {"name": "enhancement", "color": "a2eeef", "description": "New feature or improvement"},
+  {"name": "needs-triage", "color": "ededed", "description": "Waiting for a first review"},
+  {"name": "accepted", "color": "5319e7", "description": "Confirmed and planned"},
+  {"name": "in-progress", "color": "f9d0c4", "description": "Someone is working on it"},
+  {"name": "good first issue", "color": "7057ff", "description": "Good for newcomers"},
+  {"name": "wontfix", "color": "ffffff", "description": "Will not be worked on"},
+  {"name": "duplicate", "color": "cfd3d7", "description": "Already reported"},
+  {"name": "question", "color": "d876e3", "description": "Further information is requested"},
+  {"name": "not-found", "color": "e99695", "description": "Missing page, file or resource"}
+]
