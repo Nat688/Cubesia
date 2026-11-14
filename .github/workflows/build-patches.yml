@@ -1,6 +1,4 @@
 name: Build patches file
-# Rebuilds _data.yml (the in-game changelog file) whenever patch.html changes.
-# Existing entries of _data.yml (dates, author, playersRead) are kept.
 on:
   push:
     paths:

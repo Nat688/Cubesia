@@ -27,6 +27,7 @@
 #prices td { border-top: 1px solid var(--border); }
 #prices .num { text-align: right; font-variant-numeric: tabular-nums; }
 #prices tbody tr:hover { background: rgba(255, 255, 255, 0.04); }
+#prices tbody tr { content-visibility: auto; contain-intrinsic-size: auto 44px; }
 .empty { margin: 24px 0; text-align: center; color: var(--muted); }
 .apply-form { display: grid; gap: 16px; }
 .apply-form label { display: grid; gap: 6px; font-weight: 600; font-size: 0.92rem; }

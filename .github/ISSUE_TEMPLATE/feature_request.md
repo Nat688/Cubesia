@@ -1,16 +1,15 @@
 ---
 name: ✨ Feature Request
-about: Suggérer une nouvelle fonctionnalité
+about: Suggest a new feature
 title: "✨ Feature Request"
-labels: suggest
+labels: enhancement, needs-triage
 assignees: ""
 ---
-
 ## Description
-Décrire clairement la fonctionnalité souhaitée.
-
+A clear description of the feature you would like.
 ## Motivation
-Pourquoi est-ce utile pour le projet ?
-
-## Exemple d'utilisation
-Si possible, fournir un exemple ou un mockup.
+Why would it be useful for the project?
+## Usage example
+If possible, provide an example or a mockup.
+## Checklist
+* [ ] I checked that this idea has not already been suggested

@@ -1,0 +1,26 @@
+name: Update sitemap and rules date
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.html'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  meta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python _tools/update_meta.py
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add sitemap.xml rules.html
+          git diff --staged --quiet || (git commit -m "Update sitemap and rules date" && git push)

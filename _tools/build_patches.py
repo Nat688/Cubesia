@@ -1,22 +1,3 @@
-"""Single source for patches: patch.html  ->  _data.yml (the in-game changelog plugin).
-
-Write your patches ONLY in patch.html (with data-date="YYYY-MM-DD" on every <details>).
-This script builds the plugin file from it. It needs Python and PyYAML:  pip install pyyaml
-
-Usage, from the project root:
-    python _tools/build_patches.py --yaml path/to/the/server/_data.yml
-        -> writes _build/_data.yml (put it back on the server)
-    python _tools/build_patches.py
-        -> same, but without the server file: every player will see every patch as unread
-
-Options:
-    --yaml FILE      the server's current _data.yml: its dates, author and "playersRead" list
-                     are kept for every patch, texts are updated from patch.html and new
-                     patches are added (unread by everyone)
-    --only-new       leave the text of patches that are already in the server file untouched
-    --out FILE       plugin file to write (default: _build/_data.yml)
-    --feed FILE      also write an RSS feed (off by default), for example: --feed feed.xml
-"""
 import argparse
 import copy
 import datetime

@@ -1,0 +1,20 @@
+name: Triage
+on:
+  issues:
+    types: [opened, closed, reopened]
+permissions:
+  issues: write
+jobs:
+  welcome:
+    if: github.event.action == 'opened'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: 'Thanks for your report! The team will review it soon. Please keep all details in this thread.'
+            });

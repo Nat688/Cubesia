@@ -1,0 +1,33 @@
+name: Wiki or rules content
+description: Information is wrong, outdated or missing in the wiki, patch notes or rules.
+title: "[Content] "
+labels: ["content", "needs-triage"]
+body:
+  - type: dropdown
+    id: page
+    attributes:
+      label: Page
+      options: [Wiki, Patch, Rules, Vote, Staff, Other]
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Section or link
+      placeholder: https://nat688.github.io/Cubesia/wiki.html#minions
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of problem
+      options: [Outdated information, Wrong information, Missing information, Broken link, Missing or wrong image]
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What should it say instead?
+    validations:
+      required: true

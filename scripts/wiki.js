@@ -9,7 +9,6 @@ lucide.createIcons();
 	};
 	const labelFromId = id => id.replace(/^(\w)(\w*)-(\d+)$/, (m, a, b, n) => a.toUpperCase() + b + ' #' + n);
 	const num = id => parseInt(id.split('-')[1], 10) || 0;
-
 	const BLOCKS = 'p, li, td, th, .base, .rm-note, figcaption';
 	const NESTED = 'p, li, td, th, ul, ol, table, .base, .rm-note';
 	const blocks = $$(BLOCKS, document.querySelector('.wiki-content')).filter(el => !el.querySelector(NESTED));
@@ -18,7 +17,6 @@ lucide.createIcons();
 		return node ? { node, en: node.nodeValue } : null;
 	}).filter(Boolean);
 	const origBlocks = blocks.map(el => ({ el, en: el.innerHTML, key: norm(el.innerHTML) }));
-
 	const chips = $$('.wiki-content [data-patch]');
 	chips.forEach(h => {
 		const id = h.dataset.patch;
@@ -59,7 +57,6 @@ lucide.createIcons();
 			markNew({ items, latestPatch, latestUpdate });
 		})
 		.catch(() => {});
-
 	let dict = null, lang = 'en';
 	const KEY = 'cubesia-lang';
 	const buttons = $$('.lang-switch button');
@@ -75,6 +72,7 @@ lucide.createIcons();
 		});
 		origBlocks.forEach(b => { b.el.innerHTML = l === 'fr' && t[b.key] ? t[b.key] : b.en; });
 		if (window.cubesiaBindCopy) window.cubesiaBindCopy();
+		if (window.cubesiaReindex) window.cubesiaReindex();
 		const set = (sel, v, attr) => { const el = document.querySelector(sel); if (el && v) { if (attr) el.setAttribute(attr, v); else el.lastChild.nodeValue = v; } };
 		set('.toc-search', l === 'fr' ? ui.search : 'Search the wiki...', 'placeholder');
 		const title = document.querySelector('.toc-title');

@@ -1,10 +1,4 @@
-##########################
-##   MAINTENANCE MODE   ##
-##########################
 maintenance: false
-# "true" or "false" #
-
-# Optional features (leave empty to disable)
 discord_server_id: "1243590602130718740"
 goatcounter: ""
 apply_endpoint: "https://apply.cubesiamc.workers.dev"

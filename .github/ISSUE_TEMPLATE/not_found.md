@@ -1,30 +1,23 @@
 ---
-name: 🔍 Not Found / Ressource manquante
-about: Signaler une page, fichier ou ressource qui est introuvable
+name: 🔍 Not Found / Missing resource
+about: Report a page, file or resource that cannot be found
 title: "🔍 Not Found"
-labels: not found
+labels: not-found, needs-triage
 assignees: ""
 ---
-
 ## Description
-Décrire clairement ce qui est introuvable (page, fichier, API, etc.).
-
-## Étapes pour reproduire
-1. Aller à l’URL ou ouvrir la ressource `...`
-2. Cliquer sur `...` si nécessaire
-
-## Comportement attendu
-Décrire ce que tu pensais trouver.
-
-## Comportement observé
-Décrire ce qui se passe réellement (ex: message 404, page vide, erreur).
-
-## Captures d'écran / Logs
-Si possible, ajouter des captures d’écran ou messages d’erreur.
-
-## Informations supplémentaires
-Tout autre contexte utile (OS, navigateur, version du projet…).
-
+Clearly describe what cannot be found (page, file, API, etc.).
+## Steps to reproduce
+1. Go to the URL or open the resource `...`
+2. Click on `...` if needed
+## Expected behavior
+Describe what you thought you would find.
+## Actual behavior
+Describe what really happens (e.g. 404 message, blank page, error).
+## Screenshots / Logs
+If possible, add screenshots or error messages.
+## Additional information
+Any other useful context (OS, browser, project version…).
 ## Checklist
-* [ ] J’ai vérifié que la ressource n’existe pas déjà ailleurs
-* [ ] J’ai fourni les étapes exactes pour reproduire le problème
+* [ ] I checked that the resource does not already exist elsewhere
+* [ ] I provided the exact steps to reproduce the problem
