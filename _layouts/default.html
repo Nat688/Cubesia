@@ -1,5 +1,4 @@
 {% if site.maintenance %}
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -42,10 +41,8 @@
 		</script>
 	</body>
 </html>
-
 {% else %}
-
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -78,7 +75,7 @@
 		{% if site.minecraft_style %}<link id="mc-fonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&display=swap">{% endif %}
 		<link rel="stylesheet" type="text/css" href="styles/base.css">
 		{% if site.goatcounter != "" and site.goatcounter %}<script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>{% endif %}
-		<script>window.CUBESIA_MC_DEFAULT = {{ site.minecraft_style | default: false }};try{var d=document.documentElement,t=localStorage.getItem('cubesia-theme'),z=localStorage.getItem('cubesia-zoom');if(t==='auto')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';if(t)d.dataset.theme=t;if(z)d.style.setProperty('--text-zoom',z);}catch(e){}</script>
+		<script>window.CUBESIA_MC_DEFAULT = {{ site.minecraft_style | default: false }};try{var d=document.documentElement,t=localStorage.getItem('cubesia-theme'),z=localStorage.getItem('cubesia-zoom');if(t==='auto')t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';if(t)d.dataset.theme=t;if(z)d.style.setProperty('--text-zoom',z);var s=localStorage.getItem('cubesia-style');if(s?s==='minecraft':window.CUBESIA_MC_DEFAULT)d.classList.add('mc-pending');}catch(e){}</script>
 	</head>
 	<a class="skip-link" href="#content">Skip to content</a>
 	<header>
@@ -102,7 +99,7 @@
 		</a>
 		<a href="https://nat688.github.io/Cubesia/work-in-progress.html" class="btn2">
 			<i data-lucide="shopping-cart"></i>
-		</a>	
+		</a>
         <script>
 				lucide.createIcons();
 				(function () {
@@ -130,5 +127,4 @@
 	<p class="edit-page"><a class="edit-btn" href="https://github.com/Nat688/Cubesia/edit/main/{{ page.path }}" target="_blank" rel="noopener"><i data-lucide="pencil"></i>Edit this page on GitHub</a></p>
 	{% endunless %}
 </html>
-
 {% endif %}
