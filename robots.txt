@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://nat688.github.io/Cubesia/sitemap.xml
